@@ -1,0 +1,448 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+    
+
+- intent: inform_heart_disease
+  examples: | 
+    -can i know about heart disease.
+    -what is a heart disease.
+    -tell me about heart diseases.
+    -what muscles get affected from heart diseases.
+    -heart diseases?
+    -wht heart diseases
+    -what is the nature of heart diseases
+
+
+- intent: types of HD
+  examples: |
+    -what are the main types of heart diseases
+    -what are types of heart diseases
+    -what are types of HD
+    -types of HD?
+    -heart diseases types?
+    -types of disorders of heart diseases
+
+- intent: causes for HD
+  examples: |
+    -what are the factors causing heart diseases
+    -what causes heart diseases?
+    -factors for heart diseases
+    -main factors for heart diseases
+    -factors for HD?
+    -can you tell me about heart diseases causes?
+    -reasons for heart diseases
+    -What are the main risk factors for heart disease?
+    -How does someone get heart disease?
+    -What contributes to the development of heart disease?
+    -What are the primary causes of cardiovascular disease?
+    -What lifestyle factors lead to heart disease?
+    -What are the top reasons for heart disease?
+    -Why do people develop heart disease?
+    -What increases the risk of heart disease?
+    -What habits or conditions cause heart disease?
+    
+    
+    
+
+- intent: what is CAD
+  examples: |
+    -What is CAD?
+    -Wht s CAD?
+    -wht is Coronary Artery Diseases(CAD)?
+    -can you tell me about CAD?
+    -explain about Coronary Artery Disease?
+    -CAD?
+    -tell me about coronary artery disease
+    -what is the most common heart disease in the world?
+    -common heart disease globally 
+    -worldwide common heart disease
+    -wht is the most common HD among the people worldwide?
+
+
+- intent: symptoms of HD
+  examples: |
+    -what are symptoms of HD?
+    -What are the symptoms of heart diseases?
+    -Can you tell me the signs of heart diseases?
+    -What should I look out for if I suspect a heart problem?
+    -How do I know if I have a heart disease?
+    -What are the common signs of heart-related issues?
+    -Can you explain the symptoms of heart disease?
+    -What are the warning signs of a heart attack or heart disease?
+    -How do heart diseases manifest?
+    -What are the physical symptoms of heart problems?
+    -Could you list the symptoms of heart conditions?
+    -What are the early symptoms of heart disease?
+    -How can I recognize if my heart isn’t healthy?
+    -Tell me about the signs of a cardiac condition.
+    -What are the indicators of heart trouble?
+    -What are the symptoms I should watch for heart diseases?
+
+
+- intent: common_to_male_or_female
+  examples:  |
+      -Is heart disease more common in men or women?
+      -Which gender is more affected by heart disease?
+      -Does heart disease occur more often in males or females?
+      -Are men or women more likely to get heart disease?
+      -Who is more prone to heart disease, men or women?
+      -Is heart disease more prevalent in men or women?
+      -What gender has a higher risk of heart disease?
+      -Are heart diseases more common among men or women?
+      -Which gender suffers more from heart diseases?
+      -Do men or women experience heart disease more often?
+      -Who is more likely to develop heart disease, males or females?
+      -Is heart disease more frequent in males or females?
+      -Between men and women, who has a higher chance of developing heart disease?
+      -Are men or women at a greater risk of heart disease?
+      -Does heart disease affect men or women more frequently?
+
+- intent: ECG report
+  examples: |
+      -What ECG changes indicate a myocardial infarction (MI)?
+      -How can I identify ST-elevation myocardial infarction (STEMI) on an ECG?
+      -What are the key ECG features of a heart attack?
+      -How do I detect ischemic changes in an ECG?
+      -What abnormalities in an ECG suggest myocardial infarction?
+      -How can I differentiate between acute and old myocardial infarction on an ECG?
+      -What are the specific leads to check for myocardial infarction in different heart regions?
+      -What patterns on an ECG indicate myocardial ischemia or infarction?
+      -How do T-wave changes help in diagnosing myocardial infarction on an ECG?
+      -What ECG criteria are used to diagnose a non-ST-elevation myocardial infarction (NSTEMI)?
+
+- intent: nations affected
+  examples: |
+      -Which countries have the highest rates of heart disease?
+      -Where do most people suffer from heart disease?
+      -What countries have the most heart disease cases?
+      -Which nations are most affected by heart disease?
+      -Which countries have the largest number of heart disease patients?
+      -Where is heart disease most prevalent around the world?
+      -Which countries report the highest number of heart disease-related deaths?
+      -What are the leading countries in terms of heart disease patients?
+      -Which nations are facing the biggest heart disease epidemics?
+      -Where is cardiovascular disease most common?
+
+- intent: hw to prevent
+  examples:  |
+      -What are the best ways to prevent heart disease?
+      -How can I lower my risk of heart disease?
+      -What lifestyle changes can I make to protect my heart?
+      -I want to improve my heart health. What should I do?
+      -Are there any steps I can take to avoid heart problems?
+      -What can I do to live a heart-healthy life?
+      -I want to live a long and healthy life. What are some heart-healthy habits?
+      -I'm concerned about my heart health. What can I do to reduce my risk?
+      -Are there any simple lifestyle changes that can protect my heart?
+      -how to minimize the risk  of HD?
+    
+    
+- intent: difference between cardiac and non cardiac pain
+  examples: |
+      -What are the key differences between cardiac and non-cardiac chest pain?
+      -How can I clinically differentiate cardiac chest pain from other types of chest pain?
+      -What signs indicate chest pain is cardiac in origin?
+      -How do I know if chest pain is due to a heart problem or something else?
+      -What are the characteristics of non-cardiac chest pain?
+      -Are there specific symptoms to help distinguish between cardiac and non-cardiac chest pain?
+      -How can I determine if chest pain is heart-related during an initial evaluation?
+      -What diagnostic features separate cardiac chest pain from non-cardiac causes?
+      -How can I tell if chest pain is from angina or gastrointestinal issues?
+      -What questions should I ask a patient to differentiate between cardiac and non-cardiac chest pain?
+    
+- intent: what types tests
+  examples:  |
+      -What are the common tests used to diagnose heart diseases?
+      -How do doctors confirm a diagnosis of heart disease?
+      -What diagnostic tools are available for identifying heart problems?
+      -What tests should be performed to evaluate a patient for cardiovascular disease?
+      -What are the standard investigations for detecting heart-related conditions?
+      -What imaging or lab tests are used to diagnose heart issues?
+      -Which tests help differentiate between types of heart diseases?
+      -How can I assess heart function in a patient?
+      -What are the key diagnostic procedures for identifying coronary artery disease?
+      -What advanced tests are available for evaluating heart diseases?
+    
+
+- intent: diagnosing criteria
+  examples:   |
+      -What clinical guidelines should I follow to diagnose heart failure?
+      -How do the Framingham criteria help in diagnosing heart failure?
+      -What are the laboratory tests used to confirm heart failure?
+      -How can echocardiography findings indicate heart failure?
+      -What role does ejection fraction play in diagnosing heart failure?
+      -How are natriuretic peptide levels (BNP/NT-proBNP) used to identify heart failure?
+      -What physical signs on examination suggest heart failure?
+      -What imaging studies confirm heart failure, and how are they interpreted?
+      -How do I use NYHA functional classification to assess heart failure severity?
+      -What differentiates heart failure with reduced ejection fraction (HFrEF) from preserved ejection fraction (HFpEF)?
+
+- intent: troponin levels
+  examples:  |
+      -How is troponin used to confirm a heart attack?
+      -What role do cardiac biomarkers play in diagnosing myocardial infarction?
+      -How can elevated troponin levels indicate a heart attack?
+      -Why is troponin the preferred biomarker for diagnosing acute coronary syndrome?
+      -How do changes in troponin levels help in identifying myocardial damage?
+      -What is the diagnostic significance of troponin in heart attacks?
+      -When should troponin levels be checked in a suspected heart attack?
+      -How does the timeline of troponin elevation help diagnose myocardial infarction?
+      -Can normal troponin levels rule out a heart attack?
+      -How do troponin levels differentiate between acute and chronic cardiac injury?
+
+- intent: smoking to HD
+  examples:  |
+      -How does smoking contribute to the development of heart disease?
+      -Why is smoking a major risk factor for cardiovascular disease?
+      -In what ways does smoking affect heart health?
+      -How does smoking increase the likelihood of heart attacks and strokes?
+      -What are the effects of tobacco use on the heart and blood vessels?
+      -Can smoking cause damage to the arteries? If so, how?
+      -How does smoking affect blood pressure and heart rate?
+      -Why does smoking lead to atherosclerosis and heart disease?
+      -What specific heart conditions are caused by smoking?
+      -How does nicotine and other chemicals in cigarettes damage the cardiovascular system?
+
+- intent: hypertension
+  examples:  |
+      -How does hypertension contribute to cardiovascular complications?
+      -Why is high blood pressure considered a risk factor for heart disease?
+      -Can prolonged hypertension damage the heart? If yes, how?
+      -What is the connection between hypertension and heart failure?
+      -How does uncontrolled blood pressure affect coronary arteries?
+      -In what ways does high blood pressure lead to a heart attack?
+      -Why does hypertension increase the likelihood of developing arrhythmias?
+      -How does high blood pressure impact the heart's structure and function?
+      -What specific types of heart diseases are caused by chronic hypertension?
+      -How can hypertension cause long-term cardiovascular problems?
+      -what is known as hypertension?
+
+- intent: diabetes and HD
+  examples:  |
+      -How does diabetes contribute to the development of heart disease?
+      -What is the link between high blood sugar levels and heart problems?
+      -Why are people with diabetes more likely to have cardiovascular diseases?
+      -Can diabetes directly lead to heart disease? If so, how?
+      -How does Type 2 diabetes increase the risk of heart attacks?
+      -What is the relationship between insulin resistance and heart health?
+      -How does poorly controlled diabetes affect the heart and blood vessels?
+      -What are the common heart-related complications seen in diabetics?
+      -Why is cardiovascular disease the leading cause of death in people with diabetes?
+      -How do chronic high glucose levels damage the cardiovascular system?
+    
+- intent: cholestrol and HD
+  examples:  |
+      -How does high cholesterol lead to atherosclerosis?
+      -What is the role of cholesterol in the formation of atherosclerotic plaques?
+      -Why is elevated cholesterol a major risk factor for atherosclerosis?
+      -Can high LDL cholesterol levels cause artery blockages? If so, how?
+      -How do cholesterol deposits contribute to hardening of the arteries?
+      -What is the connection between bad cholesterol and plaque buildup in arteries?
+      -How does having high cholesterol affect blood vessel health?
+      -What mechanisms link cholesterol and atherosclerosis?
+      -Why does high cholesterol increase the risk of arterial narrowing?
+      -How do lipids from cholesterol accumulate in arterial walls?
+
+- intent: genetics and HD
+  examples:   |
+      -How does family history influence my risk of heart disease?
+      -Why is knowing family history important in evaluating heart health risks?
+      -Can a genetic predisposition increase the likelihood of developing heart conditions?
+      -How significant is the role of inherited factors in heart disease?
+      -Does having a parent with heart disease mean I’m at higher risk?
+      -How can a family history of cardiovascular issues affect my health?
+      -Why do doctors ask about relatives with heart problems during a checkup?
+      -What genetic traits are passed down that might cause heart disease?
+      -Is family history the strongest risk factor for developing coronary artery disease?
+      -How do hereditary heart conditions differ from lifestyle-induced heart disease?
+
+- intent: hypertension treatments
+  examples:  |
+      -What are the most common drugs prescribed for hypertension?
+      -Which medications are typically used to manage high blood pressure?
+      -What treatment options are available for people with hypertension?
+      -What are the standard medications for controlling hypertension?
+      -How do doctors usually treat high blood pressure with medication?
+      -What are the popular medications used to lower blood pressure?
+      -Which drugs are commonly recommended for hypertension management?
+      -What medications can help control hypertension?
+      -What are the first-line treatments for hypertension?
+      -What are the most effective medications for managing high blood pressure?
+
+- intent: manage atrial fibrillations
+  examples:  |
+      -What are the best strategies for managing a patient with atrial fibrillation?
+      -How should a patient with atrial fibrillation be treated?
+      -What is the recommended management plan for atrial fibrillation?
+      -How do you approach the treatment of atrial fibrillation in a clinical setting?
+      -What are the steps in managing atrial fibrillation?
+      -What is the standard care for patients diagnosed with atrial fibrillation?
+      -How do you manage a case of atrial fibrillation effectively?
+      -What treatment options should be considered for managing atrial fibrillation?
+      -What are the most common treatments for atrial fibrillation?
+      -How should you care for a patient presenting with atrial fibrillation?
+    
+- intent: Lbbb block MD
+  examples:  |
+      -How does left bundle branch block (LBBB) affect the diagnosis of a myocardial infarction?
+      -What challenges does LBBB present in identifying myocardial infarction on an ECG?
+      -Why is LBBB significant in myocardial infarction diagnosis?
+      -Can myocardial infarction be reliably diagnosed in the presence of LBBB?
+      -What are the diagnostic implications of LBBB in myocardial infarction?
+
+
+- intent: ABG in CD
+  examples:  |
+      -What is the relationship between arterial blood gas (ABG) findings and cardiopulmonary dysfunction?
+      -How can ABG results indicate underlying cardiopulmonary dysfunction?
+      -What ABG abnormalities suggest cardiopulmonary problems?
+      -How do ABG findings help diagnose cardiopulmonary disorders?
+      -Why are ABG tests important in assessing cardiopulmonary function?
+
+          
+- intent: CT aniography vs conventional aniography
+  examples:  |
+      -How does CT coronary angiography compare to conventional angiography in terms of advantages and limitations?
+      -What are the benefits and drawbacks of using CT coronary angiography instead of conventional angiography?
+      -Why might CT coronary angiography be chosen over conventional angiography, and what are its limitations?
+      -What are the strengths and weaknesses of CT coronary angiography compared to traditional angiography?
+      -How do CT and conventional coronary angiography differ in diagnostic utility and practicality?
+
+- intent: ABI in PAD
+  examples:  |
+      -What is the role of the ankle-brachial index (ABI) in diagnosing peripheral arterial disease (PAD)?
+      -How does the ankle-brachial index indicate the presence of peripheral arterial disease?
+      -Why is the ankle-brachial index used to diagnose peripheral arterial disease?
+      -What does an abnormal ankle-brachial index signify in relation to peripheral arterial disease?
+      -How is the ankle-brachial index applied in the detection of peripheral arterial disease?
+
+- intent: DVT to PE
+  examples:  |
+      -How are deep vein thrombosis (DVT) and pulmonary embolism (PE) pathophysiologically connected?
+      -What is the mechanism linking DVT to the development of a pulmonary embolism?
+      -Why does a deep vein thrombosis increase the risk of pulmonary embolism?
+      -What is the relationship between DVT and PE in terms of pathophysiology?
+      -How does a thrombus from DVT lead to pulmonary embolism?
+
+- intent: echocardiography in Ischemic
+  examples:  |
+      -What role does echocardiography play in diagnosing ischemic heart disease?
+      -How can echocardiography findings indicate ischemic heart disease?
+      -What echocardiographic signs suggest the presence of ischemic heart disease?
+      -How does echocardiography help differentiate ischemic heart disease from other conditions?
+      -Why is echocardiography used in the evaluation of ischemic heart disease?
+
+- intent: Beta blockers in CD
+  examples:  |
+      -How do beta-blockers work to prevent secondary cardiac events?
+      -What is the mechanism behind beta-blockers reducing the risk of recurrent cardiac events?
+      -How do beta-blockers help in the management of patients post-myocardial infarction?
+      -What role do beta-blockers play in secondary prevention of cardiac events?
+      -Why are beta-blockers prescribed to prevent secondary cardiac complications?
+
+- intent: right catherization
+  examples:  |
+      -What parameters on right heart catheterization diagnose pulmonary hypertension?
+      -How is pulmonary hypertension confirmed through right heart catheterization?
+      -What are the hemodynamic criteria for diagnosing pulmonary hypertension using right heart catheterization?
+      -Which right heart catheterization findings are indicative of pulmonary hypertension?
+      -What defines pulmonary hypertension on right heart catheterization?
+
+- intent: spirometry
+  examples:  |
+      -How can spirometry differentiate between cardiac and pulmonary causes of dyspnea?
+      -What spirometry findings help identify whether dyspnea is due to pulmonary or cardiac issues?
+      -How does spirometry aid in distinguishing cardiac dyspnea from pulmonary dyspnea?
+      -What role does spirometry play in evaluating the cause of dyspnea?
+      -How do spirometry results clarify whether dyspnea is cardiac or pulmonary in origin?
+
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - what do you know?

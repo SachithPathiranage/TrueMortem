@@ -1,0 +1,141 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+
+- story: get to know about heart disease
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inform_heart_disease
+  - action: utter_inform_heart_disease
+  - intent: types of HD
+  - action: utter_types_of_HD
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: get to know about heart disease2
+  steps:
+  - intent: types of HD
+  - action: utter_types_of_HD
+  - intent: symptoms of HD
+  - action: utter_symptoms_of_HD
+
+
+- story: common to who?
+  steps:
+  - intent: common_to_male_or_female
+  - action: utter_common_among_who
+
+- story: nations affected
+  steps:
+  - intent: nations affected
+  - action: utter_most_affected
+
+- story: how to prevent HD
+  steps:
+    - intent: hw to prevent
+    - action: utter_hw_to_prevent
+
+- story: diabetes and HD
+  steps:
+    - intent: diabetes and HD
+    - action: utter_relation_to_diabetes
+
+- story: cholestrol and HD
+  steps:
+    - intent: cholestrol and HD
+    - action: utter_cholestrol_HD
+    - intent: genetics and HD
+    - action: utter_genetic_to_HD
+
+
+- story: diagnosis
+  steps:
+      - intent: difference between cardiac and non cardiac pain
+      - action:  utter_cardiac_and_non
+      - intent: what types tests
+      - action: utter_types_of tests
+      - intent: diagnosing criteria
+      - action: utter_diagnosis_criteria
+      - intent: ECG report
+      - action: utter_ECG_report
+      - intent: troponin levels
+      - action: utter_troponin_levels
+      - intent: hypertension
+      - action: utter_hypertension
+
+- story: reasons for HD
+  steps:
+  - intent: causes for HD
+  - action: utter_common_causes_for_HD
+  - intent:  what is CAD
+  - action: utter_about_CAD
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: smoking HD
+  steps:
+    - intent: smoking to HD
+    - action: utter_smoking_to_HD
+
+- story: hypertension treatments
+  steps:
+    - intent: hypertension treatments
+    - action: utter_treatment_hypertension
+
+- story: manage arial fibrilliation
+  steps:
+    - intent: manage atrial fibrillations
+    - action: utter_manage_atrial_fibrillation
+
+- story: Lbb block MD
+  steps:
+    - intent: Lbbb block MD
+    - action: utter_Lbbb_block_MD
+    - intent: echocardiography in Ischemic
+    - action: utter_echocardiography_in_Ischemic
+    - intent: ABG in CD
+    - action: utter_ABG_CD
+    - intent: Beta blockers in CD
+    - action: utter_betablocker_in_CD
+    - intent: CT aniography vs conventional aniography
+    - action: utter_conventional_aniography
+    - intent: ABI in PAD
+    - action: utter_ABI_in_PAD
+    - intent: DVT to PE
+    - action: utter_DVT_in_PE
+    - intent: right catherization
+    - action: utter_right_catherization
+    - intent: spirometry
+    - action: utter_spirometry
+
