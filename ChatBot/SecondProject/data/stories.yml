@@ -118,7 +118,7 @@ stories:
     - intent: manage atrial fibrillations
     - action: utter_manage_atrial_fibrillation
 
-- story: Lbb block MD
+- story: advance Info
   steps:
     - intent: Lbbb block MD
     - action: utter_Lbbb_block_MD
@@ -138,4 +138,24 @@ stories:
     - action: utter_right_catherization
     - intent: spirometry
     - action: utter_spirometry
+    - intent: doppler ultrasound in ID
+    - action: utter_doppler_ultrasound_in_ID
+    - intent: arial fibrillations in embolic
+    - action: utter_arial_fibrillations_in_embolic
+    - intent: TCD access cerebrovascular reserve capacity
+    - action: utter_TCD_access_cerebrovascular_reserve_capacity
+    - intent: insulin resistance in endothelial dysfunction
+    - action: utter_insulin_resistance_in_endothelial_dysfunction
+    - intent: lipid  panel in CD
+    - action: utter_lipid_panel_in_CD
+    - intent: chronic hyperglycemia and diabetic cardiomyopathy
+    - action: utter_chronic_hyperglycemia_and_diabetic_cardiomyopathy
+    - intent:  lactate levels in MD
+    - action: utter_lactate_levels_in_MD
+    - intent: APOE in CD
+    - action: utter_APOE_in_CD
+    - intent: pharmacogenomics in CD
+    - action: utter_pharmacogenomics_in_CD
+    - intent: hypercholesterolemia in CD
+    - action: utter_hypercholesterolemia_in_CD
 

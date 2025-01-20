@@ -364,23 +364,7 @@ nlu:
       -What are the most common treatments for atrial fibrillation?
       -How should you care for a patient presenting with atrial fibrillation?
     
-- intent: Lbbb block MD
-  examples:  |
-      -How does left bundle branch block (LBBB) affect the diagnosis of a myocardial infarction?
-      -What challenges does LBBB present in identifying myocardial infarction on an ECG?
-      -Why is LBBB significant in myocardial infarction diagnosis?
-      -Can myocardial infarction be reliably diagnosed in the presence of LBBB?
-      -What are the diagnostic implications of LBBB in myocardial infarction?
-
-
-- intent: ABG in CD
-  examples:  |
-      -What is the relationship between arterial blood gas (ABG) findings and cardiopulmonary dysfunction?
-      -How can ABG results indicate underlying cardiopulmonary dysfunction?
-      -What ABG abnormalities suggest cardiopulmonary problems?
-      -How do ABG findings help diagnose cardiopulmonary disorders?
-      -Why are ABG tests important in assessing cardiopulmonary function?
-
+    
           
 - intent: CT aniography vs conventional aniography
   examples:  |
@@ -389,6 +373,15 @@ nlu:
       -Why might CT coronary angiography be chosen over conventional angiography, and what are its limitations?
       -What are the strengths and weaknesses of CT coronary angiography compared to traditional angiography?
       -How do CT and conventional coronary angiography differ in diagnostic utility and practicality?
+
+- intent: ABG in CD
+  examples:  |
+      -What is the relationship between arterial blood gas (ABG) findings and cardiopulmonary dysfunction?
+      -How can ABG results indicate underlying cardiopulmonary dysfunction?
+      -What ABG abnormalities suggest cardiopulmonary problems?
+      -How do ABG findings help diagnose cardiopulmonary disorders?
+      -Why are ABG tests important in assessing cardiopulmonary function?  
+
 
 - intent: ABI in PAD
   examples:  |
@@ -438,6 +431,99 @@ nlu:
       -What role does spirometry play in evaluating the cause of dyspnea?
       -How do spirometry results clarify whether dyspnea is cardiac or pulmonary in origin?
 
+- intent: doppler ultrasound in ID
+  examples:  |
+      -How does carotid Doppler ultrasound contribute to the prevention of ischemic stroke?
+      -What is the significance of carotid Doppler ultrasound in assessing stroke risk?
+      -Why is carotid Doppler ultrasound used in stroke prevention strategies?
+      -How does carotid Doppler ultrasound help in identifying patients at risk of ischemic stroke?
+      -What role does carotid Doppler ultrasound play in managing and preventing ischemic stroke?
+
+- intent:  arial fibrillations in embolic
+  examples:   |
+      -How does atrial fibrillation increase the risk of embolic stroke?
+      -What role do left atrial appendage clots play in the development of embolic stroke?
+      -Why are patients with atrial fibrillation at higher risk for embolic stroke?
+      -How does atrial fibrillation lead to the formation of clots in the left atrial appendage?
+      -What is the connection between atrial fibrillation, left atrial appendage clots, and embolic stroke?
+
+- intent: TCD access cerebrovascular reserve capacity
+  examples:  |
+      -How does transcranial Doppler imaging evaluate cerebrovascular reserve capacity?
+      -What role does transcranial Doppler play in assessing cerebrovascular reserve?
+      -How is cerebrovascular reserve measured using transcranial Doppler imaging?
+      -Why is transcranial Doppler imaging used to assess cerebrovascular reserve?
+      -How does transcranial Doppler detect impairments in cerebrovascular reserve?
+
+      
+
+        
+- intent: lipid  panel in CD
+  examples:   |
+      -Why is a lipid panel important for assessing cardiovascular risk in diabetic patients?
+      -How does the lipid panel help evaluate heart disease risk in diabetes?
+      -What role does the lipid panel play in managing cardiovascular risk in diabetic patients?
+      -How is a lipid panel used to monitor cardiovascular health in individuals with diabetes?
+      -What is the significance of analyzing lipid profiles in diabetic patients for heart disease prevention?
+
+- intent: insulin resistance in endothelial dysfunction
+  examples:  |
+      -What is the link between insulin resistance and endothelial dysfunction?
+      -How does insulin resistance promote the development of atherosclerosis?
+      -What role does insulin resistance play in endothelial dysfunction and vascular disease?
+      -How does insulin resistance contribute to the progression of atherosclerosis?
+      -Why is insulin resistance associated with endothelial damage and atherosclerosis?
+      
+
+        
+- intent: lactate levels in MD
+  examples:   |
+      -How do lactate levels indicate tissue perfusion during an acute myocardial infarction?
+      -Why are lactate levels important in evaluating perfusion in acute myocardial infarction?
+      -What is the role of lactate levels in monitoring tissue hypoxia during a heart attack?
+      -How does elevated lactate help assess the severity of myocardial infarction?
+      -What is the clinical significance of lactate levels in acute myocardial infarction management?
+
+
+- intent: chronic hyperglycemia and diabetic cardiomyopathy
+  examples:   |
+      -What is the relationship between chronic hyperglycemia and diabetic cardiomyopathy progression?
+      -How does persistent high blood sugar worsen diabetic cardiomyopathy?
+      -Why does chronic hyperglycemia contribute to the development of diabetic cardiomyopathy?
+      -How does hyperglycemia accelerate structural and functional changes in diabetic cardiomyopathy?
+      -What role does chronic hyperglycemia play in worsening diabetic heart disease?
+
+- intent: Lbbb block MD
+  examples:  |
+      -How does left bundle branch block (LBBB) affect the diagnosis of a myocardial infarction?
+      -What challenges does LBBB present in identifying myocardial infarction on an ECG?
+      -Why is LBBB significant in myocardial infarction diagnosis?
+      -Can myocardial infarction be reliably diagnosed in the presence of LBBB?
+      -What are the diagnostic implications of LBBB in myocardial infarction?
+
+- intent: APOE in CD
+  examples:  |
+      -How do ApoE genetic variants impact cardiovascular risk?
+      -What is the role of ApoE polymorphisms in determining cardiovascular disease susceptibility?
+      -How does the ApoE genotype correlate with cardiovascular risk factors?
+      -What influence do ApoE genetic markers have on lipid metabolism and cardiovascular health?
+      -Why are ApoE variants significant in assessing cardiovascular disease risk?
+
+- intent: pharmacogenomics in CD
+  examples:  |
+      -How does pharmacogenomics guide antiplatelet therapy in patients with coronary artery disease?
+      -What is the importance of pharmacogenomic testing in personalizing antiplatelet treatment for coronary artery disease?
+      -How do genetic variations affect the response to antiplatelet drugs in coronary artery disease patients?
+      -What role do pharmacogenomic markers play in optimizing antiplatelet therapy for coronary artery disease?
+      -Why is pharmacogenomics essential in selecting the most effective antiplatelet therapy for coronary artery disease?
+
+- intent: hypercholesterolemia in CD
+  examples:  |
+      -How does familial hypercholesterolemia contribute to early-onset coronary artery disease?
+      -What is the link between familial hypercholesterolemia and premature coronary artery disease?
+      -Why does familial hypercholesterolemia increase the risk of coronary artery disease at a young age?
+      -How does elevated cholesterol in familial hypercholesterolemia lead to early cardiovascular events?
+      -What mechanisms in familial hypercholesterolemia predispose individuals to premature coronary artery disease?
 
 - intent: bot_challenge
   examples: |

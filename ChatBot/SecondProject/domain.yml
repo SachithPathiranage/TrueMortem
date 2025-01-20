@@ -37,6 +37,16 @@ intents:
   - DVT to PE
   - right catherization
   - spirometry
+  - doppler ultrasound in ID
+  - arial fibrillations in embolic
+  - TCD access cerebrovascular reserve capacity
+  - insulin resistance in endothelial dysfunction
+  - lipid  panel in CD
+  - chronic hyperglycemia and diabetic cardiomyopathy
+  - lactate levels in MD
+  - APOE in CD
+  - pharmacogenomics in CD
+  - hypercholesterolemia in CD
 
 responses:
   utter_greet:
@@ -844,22 +854,46 @@ responses:
         
         Analysis of flow-volume loops may reveal fixed or variable extrathoracic/intrathoracic obstructions, which are pulmonary in origin. A normal loop shifts suspicion to a cardiac cause.
         By combining spirometry results with clinical assessment and other tests (e.g., echocardiography or BNP levels), clinicians can effectively differentiate between cardiac-related and pulmonary causes of dyspnea.
-                
+
+  utter_doppler_ultrasound_in_ID:
+    - text:  |
+        Carotid Doppler ultrasound is a non-invasive imaging technique that evaluates blood flow in the carotid arteries, which supply blood to the brain. It is crucial in preventing ischemic stroke as it helps detect carotid artery stenosis, plaque formation, and other abnormalities that may impede blood flow. Early identification of significant stenosis allows for timely intervention, such as lifestyle changes, medical management (e.g., antiplatelet therapy, statins), or surgical procedures like carotid endarterectomy or stenting, thereby reducing the risk of stroke.
+
+  utter_arial_fibrillations_in_embolic:
+    - text:  |
+        Atrial fibrillation (AF) leads to irregular and inefficient contraction of the atria, causing blood stasis, particularly in the left atrial appendage (LAA). This stagnation promotes the formation of clots within the LAA. If a clot dislodges, it can travel through the bloodstream and block cerebral arteries, resulting in an embolic stroke. Effective management of AF with anticoagulation therapy significantly reduces the risk of clot formation and subsequent embolic stroke.
         
+  utter_TCD_access_cerebrovascular_reserve_capacity:
+    - text:  |
+        Transcranial Doppler (TCD) imaging assesses cerebrovascular reserve by measuring blood flow velocity in the major cerebral arteries, typically before and after a vasodilatory stimulus such as carbon dioxide inhalation or administration of acetazolamide. An intact cerebrovascular reserve allows for increased blood flow velocity in response to the stimulus, indicating good compensatory capacity. Reduced or absent flow velocity changes suggest impaired cerebrovascular reserve, which may indicate a higher risk of ischemic events or inadequate cerebral perfusion in conditions such as stenosis or chronic cerebrovascular disease.
         
+  utter_insulin_resistance_in_endothelial_dysfunction:
+    - text:  |
+        Insulin resistance contributes to endothelial dysfunction and atherosclerosis by impairing the normal vasodilatory response mediated by nitric oxide (NO). In insulin resistance, there is reduced production and bioavailability of NO due to increased oxidative stress and inflammation. This promotes endothelial dysfunction, which is an early step in atherosclerosis. Additionally, insulin resistance is associated with increased levels of pro-inflammatory cytokines, enhanced vascular smooth muscle cell proliferation, and elevated levels of pro-atherogenic lipids, all of which accelerate the development of atherosclerotic plaques.
         
-        
-        
-        
+  utter_lipid_panel_in_CD:
+    - text:  |
+        The lipid panel is significant in evaluating cardiovascular risk in diabetic patients because diabetes is often associated with atherogenic dyslipidemia, characterized by elevated triglycerides, low HDL cholesterol, and small dense LDL particles. These lipid abnormalities significantly increase the risk of atherosclerosis and cardiovascular events. Monitoring the lipid panel allows clinicians to identify and quantify these risk factors, guiding interventions such as lifestyle changes, glycemic control, and pharmacological therapies (e.g., statins or fibrates) to reduce cardiovascular risk in diabetic patients.
 
+  utter_chronic_hyperglycemia_and_diabetic_cardiomyopathy:
+    - text:  |
+        Chronic hyperglycemia accelerates the progression of diabetic cardiomyopathy by inducing metabolic and structural changes in the heart. Persistent high glucose levels increase oxidative stress and the formation of advanced glycation end products (AGEs), which damage myocardial cells and extracellular matrix. Hyperglycemia also activates inflammatory pathways and contributes to mitochondrial dysfunction, leading to impaired cardiac energy metabolism. Additionally, it promotes fibrosis, left ventricular hypertrophy, and diastolic dysfunction, which are hallmarks of diabetic cardiomyopathy. These mechanisms collectively impair cardiac function and accelerate the disease's progression.
 
+  utter_lactate_levels_in_MD:
+    - text:  |
+        Lactate levels are significant in assessing tissue perfusion during acute myocardial infarction (AMI) because they reflect the extent of tissue hypoxia and anaerobic metabolism. In AMI, reduced coronary blood flow leads to inadequate oxygen delivery, causing the myocardium and other tissues to switch to anaerobic metabolism, which produces lactate as a byproduct. Elevated lactate levels indicate poor tissue perfusion and hypoxia, serving as a marker of hemodynamic instability and severity of ischemia. Monitoring lactate levels can help guide resuscitation efforts and predict patient outcomes in the context of AMI.
 
+  utter_APOE_in_CD:
+    - text: |
+        ApoE (Apolipoprotein E) genetic variants, specifically the alleles ApoE2, ApoE3, and ApoE4, significantly influence cardiovascular risk by altering lipid metabolism and cholesterol transport. The ApoE4 allele is associated with higher levels of low-density lipoprotein (LDL) cholesterol and increased risk of atherosclerosis and coronary artery disease. Conversely, the ApoE2 allele may lead to lower LDL levels but is also linked to type III hyperlipoproteinemia, which can elevate cardiovascular risk in some individuals. Genetic testing for ApoE variants helps in assessing cardiovascular risk and tailoring lipid-lowering therapies.
 
+  utter_pharmacogenomics_in_CD:
+    - text: |
+        Pharmacogenomics plays a critical role in tailoring antiplatelet therapy for coronary artery disease (CAD) by identifying genetic variations that affect drug metabolism and response. For example, genetic variations in the CYP450 enzymes, particularly CYP2C19, can influence how patients metabolize clopidogrel, a commonly used antiplatelet medication. Individuals with certain genetic variants may have reduced efficacy of clopidogrel, putting them at higher risk for cardiovascular events. By using pharmacogenomic testing, clinicians can select the most appropriate antiplatelet therapy (e.g., prasugrel or ticagrelor) for better outcomes, reducing the risk of adverse events and improving the efficacy of treatment.
 
-
-
-
-
+  utter_hypercholesterolemia_in_CD:
+    - text:  |
+        Familial hypercholesterolemia (FH) is a genetic disorder that leads to extremely high levels of low-density lipoprotein (LDL) cholesterol in the blood, significantly increasing the risk of premature coronary artery disease (CAD). The condition is typically caused by mutations in the LDL receptor gene, leading to reduced clearance of LDL cholesterol from the bloodstream. As a result, individuals with FH accumulate excessive cholesterol in their arteries, which accelerates the formation of atherosclerotic plaques. This early buildup of plaque can lead to coronary artery disease at a younger age, increasing the risk of heart attacks and other cardiovascular events. Early diagnosis and aggressive treatment with statins or other lipid-lowering therapies can help mitigate the risk of premature CAD in individuals with FH.
 
 
 
