@@ -525,6 +525,88 @@ nlu:
       -How does elevated cholesterol in familial hypercholesterolemia lead to early cardiovascular events?
       -What mechanisms in familial hypercholesterolemia predispose individuals to premature coronary artery disease?
 
+- intent: troponin I and troponin T in MD
+  examples:  |
+      -How do troponin I and troponin T compare in terms of sensitivity and specificity for diagnosing myocardial infarction?
+      -What are the differences between troponin I and troponin T in detecting myocardial infarction?
+      -Which has better diagnostic accuracy for myocardial infarction: troponin I or troponin T?
+      -How do the sensitivity and specificity of troponin I and T influence their use in myocardial infarction diagnosis?
+      -Are there differences in diagnostic reliability between troponin I and troponin T for myocardial infarction?
+
+- intent: Q waves in ECG
+  examples:  |
+      -What does the presence of Q waves on an ECG indicate about the severity of myocardial infarction?
+      -How are Q waves on an ECG linked to the extent of heart muscle damage during a myocardial infarction?
+      -Why are Q waves significant in assessing the magnitude of a myocardial infarction?
+      -How does the development of Q waves on an ECG reflect the size of a myocardial infarction?
+      -What is the relationship between Q waves and myocardial infarction severity on an ECG?
+
+
+- intent: HRV in CD
+  examples:  |
+      -How is heart rate variability (HRV) used to predict outcomes in cardiovascular diseases?
+      -What is the importance of heart rate variability in evaluating the prognosis of cardiovascular patients?
+      -How does reduced HRV correlate with cardiovascular disease risk and outcomes?
+      -Why is heart rate variability a significant prognostic marker in cardiovascular health?
+      -What does heart rate variability reveal about the prognosis of patients with cardiovascular conditions?
+
+- intent: MRI in identifying MD
+  examples:  |
+      -What is the role of cardiac MRI in identifying myocardial fibrosis and infarction?
+      -How does cardiac MRI improve the accuracy of diagnosing myocardial damage?
+      -Why is cardiac MRI considered effective for detecting myocardial fibrosis or infarction?
+      -How does cardiac MRI differentiate between viable and non-viable myocardium?
+      -What are the advantages of using cardiac MRI to assess myocardial fibrosis or infarction?
+
+- intent: SGLT2 in CD
+  examples:  |
+      -How do SGLT2 inhibitors reduce cardiovascular risk in patients with heart failure and diabetes?
+      -What are the benefits of SGLT2 inhibitors for cardiovascular health in diabetic patients with heart failure?
+      -Why are SGLT2 inhibitors recommended for managing heart failure in patients with diabetes?
+      -What mechanisms allow SGLT2 inhibitors to lower cardiovascular risk in heart failure and diabetes?
+      -How do SGLT2 inhibitors improve outcomes for patients with both diabetes and heart failure?
+
+- intent: FFR in CD
+  examples:  |
+      -What is the role of fractional flow reserve (FFR) in determining the need for revascularization in coronary artery disease?
+      -How does FFR assessment influence revascularization decisions in patients with coronary artery disease?
+      -Why is fractional flow reserve important for guiding treatment in coronary artery disease?
+      -How does FFR help identify lesions that require revascularization in coronary arteries?
+      -What is the significance of fractional flow reserve in planning coronary interventions?
+
+- intent: therapies for PAH
+  examples:   |
+      -What are the latest therapeutic advancements in managing pulmonary arterial hypertension (PAH)?
+      -How are emerging treatments changing the landscape of pulmonary arterial hypertension therapy?
+      -What new drugs or therapies are available for pulmonary arterial hypertension?
+      -What are the novel approaches being developed to treat pulmonary arterial hypertension?
+      -How do emerging therapies improve outcomes in patients with pulmonary arterial hypertension?
+
+- intent: D_dimer testing
+  examples:  |
+      -What is the role of d-dimer testing in diagnosing venous thromboembolism (VTE)?
+      -How do elevated d-dimer levels indicate the presence of venous thromboembolism?
+      -Why are d-dimer levels important in evaluating patients for suspected VTE?
+      -How is a d-dimer test used to rule out venous thromboembolism?
+      -What does an abnormal d-dimer level signify in the context of diagnosing VTE?
+
+- intent: endothelial dysfunction and vascular disease
+  examples:  |
+      -How does endothelial dysfunction contribute to the development of atherosclerosis and peripheral vascular disease?
+      -What role does endothelial dysfunction play in the progression of vascular diseases like atherosclerosis?
+      -Why is endothelial dysfunction a key factor in the pathogenesis of atherosclerosis and peripheral vascular disease?
+      -How does impaired endothelial function accelerate atherosclerosis and peripheral vascular disease?
+      -What is the relationship between endothelial dysfunction and vascular disease progression?
+
+- intent: CTPA in pulmonary embolism
+  examples:  |
+      -How is computed tomography pulmonary angiography (CTPA) used to diagnose acute pulmonary embolism?
+      -What makes CTPA the gold standard for detecting acute pulmonary embolism?
+      -Why is CTPA preferred for diagnosing pulmonary embolism in acute settings?
+      -What role does CTPA play in confirming the presence of acute pulmonary embolism?
+      -How does CTPA enhance the accuracy of diagnosing pulmonary embolism?
+
+
 - intent: bot_challenge
   examples: |
     - are you a bot?

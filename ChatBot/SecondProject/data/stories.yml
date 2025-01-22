@@ -158,4 +158,25 @@ stories:
     - action: utter_pharmacogenomics_in_CD
     - intent: hypercholesterolemia in CD
     - action: utter_hypercholesterolemia_in_CD
+    - intent: troponin I and troponin T in MD
+    - action: utter_troponin_I_and_troponin_T_in_MD
+    - intent: Q waves in ECG
+    - action: utter_Q_waves_in_ECG
+    - intent: HRV in CD
+    - action: utter_HRV_in_CD
+    - intent: MRI in identifying MD
+    - action: utter_MRI_in_identifying_MD
+    - intent: SGLT2 in CD
+    - action: utter_SGLT2_in_CD
+    - intent: FFR in CD
+    - action: utter_FFR_in_CD
+    - intent: therapies for PAH
+    - action: utter_therapies_for_PAH
+    - intent: D_dimer testing
+    - action: utter_D_dimer_testing
+    - intent: endothelial dysfunction and vascular disease
+    - action: utter_endothelial_dysfunction_and_vascular_disease
+    - intent: CTPA in pulmonary embolism
+    - action: utter_CTPA_in_pulmonary_embolism
+
 
