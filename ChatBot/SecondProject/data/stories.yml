@@ -178,5 +178,24 @@ stories:
     - action: utter_endothelial_dysfunction_and_vascular_disease
     - intent: CTPA in pulmonary embolism
     - action: utter_CTPA_in_pulmonary_embolism
+    - intent: celebral autoregulation in ischemic stroke
+    - action: utter_celebral_autoregulation_in_ischemic_stroke
+    - intent: antiplatelet therapy
+    - action: utter_antiplatelet_therapy
+    - intent: neuroimaging differentiate
+    - action: utter_neuroimaging_differentiate
+    - intent: cryptogenic strokes
+    - action: utter_cryptogenic_strokes
+    - intent: PFO closure
+    - action: utter_PFO_closure
+    - intent: incretin based therapies
+    - action: utter_incretin_based_therapies
+    - intent: impact of AGEs
+    - action: utter_impact_of_AGEs
+    - intent: adipose tissue function
+    - action: utter_adipose_tissue_function
+    - intent: mitochondrial dysfunction
+    - action: utter_mitochondrial_dysfunction
+
 
 

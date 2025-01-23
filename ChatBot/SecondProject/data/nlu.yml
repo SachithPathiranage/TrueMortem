@@ -606,6 +606,78 @@ nlu:
       -What role does CTPA play in confirming the presence of acute pulmonary embolism?
       -How does CTPA enhance the accuracy of diagnosing pulmonary embolism?
 
+- intent: celebral autoregulation in ischemic stroke
+  examples:  |
+      -What happens to cerebral autoregulation during an ischemic stroke, and how can it be assessed?
+      -How is cerebral autoregulation affected in the setting of an ischemic stroke?
+      -What changes occur in cerebral autoregulation during ischemic stroke, and how are they measured?
+      -How does impaired cerebral autoregulation contribute to ischemic stroke pathophysiology?
+      -What techniques are used to evaluate cerebral autoregulation in patients with ischemic stroke?
+
+- intent: antiplatelet therapy
+  examples:  |
+      -How does dual antiplatelet therapy help prevent recurrent ischemic strokes?
+      -What is the importance of dual antiplatelet therapy in managing patients after an ischemic stroke?
+      -Why is dual antiplatelet therapy used in the secondary prevention of ischemic stroke?
+      -What are the benefits and risks of dual antiplatelet therapy for stroke prevention?
+      -How effective is dual antiplatelet therapy in reducing the risk of recurrent strokes?
+
+- intent: neuroimaging differentiate
+  examples:  |
+      -How do CT and MRI differ in identifying ischemic and hemorrhagic strokes?
+      -What role does neuroimaging play in distinguishing between ischemic and hemorrhagic strokes?
+      -How can CT and MRI be used to differentiate stroke types?
+      -Why is neuroimaging essential in determining whether a stroke is ischemic or hemorrhagic?
+      -What are the advantages of CT and MRI in diagnosing stroke subtypes?
+
+- intent: cryptogenic strokes
+  examples:  |
+      -What factors increase the likelihood of a recurrent stroke in cryptogenic stroke patients?
+      -Why do cryptogenic stroke patients remain at risk for future strokes?
+      -What are the predictors of recurrent stroke in individuals with cryptogenic stroke?
+      -How can clinicians identify patients with cryptogenic stroke who are at high risk for recurrence?
+      -What risk factors should be monitored to prevent recurrent strokes in cryptogenic stroke cases?
+
+- intent: PFO closure
+  examples:  |
+      -How effective is patent foramen ovale (PFO) closure in reducing recurrent stroke risk in young patients?
+      -What is the impact of PFO closure on preventing stroke recurrence in younger individuals?
+      -Why is PFO closure recommended for younger stroke patients?
+      -How does closing a PFO influence the long-term risk of stroke recurrence in young people?
+      -What are the benefits of PFO closure in younger patients with cryptogenic stroke?
+
+- intent: incretin based therapies
+  examples:  |
+      -How do incretin-based therapies impact cardiovascular health in patients with type 2 diabetes?
+      -What role do incretin-based treatments play in improving cardiovascular outcomes for diabetic patients?
+      -How do GLP-1 receptor agonists and DPP-4 inhibitors benefit cardiovascular outcomes in type 2 diabetes?
+      -Why are incretin-based therapies associated with reduced cardiovascular risk in type 2 diabetes?
+      -What is the evidence for the cardiovascular benefits of incretin-based therapies in managing type 2 diabetes?
+
+
+- intent: impact of AGEs
+  examples:  |
+      -How do advanced glycation end products (AGEs) contribute to vascular damage and metabolic diseases?
+      -What is the role of AGEs in the progression of vascular dysfunction and metabolic disorders?
+      -How do AGEs impact vascular health in conditions like diabetes and metabolic syndrome?
+      -What are the mechanisms by which AGEs affect vascular integrity and metabolic regulation?
+      -How do elevated levels of AGEs influence the development of vascular complications in metabolic disorders?
+
+- intent: adipose tissue function
+  examples:  |
+      -How does impaired adipose tissue function lead to systemic inflammation and the development of metabolic syndrome?
+      -What is the role of dysfunctional adipose tissue in promoting inflammation and metabolic dysregulation?
+      -How does adipose tissue dysfunction drive the pathophysiology of metabolic syndrome?
+      -What are the inflammatory consequences of adipose tissue dysfunction in metabolic diseases?
+      -How does the dysregulation of adipose tissue contribute to the onset of systemic inflammation and metabolic syndrome?
+
+- intent: mitochondrial dysfunction
+  examples:  |
+      -How does mitochondrial dysfunction contribute to the development of type 2 diabetes?
+      -What role does impaired mitochondrial function play in the progression of type 2 diabetes?
+      -How does mitochondrial dysfunction affect insulin sensitivity in type 2 diabetes?
+      -What is the relationship between mitochondrial dysfunction and metabolic disturbances in type 2 diabetes?
+      -How does mitochondrial dysfunction influence glucose metabolism and insulin resistance in type 2 diabetes?
 
 - intent: bot_challenge
   examples: |
