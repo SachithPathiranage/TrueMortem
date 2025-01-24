@@ -196,6 +196,57 @@ stories:
     - action: utter_adipose_tissue_function
     - intent: mitochondrial dysfunction
     - action: utter_mitochondrial_dysfunction
+    - intent: care testing improve diagnosis
+    - action: utter_care_testing_improve_diagnosis
+    - intent: role ECMO
+    - action: utter_role_ECMO
+    - intent: ETCO2 level assist
+    - action: utter_ETCO2_level_assist
+    - intent: EGDT in septic
+    - action: utter_EGDT_in_septic
+    - intent: polygenic risk
+    - action: utter_polygenic_risk
+    - intent: familial hypercholesterolemia
+    - action: utter_familial_hypercholesterolemia
+    - intent: CRISPR
+    - action: utter_CRISPR
+    - intent: CRP in CD
+    - action: utter_CRP_in_CD
+    - intent: Takotsubo cardiomypathy
+    - action: utter_Takotsubo_cardiomypathy
+    - intent: Systolic diastolic dysfunction
+    - action: utter_Systolic_diastolic_dysfunction
+    - intent: INOCA patients
+    - action: utter_INOCA_patients
+    - intent: LGE effect
+    - action: utter_LGE_effect
+    - intent: MitraClip procedure
+    - action: utter_MitraClip_procedure
+    - intent: OSA contribution to hypertension
+    - action: utter_OSA_contribution
+    - intent: endothelin receptors in PAH
+    - action: utter_endothelin_receptors_in_PAH
+    - intent: CTEPH and IPH
+    - action: utter_CTEPH_and_IPH
+    - intent: venous stasis in CVI
+    - action: utter_venous_stasis_in_CVI
+    - intent: TBI to improve accuracy in PAD
+    - action: utter_TBI_to_improve_accuracy_in_PAD
+    - intent: mechanical thrombectomy
+    - action: utter_mechanical_thrombectomy
+    - intent: CSVD contribution
+    - action: utter_CSVD_contribution
+    - intent: perfusion weighted MRI
+    - action: utter_perfusion_weighted_MRI
+    - intent: atrial septal aneurysm
+    - action: utter_atrial_septal_aneurysm
+    - intent: hypothyroidism contribution to atherosclerosis
+    - action: utter_hypothyroidism_contribution_to_atherosclerosis
+    - intent: NAFLD contribution
+    - action: utter_NAFLD_contribution
+    - intent: CKD contribution
+    - action: utter_CKD_contribution
+
 
 
 

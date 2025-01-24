@@ -679,6 +679,207 @@ nlu:
       -What is the relationship between mitochondrial dysfunction and metabolic disturbances in type 2 diabetes?
       -How does mitochondrial dysfunction influence glucose metabolism and insulin resistance in type 2 diabetes?
 
+- intent: care testing improve diagnosis
+  examples:  |
+      -How are point-of-care cardiac biomarkers used to quickly diagnose acute coronary syndrome in emergency care?
+      -What is the role of point-of-care testing for cardiac biomarkers in detecting acute coronary syndrome?
+      -How do cardiac biomarkers at the point of care aid in the rapid assessment of acute coronary syndrome?
+      -Why are point-of-care cardiac biomarker tests crucial in emergency settings for diagnosing acute coronary syndrome?
+      -How does point-of-care testing improve the speed of acute coronary syndrome diagnosis?
+
+- intent: role ECMO
+  examples:  |
+      -How is extracorporeal membrane oxygenation (ECMO) used in the treatment of cardiogenic shock?
+      -What role does ECMO play in managing patients with cardiogenic shock?
+      -How does ECMO support patients experiencing cardiogenic shock?
+      -Why is ECMO considered a therapeutic option for severe cardiogenic shock?
+      -How does ECMO improve outcomes in cases of refractory cardiogenic shock?
+
+- intent: ETCO2 level assist
+  examples:  |
+      -How is end-tidal CO₂ (ETCO₂) monitoring used during cardiac arrest resuscitation?
+      -What role does ETCO₂ monitoring play in guiding resuscitation efforts during cardiac arrest?
+      -How can ETCO₂ levels inform the effectiveness of CPR in cardiac arrest management?
+      -Why is end-tidal CO₂ measurement important during advanced life support in cardiac arrest?
+      -How does monitoring ETCO₂ assist in evaluating outcomes during cardiac resuscitation?
+
+- intent: EGDT in septic
+  examples:  |
+      -How does early goal-directed therapy (EGDT) improve outcomes in septic shock management?
+      -What are the benefits of implementing EGDT in patients with septic shock?
+      -Why is early goal-directed therapy significant in treating septic shock?
+      -How does EGDT influence mortality rates in septic shock patients?
+      -What role does early goal-directed therapy play in optimizing septic shock treatment?
+
+- intent: polygenic risk
+  examples:  |
+      -How do polygenic risk scores enhance cardiovascular event prediction across different populations?
+      -What role do polygenic risk scores play in assessing cardiovascular risk in diverse genetic groups?
+      -Why are polygenic risk scores valuable for predicting cardiovascular events in multi-ethnic cohorts?
+      -How can polygenic risk scores improve personalized cardiovascular risk assessment?
+      -What is the significance of polygenic risk scores in stratifying cardiovascular risk in varied populations?
+
+- intent: familial hypercholesterolemia
+  examples:  |
+      -How does next-generation sequencing aid in diagnosing familial hypercholesterolemia?
+      -What is the significance of next-generation sequencing in detecting genetic mutations linked to familial hypercholesterolemia?
+      -How does next-generation sequencing improve the identification of familial hypercholesterolemia cases?
+      -Why is next-generation sequencing important for the genetic diagnosis of familial hypercholesterolemia?
+      -What role does next-generation sequencing play in uncovering hereditary factors in familial hypercholesterolemia?
+
+- intent: CRISPR
+  examples:  |
+      -How can CRISPR-Cas9 be used to treat genetic mutations causing hypertrophic cardiomyopathy?
+      -What is the potential role of CRISPR-Cas9 in addressing the genetic basis of hypertrophic cardiomyopathy?
+      -How does CRISPR-Cas9 offer a therapeutic approach for hereditary hypertrophic cardiomyopathy?
+      -Can CRISPR-Cas9 correct the genetic defects underlying hypertrophic cardiomyopathy?
+      -What is the mechanism by which CRISPR-Cas9 could treat hypertrophic cardiomyopathy caused by genetic mutations?
+
+- intent: CRP in CD
+  examples:  |
+      -How is high-sensitivity C-reactive protein (hs-CRP) used to evaluate cardiovascular risk?
+      -What does hs-CRP indicate about inflammation and cardiovascular disease risk?
+      -Why is hs-CRP considered a reliable biomarker for assessing cardiovascular risk?
+      -How does hs-CRP correlate with the likelihood of cardiovascular events?
+      -What is the clinical significance of measuring hs-CRP in predicting cardiovascular disease?
+
+- intent: Takotsubo cardiomypathy
+  examples:  |
+      -What are the similarities between Takotsubo cardiomyopathy and myocardial infarction, and how is it differentiated?
+      -How does Takotsubo cardiomyopathy present like a myocardial infarction?
+      -What diagnostic tools help distinguish Takotsubo cardiomyopathy from myocardial infarction?
+      -Why is Takotsubo cardiomyopathy often mistaken for myocardial infarction?
+      -How is Takotsubo cardiomyopathy identified and confirmed despite its resemblance to myocardial infarction?
+
+- intent: Systolic diastolic dysfunction
+  examples:  |
+      -What are the key differences between systolic and diastolic dysfunction in heart failure?
+      -How does systolic dysfunction differ from diastolic dysfunction in heart failure pathophysiology?
+      -What distinguishes systolic heart failure from diastolic heart failure in terms of their underlying mechanisms?
+      -How do systolic and diastolic dysfunction impact cardiac function in heart failure patients?
+      -What are the pathophysiological differences between systolic and diastolic dysfunction in heart failure?
+
+- intent: INOCA patients
+  examples:  |
+      -How does coronary microvascular dysfunction lead to ischemia in patients with no obstructive coronary arteries (INOCA)?
+      -What role does coronary microvascular dysfunction play in causing ischemia in INOCA?
+      -How can coronary microvascular dysfunction result in symptoms similar to ischemic heart disease despite the absence of major coronary artery obstruction?
+      -What is the connection between coronary microvascular dysfunction and ischemia in patients with non-obstructive coronary artery disease (NOCAD)?
+      -How does coronary microvascular dysfunction contribute to the pathophysiology of ischemia in INOCA patients?
+
+- intent: LGE effect
+  examples:  |
+      -How does late gadolinium enhancement (LGE) on cardiac MRI predict cardiac outcomes in hypertrophic cardiomyopathy?
+      -What is the significance of late gadolinium enhancement in assessing the prognosis of patients with hypertrophic cardiomyopathy?
+      -How does late gadolinium enhancement help in predicting adverse events in hypertrophic cardiomyopathy?
+      -What role does late gadolinium enhancement play in evaluating the risk of arrhythmias and sudden cardiac death in hypertrophic cardiomyopathy?
+      -How can late gadolinium enhancement on MRI be used to assess the severity and prognosis of hypertrophic cardiomyopathy?
+
+- intent: MitraClip procedure
+  examples:  |
+      -How does the MitraClip procedure help manage functional mitral regurgitation in heart failure patients?
+      -What role does the MitraClip device play in treating functional mitral regurgitation in heart failure?
+      -How does MitraClip therapy improve outcomes in patients with heart failure and functional mitral regurgitation?
+      -How does interventional treatment with MitraClip reduce the severity of functional mitral regurgitation in heart failure?
+      -What are the benefits of using MitraClip in patients with functional mitral regurgitation due to heart failure?
+
+- intent: OSA contribution to hypertension
+  examples:  |
+      -How does obstructive sleep apnea (OSA) lead to the development of pulmonary hypertension?
+      -What is the link between obstructive sleep apnea and pulmonary hypertension?
+      -How does OSA contribute to increased pulmonary artery pressure?
+      -What mechanisms connect obstructive sleep apnea with pulmonary hypertension?
+      -How does untreated obstructive sleep apnea result in pulmonary vascular complications like pulmonary hypertension?
+
+- intent: endothelin receptors in PAH
+  examples:  |
+      -How do endothelin receptor antagonists help in managing pulmonary arterial hypertension?
+      -What is the mechanism of action of endothelin receptor antagonists in treating PAH?
+      -Why are endothelin receptor antagonists used for pulmonary arterial hypertension?
+      -How do endothelin receptor antagonists improve outcomes in PAH patients?
+      -What is the therapeutic role of endothelin receptor blockers in PAH management?
+
+- intent: CTEPH and IPH
+  examples:  |
+      -How is chronic thromboembolic pulmonary hypertension (CTEPH) different from idiopathic pulmonary hypertension (IPH) in terms of pathophysiology and treatment?
+      -What distinguishes CTEPH from IPH in causes and management approaches?
+      -How do the mechanisms of CTEPH and IPH differ, and how does this affect treatment options?
+      -What are the key differences in the pathophysiology and management of CTEPH compared to IPH?
+      -How does the treatment strategy for CTEPH vary from that for idiopathic pulmonary hypertension?
+
+- intent: venous stasis in CVI
+  examples:  |
+      -How does venous stasis affect patients with chronic venous insufficiency (CVI)?
+      -What are the clinical consequences of venous stasis in CVI patients?
+      -How does chronic venous stasis contribute to complications in CVI?
+      -What is the significance of venous stasis in the progression of chronic venous insufficiency?
+      -What are the health impacts of venous stasis in individuals with chronic venous disease?
+
+- intent: TBI to improve accuracy in PAD
+  examples:  |
+      -How is the toe-brachial index (TBI) used to diagnose peripheral arterial disease in diabetic patients?
+      -Why is the toe-brachial index more reliable than the ankle-brachial index in diabetics with suspected PAD?
+      -How does TBI enhance the detection of peripheral arterial disease in patients with diabetes?
+      -What makes the toe-brachial index a better diagnostic tool for PAD in diabetic individuals?
+      -How does the use of TBI improve the accuracy of PAD diagnosis in diabetic patients?
+
+- intent: mechanical thrombectomy
+  examples:  |
+      -How does mechanical thrombectomy help in managing large vessel occlusion strokes?
+      -Why is mechanical thrombectomy considered a standard treatment for large vessel occlusion strokes?
+      -What benefits does mechanical thrombectomy offer in large vessel ischemic stroke management?
+      -How effective is mechanical thrombectomy for patients with large vessel occlusion strokes?
+      -What is the significance of mechanical thrombectomy in improving outcomes for large vessel stroke patients?
+
+- intent: CSVD contribution
+  examples:  |
+      -What is the relationship between cerebral small vessel disease and vascular cognitive impairment?
+      -How does small vessel disease in the brain affect cognitive function?
+      -Why is cerebral small vessel disease a key factor in vascular cognitive impairment?
+      -What role does cerebral small vessel disease play in the development of cognitive decline?
+      -How does damage from small vessel disease lead to vascular-related cognitive issues?
+
+- intent: perfusion weighted MRI
+  examples:  |
+      -How does perfusion-weighted MRI help identify salvageable brain tissue in acute stroke patients?
+      -What is the role of advanced imaging techniques in determining the penumbra during an acute stroke?
+      -Why is perfusion-weighted MRI critical for assessing viable brain tissue in stroke management?
+      -How do imaging methods like diffusion and perfusion MRI guide acute stroke therapy?
+      -What is the importance of advanced imaging in identifying the ischemic core and penumbra in stroke patients?
+
+- intent: atrial septal aneurysm
+  examples:  |
+      -Why does atrial septal aneurysm raise the likelihood of embolic stroke?
+      -How does an atrial septal aneurysm contribute to stroke risk?
+      -What is the connection between atrial septal aneurysm and embolic stroke?
+      -How can atrial septal aneurysm lead to an increased risk of thromboembolic events?
+      -What is the role of atrial septal aneurysm in the pathogenesis of embolic strokes?
+
+- intent: hypothyroidism contribution to atherosclerosis
+  examples:  |
+      -How does hypothyroidism contribute to the development of atherosclerosis?
+      -What are the cardiovascular effects of hypothyroidism, especially regarding atherosclerosis risk?
+      -Why is hypothyroidism considered a factor in atherosclerosis progression?
+      -How does hypothyroidism influence lipid metabolism and atherosclerosis development?
+      -What is the link between hypothyroidism and cardiovascular complications like atherosclerosis?
+
+- intent: NAFLD contribution
+  examples:  |
+      -What is the connection between non-alcoholic fatty liver disease (NAFLD) and insulin resistance?
+      -How does NAFLD increase the risk of cardiovascular disease and metabolic complications?
+      -Why is NAFLD considered a factor in worsening insulin resistance and cardiovascular health?
+      -What role does non-alcoholic fatty liver disease play in systemic inflammation and cardiovascular risk?
+      -How does the presence of NAFLD contribute to metabolic syndrome and related cardiovascular conditions?
+
+- intent: CKD contribution
+  examples:  |
+      -How does chronic kidney disease (CKD) contribute to cardiovascular complications in diabetes?
+      -What molecular pathways connect CKD with cardiovascular risk in diabetic individuals?
+      -Why is CKD a significant factor in increasing cardiovascular morbidity in patients with diabetes?
+      -What are the underlying mechanisms driving cardiovascular disease in diabetics with CKD?
+      -How do CKD and diabetes interact to amplify cardiovascular morbidity?
+
+
 - intent: bot_challenge
   examples: |
     - are you a bot?

@@ -66,6 +66,32 @@ intents:
   - impact of AGEs
   - adipose tissue function
   - mitochondrial dysfunction
+  - care testing improve diagnosis
+  - role ECMO
+  - ETCO2 level assist
+  - EGDT in septic
+  - polygenic risk
+  - familial hypercholesterolemia
+  - CRISPR
+  - CRP in CD
+  - Takotsubo cardiomypathy
+  - Systolic diastolic dysfunction
+  - INOCA patients
+  - LGE effect
+  - MitraClip procedure
+  - OSA contribution to hypertension
+  - endothelin receptors in PAH
+  - CTEPH and IPH
+  - venous stasis in CVI
+  - TBI to improve accuracy in PAD
+  - mechanical thrombectomy
+  - CSVD contribution
+  - perfusion weighted MRI
+  - atrial septal aneurysm
+  - hypothyroidism contribution to atherosclerosis
+  - NAFLD contribution
+  - CKD contribution
+
 
 responses:
   utter_greet:
@@ -102,6 +128,179 @@ responses:
         7. Congenital Heart Disease
         8. Pericardial Disease
 
+  utter_CKD_contribution:
+    - text:  |
+        Chronic kidney disease (CKD) in diabetic patients contributes to cardiovascular morbidity through several molecular mechanisms. 
+        Persistent hyperglycemia and impaired renal function lead to endothelial dysfunction via oxidative stress, inflammation, and reduced nitric oxide bioavailability. 
+        CKD increases circulating levels of uremic toxins and pro-inflammatory cytokines, which promote vascular calcification and atherosclerosis. 
+        Additionally, abnormalities in the renin-angiotensin-aldosterone system (RAAS) exacerbate hypertension and left ventricular hypertrophy. 
+        Proteinuria, a hallmark of CKD, further accelerates vascular injury and cardiac remodeling, amplifying cardiovascular risk in diabetic patients.
+        
+
+
+  utter_NAFLD_contribution:
+    - text:  |
+        Non-alcoholic fatty liver disease (NAFLD) exacerbates insulin resistance by increasing hepatic fat accumulation, which disrupts normal glucose and lipid metabolism.
+        This leads to elevated free fatty acids and pro-inflammatory cytokines, impairing insulin signaling pathways. NAFLD also contributes to systemic inflammation and oxidative stress, further worsening insulin resistance.
+        Additionally, the metabolic dysregulation associated with NAFLD increases cardiovascular risk through mechanisms such as dyslipidemia, endothelial dysfunction, and arterial stiffness, all of which promote atherogenesis and cardiovascular events
+        
+
+  utter_hypothyroidism_contribution_to_atherosclerosis:
+    - text:  |
+        Hypothyroidism impacts cardiovascular health by contributing to the development and progression of atherosclerosis. 
+        It leads to dyslipidemia, characterized by elevated LDL cholesterol and triglycerides, which promotes plaque formation in blood vessels.
+        Hypothyroidism also causes endothelial dysfunction, reduces nitric oxide availability, and increases systemic vascular resistance, all of which impair vascular health. 
+        Additionally, hypothyroidism may enhance systemic inflammation, further accelerating atherosclerotic processes and increasing the risk of cardiovascular complications.
+
+
+  utter_atrial_septal_aneurysm:
+    - text:  |
+        An atrial septal aneurysm increases the risk of embolic stroke by serving as a structural abnormality in the heart that promotes blood stasis and clot formation.
+        It is often associated with a patent foramen ovale (PFO), which can allow clots or emboli to bypass the pulmonary circulation and enter the systemic circulation, potentially lodging in cerebral arteries.
+        Additionally, the abnormal motion of the septum in atrial septal aneurysm may disrupt normal blood flow, further increasing the risk of thrombus formation and embolization.
+
+
+
+  utter_perfusion_weighted_MRI:
+    - text:  |
+        Perfusion-weighted MRI is invaluable in acute stroke management as it identifies salvageable brain tissue (penumbra) by mapping blood flow abnormalities. 
+        By comparing perfusion deficits with diffusion-weighted imaging (which shows irreversible infarcted tissue), clinicians can estimate the mismatch region, indicating tissue at risk but still viable.
+        This information helps guide timely therapeutic interventions, such as thrombolysis or mechanical thrombectomy, to maximize functional recovery while minimizing damage. 
+        Advanced imaging techniques thus play a critical role in patient selection for reperfusion therapies, even beyond standard time windows.
+
+
+  utter_CSVD_contribution:
+    - text:  |
+        Cerebral small vessel disease (CSVD) contributes to vascular cognitive impairment by causing chronic ischemia, microinfarcts, and white matter changes that disrupt neural connectivity.
+        Damage to small blood vessels leads to reduced blood flow and oxygen delivery to brain tissues, particularly in subcortical regions critical for cognition. 
+        These changes result in impaired executive function, processing speed, and memory. CSVD is a major underlying pathology in vascular dementia and often coexists with other neurodegenerative conditions, compounding cognitive decline. 
+        Early detection and management of risk factors like hypertension and diabetes are crucial in mitigating its impact
+
+  utter_mechanical_thrombectomy:
+    - text:  |
+        Mechanical thrombectomy is a minimally invasive procedure that significantly improves outcomes in patients with large vessel occlusion (LVO) strokes.
+        It involves the use of specialized devices to physically remove the clot from the blocked artery, restoring blood flow to the brain. 
+        This treatment is most effective when performed within 6-24 hours of symptom onset, depending on the patient's imaging findings. Mechanical thrombectomy reduces disability, improves functional recovery, and is often used in combination with intravenous thrombolysis for optimal results. 
+        It has become a cornerstone in the management of LVO strokes, particularly in eligible patients.
+
+  utter_TBI_to_improve_accuracy_in_PAD:
+    - text:  |
+        The toe-brachial index (TBI) improves diagnostic accuracy in diabetic patients with suspected peripheral arterial disease (PAD) because it overcomes the limitations of the ankle-brachial index (ABI). 
+        In diabetics, arterial calcification can stiffen vessels, leading to falsely elevated ABI readings. The smaller arteries in the toes are less affected by calcification, making the TBI a more sensitive and reliable measure of perfusion in this population. 
+        It is particularly useful for detecting PAD at an earlier stage and guiding appropriate interventions to prevent complications such as ulcers or amputations.
+
+  utter_venous_stasis_in_CVI:
+    - text:  |
+        Venous stasis in patients with chronic venous insufficiency (CVI) leads to a cascade of clinical implications, including edema, skin changes (e.g., hyperpigmentation and lipodermatosclerosis), and the formation of venous ulcers due to impaired tissue perfusion and chronic inflammation.
+        Prolonged stasis increases venous pressure, resulting in capillary leakage, reduced lymphatic drainage, and accumulation of inflammatory mediators, which exacerbate tissue damage. Management typically involves compression therapy, improving venous return, and preventing ulcer recurrence.
+
+  utter_CTEPH_and_IPH:
+    - text:  |
+        Chronic thromboembolic pulmonary hypertension (CTEPH) and idiopathic pulmonary hypertension (IPH) differ significantly in pathophysiology and management. CTEPH results from unresolved thromboembolic events causing mechanical obstruction of the pulmonary vasculature, along with secondary vascular remodeling. In contrast, IPH is caused by idiopathic pulmonary artery remodeling without an identifiable cause or obstruction.
+        Management of CTEPH often involves surgical pulmonary endarterectomy (PEA) to remove thromboembolic material and improve hemodynamics. For inoperable cases, balloon pulmonary angioplasty (BPA) or targeted therapies like riociguat are used. IPH, on the other hand, is treated primarily with pulmonary vasodilators (e.g., prostacyclin analogs, endothelin receptor antagonists, and PDE-5 inhibitors) to alleviate pulmonary arterial pressure and improve symptoms.
+
+
+
+  utter_endothelin_receptors_in_PAH:
+    - text:  |
+        Endothelin receptor antagonists (ERAs) are used in the treatment of pulmonary arterial hypertension (PAH) by blocking the effects of endothelin-1, a potent vasoconstrictor and promoter of vascular smooth muscle proliferation.
+        By inhibiting the binding of endothelin-1 to its receptors (ETA and/or ETB) on the pulmonary vasculature, ERAs reduce vasoconstriction and vascular remodeling. This results in decreased pulmonary vascular resistance and improved cardiac output, ultimately alleviating symptoms and slowing disease progression in PAH patients.
+
+
+  utter_OSA_contribution:
+    - text:  |
+        Obstructive sleep apnea (OSA) contributes to pulmonary hypertension through repetitive airway obstruction during sleep, which causes intermittent hypoxia, hypercapnia, and sympathetic nervous system activation. 
+        These episodes lead to pulmonary vasoconstriction and an increase in pulmonary artery pressure. Chronic intermittent hypoxia also promotes vascular remodeling and inflammation, further worsening pulmonary hypertension. 
+        Additionally, OSA can lead to increased intrathoracic pressure swings, left heart dysfunction, and elevated pulmonary venous pressure, exacerbating the condition. If untreated, these mechanisms collectively raise the risk of developing pulmonary hypertension in patients with OSA.
+
+
+  utter_MitraClip_procedure:
+    - text:  |
+        Interventional therapy with MitraClip is a minimally invasive procedure used to treat functional mitral regurgitation (MR) in heart failure patients. 
+        In functional MR, the mitral valve fails to close properly due to changes in the heart's shape and function, often caused by left ventricular dysfunction. 
+        The MitraClip device is delivered via a catheter to the mitral valve, where it clips the leaflets together, reducing the regurgitant flow and improving valve coaptation.
+        This procedure helps alleviate symptoms such as dyspnea and fatigue by improving the heart's efficiency and reducing the volume of blood that flows backward into the left atrium.
+        As a result, MitraClip can enhance the quality of life, improve functional capacity, and reduce hospitalizations for heart failure in patients with functional mitral regurgitation.
+
+
+  utter_LGE_effect:
+    - text:  |
+        Late gadolinium enhancement (LGE) on cardiac MRI plays a crucial role in predicting cardiac outcomes in hypertrophic cardiomyopathy (HCM).
+        LGE reflects areas of myocardial fibrosis, which are associated with an increased risk of adverse outcomes in HCM, such as arrhythmias, heart failure, and sudden cardiac death. 
+        Fibrosis, detected by LGE, disrupts the heart's electrical conduction system, promoting arrhythmogenesis. 
+        Studies have shown that the extent of LGE correlates with the severity of the disease, risk of heart failure, and arrhythmic events. 
+        Therefore, LGE is considered a valuable marker for assessing the prognosis of patients with HCM and can guide risk stratification, helping to identify those who may benefit from more aggressive management or implantable defibrillators for arrhythmia prevention.
+
+
+  utter_INOCA_patients:
+    - text:  |
+        Coronary microvascular dysfunction (CMD) refers to impaired function of the small coronary blood vessels, which can cause ischemia despite the absence of major coronary artery obstruction. 
+        In patients with Ischemia with No Obstructive Coronary Arteries (INOCA), the coronary microvessels fail to dilate properly in response to increased myocardial demand, leading to inadequate blood flow to the heart muscle. 
+        This dysfunction can be due to factors like endothelial dysfunction, smooth muscle abnormalities, or microvascular inflammation.
+        As a result, these patients experience symptoms of ischemia, such as chest pain, even though no significant blockages are present in the larger coronary arteries.
+        Diagnosis often involves imaging techniques such as coronary flow reserve testing, MRI, or assessment of microvascular endothelial function.
+  
+  
+
+  utter_Systolic_diastolic_dysfunction:
+    - text:  |
+        Systolic dysfunction and diastolic dysfunction are both causes of heart failure, but they affect the heart's ability to pump blood differently:
+        
+        Systolic Dysfunction: Involves the inability of the heart muscle to contract effectively, leading to reduced ejection fraction (EF) and impaired pumping of blood. 
+        This results from damage to the myocardium, often due to ischemia, infarction, or dilated cardiomyopathy. The hallmark is a decreased left ventricular ejection fraction (LVEF).
+        
+        Diastolic Dysfunction: Occurs when the heart muscle becomes stiff and cannot relax properly during diastole, leading to inadequate filling of the ventricles.
+        It typically results from conditions such as hypertension or fibrosis, leading to increased filling pressures, but the ejection fraction may remain normal or slightly reduced.
+        
+        While systolic dysfunction leads to reduced cardiac output, diastolic dysfunction leads to increased ventricular pressures, both contributing to heart failure symptoms. The treatment approaches differ based on the underlying mechanism, with systolic dysfunction often treated with medications that improve contractility (e.g., ACE inhibitors, beta-blockers), while diastolic dysfunction focuses on managing blood pressure and fluid overload.
+
+
+  utter_Takotsubo_cardiomypathy:
+    - text:  |
+        Takotsubo cardiomyopathy, also known as stress-induced cardiomyopathy, mimics myocardial infarction due to its similar presentation of chest pain, ST-segment elevation, and elevated cardiac biomarkers like troponins.
+        However, unlike myocardial infarction, Takotsubo cardiomyopathy does not involve coronary artery obstruction. It is diagnosed using coronary angiography, which reveals no significant coronary blockages, and echocardiography or cardiac MRI, which show characteristic left ventricular wall motion abnormalities (apical ballooning or other regional dysfunction) not corresponding to a single coronary artery distribution. 
+        The condition is typically triggered by severe physical or emotional stress.
+
+
+  utter_CRP_in_CD:
+    - text:  |
+        High-sensitivity C-reactive protein (hs-CRP) is a marker of systemic inflammation and is widely used to assess cardiovascular risk. 
+        Elevated levels of hs-CRP are associated with an increased risk of atherosclerosis and cardiovascular events, including myocardial infarction and stroke.
+        It provides insight into the inflammatory processes that contribute to plaque formation and instability, complementing traditional risk factors like cholesterol levels. 
+        Clinically, hs-CRP measurement is used to stratify patients into low, intermediate, or high cardiovascular risk categories and can guide preventive strategies, such as lifestyle modifications or anti-inflammatory therapies.
+
+
+  utter_polygenic_risk:
+    - text:  |
+        Polygenic risk scores (PRS) improve the prediction of cardiovascular events in diverse populations by incorporating genetic variations associated with disease risk. PRS enables:
+
+        1)Personalized Risk Assessment: By analyzing multiple genetic markers, PRS provides a more precise estimation of an individual’s risk beyond traditional factors like age or lifestyle.
+        2)Early Intervention: High-risk individuals identified by PRS can benefit from targeted prevention strategies, such as medication or lifestyle changes.
+        3)Inclusion of Genetic Diversity: Incorporating diverse population data improves PRS accuracy and applicability across ethnic groups, addressing historical biases in genomic studies.
+        4)Complementary Insights: PRS adds to existing clinical tools, enhancing overall cardiovascular risk prediction models.
+        Despite its promise, challenges include ensuring equitable representation in genetic research and refining PRS models for global applicability.
+
+  utter_CRISPR:
+    - text:  |
+        CRISPR-Cas9 technology offers the potential to treat genetic forms of hypertrophic cardiomyopathy (HCM) by directly targeting and correcting the specific mutations in genes such as MYH7 or MYBPC3. Key aspects include:
+
+        1)Precise Gene Editing: CRISPR-Cas9 can precisely edit faulty DNA sequences responsible for HCM, restoring normal protein function.
+        2)Targeted Therapy: It allows for personalized treatment tailored to the genetic mutation of the individual patient.
+        3Long-Term Solution: By permanently correcting the genetic defect, CRISPR-Cas9 may offer a lasting cure instead of symptom management.
+        4)Prevention of Disease Progression: Early intervention with gene editing could prevent the development or worsening of cardiomyopathy symptoms.
+        Although promising, CRISPR-Cas9 therapy for HCM is still in experimental stages, with challenges such as ensuring delivery to heart tissue and minimizing off-target effects.
+
+  utter_familial_hypercholesterolemia:
+    - text:  |
+        Next-generation sequencing (NGS) plays a pivotal role in identifying familial hypercholesterolemia (FH) by enabling the comprehensive analysis of genes associated with the condition, such as LDLR, APOB, and PCSK9. Key contributions include:
+
+        1)Accurate Mutation Detection: NGS identifies pathogenic genetic mutations responsible for FH, even in complex cases or rare variants.
+        2)High Throughput: It allows for the simultaneous analysis of multiple genes, enhancing diagnostic efficiency.
+        3)Early Diagnosis: NGS supports the early detection of FH, enabling timely interventions to reduce cardiovascular risk.
+        4)Family Screening: It facilitates cascade screening, identifying at-risk relatives who may carry the same mutations.
+        NGS has revolutionized the diagnostic landscape for FH, though challenges remain in interpreting variants of uncertain significance and ensuring access to this advanced technology.
+
+
   utter_antiplatelet_therapy:
     - text:  |
         Dual antiplatelet therapy (DAPT), typically involving aspirin and clopidogrel, plays a significant role in the secondary prevention of ischemic stroke, particularly in the acute and subacute phases. Its key roles include:
@@ -124,7 +323,53 @@ responses:
         5)Inflammation: Damaged mitochondria release inflammatory signals that contribute to chronic low-grade inflammation, a key factor in type 2 diabetes progression.
         Improving mitochondrial function through lifestyle changes, exercise, and pharmacological approaches may help manage and slow the progression of type 2 diabetes.
 
+  utter_ETCO2_level_assist:
+    - text:  |
+        End-tidal CO₂ (ETCO₂) monitoring is a valuable tool during cardiac arrest resuscitation, providing real-time feedback on the effectiveness of chest compressions and overall resuscitative efforts.
 
+        1)Indicator of Compression Quality: ETCO₂ levels reflect cardiac output generated by chest compressions, with higher values indicating effective CPR.
+        2)Early Predictor of Return of Spontaneous Circulation (ROSC): A sudden increase in ETCO₂ levels often suggests ROSC.
+        3)Prognostic Value: Persistently low ETCO₂ levels (<10 mmHg) after prolonged resuscitation may indicate poor chances of survival.
+        4)Ventilation Management: ETCO₂ helps in titrating ventilatory support to avoid hyperventilation, which can reduce venous return and cardiac output.
+        5)Non-Invasive Monitoring: It provides continuous and non-invasive assessment of resuscitation progress without interrupting chest compressions.
+        ETCO₂ monitoring enhances decision-making during cardiac arrest and is a critical parameter in advanced life support protocols.
+
+  utter_EGDT_in_septic:
+    - text:  |
+        Early goal-directed therapy (EGDT) significantly improves outcomes in the management of septic shock by emphasizing timely interventions aimed at restoring tissue perfusion and preventing organ dysfunction. Key impacts include:
+
+        1)Reduction in Mortality: EGDT reduces in-hospital and 28-day mortality by promptly addressing sepsis-related hypoperfusion.
+        2)Hemodynamic Stabilization: Early use of fluids, vasopressors, and inotropes optimizes cardiac output and oxygen delivery.
+        3)Organ Protection: By normalizing lactate levels, central venous oxygen saturation, and urine output, EGDT helps prevent organ failure.
+        4)Structured Approach: EGDT provides a standardized protocol for the first 6 hours of sepsis care, enhancing clinical decision-making and resource utilization.
+        While EGDT remains a cornerstone of septic shock management, newer trials suggest protocol modifications based on evolving evidence and patient-specific needs.
+
+
+
+
+  utter_role_ECMO:
+    - text:  |
+        Extracorporeal membrane oxygenation (ECMO) plays a critical role in managing cardiogenic shock by providing mechanical circulatory and respiratory support when conventional treatments fail. Key aspects include:
+
+        1)Hemodynamic Support: ECMO temporarily takes over the heart's pumping function, ensuring adequate blood flow to vital organs.
+        2)Oxygenation and CO₂ Removal: ECMO provides respiratory support by oxygenating blood and removing carbon dioxide, especially in cases of concurrent respiratory failure.
+        3)Bridge to Recovery or Intervention: It acts as a bridge to recovery, heart transplantation, or long-term mechanical circulatory support like a ventricular assist device (VAD).
+        4)Reversibility of Underlying Cause: ECMO gives time to manage reversible causes of cardiogenic shock, such as myocarditis or acute myocardial infarction.
+        5)Improved Survival in Severe Cases: In cases of refractory cardiogenic shock, ECMO significantly improves the chances of survival by maintaining organ perfusion.
+        Although ECMO offers life-saving benefits, it requires specialized expertise and is associated with complications such as bleeding and infection. It is typically used in carefully selected patients.
+
+
+
+  utter_care_testing_improve_diagnosis:
+    - text:  |
+        Point-of-care cardiac biomarkers, such as troponins, play a critical role in the rapid diagnosis of acute coronary syndrome (ACS) in emergency settings by providing quick and reliable results at the bedside. Key benefits include:
+
+        1)Early Detection: Rapid testing of biomarkers like troponin I and T allows for early identification of myocardial injury, facilitating immediate intervention.
+        2)Timely Decision-Making: Results are available within minutes, supporting faster triage and treatment decisions in critical cases.
+        3)Reduced Turnaround Time: Unlike laboratory tests, point-of-care devices minimize delays, ensuring prompt diagnosis.
+        4)Improved Patient Outcomes: Early and accurate diagnosis reduces time to reperfusion therapies, improving survival rates and outcomes.
+        5)Streamlined Workflow: Point-of-care testing enhances emergency department efficiency by expediting the diagnostic process.
+        These tools are integral to the effective management of ACS, particularly in time-sensitive environments.
 
 
   utter_adipose_tissue_function:
