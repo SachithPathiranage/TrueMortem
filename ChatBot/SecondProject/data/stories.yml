@@ -276,6 +276,26 @@ stories:
     - action: utter_ST2_and_galectin3
     - intent: FFRCT in treatments
     - action: utter_FFRCT_in_treatments
+    - intent: TVR in elderly patients
+    - action: utter_TVR_in_elderly_patients
+    - intent: HFpEF mimic heart failure
+    - action: utter_ HFpEF_mimic_heart_failure
+    - intent: lipoprotein in LDL
+    - action: utter_lipoprotein_in_LDL
+    - intent: role of PCI
+    - action: utter_role_of_PCI
+    - intent: coronary vasospastic angina
+    - action: utter_coronary_vasospastic_angina
+    - intent: cardioprotective mechanisms of SGLT2
+    - action: utter_cardioprotective_mechanisms_of_SGLT2
+    - intent: coronary slow flow phenomenon
+    - action: utter_coronary_slow_flow_phenomenon
+    - intent: CTEPH  differ from other forms
+    - action: utter_CTEPH_differ_from_other_forms
+    - intent: role of NOACs
+    - action: utter_role_of_NOACs
+    - intent: pulmonary edema
+    - action: utter_pulmonary edema
 
 
 

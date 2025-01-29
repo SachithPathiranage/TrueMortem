@@ -106,6 +106,16 @@ intents:
   - use of AI in wearables
   - ST2 and galectin3
   - FFRCT in treatments
+  - TVR in elderly patients
+  - HFpEF mimic heart failure
+  - lipoprotein in LDL
+  - role of PCI
+  - coronary vasospastic angina
+  - cardioprotective mechanisms of SGLT2
+  - coronary slow flow phenomenon
+  - CTEPH  differ from other forms
+  - role of NOACs
+  - pulmonary edema
 
 
 responses:
@@ -142,6 +152,79 @@ responses:
         6. Cardiomyopathy
         7. Congenital Heart Disease
         8. Pericardial Disease
+
+  utter_pulmonary edema:
+    - text:  |
+        Pulmonary edema in high-altitude sickness, particularly high-altitude pulmonary edema (HAPE), is primarily caused by hypoxia, which leads to vasoconstriction and increased pulmonary vascular pressure. As the body adjusts to lower oxygen levels at high altitudes, the pulmonary arteries constrict, raising pulmonary artery pressure. This leads to leakage of fluid into the alveolar 
+        spaces of the lungs due to the high pressure, disrupting gas exchange and resulting in pulmonary edema. Additionally, the imbalance between the sympathetic nervous system activation and increased capillary permeability also contributes to the development of HAPE.
+
+
+  utter_role_of_NOACs:
+    - text:  |
+        Novel anticoagulants, including direct oral anticoagulants (DOACs) such as rivaroxaban, apixaban, and dabigatran, 
+        play a crucial role in preventing recurrent venous thromboembolism (VTE) by inhibiting thrombin or factor Xa. Compared to warfarin, 
+        they offer predictable pharmacokinetics, fewer dietary interactions, and no need for routine monitoring. Clinical trials have demonstrated 
+        their efficacy in reducing recurrent deep vein thrombosis (DVT) and pulmonary embolism (PE) with a lower risk of major bleeding. 
+        Their ease of use and favorable safety profile have made them the preferred choice for long-term VTE prevention.
+        
+  
+
+  utter_CTEPH_differ_from_other_forms:
+    - text:  |
+        Chronic thromboembolic pulmonary hypertension (CTEPH) is caused by unresolved pulmonary emboli that lead to persistent obstruction and remodeling of pulmonary arteries, distinguishing it from other forms of pulmonary hypertension (PH), which are often due to vasculopathy or cardiac dysfunction.
+        Unlike idiopathic pulmonary arterial hypertension (PAH), CTEPH is potentially curable with pulmonary endarterectomy (PEA) surgery. Medical management includes anticoagulation and pulmonary vasodilators like riociguat. Early diagnosis via ventilation-perfusion (V/Q) scan and right heart catheterization 
+        is crucial for effective intervention.
+
+  utter_coronary_slow_flow_phenomenon:
+    - text:  |
+        Coronary slow flow phenomenon (CSFP) is characterized by delayed opacification of coronary arteries despite the absence of significant epicardial stenosis. It is associated with microvascular dysfunction, endothelial dysfunction, and inflammation, 
+        often leading to recurrent angina and increased cardiovascular risk. CSFP can be managed with vasodilators (e.g., calcium channel blockers, nitrates), antiplatelet therapy, and lifestyle modifications to improve endothelial function. Identifying and 
+        treating underlying conditions, such as metabolic syndrome and autonomic dysfunction, is crucial for long-term management.
+  
+
+  utter_cardioprotective_mechanisms_of_SGLT2:
+    - text:  |
+        SGLT2 inhibitors provide cardioprotective benefits beyond glucose control by reducing intravascular volume and preload through osmotic diuresis, lowering blood pressure without increasing heart rate, and improving cardiac energy metabolism. 
+        They also reduce oxidative stress, inflammation, and fibrosis, which contribute to heart failure progression. Additionally, these drugs enhance renal protection   by reducing glomerular hyperfiltration, thereby lowering cardiovascular risk. 
+        Their ability to improve myocardial efficiency and reduce left ventricular mass makes them beneficial even in non-diabetic patients with heart failure.
+
+
+  utter_coronary_vasospastic_angina:
+    - text:  |
+        Coronary vasospastic angina challenges the traditional view that myocardial ischemia is solely caused by fixed atherosclerotic lesions. 
+        Instead, it highlights the role of transient coronary artery spasms, which can induce significant ischemia without obstructive coronary disease. 
+        This emerging concept underscores the importance of endothelial dysfunction, autonomic imbalances, and vascular smooth muscle hyperreactivity in ischemic syndromes.
+        Unlike classical angina, vasospastic angina may occur at rest and is often triggered by stress or cold exposure. Recognizing this mechanism is crucial for accurate diagnosis and treatment, as it requires vasodilators like calcium channel blockers rather than conventional anti-anginal therapies.
+  
+
+  utter_role_of_PCI:
+    - text:  |
+        Invasive coronary physiology testing, including fractional flow reserve (FFR) and instantaneous wave-free ratio (iFR), helps assess the functional significance of coronary artery stenosis, guiding percutaneous coronary intervention (PCI) decisions.
+        FFR measures the pressure gradient across a lesion to determine if revascularization is necessary, improving patient outcomes and reducing unnecessary stent placements. 
+        iFR offers a non-hyperemic alternative, minimizing procedural time and patient discomfort. These assessments optimize PCI by targeting ischemia-causing lesions, leading to better symptom relief and lower rates of adverse cardiovascular events.
+        
+  
+
+  utter_lipoprotein_in_LDL:
+    - text:  |
+        Lipoprotein(a) [Lp(a)] is an independent risk factor for atherosclerosis, thrombosis, and cardiovascular disease (CVD), contributing to residual cardiovascular risk even when LDL cholesterol is optimally controlled.
+        Lp(a) has pro-atherogenic and pro-thrombotic properties, promoting plaque formation and instability, increasing inflammation, and impairing fibrinolysis. Since statins have little effect on Lp(a) levels, targeted therapies
+        such as PCSK9 inhibitors, antisense oligonucleotides, and siRNA-based treatments are being explored to reduce Lp(a)-mediated cardiovascular risk. Identifying elevated Lp(a) levels in high-risk patients can help guide more personalized treatment strategies.
+
+  utter_ HFpEF_mimic_heart_failure:
+    - text:  |
+        Cardiac amyloidosis can mimic heart failure with preserved ejection fraction (HFpEF) due to shared features like diastolic dysfunction, left ventricular hypertrophy, and elevated filling pressures. However, unlike typical HFpEF, cardiac amyloidosis is characterized by restrictive cardiomyopathy, increased wall thickness without hypertension, and a disproportionate reduction in longitudinal strain on echocardiography. 
+        Diagnosis involves echocardiography with strain imaging, cardiac MRI with late gadolinium enhancement, and confirmatory tests such as bone scintigraphy, serum free light chains, or endomyocardial biopsy to identify amyloid deposits. Early detection is crucial for targeted treatment and improved outcomes.
+  
+  
+
+  utter_TVR_in_elderly_patients:
+    - text:  |
+        Frailty is a key predictor of outcomes in elderly patients undergoing transcatheter aortic valve replacement (TAVR).
+        It is associated with increased risks of perioperative complications, prolonged hospital stays, and higher mortality rates. 
+        Frail patients often have reduced physiological reserve, making them more susceptible to post-procedure functional decline, poor rehabilitation,
+        and higher rates of rehospitalization. Assessing frailty preoperatively helps guide clinical decision-making, risk stratification, and 
+        postoperative care planning to improve patient outcomes.
 
   utter_FFRCT_in_treatments:
     - text:  |

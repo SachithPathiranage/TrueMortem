@@ -999,6 +999,87 @@ nlu:
       -How do ST2 and galectin3 biomarkers contribute to the care of patients with chronic heart failure?
       -What roles do ST2 and galectin3 play in guiding therapy for chronic heart failure?
 
+- intent: TVR in elderly patients
+  examples:  |
+      -What impact does frailty have on the prognosis of elderly patients undergoing TAVR?
+      -How does frailty affect recovery and complications after transcatheter aortic valve replacement?
+      -Why is frailty an important factor in assessing TAVR outcomes in older adults?
+      -What role does frailty play in predicting mortality and morbidity after TAVR?
+      -How does preoperative frailty influence long-term survival in TAVR patients?
+      
+- intent: HFpEF mimic heart failure
+  examples:  |
+      -How does cardiac amyloidosis present similarly to heart failure with preserved ejection fraction (HFpEF)?
+      -Why is cardiac amyloidosis often misdiagnosed as HFpEF?
+      -What are the clinical and echocardiographic similarities between cardiac amyloidosis and HFpEF?
+      -How can cardiac amyloidosis be differentiated from HFpEF in diagnosis?
+      -What diagnostic tools help distinguish cardiac amyloidosis from HFpEF?
+
+- intent: lipoprotein in LDL
+  examples:  |
+      -How does lipoprotein(a) contribute to cardiovascular risk despite well-controlled LDL levels?
+      -Why is lipoprotein(a) considered a residual risk factor in cardiovascular disease management?
+      -What role does lipoprotein(a) play in persistent cardiovascular risk after LDL optimization?
+      -Can elevated lipoprotein(a) levels increase cardiovascular events even with low LDL cholesterol?
+      -How does lipoprotein(a) influence atherosclerosis and thrombosis despite statin therapy?
+
+- intent: role of PCI
+  examples:  |
+      -How does invasive coronary physiology testing assist in optimizing PCI outcomes?
+      -What is the clinical significance of fractional flow reserve (FFR) and instantaneous wave-free ratio (iFR) in PCI decision-making?
+      -How do invasive physiological assessments improve stent placement strategies in coronary interventions?
+      -Why is invasive coronary physiology testing important for guiding revascularization in patients with coronary artery disease?
+      -How do FFR and iFR influence the selection of lesions for PCI?
+
+- intent: coronary vasospastic angina
+  examples:  |
+      -How does coronary vasospastic angina redefine the understanding of myocardial ischemia?
+      -What challenges does vasospastic angina pose to the traditional obstructive model of ischemic heart disease?
+      -How does coronary artery spasm contribute to myocardial ischemia despite the absence of significant atherosclerosis?
+      -Why is vasospastic angina considered a distinct mechanism of ischemia compared to stable angina and acute coronary syndromes?
+      -What are the implications of recognizing coronary vasospastic angina for diagnosing and treating ischemic heart disease?
+
+- intent: cardioprotective mechanisms of SGLT2
+  examples:  |
+      -What are the cardioprotective mechanisms of SGLT2 inhibitors beyond lowering blood glucose?
+      -How do SGLT2 inhibitors benefit heart failure and cardiovascular disease independent of glycemic control?
+      -Why are SGLT2 inhibitors recommended for heart failure patients even without diabetes?
+      -What non-glycemic effects of SGLT2 inhibitors contribute to cardiovascular risk reduction?
+      -How do SGLT2 inhibitors improve cardiac and renal outcomes in patients with cardiovascular disease?
+
+- intent: coronary slow flow phenomenon
+  examples:  |
+      -What are the causes and clinical implications of the coronary slow flow phenomenon?
+      -How does coronary slow flow affect patient prognosis and treatment strategies?
+      -What is the relationship between coronary slow flow and microvascular dysfunction?
+      -How should coronary slow flow be diagnosed and managed in clinical practice?
+      -Why is coronary slow flow phenomenon considered a distinct entity in coronary artery disease?
+
+
+- intent: CTEPH  differ from other forms
+  examples:  |
+      -What distinguishes chronic thromboembolic pulmonary hypertension (CTEPH) from idiopathic pulmonary hypertension?
+      -How does CTEPH develop, and how is it different from other types of pulmonary hypertension?
+      -What are the key pathophysiological differences between CTEPH and pulmonary arterial hypertension (PAH)?
+      -How does the treatment approach for CTEPH vary compared to other forms of pulmonary hypertension?
+      -Why is CTEPH considered a potentially curable form of pulmonary hypertension?
+
+- intent: role of NOACs
+  examples:  |
+      -How do novel oral anticoagulants (NOACs) help in preventing recurrent venous thromboembolism (VTE)?
+      -What are the advantages of NOACs over traditional anticoagulants in VTE prevention?
+      -Why are direct oral anticoagulants (DOACs) preferred for long-term VTE management?
+      -How effective are novel anticoagulants in reducing the risk of recurrent deep vein thrombosis (DVT) and pulmonary embolism (PE)?
+      -What is the role of factor Xa inhibitors in secondary prevention of venous thromboembolism?
+
+- intent: pulmonary edema
+  examples:  |
+      -What causes pulmonary edema in high-altitude sickness?
+      -How does hypoxia lead to the development of pulmonary edema at high altitudes?
+      -What physiological changes contribute to pulmonary edema in mountaineers or travelers at high altitudes?
+      -How does highaltitude pulmonary edema (HAPE) occur, and what are the underlying mechanisms?
+      -What role does the increased pulmonary vascular pressure play in high-altitude pulmonary edema
+
 - intent: bot_challenge
   examples: |
     - are you a bot?
