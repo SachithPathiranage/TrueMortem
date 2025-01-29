@@ -879,6 +879,125 @@ nlu:
       -What are the underlying mechanisms driving cardiovascular disease in diabetics with CKD?
       -How do CKD and diabetes interact to amplify cardiovascular morbidity?
 
+- intent: glucocorticoids affect in HD
+  examples:  |
+      -What are the cardiovascular effects of long-term glucocorticoid use in chronic inflammatory diseases?
+      -How do glucocorticoids influence heart health in patients with chronic inflammation?
+      -Why do glucocorticoids pose cardiovascular risks for individuals with chronic inflammatory conditions?
+      -What is the role of glucocorticoids in altering cardiovascular physiology in chronic inflammation?
+      -How does prolonged glucocorticoid therapy affect the cardiovascular system in inflammatory diseases?
+
+- intent: impedance cardiography
+  examples:  |
+      -How does impedance cardiography assist in managing heart failure in critical care settings?
+      -What is the clinical utility of impedance cardiography for heart failure patients in intensive care?
+      -How can impedance cardiography improve monitoring in critically ill heart failure patients?
+      -What role does impedance cardiography play in optimizing treatment for heart failure in critical care?
+      -Why is impedance cardiography used for hemodynamic assessment in heart failure patients in ICU settings?
+
+- intent: permissive hypertension in hemorrhagic shock
+  examples:  |
+      -What are the effects of permissive hypotension on trauma patients with hemorrhagic shock?
+      -How does permissive hypotension influence survival in hemorrhagic trauma cases?
+      -Why is permissive hypotension used in managing trauma-induced hemorrhagic shock?
+      -How does maintaining permissive hypotension affect outcomes in hemorrhagic shock?
+      -What is the role of permissive hypotension in improving outcomes in trauma patients with severe bleeding?
+
+- intent: lactate clearence in sepsis
+  examples:  |
+      -How does lactate clearance predict mortality in sepsis patients?
+      -Why is lactate clearance used as an indicator of survival in sepsis management?
+      -What is the significance of monitoring lactate clearance in septic patients?
+      -How effective is lactate clearance as a prognostic tool in sepsis?
+      -What does lactate clearance indicate about patient outcomes in sepsis?
+
+- intent: VADS enhance survival rates
+  examples:  |
+      -How do ventricular assist devices (VADs) enhance survival rates in end-stage heart failure patients?
+      -What role do VADs play in improving outcomes for individuals with severe heart failure?
+      -How effective are VADs in extending life expectancy in patients with advanced heart failure?
+      -Why are ventricular assist devices used in managing end-stage heart failure?
+      -What are the survival benefits of VADs in patients awaiting heart transplantation?
+
+- intent: detection of pathogenic variants in the TTN gene
+  examples:  |
+      -How do TTN gene mutations affect the management of patients with dilated cardiomyopathy?
+      -What is the clinical significance of identifying pathogenic TTN variants in dilated cardiomyopathy?
+      -How does genetic testing for TTN mutations guide treatment strategies in dilated cardiomyopathy?
+      -Why is the detection of TTN pathogenic variants important in the care of dilated cardiomyopathy patients?
+      -What role does TTN gene analysis play in managing familial dilated cardiomyopathy?
+
+- intent: pharmacogenomics in hyperlimidia
+  examples:  |
+      -How does pharmacogenomics help tailor statin therapy for patients with hyperlipidemia?
+      -What is the significance of pharmacogenomic testing in optimizing statin efficacy and safety?
+      -How can genetic variations affect the response to statins in hyperlipidemia management?
+      -Why is pharmacogenomics important in reducing statin-related adverse effects?
+      -How does genetic testing guide personalized statin therapy in treating hyperlipidemia?
+
+- intent: gene environment in hypertension
+  examples:  |
+      -How do genetic and environmental factors interact to influence the risk of developing hypertension?
+      -What is the role of gene-environment interactions in the pathogenesis of hypertension?
+      -How does the combination of genetic predisposition and lifestyle factors contribute to hypertension?
+      -What are the effects of gene-environment interplay on blood pressure regulation and hypertension development?
+      -How do environmental triggers modify the genetic susceptibility to hypertension?
+
+- intent: lipoprotein levels in CD
+  examples:  |
+      -How do elevated lipoprotein(a) levels contribute to residual cardiovascular risk?
+      -What is the significance of measuring lipoprotein(a) in assessing cardiovascular risk beyond traditional lipid profiles?
+      -How does lipoprotein(a) affect the evaluation of residual cardiovascular risk after statin therapy?
+      -Why is lipoprotein(a) considered an independent risk factor for cardiovascular disease?
+      -What role does lipoprotein(a) play in the management of patients with residual cardiovascular risk?
+
+- intent: intermittent fasting effects
+  examples:  |
+      -What are the cardiovascular and metabolic benefits of intermittent fasting?
+      -How does intermittent fasting influence heart health and metabolic markers?
+      -Can intermittent fasting improve cardiovascular outcomes and insulin sensitivity?
+      -What is the impact of intermittent fasting on cholesterol, blood pressure, and glucose levels?
+      -How does intermittent fasting contribute to better cardiovascular and metabolic health?
+
+- intent:  role of omega3 fatty acids
+  examples:  |
+      -How do omega-3 fatty acids help in preventing arrhythmias and sudden cardiac death?
+      -What is the role of omega-3 fatty acids in improving cardiac rhythm stability?
+      -Can omega-3 fatty acids reduce the risk of life-threatening arrhythmias?
+      -What benefits do omega-3 fatty acids offer in lowering sudden cardiac death risk?
+      -How do omega-3 fatty acids contribute to arrhythmia prevention and heart health?
+
+- intent: affect of psychosocial stress
+  examples:  |
+      -What is the impact of job strain and other stressors on the risk of developing hypertension?
+      -How do psychosocial stress factors contribute to high blood pressure?
+      -Can chronic stress from work and life situations lead to hypertension?
+      -What role do stressors like job strain play in increasing the likelihood of hypertension?
+      -How do psychological and social stressors influence blood pressure regulation and hypertension risk?
+
+- intent: use of AI in wearables
+  examples:  |
+      -How does artificial intelligence improve the detection of arrhythmias through wearable technology?
+      -What is the significance of AI in identifying cardiac arrhythmias with wearables?
+      -Can wearable devices with AI algorithms effectively detect arrhythmias?
+      -How is artificial intelligence transforming arrhythmia detection in wearable health devices?
+      -What role does AI play in enhancing the accuracy of arrhythmia monitoring via wearables?
+
+- intent: FFRCT in treatments
+  examples:  |
+      -How is coronary fractional flow reserve-computed tomography (FFR-CT) used in clinical decision-making for coronary artery disease?
+      -What is the role of FFR-CT in managing patients with coronary artery disease?
+      -How does FFR-CT guide treatment decisions for coronary lesions?
+      -Why is FFR-CT important in evaluating coronary artery disease severity?
+      -What are the clinical benefits of using FFR-CT in coronary treatment planning?
+
+- intent: ST2 and galectin3
+  examples:  |
+      -What is the clinical significance of ST2 and galectin-3 biomarkers in chronic heart failure management?
+      -How do ST2 and galectin3 assist in monitoring and treating chronic heart failure?
+      -Why are biomarkers like ST2 and galectin3 important in heart failure prognosis?
+      -How do ST2 and galectin3 biomarkers contribute to the care of patients with chronic heart failure?
+      -What roles do ST2 and galectin3 play in guiding therapy for chronic heart failure?
 
 - intent: bot_challenge
   examples: |

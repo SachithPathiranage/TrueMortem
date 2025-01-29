@@ -246,6 +246,39 @@ stories:
     - action: utter_NAFLD_contribution
     - intent: CKD contribution
     - action: utter_CKD_contribution
+    - intent: glucocorticoids affect in HD
+    - action: utter_glucocorticoids_affect_in_HD
+    - intent: impedance cardiography
+    - action: utter_impedance_cardiography
+    - intent: permissive hypertension in hemorrhagic shock
+    - action: utter_permissive_hypertension_in_hemorrhagic_shock
+    - intent: lactate clearence in sepsis
+    - action: utter_lactate_clearence_in_sepsis
+    - intent: VADS enhance survival rates
+    - action: utter_VADS_enhance_survival_rates
+    - intent: detection of pathogenic variants in the TTN gene
+    - action: utter_detection_of_pathogenic_variants_in_the_TTN_gene
+    - intent: pharmacogenomics in hyperlimidia
+    - action: utter_pharmacogenomics_in_hyperlimidia
+    - intent: gene environment in hypertension
+    - action: utter_gene_environment_in_hypertension
+    - intent: lipoprotein levels in CD
+    - action: utter_lipoprotein_levels_in_CD
+    - intent: intermittent fasting effects
+    - action: utter_intermittent_fasting_effects
+    - intent: role of omega3 fatty acids
+    - action: utter_role_of_omega3_fatty_acids
+    - intent: affect of psychosocial stress
+    - action: utter_affect_of_psychosocial_stress
+    - intent: use of AI in wearables
+    - action: utter_use_of_AI_in_wearables
+    - intent: ST2 and galectin3
+    - action: utter_ST2_and_galectin3
+    - intent: FFRCT in treatments
+    - action: utter_FFRCT_in_treatments
+
+
+
 
 
 

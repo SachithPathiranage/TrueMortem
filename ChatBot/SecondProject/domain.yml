@@ -91,6 +91,21 @@ intents:
   - hypothyroidism contribution to atherosclerosis
   - NAFLD contribution
   - CKD contribution
+  - glucocorticoids affect in HD
+  - impedance cardiography
+  - permissive hypertension in hemorrhagic shock
+  - lactate clearence in sepsis
+  - VADS enhance survival rates
+  - detection of pathogenic variants in the TTN gene
+  - pharmacogenomics in hyperlimidia
+  - gene environment in hypertension
+  - lipoprotein levels in CD
+  - intermittent fasting effects
+  - role of omega3 fatty acids
+  - affect of psychosocial stress
+  - use of AI in wearables
+  - ST2 and galectin3
+  - FFRCT in treatments
 
 
 responses:
@@ -127,6 +142,106 @@ responses:
         6. Cardiomyopathy
         7. Congenital Heart Disease
         8. Pericardial Disease
+
+  utter_FFRCT_in_treatments:
+    - text:  |
+        Coronary fractional flow reserve-computed tomography (FFR-CT) is a non-invasive imaging modality used to assess the physiological significance of coronary artery stenosis. By integrating anatomical imaging from CT angiography with computational models of blood flow, FFR-CT evaluates whether a coronary lesion is causing significant ischemia.
+        This helps in identifying patients who would benefit from revascularization versus those who can be managed conservatively. Its clinical application reduces the need for invasive diagnostic procedures, enhances diagnostic accuracy, and improves treatment planning, leading to better patient outcomes in coronary artery disease management.
+
+
+  utter_ST2_and_galectin3:
+    - text:  |
+        Biomarkers like ST2 and galectin-3 play crucial roles in the management of chronic heart failure by providing insights into disease progression and prognosis. 
+        ST2 is associated with myocardial stress and fibrosis, while galectin-3 reflects inflammation and fibrotic processes in the heart. Elevated levels of these biomarkers indicate
+        worse outcomes, helping clinicians stratify risk and tailor treatment strategies. They complement traditional biomarkers like BNP or NT-proBNP, aiding in early detection of worsening
+        heart failure, monitoring therapeutic responses, and optimizing interventions to improve patient outcomes
+        
+  
+
+  utter_use_of_AI_in_wearables:
+    - text:  |
+        Artificial intelligence (AI) enhances arrhythmia detection in wearable devices by analyzing vast amounts of real-time electrocardiogram (ECG) or photoplethysmogram (PPG) data with high accuracy and speed.
+        AI algorithms, such as deep learning, identify subtle patterns and anomalies that may indicate arrhythmias, such as atrial fibrillation or ventricular tachycardia. This approach reduces false positives and improves early diagnosis.
+        Wearables equipped with AI can continuously monitor heart rhythms, provide alerts for potential abnormalities, and even generate diagnostic-quality data for healthcare providers, facilitating timely intervention and improving outcomes in cardiac care.
+
+
+  utter_affect_of_psychosocial_stress:
+    - text:  |
+        Psychosocial stressors, such as job strain, contribute to hypertension by triggering chronic activation of the body's stress response systems, including the hypothalamic-pituitary-adrenal (HPA) axis and the sympathetic nervous system.
+        This results in elevated cortisol levels, increased heart rate, and persistent vasoconstriction, which raise blood pressure over time. Stress can also lead to unhealthy coping mechanisms, such as poor diet, physical inactivity, and increased alcohol or tobacco use, further exacerbating hypertension risk.
+        Additionally, prolonged exposure to stress can impair vascular function and increase systemic inflammation, both of which contribute to the development and progression of high blood pressure
+
+
+  utter_role_of_omega3_fatty_acids:
+    - text:  |
+        Omega-3 fatty acids play a protective role in reducing arrhythmias and sudden cardiac death by stabilizing cardiac cell membranes and modulating electrical activity in the heart. 
+        They lower the risk of ventricular arrhythmias by reducing ion channel dysfunction and preventing abnormal electrical conduction. Omega-3s also have anti-inflammatory and anti-thrombotic effects, which improve overall cardiovascular health. 
+        Additionally, they reduce resting heart rate and improve heart rate variability, which are associated with lower mortality risk in patients with cardiac conditions. 
+        These mechanisms collectively help reduce the likelihood of sudden cardiac death.
+  
+
+  utter_intermittent_fasting_effects:
+    - text:  |
+        Intermittent fasting (IF) has been shown to positively impact cardiovascular health and metabolic parameters by improving insulin sensitivity, reducing blood pressure, and lowering levels of LDL cholesterol and triglycerides. It promotes weight loss and enhances fat metabolism, which can reduce the risk of obesity-related conditions.
+        IF also reduces oxidative stress and inflammation, key contributors to atherosclerosis and cardiovascular disease. Furthermore, fasting may improve heart health by enhancing autophagy and mitochondrial function, which are protective against age-related metabolic and cardiovascular dysfunctions.
+
+
+  utter_lipoprotein_levels_in_CD:
+    - text:  |
+        Lipoprotein(a) [Lp(a)] is a genetically determined lipoprotein that contributes to residual cardiovascular risk, even when LDL cholesterol levels are well-controlled. Elevated Lp(a) levels are associated with an increased risk of atherosclerosis, myocardial infarction, and stroke due to its pro-inflammatory, pro-atherogenic, and pro-thrombotic properties. 
+        Unlike traditional lipids, Lp(a) levels are largely unaffected by lifestyle changes or statin therapy, making it an important marker for identifying high-risk individuals who may benefit from novel therapies, such as antisense oligonucleotides or PCSK9 inhibitors, targeting Lp(a) reduction.
+
+  utter_gene_environment_in_hypertension:
+    - text:  |
+        Gene-environment interactions significantly influence the development of hypertension by combining genetic predisposition with environmental factors such as diet, physical activity, and stress. For instance, genetic variants in pathways related to sodium handling or vascular tone may predispose individuals to hypertension, while high salt intake or sedentary behavior can amplify this risk. 
+        Additionally, epigenetic modifications, such as DNA methylation influenced by environmental exposures, can alter the expression of hypertension-related genes. Understanding these interactions enables personalized prevention and treatment strategies, targeting both genetic susceptibilities and modifiable environmental factors.
+
+  utter_glucocorticoids_affect_in_HD:
+    - text:  |
+        Glucocorticoids affect the cardiovascular system in patients with chronic inflammatory diseases through multiple mechanisms.
+        While they reduce inflammation by modulating cytokine release and immune activity, long-term use can lead to adverse effects such as hypertension, hyperlipidemia, and insulin resistance, which are risk factors for cardiovascular disease.
+        Glucocorticoids increase sodium retention and vascular tone, contributing to elevated blood pressure. They also promote visceral fat accumulation and dyslipidemia, exacerbating atherosclerosis. Additionally, glucocorticoids can impair endothelial 
+        function and increase the risk of thromboembolic events, further heightening cardiovascular morbidity in these patients.
+
+  utter_detection_of_pathogenic_variants_in_the_TTN_gene:
+    - text:  |
+        The detection of pathogenic variants in the TTN gene provides valuable insights for the management of dilated cardiomyopathy (DCM). TTN mutations are a common genetic cause of DCM and can help identify individuals at risk, enabling early monitoring and preventive strategies. 
+        In affected patients, TTN genetic testing supports personalized management, including tailored medication regimens, lifestyle modifications, and consideration for implantable cardioverter-defibrillators (ICDs) to prevent sudden cardiac death.
+        In familial cases, screening family members for TTN mutations facilitates early diagnosis and intervention, reducing complications and improving long-term outcomes.
+
+  utter_pharmacogenomics_in_hyperlimidia:
+    - text:  |
+        Pharmacogenomics plays a key role in optimizing statin therapy by identifying genetic variations that influence statin metabolism, efficacy, and safety. For example, variations in the SLCO1B1 gene can predispose individuals to statin-associated muscle symptoms (SAMS), allowing clinicians to select alternative statins or adjust dosages to minimize side effects. 
+        Additionally, genetic insights help predict individual responses to statins, ensuring that therapy is both effective in lowering LDL cholesterol and well-tolerated. By integrating pharmacogenomics, healthcare providers can personalize treatment, reduce adverse reactions, and improve long-term cardiovascular outcomes in patients with hyperlipidemia.
+
+  utter_impedance_cardiography:
+    - text:  |
+        Impedance cardiography is a non-invasive tool used in critical care to monitor heart failure patients by assessing hemodynamic parameters such as stroke volume, cardiac output, and systemic vascular resistance. 
+        It provides real-time data on fluid status and cardiac function, helping clinicians tailor diuretic therapy, vasodilators, or inotropes. The technique is particularly valuable for monitoring dynamic changes in a patient's
+        condition without the need for invasive procedures, reducing the risks associated with catheter-based methods. By offering continuous and reliable measurements, impedance cardiography aids in optimizing treatment strategies and improving 
+        outcomes in critically ill heart failure patients.
+
+  utter_permissive_hypertension_in_hemorrhagic_shock:
+    - text:  |
+        Permissive hypotension is a strategy used in trauma-related hemorrhagic shock to maintain a lower-than-normal blood pressure, typically sufficient to preserve vital organ perfusion while minimizing further blood loss.
+        By avoiding excessive fluid resuscitation, it reduces the risk of disrupting blood clots and exacerbating hemorrhage. This approach is particularly beneficial in the pre-surgical phase when definitive hemorrhage control is pending. 
+        Studies have shown that permissive hypotension improves survival rates and reduces complications by balancing perfusion with clot preservation. 
+        However, it must be carefully applied, especially in patients with coexisting conditions like traumatic brain injury.
+
+  utter_VADS_enhance_survival_rates:
+    - text:  |
+        Ventricular assist devices (VADs) improve survival in patients with end-stage heart failure by providing mechanical support to maintain cardiac output when the heart can no longer pump effectively. 
+        They reduce the workload of the failing heart, improve organ perfusion, and stabilize patients who are critically ill. VADs are used as a bridge to transplantation, destination therapy, or recovery.
+        Studies have shown that VADs significantly increase survival rates and improve quality of life by reducing symptoms of heart failure and associated complications.
+
+  utter_lactate_clearence_in_sepsis:
+    - text:  |
+        Lactate clearance is a valuable predictor of mortality in sepsis as it reflects the adequacy of tissue perfusion and oxygen delivery.
+        Elevated lactate levels indicate hypoperfusion, and their reduction over time demonstrates improved hemodynamics and cellular function.
+        Monitoring lactate clearance helps clinicians assess the effectiveness of resuscitation efforts and guide therapeutic decisions.
+        Studies have shown that patients with higher rates of lactate clearance have significantly lower mortality rates, making it a critical biomarker in sepsis management.
+
+
 
   utter_CKD_contribution:
     - text:  |
