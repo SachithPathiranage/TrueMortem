@@ -1,0 +1,1 @@
+# Data access layer, responsible for handling interactions with app and db
