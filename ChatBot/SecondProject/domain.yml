@@ -116,6 +116,26 @@ intents:
   - CTEPH  differ from other forms
   - role of NOACs
   - pulmonary edema
+  - PFts differentiate
+  - endothelin1 role
+  - nitric oxide in ARDS
+  - BAE in hemoptysis
+  - microembolic signals
+  - CAA cause of ICH
+  - thrombolysis and thrombectomy in WUS
+  - glymphatic  system role
+  - WMHs
+  - OSA in lacunar  stroke
+  - bile acid affect in glucose metabolism
+  - thyroid dysfunction in CD
+  - adiponectin role
+  - gut dysbiosis in metbabolic syndrome
+  - PCOS long term affect
+  - role of hyperaldosteronism
+  - utility vs dynamic preload
+  - temperature modulation
+  - bedside ultrasound
+  - permissive hypercapnia
 
 
 responses:
@@ -152,6 +172,119 @@ responses:
         6. Cardiomyopathy
         7. Congenital Heart Disease
         8. Pericardial Disease
+
+  utter_permissive_hypercapnia:
+    - text:  |
+        Permissive hypercapnia, which involves allowing elevated carbon dioxide levels to persist in patients with ARDS, is often used as a strategy to reduce ventilator-induced lung injury. By limiting tidal volumes and using lower airway pressures,
+        it minimizes barotrauma and volutrauma while still providing adequate oxygenation. Studies have shown that permissive hypercapnia can improve survival rates by reducing ventilator-associated injuries, although it requires careful monitoring to
+        avoid complications like acidosis or organ dysfunction. This approach is particularly beneficial in the context of lung protective ventilation strategies and has become a standard part of ARDS management.
+  
+
+  utter_bedside_ultrasound:
+    - text:  |
+        Bedside ultrasound is a valuable tool in managing hemodynamic instability by providing rapid, real-time assessment of cardiac function, fluid status, and vascular conditions. It helps identify causes of shock such as cardiac tamponade, pericardial effusion, or right
+        ventricular dysfunction, and guides fluid resuscitation strategies. It also allows for the assessment of volume responsiveness, helping clinicians decide whether fluids or vasopressors are needed. By offering a non-invasive, quick, and dynamic approach to patient 
+        evaluation, bedside ultrasound enhances clinical decision-making and can improve outcomes in critical care settings.
+
+  utter_temperature_modulation:
+    - text:  |
+        Temperature modulation, particularly induced hypothermia (cooling), is a key intervention in post-cardiac arrest syndrome to improve neurological recovery and survival. By lowering the body temperature to around 32-34°C within a few hours of return of spontaneous 
+        circulation (ROSC), it reduces the metabolic demands of the brain, mitigating ischemic brain injury. Hypothermia helps to preserve brain function, reduce inflammation, and limit oxidative stress. However, it carries risks like infection, bleeding, and electrolyte 
+        imbalances, requiring careful monitoring and controlled rewarming.
+
+  utter_utility_vs_dynamic_preload:
+    - text:  |
+        Dynamic preload assessment, which includes measures like pulse pressure variation (PPV) and stroke volume variation (SVV), is more reliable than static measures (e.g., central venous pressure, pulmonary artery wedge pressure) for predicting fluid responsiveness. Unlike static
+        parameters, dynamic assessment accounts for real-time changes in cardiac output in response to fluid challenges or mechanical ventilation. This improves fluid resuscitation strategies, reducing the risk of fluid overload and associated complications such as pulmonary edema. 
+        Consequently, dynamic preload assessment is preferred in critical care settings for optimizing hemodynamic management.
+
+  utter_role_of_hyperaldosteronism:
+    - text:  |
+        Hyperaldosteronism, particularly primary aldosteronism, leads to resistant hypertension by increasing sodium retention, expanding blood volume, and enhancing vascular stiffness. Excess aldosterone promotes endothelial dysfunction, inflammation, and fibrosis, contributing to left
+        ventricular hypertrophy and an increased risk of heart failure and stroke. It also reduces potassium levels, which can impair vascular function and increase arrhythmia risk. Due to these effects, hyperaldosteronism is a significant but often underdiagnosed cause of treatment-resistant 
+        hypertension, necessitating targeted therapies such as mineralocorticoid receptor antagonists.
+
+  utter_PCOS_long_term_affect:
+    - text:  |
+        Polycystic ovary syndrome (PCOS) is associated with an increased long-term risk of cardiovascular disease due to its links with insulin resistance, dyslipidemia, hypertension, and chronic inflammation. Women with PCOS often develop metabolic syndrome, which increases the 
+        likelihood of atherosclerosis and coronary artery disease. Elevated androgen levels and obesity further contribute to endothelial dysfunction and vascular stiffness. Over time, these factors heighten the risk of hypertension, stroke, and heart failure, making cardiovascular
+        screening and lifestyle interventions essential for managing PCOS-related health risks.
+
+  utter_gut_dysbiosis_in_metbabolic_syndrome:
+    - text:  |
+        The gut microbiome plays a crucial role in metabolic syndrome by influencing energy balance, insulin sensitivity, and systemic inflammation. Dysbiosis, or an imbalance in gut bacteria, promotes low-grade inflammation, impairs glucose metabolism, and contributes to obesity.
+        Microbial metabolites like short-chain fatty acids (SCFAs) can have beneficial effects on insulin sensitivity, while endotoxins from harmful bacteria may trigger inflammation and metabolic dysfunction. Additionally, alterations in gut microbiota composition can affect bile 
+        acid metabolism and influence lipid homeostasis, further contributing to metabolic syndrome progression.
+
+  utter_adiponectin_role:
+    - text:  |
+        Adiponectin, a hormone secreted by adipose tissue, enhances insulin sensitivity by promoting glucose uptake and fatty acid oxidation while reducing hepatic glucose production. It exerts anti-inflammatory and anti-atherogenic effects, protecting cardiovascular
+        health by improving endothelial function, reducing oxidative stress, and inhibiting vascular inflammation. Low adiponectin levels are associated with insulin resistance, type 2 diabetes, and increased cardiovascular disease risk. Conversely, higher adiponectin 
+        levels correlate with better metabolic and vascular health, making it a potential target for therapeutic interventions in metabolic syndrome and cardiovascular disease.
+
+  utter_thyroid_dysfunction_in_CD:
+    - text:  |
+        Thyroid dysfunction significantly affects lipid metabolism and cardiovascular risk. Hypothyroidism leads to increased LDL cholesterol, triglycerides, and reduced HDL, promoting atherosclerosis and increasing cardiovascular disease risk. 
+        This occurs due to reduced LDL receptor activity and impaired lipid clearance. Conversely, hyperthyroidism is associated with lower LDL and total cholesterol but may increase the risk of arrhythmias and heart failure. Both conditions can 
+        contribute to endothelial dysfunction and systemic inflammation, further impacting cardiovascular health. Proper thyroid function is essential for maintaining a balanced lipid profile and reducing cardiovascular risk.
+
+  utter_bile_acid_affect_in_glucose_metabolism:
+    - text:  |
+        Bile acid sequestrants, such as colesevelam, can modestly improve glucose metabolism in patients with type 2 diabetes by altering bile acid composition and signaling pathways. They enhance incretin hormone secretion, particularly glucagon-like peptide-1 (GLP-1), which improves insulin sensitivity and reduces hepatic glucose production.
+        Additionally, they may influence gut microbiota and farnesoid X receptor (FXR) signaling, both of which are linked to glucose homeostasis. While primarily used for lowering LDL cholesterol, bile acid sequestrants can provide an added benefit of modest reductions in HbA1c levels in diabetic patients.
+  
+
+  utter_OSA_in_lacunar_stroke:
+    - text:  |
+        Obstructive sleep apnea (OSA) is a significant risk factor for lacunar strokes due to intermittent hypoxia, blood pressure surges, and endothelial dysfunction, all of which contribute to cerebral small vessel disease. Repeated episodes of oxygen desaturation and sympathetic activation promote inflammation, oxidative stress, and impaired cerebral autoregulation, increasing the risk of lacunar infarcts. 
+        OSA also worsens hypertension, a major contributor to small vessel strokes, and may accelerate cognitive decline when combined with vascular pathology. Effective management of OSA, including continuous positive airway pressure (CPAP) therapy, may help reduce stroke risk and improve overall cerebrovascular health.
+
+  utter_WMHs:
+    - text:  |
+        White matter hyperintensities (WMHs) are markers of cerebral small vessel disease and are commonly associated with cognitive impairment. They contribute to disrupted neural connectivity, leading to deficits in memory, executive function, and processing speed. WMHs are linked to an increased risk of dementia, particularly vascular and mixed dementias, and may accelerate 
+        cognitive decline when present alongside Alzheimer's pathology. Their severity correlates with worse functional outcomes, making them a valuable biomarker for predicting disease progression and guiding management strategies in cognitive disorders.
+
+  utter_glymphatic_system_role:
+    - text:  |
+        The glymphatic system facilitates the clearance of neurotoxic proteins, such as amyloid-beta and tau, by promoting cerebrospinal fluid (CSF) exchange with interstitial fluid. During stroke recovery, impaired glymphatic function can lead to the accumulation of toxic metabolites, exacerbating neuroinflammation and secondary brain injury. 
+        Efficient glymphatic drainage supports neuronal repair and reduces long-term neurodegeneration. Enhancing glymphatic activity through sleep optimization, hydration, and potential pharmacological interventions may improve stroke outcomes by mitigating protein aggregation and promoting brain homeostasis.
+
+  utter_thrombolysis_and_thrombectomy_in_WUS:
+    - text:  |
+        In patients with wake-up stroke (WUS), both thrombolysis and thrombectomy have shown effectiveness, but outcomes depend on stroke severity and imaging-based selection. Thrombolysis with intravenous alteplase (IV tPA) is beneficial when MRI or CT perfusion imaging indicates salvageable brain tissue, while thrombectomy is preferred for large vessel occlusions.
+        Studies suggest thrombectomy provides higher recanalization rates and better functional outcomes in severe strokes compared to IV tPA alone. However, thrombolysis remains an option for non-thrombectomy-eligible patients. Combining both therapies when appropriate offers the best chance for recovery, minimizing disability while considering bleeding risks.
+
+
+  utter_CAA_cause_of_ICH:
+    - text:  |
+        Cerebral amyloid angiopathy (CAA) is a leading cause of spontaneous intracerebral hemorrhage (ICH), particularly in elderly individuals. It is characterized by the deposition of β-amyloid in cerebral blood vessel walls, leading to vessel fragility and an increased risk of lobar hemorrhages. CAA-related ICH often occurs in the cortical and subcortical 
+        regions, sparing the deep brain structures typically affected by hypertensive hemorrhage. Patients with CAA may also experience cognitive decline and microbleeds, detectable on MRI with susceptibility-weighted imaging. There is no specific treatment for CAA, but managing hypertension and avoiding anticoagulation can help reduce hemorrhagic risk.
+
+  utter_microembolic_signals:
+    - text:  |
+        Microembolic signals (MES) detected on transcranial Doppler (TCD) indicate active embolization and are associated with an increased risk of stroke recurrence. MES are commonly observed in patients with atrial fibrillation, carotid stenosis, or patent foramen ovale. Studies show that patients with persistent MES have a higher likelihood of recurrent
+        ischemic events, making TCD a valuable non-invasive tool for risk stratification. Identifying MES can guide treatment decisions, such as intensifying antithrombotic therapy or considering interventions like carotid endarterectomy. Regular TCD monitoring can help assess treatment effectiveness and adjust preventive strategies accordingly
+
+  utter_BAE_in_hemoptysis:
+    - text:  |
+        Bronchial artery embolization (BAE) is a minimally invasive procedure that effectively controls massive hemoptysis by selectively occluding abnormal bronchial arteries responsible for bleeding. It provides rapid hemostasis and is less invasive than surgical intervention. The procedure has an initial success rate of over 85%, but recurrence
+        can occur due to collateral vessel formation or underlying disease progression. BAE is particularly useful for patients with hemoptysis caused by conditions such as tuberculosis, bronchiectasis, or lung malignancies. While generally safe, complications like spinal cord ischemia or non-target embolization can occur, though they are rare.
+
+  utter_nitric_oxide_in_ARDS:
+    - text:  |
+        Nitric oxide (NO) therapy benefits patients with acute respiratory distress syndrome (ARDS) by acting as a selective pulmonary vasodilator, reducing pulmonary hypertension and improving oxygenation. Inhaled NO specifically dilates ventilated lung regions, enhancing ventilation-perfusion (V/Q) matching and increasing arterial oxygenation 
+        without causing systemic hypotension. It also has anti-inflammatory effects and reduces endothelial injury. However, while nitric oxide therapy provides short-term improvements in oxygenation, it has not been shown to reduce overall mortality in ARDS patients, and its use is typically reserved for refractory hypoxemia.
+
+  utter_endothelin1_role:
+    - text:  |
+        Endothelin-1 (ET-1) plays a key role in the pathogenesis of pulmonary arterial hypertension (PAH) by promoting vasoconstriction, inflammation, and vascular remodeling. It is a potent vasoconstrictor that increases pulmonary vascular resistance by acting on ETA and ETB receptors in smooth muscle cells.
+        ET-1 also stimulates endothelial dysfunction, proliferation of vascular smooth muscle cells, and fibrosis, leading to progressive narrowing of pulmonary arteries. Elevated ET-1 levels are observed in PAH patients, making endothelin receptor antagonists (e.g., bosentan, ambrisentan) an important therapeutic option to reduce pulmonary pressure and improve hemodynamics.
+
+  utter_PFts_differentiate:
+    - text:  |
+        Pulmonary function tests (PFTs) help differentiate restrictive from obstructive lung disease in heart failure patients by assessing lung volumes and airflow patterns. In obstructive lung disease (e.g., COPD), PFTs show a reduced FEV1/FVC ratio (<70%) due to airflow limitation. 
+        In contrast, restrictive lung disease, often seen in heart failure due to pulmonary congestion or fibrosis, is characterized by a normal or high FEV1/FVC ratio but reduced total lung capacity (TLC) and forced vital capacity (FVC). Diffusion capacity (DLCO) can also help, as it 
+        is often reduced in interstitial lung involvement but may be preserved in pure obstructive diseases.
 
   utter_pulmonary edema:
     - text:  |

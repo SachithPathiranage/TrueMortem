@@ -1080,6 +1080,166 @@ nlu:
       -How does highaltitude pulmonary edema (HAPE) occur, and what are the underlying mechanisms?
       -What role does the increased pulmonary vascular pressure play in high-altitude pulmonary edema
 
+- intent: PFts differentiate
+  examples:  |
+      -How can pulmonary function tests (PFTs) distinguish between restrictive and obstructive lung disease in heart failure?
+      -What role do PFTs play in identifying lung abnormalities in heart failure patients?
+      -How do spirometry and lung volume measurements differentiate obstructive vs. restrictive lung disease in heart failure?
+      -What pulmonary function test parameters help diagnose restrictive lung disease in heart failure patients?
+      -How can PFT results clarify whether dyspnea in heart failure patients is due to lung disease or cardiac dysfunction?
+
+- intent: endothelin1 role
+  examples:  |
+      -How does endothelin-1 contribute to the development of pulmonary arterial hypertension (PAH)?
+      -What is the pathogenic role of endothelin-1 in pulmonary arterial hypertension?
+      -How does endothelin-1 influence vascular remodeling in PAH?
+      -What mechanisms link endothelin-1 to increased pulmonary vascular resistance in PAH?
+      -Why is endothelin-1 a therapeutic target in the treatment of pulmonary arterial hypertension?
+
+- intent: nitric oxide in ARDS
+  examples:  |
+      -What are the benefits of nitric oxide therapy in managing acute respiratory distress syndrome (ARDS)?
+      -How does inhaled nitric oxide improve oxygenation in ARDS patients?
+      -What is the role of nitric oxide in the treatment of ARDS?
+      -How does nitric oxide therapy affect pulmonary hemodynamics in ARDS?
+      -Why is nitric oxide used as an adjunct therapy in acute respiratory distress syndrome?
+
+- intent: BAE in hemoptysis
+  examples:  |
+      -How effective is bronchial artery embolization (BAE) in managing massive hemoptysis?
+      -What are the benefits of bronchial artery embolization in controlling life-threatening hemoptysis?
+      -How does bronchial artery embolization work in the treatment of severe hemoptysis?
+      -What is the success rate of bronchial artery embolization for massive hemoptysis?
+      -How does bronchial artery embolization compare to surgery in treating massive hemoptysis?
+
+- intent: microembolic signals
+  examples:  |
+      -How do microembolic signals detected on transcranial Doppler relate to stroke recurrence risk?
+      -What is the prognostic value of microembolic signals on transcranial Doppler in stroke patients?
+      -Can transcranial Doppler-detected microembolic signals help predict future strokes?
+      -How are microembolic signals used to assess stroke recurrence likelihood?
+      -What does the presence of microembolic signals on transcranial Doppler indicate about stroke prognosis?
+
+- intent: CAA cause of ICH
+  examples:  |
+      -How does cerebral amyloid angiopathy contribute to spontaneous intracerebral hemorrhage?
+      -What is the link between cerebral amyloid angiopathy and intracerebral hemorrhage?
+      -Why is cerebral amyloid angiopathy a major cause of spontaneous brain bleeding?
+      -How does cerebral amyloid angiopathy affect the risk of intracerebral hemorrhage?
+      -What role does amyloid deposition play in spontaneous intracerebral hemorrhage?
+
+- intent: thrombolysis and thrombectomy in WUS
+  examples:  |
+      -How do the outcomes of thrombolysis and thrombectomy compare in wake-up stroke patients?
+      -Which treatment is more effective for wake-up stroke: thrombolysis or thrombectomy?
+      -What are the differences in success rates between thrombolysis and thrombectomy in wake-up stroke?
+      -How do wake-up stroke patients respond to thrombolysis versus thrombectomy?
+      -Is mechanical thrombectomy superior to thrombolysis in treating wake-up stroke
+
+- intent: glymphatic  system role
+  examples:  |
+      -What role does the glymphatic system play in removing neurotoxic proteins after a stroke?
+      -How does the glymphatic system aid in clearing harmful proteins during stroke recovery?
+      -What is the function of the glymphatic system in post-stroke neurotoxin clearance?
+      -How does impaired glymphatic function affect stroke recovery and protein buildup?
+      -Why is the glymphatic system important for neurotoxic waste removal following a stroke?
+
+- intent: WMHs
+  examples:  |
+      -How do white matter hyperintensities impact cognitive decline?
+      -What is the relationship between white matter hyperintensities and dementia?
+      -Why are white matter hyperintensities significant in cognitive impairment?
+      -How do white matter hyperintensities contribute to memory and executive dysfunction?
+      -What is the prognostic value of white matter hyperintensities in neurodegenerative diseases?
+
+- intent: OSA in lacunar  stroke
+  examples:  |
+      -How does obstructive sleep apnea (OSA) contribute to lacunar stroke risk?
+      -What is the link between OSA and small vessel strokes?
+      -How does sleep apnea affect the likelihood of lacunar infarcts?
+      -What role does obstructive sleep apnea play in cerebral small vessel disease and stroke?
+      -Why is OSA considered a risk factor for lacunar strokes?
+
+- intent: bile acid affect in glucose metabolism
+  examples:  |
+      -How do bile acid sequestrants influence blood sugar levels in type 2 diabetes?
+      -What is the effect of bile acid sequestrants on glucose metabolism in diabetic patients?
+      -Can bile acid sequestrants improve glycemic control in type 2 diabetes?
+      -How do bile acid sequestrants impact insulin sensitivity in diabetes?
+      -What role do bile acid sequestrants play in managing glucose levels in type 2 diabetes?
+
+- intent: thyroid dysfunction in CD
+  examples:  |
+      -How does thyroid dysfunction affect lipid metabolism and cardiovascular health?
+      -What is the relationship between thyroid disorders and lipid abnormalities?
+      -How does hypothyroidism or hyperthyroidism influence cholesterol levels and heart disease risk?
+      -What role does thyroid function play in regulating lipid metabolism and atherosclerosis?
+      -How do thyroid hormones impact lipid profiles and cardiovascular disease development?
+
+- intent: adiponectin role
+  examples:  |
+      -What role does adiponectin play in regulating insulin sensitivity and cardiovascular function?
+      -How does adiponectin impact glucose metabolism and heart health?
+      -What is the connection between adiponectin levels and insulin resistance?
+      -How does adiponectin contribute to cardiovascular protection and metabolic health?
+      -What are the effects of adiponectin deficiency on insulin resistance and cardiovascular disease?
+
+- intent: gut dysbiosis in metbabolic syndrome
+  examples:  |
+      -What is the role of the gut microbiome in metabolic syndrome development?
+      -How does gut dysbiosis influence metabolic syndrome risk?
+      -What are the mechanisms linking the gut microbiome to obesity and insulin resistance?
+      -How do microbial metabolites affect metabolic health and inflammation?
+      -What is the impact of gut microbiota composition on metabolic disorders?
+
+- intent: PCOS long term affect
+  examples:  |
+      -How does PCOS increase long-term cardiovascular risk?
+      -What are the cardiovascular complications associated with PCOS?
+      -How does PCOS contribute to heart disease and metabolic disorders over time?
+      -What is the link between PCOS and hypertension, atherosclerosis, or heart failure?
+      -How does PCOS impact long-term vascular health?
+
+- intent: role of hyperaldosteronism
+  examples:  |
+      -What is the role of hyperaldosteronism in causing resistant hypertension?
+      -How does excess aldosterone lead to cardiovascular complications?
+      -Why is hyperaldosteronism a major factor in uncontrolled hypertension?
+      -What are the cardiovascular effects of primary aldosteronism?
+      -How does hyperaldosteronism contribute to hypertension that does not respond to standard treatments?
+
+- intent: utility vs dynamic preload
+  examples:  |
+      -How does dynamic preload assessment compare to static measures in guiding fluid resuscitation?
+      -What are the advantages of using dynamic over static preload parameters in fluid management?
+      -Why is dynamic preload assessment preferred over static measures in critical care settings?
+      -How do static and dynamic preload indicators impact fluid resuscitation decisions?
+      -What is the clinical significance of dynamic preload assessment in fluid therapy?
+
+- intent: temperature modulation
+  examples:  |
+      -What is the role of temperature modulation in improving outcomes for post-cardiac arrest syndrome?
+      -How does therapeutic hypothermia affect survival rates and neurological recovery in post-cardiac arrest patients?
+      -What are the benefits and risks of temperature management in the treatment of post-cardiac arrest syndrome?
+      -How does temperature modulation help in reducing ischemic brain injury after cardiac arrest?
+      -What is the impact of induced hypothermia on long-term neurological outcomes in post-cardiac arrest syndrome?
+
+- intent: bedside ultrasound
+  examples:  |
+      -How does bedside ultrasound assist in evaluating hemodynamic instability in critically ill patients?
+      -What is the role of bedside echocardiography in assessing cardiovascular status during shock?
+      -How does point-of-care ultrasound guide treatment decisions in patients with hypotension or shock?
+      -In what ways can bedside ultrasound improve diagnostic accuracy and management in hemodynamically unstable patients?
+      -How does the use of ultrasound influence the management of hemodynamic instability in emergency and intensive care settings?
+
+- intent: permissive hypercapnia
+  examples:  |
+      -What is the effect of permissive hypercapnia on survival outcomes in patients with ARDS?
+      -How does allowing elevated CO2 levels (permissive hypercapnia) influence mortality in ARDS patients?
+      -What are the clinical benefits and risks of permissive hypercapnia in the management of ARDS?
+      -How does permissive hypercapnia affect ventilatory strategies and survival rates in ARDS?
+      -What role does permissive hypercapnia play in improving the prognosis of patients with acute respiratory distress syndrome (ARDS)?
+
 - intent: bot_challenge
   examples: |
     - are you a bot?

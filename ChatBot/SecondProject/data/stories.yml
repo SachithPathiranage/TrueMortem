@@ -93,7 +93,7 @@ stories:
       - intent: hypertension
       - action: utter_hypertension
 
-- story: reasons for HD
+- story: base questions about CAD
   steps:
   - intent: causes for HD
   - action: utter_common_causes_for_HD
@@ -296,6 +296,48 @@ stories:
     - action: utter_role_of_NOACs
     - intent: pulmonary edema
     - action: utter_pulmonary edema
+    - intent: PFts differentiate
+    - action: utter_PFts_differentiate
+    - intent: endothelin1 role
+    - action: utter_endothelin1_role
+    - intent: nitric oxide in ARDS
+    - action: utter_nitric_oxide_in_ARDS
+    - intent: BAE in hemoptysis
+    - action: utter_BAE_in_hemoptysis
+    - intent: microembolic signals
+    - action: utter_microembolic_signals
+    - intent: CAA cause of ICH
+    - action: utter_CAA_cause_of_ICH
+    - intent: thrombolysis and thrombectomy in WUS
+    - action: utter_thrombolysis_and_thrombectomy_in_WUS
+    - intent: glymphatic  system role
+    - action: utter_glymphatic_system_role
+    - intent: WMHs
+    - action: utter_WMHs
+    - intent: OSA in lacunar  stroke
+    - action: utter_OSA_in_lacunar_stroke
+    - intent: bile acid affect in glucose metabolism
+    - action: utter_bile_acid_affect_in_glucose_metabolism
+    - intent: thyroid dysfunction in CD
+    - action: utter_thyroid_dysfunction_in_CD
+    - intent: adiponectin role
+    - action: utter_adiponectin_role
+    - intent: gut dysbiosis in metbabolic syndrome
+    - action: utter_gut_dysbiosis_in_metbabolic_syndrome
+    - intent: PCOS long term affect
+    - action: utter_PCOS_long_term_affect
+    - intent: role of hyperaldosteronism
+    - action: utter_role_of_hyperaldosteronism
+    - intent: utility vs dynamic preload
+    - action: utter_utility_vs_dynamic_preload
+    - intent: temperature modulation
+    - action: utter_temperature_modulation
+    - intent: bedside ultrasound
+    - action: utter_bedside_ultrasound
+    - intent: permissive hypercapnia
+    - action: utter_permissive_hypercapnia
+
+
 
 
 
