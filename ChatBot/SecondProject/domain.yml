@@ -161,6 +161,9 @@ responses:
   utter_inform_heart_disease:
   - text: "A heart disease refers to a range of conditions that affect the heart's structure and function. These conditions can involve the heart muscle, valves, blood vessels, or the electrical system that regulates the heart's rhythm. Heart disease is a broad term that includes many specific types of disorders."
 
+  utter_default: # Fallback response
+    - text: "I'm sorry, but I can't help you with that. Can you please ask different question?"
+
   utter_types_of_HD:
   - text: |
         These are the most common heart diseases among the people-
