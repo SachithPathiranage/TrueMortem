@@ -2,7 +2,10 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 import joblib
+import pickle
 import numpy as np
+from sklearn.preprocessing import StandardScaler
+from sklearn.decomposition import PCA
 
 
 app = FastAPI()
@@ -16,9 +19,40 @@ app.add_middleware(
     allow_headers=["*"],  # Allow all headers
 )
 
+# Load the trained model
+with open('rf_classifier_2.pkl', 'rb') as f:
+    model = pickle.load(f)
+
+# Define the encoding mappings
+encoding_mappings = {
+    "sex": {"Male": "M", "Female": "F"},
+    "nourished": {"well": 1, "moderately": 2, "poorly": 3},
+    "age": {"young": 1, "middle": 2, "old": 3},
+    "ChestcavityFreeairoradhesions": {"yes": 1, "no": 0},
+    "HeartSizeinconfiguration": {"normal": 0, "enlarged": 1},
+    "HeartInjuries": {"yes": 1, "no": 0},
+    "normalMyocardium": {"yes": 1, "no": 0},
+    "recentIschaemicChanges": {"yes": 1, "no": 0},
+    "Myocardialfibrosispresentin": {
+        "posterior free wall": 1,
+        "antero lateral wall": 2,
+        "inter-ventricular septum": 3,
+        "not present": 0
+    },
+    "Concentrichypertrophydetected": {"yes": 1, "no": 0},
+    "HeartValvesnormal": {"yes": 1, "no": 0},
+    "BloodVesselsCoronaryarteries": {"calcified": 1, "patent": 2, "non": 0},
+    "FreeofStenosis": {"yes": 1, "no": 0},
+    "BloodVesselsCoronaryarterycondition": {"thrombosis": 1, "anomaly": 2, "non": 0},
+    "BloodVesselsclacifiedandstenosedwithpatchyatheromatousplaques": {"yes": 1, "no": 0},
+    "Aortacondition": {"remarkable": 1, "unremarkable": 0},
+    "AortaInjuries": {"yes": 1, "no": 0},
+    "Atheromatousplaquespresentintheaorta": {"calcified": 1, "ulcerated": 2, "non": 0},
+}
+
 # Define the request model
 class PostMortemData(BaseModel):
-    built: str
+    sex: str
     nourished: str
     age: str
     ChestcavityFreeairoradhesions: str
@@ -42,29 +76,70 @@ class PostMortemData(BaseModel):
     AortaInjuries: str
     Atheromatousplaquespresentintheaorta: str
 
-# Load the trained model
-model = joblib.load("rf_classifier_2.pkl")
+# Load the trained scaler and PCA model (if you saved them)
+scaler = StandardScaler()
+pca = PCA(n_components=1)
 
 @app.post("/predict")
-def predict(data: PostMortemData):
+def predict_death_cause(data: PostMortemData):
     try:
-        # Convert input data to a NumPy array for prediction
-        input_features = np.array([
-            [
-                float(data.age),
-                data.pericardialFluid,
-                data.heartSize,
-                data.BloodVesselsLeftanteriordescendingartery,
-                data.BloodVesselsrightcoronaryartery,
-                data.BloodVesselsLeftcircumflexartery
-            ]
-        ])  # Include only numeric values for the model
+        # Convert input data to dictionary
+        data_dict = data.dict()
+        print("Received Data:", data_dict)  # Debugging
+
+        # Encode categorical values
+        encoded_features = []
+        pca_input = []  # Store PCA-related features separately
+
+        for key, value in data_dict.items():
+            if key in encoding_mappings:
+                encoded_value = encoding_mappings[key].get(value, 0)  # Default to 0 if not found
+                
+                # Check if it's one of the PCA-related columns
+                if key in [
+                    "BloodVesselsclacifiedandstenosedwithpatchyatheromatousplaques"
+                ]:
+                    pca_input.append(encoded_value)  # Append encoded value to PCA input
+                else:
+                    encoded_features.append(encoded_value)
+            
+            elif key in [
+                "BloodVesselsLeftanteriordescendingartery",
+                "BloodVesselsrightcoronaryartery",
+                "BloodVesselsLeftcircumflexartery"
+            ]:
+                pca_input.append(float(value))  # Collect numerical PCA-related features
+            else:
+                encoded_features.append(float(value))  # Convert numerical values
+
+        print("Encoded Features Before PCA:", encoded_features)  
+        print("PCA Input Features:", pca_input)  # Debugging
+
+        # Apply PCA Transformation
+        pca_scaled = scaler.fit_transform([pca_input])  # Standardize
+        pca_component = pca.fit_transform(pca_scaled)  # Apply PCA
+
+        print("PCA Component:", pca_component[0][0])  
+
+        # Add PCA component to encoded features
+        encoded_features.append(pca_component[0][0])
+
+        print("Final Encoded Features (With PCA):", encoded_features)
+
+        # Convert to NumPy array and reshape for prediction
+        input_features = np.array(encoded_features).reshape(1, -1)
+
+        print("Input Features Shape:", input_features.shape)  # Debugging
 
         # Make a prediction
-        prediction = model.predict(input_features)[0]
+        prediction = model.predict(input_features)  
+        print("Raw Prediction:", prediction)  # Debugging
 
-        # Interpret prediction (assuming 1 = Heart-related, 0 = Other)
-        result = "Heart-related death" if prediction == 1 else "Not heart-related"
+        # Convert to human-readable result
+        result = "Heart-related death" if prediction[0] == 1 else "Not heart-related"
+
         return {"prediction": result}
+
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        print("Error:", str(e))  # Print the error for debugging
+        return {"error": str(e)}
