@@ -11,7 +11,7 @@ rules:
       - intent: bot_challenge
       - action: utter_iamabot
 
-  - rule: Handle fallback
+  - rule: Handle fallback with LLM
     steps:
-      - intent: nlu_fallback
-      - action: utter_default
+      - intent: nlu_fallback  # This is triggered when no intent is matched
+      - action: action_fallback_llm  # Calls the LLM API for out-of-scope questions

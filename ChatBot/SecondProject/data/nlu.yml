@@ -1240,6 +1240,15 @@ nlu:
       -How does permissive hypercapnia affect ventilatory strategies and survival rates in ARDS?
       -What role does permissive hypercapnia play in improving the prognosis of patients with acute respiratory distress syndrome (ARDS)?
 
+- intent: myocardial infarction
+  examples:  |
+      -What is a myocardial infarction?
+      -Can you explain what MI is
+      -What causes myocardial infarction and how does it affect the heart?
+      -tell me about myocardial infarction
+      -How does a blocked artery lead to a heart attack?
+
+
 - intent: bot_challenge
   examples: |
     - are you a bot?

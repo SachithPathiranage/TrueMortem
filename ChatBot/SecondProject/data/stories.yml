@@ -336,6 +336,8 @@ stories:
     - action: utter_bedside_ultrasound
     - intent: permissive hypercapnia
     - action: utter_permissive_hypercapnia
+    - intent: myocardial infarction
+    - action: utter_myocardial_infarction
 
 
 

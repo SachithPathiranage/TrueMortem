@@ -136,6 +136,10 @@ intents:
   - temperature modulation
   - bedside ultrasound
   - permissive hypercapnia
+  - myocardial infarction
+
+actions:
+  - action_fallback_llm  # Custom fallback action to use LLM
 
 
 responses:
@@ -161,8 +165,6 @@ responses:
   utter_inform_heart_disease:
   - text: "A heart disease refers to a range of conditions that affect the heart's structure and function. These conditions can involve the heart muscle, valves, blood vessels, or the electrical system that regulates the heart's rhythm. Heart disease is a broad term that includes many specific types of disorders."
 
-  utter_default: # Fallback response
-    - text: "I'm sorry, but I can't help you with that. Can you please ask different question?"
 
   utter_types_of_HD:
   - text: |
@@ -175,6 +177,11 @@ responses:
         6. Cardiomyopathy
         7. Congenital Heart Disease
         8. Pericardial Disease
+
+  utter_myocardial_infarction:
+    - text:  |
+        A myocardial infarction, or heart attack, occurs when a coronary artery supplying blood to the heart becomes blocked, often due to plaque buildup or a blood clot. This blockage deprives the heart muscle of oxygen, leading to tissue damage or death.
+        Common symptoms include chest pain, shortness of breath, nausea, and pain radiating to the arm or jaw. Immediate medical attention is crucial to minimize heart damage and prevent complications.
 
   utter_permissive_hypercapnia:
     - text:  |
