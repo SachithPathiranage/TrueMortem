@@ -9,22 +9,28 @@ const App = () => {
   ]);
   const [input, setInput] = useState("");
 
-  const handleSend = async () => {
-    if (input.trim() === "") return;
+  const handleSend = async (messageText) => {
+    if (messageText.trim() === "") return;
 
     // Add user message to chat
-    const newMessages = [...messages, { text: input, sender: "user" }];
+    const newMessages = [...messages, { text: messageText, sender: "user" }];
     setMessages(newMessages);
     setInput("");
 
     try {
-      // Send user message to FastAPI
-      const response = await axios.post("http://127.0.0.1:8000/chat", {
-        message: input
+      // Send user message to Rasa's REST API directly
+      const response = await axios.post("http://localhost:5005/webhooks/rest/webhook", {
+        sender: "user",
+        message: messageText,
       });
 
-      // Add bot response to chat
-      setMessages([...newMessages, { text: response.data.response, sender: "bot" }]);
+      // Check if Rasa sent a response
+      if (response.data.length > 0) {
+        const botResponse = response.data[0].text; // Get response text
+        setMessages([...newMessages, { text: botResponse, sender: "bot" }]);
+      } else {
+        setMessages([...newMessages, { text: "No response from chatbot.", sender: "bot" }]);
+      }
     } catch (error) {
       console.error("Error sending message:", error);
       setMessages([...newMessages, { text: "Error connecting to chatbot.", sender: "bot" }]);
@@ -40,6 +46,7 @@ const App = () => {
           <p>Choose a prompt below or write your own to start chatting.</p>
         </div>
 
+        {/* Fix button click handlers */}
         <div className="quick-replies">
           <button onClick={() => handleSend("What is heart disease?")}>What’s a heart disease?</button>
           <button onClick={() => handleSend("Tell me about hypertension.")}>Tell me about hypertension?</button>
@@ -61,7 +68,7 @@ const App = () => {
             value={input}
             onChange={(e) => setInput(e.target.value)}
           />
-          <button onClick={handleSend}>
+          <button onClick={() => handleSend(input)}>
             <FiSend size={20} />
           </button>
         </div>
