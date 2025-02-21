@@ -5,7 +5,7 @@ from rasa_sdk.events import UserUtteranceReverted
 # Configure OpenRouter API Key
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
-    api_key="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",
+    api_key="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",
 )
 
 class ActionFallbackLLM(Action):
@@ -26,7 +26,7 @@ class ActionFallbackLLM(Action):
         try:
             # Call OpenRouter API using DeepSeek R1 (Free version)
             completion = client.chat.completions.create(
-                model="deepseek/deepseek-r1:free",
+                model="deepseek/deepseek-chat:free",
                 messages=[
                     {"role": "system", "content": system_instruction},
                     {"role": "user", "content": user_message},
