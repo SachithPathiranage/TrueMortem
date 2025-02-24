@@ -4,7 +4,7 @@ import './index.css';
 
 const FormComponent = () => {
   const [formData, setFormData] = useState({
-    built: "",
+    sex: "",
     nourished: "",
     age: "",
     ChestcavityFreeairoradhesions: "",
@@ -29,12 +29,18 @@ const FormComponent = () => {
     Atheromatousplaquespresentintheaorta: "",
   });
 
+  const [prediction, setPrediction] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    setLoading(true);
+    setError(null);
   
     try {
       const response = await fetch("http://127.0.0.1:8000/predict", {
@@ -50,12 +56,17 @@ const FormComponent = () => {
       }
   
       const data = await response.json();
+      setPrediction(data.prediction);
+      console.log("Response Data:", data); // Debugging output
       alert(`Prediction: ${data.prediction}`); // Display the prediction result
   
     } catch (error) {
       console.error("Error:", error);
       alert("An error occurred while fetching the prediction.");
     }
+    finally {
+      setLoading(false);
+  }
   };
   
 
@@ -63,13 +74,12 @@ const FormComponent = () => {
     <div className="max-w-2xl mx-auto bg-white p-6 rounded-2xl shadow-lg mt-10">
       <h2 className="text-2xl font-bold text-center mb-4">Post-Mortem Data Entry</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
-        {/* Built */}
-        <label className="block">Built</label>
-        <select name="built" value={formData.built} onChange={handleChange} className="w-full p-2 border rounded-lg">
+        {/* Sex */}
+        <label className="block">Sex</label>
+        <select name="sex" value={formData.sex} onChange={handleChange} className="w-full p-2 border rounded-lg">
           <option value="">Select</option>
-          <option value="well">Well</option>
-          <option value="average">Average</option>
-          <option value="small">Small</option>
+          <option value="M">Male</option>
+          <option value="F">Female</option>
         </select>
 
         {/* Nourished */}
@@ -236,8 +246,14 @@ const FormComponent = () => {
         </select>
 
         {/* Submit Button */}
-        <button type="submit" className="w-full bg-blue-500 text-white p-2 rounded-lg hover:bg-blue-600">Submit</button>
+        <button type="submit" disabled={loading} className="w-full bg-blue-500 text-white p-2 rounded-lg hover:bg-blue-600">
+        {loading ? "Predicting..." : "Submit"}
+        </button>
       </form>
+
+      {/* Display Prediction */}
+      {prediction && <h3>Prediction: {prediction}</h3>}
+      {error && <p style={{ color: "red" }}>{error}</p>}
     </div>
   );
 };
