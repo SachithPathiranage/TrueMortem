@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,631&display=swap");
+
 body {
   background-color: #f6f6f6;
-}
-.btn {
-  @apply rounded-full py-2 px-3 cursor-pointer tracking-wider text-xs;
+  font-family: "DM Sans", sans-serif;
 }
