@@ -25,12 +25,25 @@ const HealthForm = () => {
     had_confusion: ''
   });
 
+  const [predictionResult, setPredictionResult] = useState(null);
+  const [error, setError] = useState(null);
+
   const standardOptions = [
     { value: '', label: 'Select an option' },
     { value: 'Yes', label: 'Yes' },
     { value: 'No', label: 'No' },
     { value: "Don't Know", label: "Don't Know" },
     { value: 'Refused to Answer', label: 'Refused to Answer' }
+  ];
+
+  const painLocationOptions = [
+    { value: '', label: 'Select an option' },
+    { value: 'Upper/middle chest', label: 'Upper/middle chest' },
+    { value: 'Lower chest', label: 'Lower chest' },
+    { value: 'Left Arm', label: 'Left Arm' },
+    { value: 'Other', label: 'Other' },
+    { value: 'Refused to Answer', label: 'Refused to Answer' },
+    { value: "Don't Know", label: "Don't Know" }
   ];
 
   const breathingOptions = [
@@ -57,15 +70,40 @@ const HealthForm = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData);
-    // Add API call here to send data to backend
+    setError(null);
+
+    try {
+      const response = await fetch('http://localhost:8000/predict', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          ...formData,
+          age: parseInt(formData.age)
+        }),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.detail || 'Prediction failed');
+      }
+
+      const result = await response.json();
+      setPredictionResult(result);
+    } catch (error) {
+      setError(error.message);
+      console.error('Error:', error);
+    }
   };
 
   return (
     <div className="health-form-container">
       <h2>Cause Of Death Prediction</h2>
+      {error && <div className="error-message">{error}</div>}
+      
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="age">Age:</label>
@@ -85,17 +123,18 @@ const HealthForm = () => {
           { id: 'had_heart_disease', label: 'Did deceased have heart disease?' },
           { id: 'had_hypertension', label: 'Did deceased have hypertension?' },
           { id: 'had_obesity', label: 'Did deceased have obesity?' },
-          { id: 'had_stroke', label: ' Did deceased have a stroke?' },
-          { id: 'had_blue_lips', label: 'Have you experienced blue lips?' },
+          { id: 'had_stroke', label: 'Did deceased have a stroke?' },
+          { id: 'had_blue_lips', label: 'Did deceased have blue lips?' },
           { id: 'had_ankle_swelling', label: 'Did deceased have ankle swelling?' },
-          { id: 'had_puffiness', label: 'Did deceased have experience puffiness?' },
+          { id: 'had_puffiness', label: 'Did deceased experience puffiness?' },
           { id: 'had_diff_breathing', label: 'Did deceased have difficulty breathing?' },
           { id: 'fast_breathing', label: 'Did deceased experience fast breathing?' },
-          { id: 'had_wheezed', label: 'Did deceased experienced wheezing?' },
+          { id: 'had_wheezed', label: 'Did deceased experience wheezing?' },
           { id: 'had_chest_pain', label: 'Did deceased have chest pain?' },
-          { id: 'physical_action_painful', label: 'was physical activity painful?' },
-          { id: 'had_lost_consciousness', label: 'Did deceased lost consciousness?' },
-          { id: 'had_confusion', label: 'Did deceasedm experience confusion?' }
+          { id: 'physical_action_painful', label: 'Was physical activity painful?' },
+          { id: 'urine_stop', label: 'Did deceased have difficulty urinating?' },
+          { id: 'had_lost_consciousness', label: 'Did deceased lose consciousness?' },
+          { id: 'had_confusion', label: 'Did deceased experience confusion?' }
         ].map(question => (
           <div className="form-group" key={question.id}>
             <label htmlFor={question.id}>{question.label}</label>
@@ -115,7 +154,25 @@ const HealthForm = () => {
           </div>
         ))}
 
-        {/* Special questions with different options */}
+        {/* Pain Location */}
+        <div className="form-group">
+          <label htmlFor="pain_location">Where was the pain located?</label>
+          <select
+            id="pain_location"
+            name="pain_location"
+            value={formData.pain_location}
+            onChange={handleChange}
+            required
+          >
+            {painLocationOptions.map(option => (
+              <option key={option.value} value={option.value}>
+                {option.label}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        {/* Breathing Pattern */}
         <div className="form-group">
           <label htmlFor="breathing_on_off">Breathing Pattern:</label>
           <select
@@ -133,6 +190,7 @@ const HealthForm = () => {
           </select>
         </div>
 
+        {/* Chest Pain Duration */}
         <div className="form-group">
           <label htmlFor="chest_pain_duration">Chest Pain Duration:</label>
           <select
@@ -152,6 +210,15 @@ const HealthForm = () => {
 
         <button type="submit" className="submit-button">Submit</button>
       </form>
+
+      {predictionResult && (
+        <div className="prediction-result">
+          <h3>Prediction Result</h3>
+          <p><strong>Risk Level:</strong> {predictionResult.risk_level}</p>
+          <p><strong>Probability:</strong> {(predictionResult.probability * 100).toFixed(2)}%</p>
+          <p><strong>Message:</strong> {predictionResult.message}</p>
+        </div>
+      )}
     </div>
   );
 };
