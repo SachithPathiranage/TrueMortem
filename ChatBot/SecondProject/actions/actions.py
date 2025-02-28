@@ -1,12 +1,9 @@
-from openai import OpenAI
+import requests
 from rasa_sdk import Action
 from rasa_sdk.events import UserUtteranceReverted
 
-# Configure OpenRouter API Key
-client = OpenAI(
-    base_url="https://openrouter.ai/api/v1",
-    api_key="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",
-)
+# OpenRouter API Key
+API_KEY = "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"  # Replace with your actual key
 
 class ActionFallbackLLM(Action):
     def name(self):
@@ -15,7 +12,7 @@ class ActionFallbackLLM(Action):
     def run(self, dispatcher, tracker, domain):
         user_message = tracker.latest_message.get("text")  # Get the user's message
 
-        # Define system instruction to keep responses limited to heart disease topics
+        # Define system instruction to keep responses limited to medical topics
         system_instruction = (
             "You are a medical AI assistant specialized in cardiology and heart diseases. "
             "You should only answer questions related to heart diseases, including symptoms, diagnosis, treatments, medications, lifestyle changes, and advanced medical research. "
@@ -24,26 +21,41 @@ class ActionFallbackLLM(Action):
         )
 
         try:
-            # Call OpenRouter API using DeepSeek R1 (Free version)
-            completion = client.chat.completions.create(
-                model="deepseek/deepseek-chat:free",
-                messages=[
+            # OpenRouter API Request
+            url = "https://openrouter.ai/api/v1/chat/completions"
+            headers = {
+                "Authorization": f"Bearer {API_KEY}",
+                "Content-Type": "application/json",
+                "HTTP-Referer": "your_project_name",  # Replace with your project name
+            }
+            data = {
+                "model": "mistralai/mixtral-8x7b-instruct",  # Mixtral 8x7B-Instruct
+                "messages": [
                     {"role": "system", "content": system_instruction},
-                    {"role": "user", "content": user_message},
+                    {"role": "user", "content": user_message}
                 ],
-                extra_headers={
-                    "HTTP-Referer": "your_website_url",  # Optional, for rankings on openrouter.ai
-                    "X-Title": "your_project_name"  # Optional, for rankings on openrouter.ai
-                },
-                extra_body={},  # Can be used for additional OpenRouter settings
-            )
+                "temperature": 0.7
+            }
 
-            # Extract response text
-            llm_response = completion.choices[0].message.content if completion.choices else "I'm not sure, but I can try to learn!"
+            response = requests.post(url, headers=headers, json=data)
+
+            # Check if the API request was successful (status code 200)
+            if response.status_code != 200:
+                llm_response = f"API request failed with status code {response.status_code}: {response.text}"
+            else:
+                # Get the response text from API
+                response_json = response.json()
+
+                # Ensure the response contains valid data
+                llm_response = response_json.get("choices", [{}])[0].get("message", {}).get("content", "I'm not sure, but I can try to learn!")
+
+                # If no valid response, show more specific fallback
+                if llm_response == "I'm not sure, but I can try to learn!":
+                    llm_response = "Sorry, I couldn't process your request. Please try again."
 
         except Exception as e:
-            llm_response = "I'm sorry, but I couldn't retrieve an answer at the moment."
+            llm_response = f"An error occurred: {str(e)}"
 
-        # Send response back to user
+        # Send the response to the user
         dispatcher.utter_message(text=llm_response)
         return [UserUtteranceReverted()]
