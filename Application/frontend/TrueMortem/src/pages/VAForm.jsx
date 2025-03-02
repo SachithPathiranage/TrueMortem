@@ -101,155 +101,166 @@ const VAForm = () => {
   };
 
   return (
-    <div className="health-form-container">
-      <h2>Cause Of Death Prediction</h2>
-      {error && <div className="error-message">{error}</div>}
+    <div>
+      <div className="health-form-container">
+        <h2>Cause Of Death Prediction</h2>
+        {error && <div className="error-message">{error}</div>}
 
-      <form onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label htmlFor="age">Age:</label>
-          <input
-            type="number"
-            id="age"
-            name="age"
-            value={formData.age}
-            onChange={handleChange}
-            required
-          />
-        </div>
+        <form onSubmit={handleSubmit}>
+          <div className="form-group">
+            <label htmlFor="age">Age:</label>
+            <input
+              type="number"
+              id="age"
+              name="age"
+              value={formData.age}
+              onChange={handleChange}
+              required
+            />
+          </div>
 
-        {/* Standard yes/no questions */}
-        {[
-          { id: "had_diabetes", label: "Did deceased have diabetes?" },
-          {
-            id: "had_heart_disease",
-            label: "Did deceased have heart disease?",
-          },
-          { id: "had_hypertension", label: "Did deceased have hypertension?" },
-          { id: "had_obesity", label: "Did deceased have obesity?" },
-          { id: "had_stroke", label: "Did deceased have a stroke?" },
-          { id: "had_blue_lips", label: "Did deceased have blue lips?" },
-          {
-            id: "had_ankle_swelling",
-            label: "Did deceased have ankle swelling?",
-          },
-          { id: "had_puffiness", label: "Did deceased experience puffiness?" },
-          {
-            id: "had_diff_breathing",
-            label: "Did deceased have difficulty breathing?",
-          },
-          {
-            id: "fast_breathing",
-            label: "Did deceased experience fast breathing?",
-          },
-          { id: "had_wheezed", label: "Did deceased experience wheezing?" },
-          { id: "had_chest_pain", label: "Did deceased have chest pain?" },
-          {
-            id: "physical_action_painful",
-            label: "Was physical activity painful?",
-          },
-          {
-            id: "urine_stop",
-            label: "Did deceased have difficulty urinating?",
-          },
-          {
-            id: "had_lost_consciousness",
-            label: "Did deceased lose consciousness?",
-          },
-          { id: "had_confusion", label: "Did deceased experience confusion?" },
-        ].map((question) => (
-          <div className="form-group" key={question.id}>
-            <label htmlFor={question.id}>{question.label}</label>
+          {/* Standard yes/no questions */}
+          {[
+            { id: "had_diabetes", label: "Did deceased have diabetes?" },
+            {
+              id: "had_heart_disease",
+              label: "Did deceased have heart disease?",
+            },
+            {
+              id: "had_hypertension",
+              label: "Did deceased have hypertension?",
+            },
+            { id: "had_obesity", label: "Did deceased have obesity?" },
+            { id: "had_stroke", label: "Did deceased have a stroke?" },
+            { id: "had_blue_lips", label: "Did deceased have blue lips?" },
+            {
+              id: "had_ankle_swelling",
+              label: "Did deceased have ankle swelling?",
+            },
+            {
+              id: "had_puffiness",
+              label: "Did deceased experience puffiness?",
+            },
+            {
+              id: "had_diff_breathing",
+              label: "Did deceased have difficulty breathing?",
+            },
+            {
+              id: "fast_breathing",
+              label: "Did deceased experience fast breathing?",
+            },
+            { id: "had_wheezed", label: "Did deceased experience wheezing?" },
+            { id: "had_chest_pain", label: "Did deceased have chest pain?" },
+            {
+              id: "physical_action_painful",
+              label: "Was physical activity painful?",
+            },
+            {
+              id: "urine_stop",
+              label: "Did deceased have difficulty urinating?",
+            },
+            {
+              id: "had_lost_consciousness",
+              label: "Did deceased lose consciousness?",
+            },
+            {
+              id: "had_confusion",
+              label: "Did deceased experience confusion?",
+            },
+          ].map((question) => (
+            <div className="form-group" key={question.id}>
+              <label htmlFor={question.id}>{question.label}</label>
+              <select
+                id={question.id}
+                name={question.id}
+                value={formData[question.id]}
+                onChange={handleChange}
+                required
+              >
+                {standardOptions.map((option) => (
+                  <option key={option.value} value={option.value}>
+                    {option.label}
+                  </option>
+                ))}
+              </select>
+            </div>
+          ))}
+
+          {/* Pain Location */}
+          <div className="form-group">
+            <label htmlFor="pain_location">Where was the pain located?</label>
             <select
-              id={question.id}
-              name={question.id}
-              value={formData[question.id]}
+              id="pain_location"
+              name="pain_location"
+              value={formData.pain_location}
               onChange={handleChange}
               required
             >
-              {standardOptions.map((option) => (
+              {painLocationOptions.map((option) => (
                 <option key={option.value} value={option.value}>
                   {option.label}
                 </option>
               ))}
             </select>
           </div>
-        ))}
 
-        {/* Pain Location */}
-        <div className="form-group">
-          <label htmlFor="pain_location">Where was the pain located?</label>
-          <select
-            id="pain_location"
-            name="pain_location"
-            value={formData.pain_location}
-            onChange={handleChange}
-            required
-          >
-            {painLocationOptions.map((option) => (
-              <option key={option.value} value={option.value}>
-                {option.label}
-              </option>
-            ))}
-          </select>
-        </div>
+          {/* Breathing Pattern */}
+          <div className="form-group">
+            <label htmlFor="breathing_on_off">Breathing Pattern:</label>
+            <select
+              id="breathing_on_off"
+              name="breathing_on_off"
+              value={formData.breathing_on_off}
+              onChange={handleChange}
+              required
+            >
+              {breathingOptions.map((option) => (
+                <option key={option.value} value={option.value}>
+                  {option.label}
+                </option>
+              ))}
+            </select>
+          </div>
 
-        {/* Breathing Pattern */}
-        <div className="form-group">
-          <label htmlFor="breathing_on_off">Breathing Pattern:</label>
-          <select
-            id="breathing_on_off"
-            name="breathing_on_off"
-            value={formData.breathing_on_off}
-            onChange={handleChange}
-            required
-          >
-            {breathingOptions.map((option) => (
-              <option key={option.value} value={option.value}>
-                {option.label}
-              </option>
-            ))}
-          </select>
-        </div>
+          {/* Chest Pain Duration */}
+          <div className="form-group">
+            <label htmlFor="chest_pain_duration">Chest Pain Duration:</label>
+            <select
+              id="chest_pain_duration"
+              name="chest_pain_duration"
+              value={formData.chest_pain_duration}
+              onChange={handleChange}
+              required
+            >
+              {painDurationOptions.map((option) => (
+                <option key={option.value} value={option.value}>
+                  {option.label}
+                </option>
+              ))}
+            </select>
+          </div>
 
-        {/* Chest Pain Duration */}
-        <div className="form-group">
-          <label htmlFor="chest_pain_duration">Chest Pain Duration:</label>
-          <select
-            id="chest_pain_duration"
-            name="chest_pain_duration"
-            value={formData.chest_pain_duration}
-            onChange={handleChange}
-            required
-          >
-            {painDurationOptions.map((option) => (
-              <option key={option.value} value={option.value}>
-                {option.label}
-              </option>
-            ))}
-          </select>
-        </div>
+          <button type="submit" className="submit-button">
+            Submit
+          </button>
+        </form>
 
-        <button type="submit" className="submit-button">
-          Submit
-        </button>
-      </form>
-
-      {predictionResult && (
-        <div className="prediction-result">
-          <h3>Prediction Result</h3>
-          <p>
-            <strong>Risk Level:</strong> {predictionResult.risk_level}
-          </p>
-          <p>
-            <strong>Probability:</strong>{" "}
-            {(predictionResult.probability * 100).toFixed(2)}%
-          </p>
-          <p>
-            <strong>Message:</strong> {predictionResult.message}
-          </p>
-        </div>
-      )}
+        {predictionResult && (
+          <div className="prediction-result">
+            <h3>Prediction Result</h3>
+            <p>
+              <strong>Risk Level:</strong> {predictionResult.risk_level}
+            </p>
+            <p>
+              <strong>Probability:</strong>{" "}
+              {(predictionResult.probability * 100).toFixed(2)}%
+            </p>
+            <p>
+              <strong>Message:</strong> {predictionResult.message}
+            </p>
+          </div>
+        )}
+      </div>
       <Footer />
     </div>
   );
