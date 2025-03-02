@@ -1,10 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Predict from "./pages/Predict";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import Navbar from "./components/Navbar";
+import PMForm from "./pages/PMForm";
+import VAForm from "./pages/VAForm";
+import Chatbot from "./pages/Chatbot";
 
 const App = () => {
   return (
@@ -12,9 +14,11 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/predict" element={<Predict />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/pmForm" element={<PMForm />} />
+        <Route path="/vaForm" element={<VAForm />} />
+        <Route path="/chatbot" element={<Chatbot />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
@@ -22,6 +26,3 @@ const App = () => {
 };
 
 export default App;
-
-
-

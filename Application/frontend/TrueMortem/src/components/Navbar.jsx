@@ -22,16 +22,19 @@ const Navbar = () => {
 
       {/* Desktop Menu (Middle) */}
       <ul className="flex-1 flex justify-center grow-0 items-center gap-1">
-        <li className="flex items-center justify-center text-sm w-[70px] h-[35px] bg-[#efefef] rounded-[25px] text-[#737373] hover:text-[#494646] hover:bg-[#e2e0e0] transition align-middle">
+        <li className="shadow-lg flex items-center justify-center text-sm w-[70px] h-[35px] bg-[#efefef] rounded-[25px] text-[#737373] hover:text-[#494646] hover:bg-[#e2e0e0] transition align-middle">
           <Link to="/">Home</Link>
         </li>
-        <li className="flex items-center justify-center text-sm w-[70px] h-[35px] bg-[#efefef] rounded-[25px] text-[#737373] hover:text-[#494646] hover:bg-[#e2e0e0] transition align-middle">
-          <Link to="/predict">Predict</Link>
+        <li className="shadow-lg flex items-center justify-center text-sm w-[70px] h-[35px] bg-[#efefef] rounded-[25px] text-[#737373] hover:text-[#494646] hover:bg-[#e2e0e0] transition align-middle">
+          <Link to="/PMform">PMpred</Link>
         </li>
-        <li className="flex items-center justify-center text-sm w-[70px] h-[35px] bg-[#efefef] rounded-[25px] text-[#737373] hover:text-[#494646] hover:bg-[#e2e0e0] transition align-middle">
+        <li className="shadow-lg flex items-center justify-center text-sm w-[70px] h-[35px] bg-[#efefef] rounded-[25px] text-[#737373] hover:text-[#494646] hover:bg-[#e2e0e0] transition align-middle">
+          <Link to="/VAform">VApred</Link>
+        </li>
+        <li className="shadow-lg flex items-center justify-center text-sm w-[70px] h-[35px] bg-[#efefef] rounded-[25px] text-[#737373] hover:text-[#494646] hover:bg-[#e2e0e0] transition align-middle">
           <Link to="/about">About</Link>
         </li>
-        <li className="flex items-center justify-center text-sm w-[70px] h-[35px] bg-[#efefef] rounded-[25px] text-[#737373] hover:text-[#494646] hover:bg-[#e2e0e0] transition align-middle">
+        <li className="shadow-lg flex items-center justify-center text-sm w-[70px] h-[35px] bg-[#efefef] rounded-[25px] text-[#737373] hover:text-[#494646] hover:bg-[#e2e0e0] transition align-middle">
           <Link to="/contact">Contact</Link>
         </li>
       </ul>
@@ -39,7 +42,7 @@ const Navbar = () => {
       {/* Right Section (Chat, Bell, Profile) */}
       <ul className="flex-1 flex justify-center grow-0 items-center gap-1">
         <li className="shadow-lg flex items-center justify-center text-[20px] w-[55px] h-[50px] bg-[#efefef] rounded-4xl text-black hover:bg-[#e2e0e0] transition align-middle">
-          <Link to="/chat">
+          <Link to="/chatbot">
             <BsChatLeftText />
           </Link>
         </li>
