@@ -1,5 +1,9 @@
 import React, { useState } from "react";
+// import ReportCard from "./ReportCard"; // Import ReportCard component
 import './index.css';
+import { Bar, Pie } from "react-chartjs-2"; // Import visualization libraries
+import "chart.js/auto"; // Required for Chart.js to work
+import "./index.css";
 
 
 const FormComponent = () => {
@@ -30,6 +34,7 @@ const FormComponent = () => {
   });
 
   const [prediction, setPrediction] = useState(null);
+  const [featureContributions, setFeatureContributions] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
@@ -57,7 +62,10 @@ const FormComponent = () => {
   
       const data = await response.json();
       setPrediction(data.prediction);
+      setFeatureContributions(data.feature_contributions); // Feature importance from the model
       console.log("Response Data:", data); // Debugging output
+      console.log("Report Data:", data.prediction)
+      
       alert(`Prediction: ${data.prediction}`); // Display the prediction result
   
     } catch (error) {
@@ -251,9 +259,65 @@ const FormComponent = () => {
         </button>
       </form>
 
-      {/* Display Prediction */}
-      {prediction && <h3>Prediction: {prediction}</h3>}
-      {error && <p style={{ color: "red" }}>{error}</p>}
+      {error && <p className="text-red-500">{error}</p>}
+
+      {/* Dashboard Visualization */}
+      {prediction && featureContributions && (
+        <div className="mt-8 p-6 bg-gray-100 rounded-xl shadow-lg">
+          <h3 className="text-xl font-semibold text-center">Prediction Result</h3>
+          <p className="text-center text-lg font-bold mt-2">{prediction}</p>
+
+          {/* Feature Contribution Bar Chart */}
+          <div className="mt-6">
+            <h3 className="text-lg font-semibold">Feature Contributions</h3>
+            <Bar
+              data={{
+                labels: Object.keys(featureContributions),
+                datasets: [
+                  {
+                    label: "Feature Importance",
+                    data: Object.values(featureContributions),
+                    backgroundColor: "rgba(54, 162, 235, 0.6)",
+                    borderColor: "rgba(54, 162, 235, 1)",
+                    borderWidth: 1,
+                  },
+                ],
+              }}
+              options={{
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                  y: { beginAtZero: true },
+                },
+              }}
+            />
+          </div>
+
+          {/* Feature Contribution Pie Chart */}
+          <div className="mt-6">
+            <h3 className="text-lg font-semibold">Feature Contribution Distribution</h3>
+            <Pie
+              data={{
+                labels: Object.keys(featureContributions),
+                datasets: [
+                  {
+                    data: Object.values(featureContributions),
+                    backgroundColor: [
+                      "rgba(255, 99, 132, 0.6)",
+                      "rgba(54, 162, 235, 0.6)",
+                      "rgba(255, 206, 86, 0.6)",
+                      "rgba(75, 192, 192, 0.6)",
+                      "rgba(153, 102, 255, 0.6)",
+                      "rgba(255, 159, 64, 0.6)",
+                    ],
+                  },
+                ],
+              }}
+              options={{ responsive: true, maintainAspectRatio: false }}
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 };
