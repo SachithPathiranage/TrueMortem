@@ -1,9 +1,12 @@
 import React, { useState } from "react";
+import { BrowserRouter as Router, Routes, Route, Navigate, Link } from "react-router-dom";
 import axios from "axios";
-import "./App.css";
 import { FiSend } from "react-icons/fi";
+import SignIn from "./SignIn";
+import Register from "./Register";
+import "./App.css";
 
-const App = () => {
+const Chatbot = () => {
   const [messages, setMessages] = useState([
     { text: "Hello! How can I help you today?", sender: "bot" }
   ]);
@@ -12,21 +15,18 @@ const App = () => {
   const handleSend = async (messageText) => {
     if (messageText.trim() === "") return;
 
-    // Add user message to chat
     const newMessages = [...messages, { text: messageText, sender: "user" }];
     setMessages(newMessages);
     setInput("");
 
     try {
-      // Send user message to Rasa's REST API directly
       const response = await axios.post("http://localhost:5005/webhooks/rest/webhook", {
         sender: "user",
         message: messageText,
       });
 
-      // Check if Rasa sent a response
       if (response.data.length > 0) {
-        const botResponse = response.data[0].text; // Get response text
+        const botResponse = response.data[0].text;
         setMessages([...newMessages, { text: botResponse, sender: "bot" }]);
       } else {
         setMessages([...newMessages, { text: "No response from chatbot.", sender: "bot" }]);
@@ -46,7 +46,6 @@ const App = () => {
           <p>Choose a prompt below or write your own to start chatting.</p>
         </div>
 
-        {/* Fix button click handlers */}
         <div className="quick-replies">
           <button onClick={() => handleSend("What is heart disease?")}>What’s a heart disease?</button>
           <button onClick={() => handleSend("Tell me about hypertension.")}>Tell me about hypertension?</button>
@@ -74,6 +73,21 @@ const App = () => {
         </div>
       </div>
     </div>
+  );
+};
+
+const App = () => {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={isAuthenticated ? <Navigate to="/chat" /> : <SignIn setIsAuthenticated={setIsAuthenticated} />} />
+        <Route path="/signin" element={<SignIn setIsAuthenticated={setIsAuthenticated} />} />
+        <Route path="/register" element={<Register setIsAuthenticated={setIsAuthenticated} />} />
+        <Route path="/chat" element={isAuthenticated ? <Chatbot /> : <Navigate to="/signin" />} />
+      </Routes>
+    </Router>
   );
 };
 
