@@ -9,7 +9,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className="bg-gradient-to-b from-gray-900 to-gray-600 rounded-t-[7rem]">
+    <div className="bg-gradient-to-b from-gray-900 to-gray-600 rounded-t-[3rem] lg:rounded-t-[7rem]">
       <div className="max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-gray-300">
         <div>
           <a href="/" className="shrink-0 flex">
