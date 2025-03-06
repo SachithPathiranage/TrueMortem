@@ -50,7 +50,7 @@ const Chatbot = () => {
     <div className="app-background">
       <div className="chat-container">
         <div className="chat-header">
-          <img src="/chatbot.png" alt="Bot Logo" className="bot-logo" />
+          <img src="/trueMortem.png" alt="Bot Logo" className="bot-logo" />
           <h2>What can I help with?</h2>
           <p>Choose a prompt below or write your own to start chatting.</p>
         </div>
