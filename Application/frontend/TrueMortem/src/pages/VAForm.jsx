@@ -76,7 +76,7 @@ const VAForm = () => {
     setError(null);
 
     try {
-      const response = await fetch("http://localhost:8000/predict", {
+      const response = await fetch("http://localhost:8000/predict/verbal_autopsy", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
