@@ -52,7 +52,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="shadow-lg flex items-center justify-center text-[25px] w-[55px] h-[50px] bg-[#efefef] rounded-[25px] text-black hover:bg-[#e2e0e0] transition align-middle">
-          <Link to="/profile">
+          <Link to="/signin">
             <CgProfile />
           </Link>
         </li>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
 import "../Chatbot.css";
 import { FiSend } from "react-icons/fi";
@@ -8,6 +8,9 @@ const Chatbot = () => {
     { text: "Hello! How can I help you today?", sender: "bot" },
   ]);
   const [input, setInput] = useState("");
+  
+  // Create a reference for the chat box
+  const chatBoxRef = useRef(null);
 
   const handleSend = async (messageText) => {
     if (messageText.trim() === "") return;
@@ -46,6 +49,21 @@ const Chatbot = () => {
     }
   };
 
+  // Scroll to the bottom of the chat when messages change
+  useEffect(() => {
+    if (chatBoxRef.current) {
+      chatBoxRef.current.scrollTop = chatBoxRef.current.scrollHeight;
+    }
+  }, [messages]);
+
+  // Handle pressing Enter to send the message
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault(); // Prevent new line in input
+      handleSend(input); // Send the message
+    }
+  };
+
   return (
     <div className="app-background">
       <div className="chat-container">
@@ -68,7 +86,7 @@ const Chatbot = () => {
           </button>
         </div>
 
-        <div className="chat-box">
+        <div className="chat-box" ref={chatBoxRef}>
           {messages.map((msg, index) => (
             <div key={index} className={`message ${msg.sender}`}>
               {msg.text}
@@ -82,6 +100,7 @@ const Chatbot = () => {
             placeholder="Type here..."
             value={input}
             onChange={(e) => setInput(e.target.value)}
+            onKeyDown={handleKeyDown} // Add event handler for Enter key
           />
           <button onClick={() => handleSend(input)}>
             <FiSend size={20} />

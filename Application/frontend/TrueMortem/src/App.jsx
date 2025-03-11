@@ -7,6 +7,9 @@ import Navbar from "./components/Navbar";
 import PMForm from "./pages/PMForm";
 import VAForm from "./pages/VAForm";
 import Chatbot from "./pages/Chatbot";
+import Signin from "./pages/Signin"; 
+import Register from "./pages/Register";
+
 
 const App = () => {
   return (
@@ -19,6 +22,8 @@ const App = () => {
         <Route path="/pmForm" element={<PMForm />} />
         <Route path="/vaForm" element={<VAForm />} />
         <Route path="/chatbot" element={<Chatbot />} />
+        <Route path="/signin" element={<Signin />} />
+        <Route path="/register" element={<Register />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
