@@ -1,7 +1,7 @@
 import React from "react";
 import HeaderStat from "./HeaderStat";
 
-function BodyHeader() {
+function HomeHeader() {
   return (
     <div className="max-w-[1240px] mx-auto md:mb-35">
       <div className="grid md:grid-cols-[33%_67%] md:h-[calc(100vh-13vh)] md:gap-4 relative">
@@ -20,4 +20,4 @@ function BodyHeader() {
   );
 }
 
-export default BodyHeader;
+export default HomeHeader;
