@@ -11,7 +11,7 @@ const SignIn = ({ setIsAuthenticated }) => {
   const handleLogin = async (e) => {
     e.preventDefault();
 
-    const response = await fetch("http://127.0.0.1:8000/login", {
+    const response = await fetch("http://127.0.0.1:8000/auth/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, password }),
