@@ -5,7 +5,7 @@ function HomeHeader() {
   return (
     <div className="max-w-[1240px] mx-auto md:mb-35">
       <div className="grid md:grid-cols-[33%_67%] md:h-[calc(100vh-13vh)] md:gap-4 relative">
-        <div className="shadow-lg">
+        <div className="shadow-lg mx-auto">
           <img
             className="relative -z-10 w-[41.5%] md:w-[80%] mx-auto h-auto md:ml-15"
             src="/body.png"
