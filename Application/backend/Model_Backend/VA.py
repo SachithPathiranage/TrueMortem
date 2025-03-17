@@ -1,12 +1,8 @@
-from fastapi import HTTPException
-from pydantic import BaseModel
-import pickle
 import pandas as pd
 import numpy as np
-import os
-from sklearn.ensemble import VotingClassifier
+from pydantic import BaseModel
 
-# Define the input data model
+# Define the HealthData model for prediction input
 class HealthData(BaseModel):
     age: int  
     had_diabetes: str
@@ -29,31 +25,8 @@ class HealthData(BaseModel):
     had_lost_consciousness: str
     had_confusion: str
 
-# Load the model correctly
-def load_va_model():
-    model_path = os.path.join(os.path.dirname(__file__), "../Models/va_model.pkl")
+def predict_heart_disease(data: HealthData, expected_columns, va_model):
     try:
-        with open(model_path, 'rb') as file:
-            model = pickle.load(file)
-            if not isinstance(model, VotingClassifier):
-                raise ValueError("Loaded object is not a VotingClassifier")
-            expected_columns = model.estimators_[0].feature_names_in_  # Get from first base model
-    except Exception as e:
-        print(f"Error loading model: {str(e)}")
-        model = None
-        expected_columns = []
-    return model, expected_columns
-
-# Load the model globally
-va_model, expected_columns = load_va_model()
-
-def predict_heart_disease(data: HealthData, expected_columns, model):
-    try:
-        if model is None:
-            raise HTTPException(status_code=500, detail="Model not loaded properly")
-
-        print(f"Model Type: {type(model)}")  # Debugging
-        
         # Convert input to DataFrame
         input_data = pd.DataFrame([data.dict()])
         print("Received data:", input_data)
@@ -70,25 +43,32 @@ def predict_heart_disease(data: HealthData, expected_columns, model):
         input_encoded = input_encoded[expected_columns]
         input_encoded = input_encoded.astype(float)
 
-        # Get prediction and probability
-        prediction = model.predict(input_encoded)
-        probability = model.predict_proba(input_encoded)
-        prob_value = float(probability[0][1])
+        # Debug: Print input data for prediction
+        print("Input Data for Prediction:", input_encoded)
 
-        # Create straightforward message
-        if prediction[0] == 1:
-            conclusion = "Heart Disease was the likely cause of death"
-            explanation = f"The analysis indicates with {(prob_value * 100):.1f}% probability that heart disease was a significant factor in the death."
+        # Get prediction probabilities
+        if hasattr(va_model, "predict_proba"):
+            probabilities = va_model.predict_proba(input_encoded)[:, 1]  # Probability of class 1 (heart disease)
+            print("Prediction Probabilities:", probabilities)
+            threshold = 0.3  # Adjust this value
+            prediction = (probabilities >= threshold).astype(int)
         else:
-            conclusion = "Heart Disease was likely NOT the cause of death"
-            explanation = f"The analysis suggests that heart disease was likely not a significant factor in the death (probability: {(prob_value * 100):.1f}%)."
+            prediction = va_model.predict(input_encoded)
 
+        # Debug: Print raw prediction
+        print("Raw Prediction:", prediction)
+
+        # Create message based on prediction
+        if prediction[0] == 1:
+            message = "The analysis indicates that heart disease was a significant factor in the death."
+        else:
+            message = "The analysis suggests that heart disease was likely not a significant factor in the death."
+
+        # Return the response
         return {
-            "conclusion": conclusion,
-            "explanation": explanation,
-            "probability": prob_value
+            "message": message,
         }
 
     except Exception as e:
         print(f"Error in prediction: {str(e)}")
-        raise HTTPException(status_code=500, detail=f"Prediction error: {str(e)}")
+        raise Exception(f"Error in prediction: {str(e)}")
