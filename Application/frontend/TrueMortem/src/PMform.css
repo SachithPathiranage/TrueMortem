@@ -173,3 +173,28 @@ button {
 button:hover {
   background: linear-gradient(135deg, #4338ca, #1d4ed8);
 } */
+
+.chart-container {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;  /* Center the charts */
+  text-align: center;
+}
+
+.chart-wrapper {
+  position: relative;
+  width: 100%;
+  height: 400px;  /* Set fixed height to prevent infinite expansion */
+}
+
+@media (max-width: 768px) {
+  .chart-wrapper {
+    height: 300px;  /* Reduce height for smaller screens */
+  }
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 4px;
+}
