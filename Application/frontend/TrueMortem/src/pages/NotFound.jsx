@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 
 // Import your existing components
-import PMForm from "./PMForm";
-import VAForm from "./VAForm";
+import PMForm from "./PM2";
+import VAForm from "./VA2";
+import Footer from "../components/Footer";
 
 const NotFound = () => {
   // State to toggle between forms
@@ -14,24 +15,24 @@ const NotFound = () => {
   };
 
   return (
-    <div className="w-full max-w-lg mx-auto bg-white shadow-md rounded-lg p-6">
+    <div className="w-full mt-6 mx-auto">
       {/* Pop-up buttons to toggle between forms */}
-      <div className="flex justify-between mb-4">
+      <div className="flex justify-center mb-0 max-w-6xl mx-auto">
         <button
-          className={`px-4 py-2 font-semibold rounded-md transition-all duration-300 ${
+          className={`px-4 py-8 w-[50%] font-semibold rounded-tl-lg transition-all duration-300 ${
             activeForm === "postMortem"
-              ? "bg-blue-500 text-white"
-              : "bg-gray-200 text-gray-700"
+              ? "bg-[#0000ffb2] text-white"
+              : "bg-[#fafafae9] text-gray-700"
           }`}
           onClick={() => handleFormToggle("postMortem")}
         >
           Post Mortem
         </button>
         <button
-          className={`px-4 py-2 font-semibold rounded-md transition-all duration-300 ${
+          className={`px-4 py-8 w-[50%] font-semibold rounded-tr-lg transition-all duration-300 ${
             activeForm === "verbalAutopsy"
-              ? "bg-blue-500 text-white"
-              : "bg-gray-200 text-gray-700"
+              ? "bg-[#0000ffb2] text-white"
+              : "bg-[#fafafae9] text-gray-700"
           }`}
           onClick={() => handleFormToggle("verbalAutopsy")}
         >
@@ -39,16 +40,21 @@ const NotFound = () => {
         </button>
       </div>
 
-      {/* Forms Section */}
-      <div className="mt-4">
-        {activeForm === "postMortem" ? (
-          // Render the Post Mortem Form Component
-          <PMForm />
-        ) : (
-          // Render the Verbal Autopsy Form Component
-          <VAForm />
-        )}
+      {/* Main Form Container */}
+      <div className="max-w-6xl mx-auto bg-white shadow-md rounded-b-lg">
+        {/* Forms Section */}
+        <div className="">
+          {activeForm === "postMortem" ? (
+            // Render the Post Mortem Form Component
+            <PMForm />
+          ) : (
+            // Render the Verbal Autopsy Form Component
+            <VAForm />
+          )}
+        </div>
       </div>
+
+      <Footer />
     </div>
   );
 };

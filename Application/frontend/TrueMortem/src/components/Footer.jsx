@@ -64,70 +64,77 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Navigations Section */}
-        <div>
-          <h6 className="font-medium text-gray-400">Navigations</h6>
-          <ul>
-            <li className="py-2 text-sm">
-              <a href="/" className="hover:underline">
-                Home
-              </a>
-            </li>
-            <li className="py-2 text-sm">
-              <a href="/pmForm" className="hover:underline">
-                PMpred
-              </a>
-            </li>
-            <li className="py-2 text-sm">
-              <a href="/vaForm" className="hover:underline">
-                VApred
-              </a>
-            </li>
-            <li className="py-2 text-sm">
-              <a href="/about" className="hover:underline">
-                About
-              </a>
-            </li>
-            <li className="py-2 text-sm">
-              <a href="/contact" className="hover:underline">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div>
+        {/* Footer Sections */}
+        <div className="lg:col-span-3 flex justify-start gap-8 md:mx-[60%] mx-auto mr-10">
+          {/* Navigations Section */}
+          <div>
+            <h6 className="font-medium text-gray-400">Navigations</h6>
+            <ul>
+              <li className="py-2 text-sm">
+                <a href="/" className="hover:underline">
+                  Home
+                </a>
+              </li>
+              <li className="py-2 text-sm">
+                <a href="/pmForm" className="hover:underline">
+                  PMpred
+                </a>
+              </li>
+              <li className="py-2 text-sm">
+                <a href="/vaForm" className="hover:underline">
+                  VApred
+                </a>
+              </li>
+              <li className="py-2 text-sm">
+                <a href="/about" className="hover:underline">
+                  About
+                </a>
+              </li>
+              <li className="py-2 text-sm">
+                <a href="/contact" className="hover:underline">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
 
-        {/* Solutions Section */}
-        <div>
-          <h6 className="font-medium text-gray-400">Solutions</h6>
-          <ul>
-            <li className="py-2 text-sm">
-              <a href="/pmForm" className="hover:underline">
-                Postmortem Predictions
-              </a>
-            </li>
-            <li className="py-2 text-sm">
-              <a href="/vaForm" className="hover:underline">
-                Autopsy Predictions
-              </a>
-            </li>
-          </ul>
-        </div>
+          {/* Solutions Section */}
+          <div>
+            <h6 className="font-medium text-gray-400">Solutions</h6>
+            <ul>
+              <li className="py-2 text-sm">
+                <a href="/pmForm" className="hover:underline">
+                  Postmortem Predictions
+                </a>
+              </li>
+              <li className="py-2 text-sm">
+                <a href="/vaForm" className="hover:underline">
+                  Autopsy Predictions
+                </a>
+              </li>
+            </ul>
+          </div>
 
-        {/* Support Section */}
-        <div>
-          <h6 className="font-medium text-gray-400">Support</h6>
-          <ul>
-            <li className="py-2 text-sm">
-              <a href="#" onClick={handleFAQClick} className="hover:underline">
-                FAQ
-              </a>
-            </li>
-            <li className="py-2 text-sm">
-              <a href="/contact" className="hover:underline">
-                Contact
-              </a>
-            </li>
-          </ul>
+          {/* Support Section */}
+          <div>
+            <h6 className="font-medium text-gray-400">Support</h6>
+            <ul>
+              <li className="py-2 text-sm">
+                <a
+                  href="#"
+                  onClick={handleFAQClick}
+                  className="hover:underline"
+                >
+                  FAQ
+                </a>
+              </li>
+              <li className="py-2 text-sm">
+                <a href="/contact" className="hover:underline">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
