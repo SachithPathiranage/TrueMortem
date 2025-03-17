@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
 // Import your existing components
-import PMForm from "./PM2";
-import VAForm from "./VA2";
+import PMForm from "./PMForm";
+import VAForm from "./VAForm";
 import Footer from "../components/Footer";
 
-const NotFound = () => {
+const Predict = () => {
   // State to toggle between forms
   const [activeForm, setActiveForm] = useState("postMortem");
 
@@ -15,11 +15,11 @@ const NotFound = () => {
   };
 
   return (
-    <div className="w-full mt-6 mx-auto">
+    <div className="w-full mt-6 mx-auto ">
       {/* Pop-up buttons to toggle between forms */}
-      <div className="flex justify-center mb-0 max-w-6xl mx-auto">
+      <div className="flex justify-center mb-0 max-w-6xl mx-auto md:p-0 px-4">
         <button
-          className={`px-4 py-8 w-[50%] font-semibold rounded-tl-lg transition-all duration-300 ${
+          className={`px-4 py-8 w-[50%] font-semibold rounded-tl-2xl transition-all duration-300 ${
             activeForm === "postMortem"
               ? "bg-[#0000ffb2] text-white"
               : "bg-[#fafafae9] text-gray-700"
@@ -29,7 +29,7 @@ const NotFound = () => {
           Post Mortem
         </button>
         <button
-          className={`px-4 py-8 w-[50%] font-semibold rounded-tr-lg transition-all duration-300 ${
+          className={`px-4 py-8 w-[50%] font-semibold rounded-tr-2xl transition-all duration-300 ${
             activeForm === "verbalAutopsy"
               ? "bg-[#0000ffb2] text-white"
               : "bg-[#fafafae9] text-gray-700"
@@ -41,7 +41,7 @@ const NotFound = () => {
       </div>
 
       {/* Main Form Container */}
-      <div className="max-w-6xl mx-auto bg-white shadow-md rounded-b-lg">
+      <div className="max-w-6xl mx-auto mb-20 md:p-0 px-4">
         {/* Forms Section */}
         <div className="">
           {activeForm === "postMortem" ? (
@@ -59,4 +59,4 @@ const NotFound = () => {
   );
 };
 
-export default NotFound;
+export default Predict;

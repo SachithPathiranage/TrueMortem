@@ -2,14 +2,11 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import NotFound from "./pages/NotFound";
 import Navbar from "./components/Navbar";
-import PMForm from "./pages/PMForm";
-import VAForm from "./pages/VAForm";
+import Predict from "./pages/Predict";
 import Chatbot from "./pages/Chatbot";
-import Signin from "./pages/Signin"; 
+import Signin from "./pages/Signin";
 import Register from "./pages/Register";
-
 
 const App = () => {
   return (
@@ -19,12 +16,10 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/pmForm" element={<PMForm />} />
-        <Route path="/vaForm" element={<VAForm />} />
+        <Route path="/predict" element={<Predict />} />
         <Route path="/chatbot" element={<Chatbot />} />
         <Route path="/signin" element={<Signin />} />
         <Route path="/register" element={<Register />} />
-        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );

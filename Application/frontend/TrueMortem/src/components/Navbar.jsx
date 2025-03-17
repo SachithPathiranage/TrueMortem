@@ -28,8 +28,7 @@ const Navbar = () => {
       <ul className="hidden md:flex flex-1 justify-center items-center gap-1">
         {[
           { to: "/", label: "Home" },
-          { to: "/PMform", label: "PMpred" },
-          { to: "/VAform", label: "VApred" },
+          { to: "/predict", label: "Predict" },
           { to: "/about", label: "About" },
           { to: "/contact", label: "Contact" },
         ].map((item) => (
@@ -46,11 +45,6 @@ const Navbar = () => {
       <ul className="flex items-center gap-2">
         {[
           { to: "/chatbot", icon: <BsChatLeftText />, size: "text-[20px]" },
-          {
-            to: "/notifications",
-            icon: <IoMdNotificationsOutline />,
-            size: "text-[25px]",
-          },
           { to: "/signin", icon: <CgProfile />, size: "text-[25px]" },
         ].map((item, index) => (
           <li
@@ -89,8 +83,7 @@ const Navbar = () => {
         </a>
         {[
           { to: "/", label: "Home" },
-          { to: "/PMform", label: "PMpred" },
-          { to: "/VAform", label: "VApred" },
+          { to: "/predict", label: "Predict" },
           { to: "/about", label: "About" },
           { to: "/contact", label: "Contact" },
         ].map((item) => (
