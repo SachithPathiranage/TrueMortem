@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="flex justify-between items-center w-full bg-[#f6f6f6] h-24 max-w-[1240px] mx-auto px-4">
+    <header className="flex justify-between items-center w-full h-24 max-w-[1240px] mx-auto px-4">
       {/* Logo (Left) */}
       <a href="/" className="shrink-0 flex">
         <img

@@ -4,6 +4,7 @@ import { TfiEmail } from "react-icons/tfi";
 import Footer from "../components/Footer.jsx";
 import React from "react";
 import { useState } from "react";
+import AnimatedBackground from "../components/Animation";
 
 const Contact = () => {
   const [email, setEmail] = useState("");
@@ -30,6 +31,7 @@ const Contact = () => {
 
   return (
     <div>
+      <AnimatedBackground />
       <div className="grid grid-cols-1 md:grid-cols-[auto_1fr] gap-4 max-w-[1100px] mx-auto mt-7 mb-20">
         <div className="w-[33rem] mx-auto max-h-full">
           <div className="flex flex-col items-center gap-4">
@@ -75,7 +77,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="">
+        <div className="md:ml-10">
           <div className="max-w-lg mx-auto bg-white p-8 rounded-2xl shadow-xl">
             <h2 className="text-3xl font-semibold mb-6 text-center text-gray-800">
               Get in Touch
