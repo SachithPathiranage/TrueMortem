@@ -183,6 +183,14 @@ const VAForm = () => {
             </button>
           </div>
         </form>
+        {predictionResult && (
+          <div className="prediction-result">
+            <h3>Prediction Result</h3>
+            <p>
+              <strong>Message:</strong> {predictionResult.message}
+            </p>
+          </div>
+        )}
       </div>
     </div>
   );

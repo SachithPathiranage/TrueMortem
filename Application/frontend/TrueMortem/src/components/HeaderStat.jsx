@@ -43,19 +43,32 @@ function HeaderStat() {
 
   return (
     <div className="w-full h-full p-4">
-      <div className="grid md:grid-cols-2 gap-5 h-[50%]">
-        <div className="flex flex-col items-center p-4 rounded-lg shadow-lg bg-white">
-          <h1 className="text-lg font-semibold mb-4">Main Causes</h1>
-          <div className="w-[98%] h-[80%] bg-[#efefef] rounded-lg">
-            <Doughnut data={data} options={options} className="p-4" />
+      {/* Top Row - 50% Height */}
+      <div className="grid md:grid-cols-2 gap-5 h-1/2 shadow-lg">
+        <div className="flex flex-col items-center p-2 ml-6 rounded-lg shadow-lg bg-white h-full">
+          <h1 className="text-lg font-semibold mb-3">Main Causes</h1>
+          <div className="w-[95%] h-[80%] bg-[#efefef] rounded-lg flex items-center justify-center p-2">
+            <Doughnut
+              data={data}
+              options={options}
+              className="w-[85%] h-[85%] max-h-[75%] max-w-[75%]"
+            />
           </div>
         </div>
-        <div className="flex items-center justify-center rounded-lg shadow-lg bg-white">
-          <h1 className="text-lg font-bold">Our Focus</h1>
+        <div className="flex flex-col items-center p-2 mr-6 rounded-lg shadow-lg bg-white h-full">
+          <h1 className="text-lg font-semibold mb-3">Our Focus</h1>
+          <div className="w-[95%] h-[80%] bg-[#efefef] rounded-lg flex items-center justify-center p-2">
+            <img
+              className="h-[85%] w-[85%] max-h-[75%] max-w-[75%] object-contain"
+              src="/HomeHeart.png"
+              alt="heart"
+            />
+          </div>
         </div>
       </div>
-      {/* Second row */}
-      <div className="h-[48%] md:h-[46%] my-auto flex justify-center rounded-lg shadow-lg bg-white mt-6">
+
+      {/* Bottom Row - 50% Height */}
+      <div className="h-1/2 flex justify-center rounded-lg shadow-lg bg-white mt-4 p-3">
         <Performance />
       </div>
     </div>

@@ -70,14 +70,12 @@ function Performance() {
   };
 
   return (
-    <div className="w-full h-full p-4">
-      <div className="flex flex-col items-center p-4 rounded-lg shadow-lg bg-white">
-        <h1 className="text-lg font-semibold mb-4">
-          Model Performance Comparison
-        </h1>
-        <div className="w-[100%] h-40">
-          <Bar data={data} options={options} />
-        </div>
+    <div className="w-full h-full flex flex-col items-center p-8 rounded-lg shadow-lg bg-white">
+      <h1 className="text-lg font-semibold mb-4">
+        Model Performance Comparison
+      </h1>
+      <div className="w-[100%] h-40">
+        <Bar data={data} options={options} />
       </div>
     </div>
   );

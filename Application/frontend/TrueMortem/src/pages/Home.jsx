@@ -13,7 +13,7 @@ const Home = () => {
           <div className="flex flex-wrap justify-between items-center pl-4 md:pl-0">
             <div>
               <h1 className="text-2xl md:text-[3rem] pt-10 font-semibold">
-                Redefining Post Mortem Analysis,
+                Redefining Forensic Analysis,
               </h1>
               <h1 className="text-2xl md:text-[3rem] font-semibold">
                 One Insight at a Time

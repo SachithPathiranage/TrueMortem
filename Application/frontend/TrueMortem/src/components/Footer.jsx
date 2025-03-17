@@ -27,8 +27,8 @@ const Footer = () => {
             <span className="px-2.5 my-auto text-[1.8rem]">TrueMortem</span>
           </a>
           <p className="py-4">
-            TrueMortem: Harnessing AI to uncover heart disease related causes of
-            death with precision and insight.
+            Harnessing AI to uncover heart disease related causes of death with
+            precision and insight.
           </p>
           <div className="flex justify-between md:w-[75%] my-6">
             <a

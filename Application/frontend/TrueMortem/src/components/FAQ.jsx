@@ -12,10 +12,14 @@ function FAQ() {
       </p>
 
       {/* Grid Layout */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+      <div className="grid md:grid-cols-[40%_60%] gap-8 items-center w-full">
         {/* Left Side - Placeholder for Image */}
-        <div className="w-full h-[300px] md:h-[400px] bg-gray-300 rounded-2xl flex items-center justify-center">
-          <span className="text-gray-600">Robot Image Here</span>
+        <div className="w-full h-[300px] md:h-[400px] rounded-2xl flex items-center justify-center">
+          <img
+            className="w-full h-full object-cover rounded-[3rem] shadow-lg"
+            src="/operating.png"
+            alt=""
+          />
         </div>
 
         {/* Right Side - FAQ Section */}
