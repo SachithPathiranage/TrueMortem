@@ -74,6 +74,7 @@ const VAForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError(null);
+    setPredictionResult(null); // Reset prediction result
 
     try {
       const response = await fetch("http://localhost:8000/predict/verbal_autopsy", {
@@ -248,13 +249,6 @@ const VAForm = () => {
         {predictionResult && (
           <div className="prediction-result">
             <h3>Prediction Result</h3>
-            <p>
-              <strong>Risk Level:</strong> {predictionResult.risk_level}
-            </p>
-            <p>
-              <strong>Probability:</strong>{" "}
-              {(predictionResult.probability * 100).toFixed(2)}%
-            </p>
             <p>
               <strong>Message:</strong> {predictionResult.message}
             </p>
