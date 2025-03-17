@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
-import '../styles.css'
+import "../styles.css";
 
 const SignIn = ({ setIsAuthenticated }) => {
   const [email, setEmail] = useState("");
@@ -31,8 +31,8 @@ const SignIn = ({ setIsAuthenticated }) => {
     <div className="flex h-screen bg-white">
       {/* Left Side with Full-Sized Image */}
       <div className="w-1/2 min-h-screen">
-        <img 
-          src="/red_heart.png"            
+        <img
+          src="/red_heart.png"
           className="w-full h-full object-cover opacity-80 mix-blend-multiply transition duration-300 hover:opacity-100 slide-left"
           alt="Heart Logo"
         />
@@ -61,21 +61,26 @@ const SignIn = ({ setIsAuthenticated }) => {
               className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300"
             />
 
-            <button 
-              type="submit" 
+            <button
+              type="submit"
               className="w-full p-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300 shadow-md"
             >
               Sign in
             </button>
           </form>
 
-          {message && <p className="text-red-500 text-sm mt-2 text-center">{message}</p>}
+          {message && (
+            <p className="text-red-500 text-sm mt-2 text-center">{message}</p>
+          )}
 
           <div className="my-4 text-center text-gray-500">or</div>
 
           <p className="text-center text-sm text-gray-600 mt-4">
             Are you new?{" "}
-            <Link to="/register" className="text-green-600 font-semibold hover:underline">
+            <Link
+              to="/register"
+              className="text-green-600 font-semibold hover:underline"
+            >
               Create an Account
             </Link>
           </p>

@@ -46,8 +46,8 @@ function HeaderStat() {
       <div className="grid md:grid-cols-2 gap-5 h-[50%]">
         <div className="flex flex-col items-center p-4 rounded-lg shadow-lg bg-white">
           <h1 className="text-lg font-semibold mb-4">Main Causes</h1>
-          <div className="w-64 h-64">
-            <Doughnut data={data} options={options} />
+          <div className="w-[98%] h-[80%] bg-[#efefef] rounded-lg">
+            <Doughnut data={data} options={options} className="p-4" />
           </div>
         </div>
         <div className="flex items-center justify-center rounded-lg shadow-lg bg-white">
