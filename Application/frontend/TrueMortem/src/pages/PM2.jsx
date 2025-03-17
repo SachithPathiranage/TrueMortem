@@ -246,7 +246,7 @@ const FormComponent = () => {
         <div className="relative z-10 bg-opacity-80 rounded-lg shadow-lg ">
           <form onSubmit={handleSubmit} className="space-y-6 p-8 max-w-6xl">
             {/* Row 1: Three Columns */}
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2 gap-6">
               {/* Sex */}
               <div>
                 <label className="block font-semibold">Sex</label>
@@ -285,7 +285,7 @@ const FormComponent = () => {
 
             {/* Row 2: Two Columns */}
             {/* Age */}
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <label className="block font-semibold">Age</label>
                 <select
@@ -360,7 +360,7 @@ const FormComponent = () => {
 
             {/* Row 4: Three Columns */}
             {/* Heart-Size in configuration */}
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <label className="block font-semibold">
                   Heart-Size in configuration
@@ -400,7 +400,7 @@ const FormComponent = () => {
             </div>
 
             {/* Row 5: Three Columns */}
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2 gap-6">
               {/* Normal Myocardium */}
               <div>
                 <label className="block font-semibold">Normal Myocardium</label>
@@ -441,7 +441,7 @@ const FormComponent = () => {
             </div>
 
             {/* Row 6: Three Columns */}
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2 gap-6">
               <div>
                 {/*Heart-Myocardial fibrosis present in*/}
                 <label className="block font-semibold">
@@ -494,7 +494,7 @@ const FormComponent = () => {
             </div>
 
             {/* Row 7: Three Columns */}
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2 gap-6">
               <div>
                 {/*Heart-Valves normal*/}
                 <label className="block font-semibold">
@@ -538,7 +538,7 @@ const FormComponent = () => {
             </div>
 
             {/* Row 8: two Columns */}
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2 gap-6">
               <div>
                 {/*Blood Vessels-Free of Stenosis*/}
                 <label className="block font-semibold">
@@ -677,7 +677,7 @@ const FormComponent = () => {
             </div>
 
             {/* Row 8: three Columns */}
-            <div className="grid grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-3 gap-6">
               <div>
                 {/*Aorta condition */}
                 <label className="block font-semibold">Aorta condition</label>

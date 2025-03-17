@@ -117,7 +117,7 @@ const VA2 = () => {
         )}
 
         <form onSubmit={handleSubmit} className="p-8 bg-opacity-80 max-w-6xl">
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-6">
             <div>
               <label htmlFor="age" className="block text-gray-700 font-medium">
                 Age
