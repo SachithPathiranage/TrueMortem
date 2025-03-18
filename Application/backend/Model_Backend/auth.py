@@ -18,6 +18,7 @@ if not MONGO_URI:
 client = MongoClient(MONGO_URI)
 db = client["auth_db"]
 users_collection = db["users"]
+inquiries_collection = db["inquiries"]
 
 # Create a FastAPI router
 router = APIRouter()
@@ -32,6 +33,12 @@ class User(BaseModel):
 class LoginUser(BaseModel):
     email: str
     password: str
+
+class Inquiry(BaseModel):
+    name: str
+    email: str
+    phone: str
+    message: str
 
 # Register API
 @router.post("/register")
@@ -61,3 +68,19 @@ async def login(user: LoginUser):
         raise HTTPException(status_code=400, detail="Incorrect password")
 
     return {"message": "Login successful"}
+
+
+
+#  API to Submit Inquiries
+@router.post("/inquiry")
+async def submit_inquiry(inquiry: Inquiry):
+    inquiry_data = {
+        "name": inquiry.name,
+        "email": inquiry.email,
+        "phone": inquiry.phone,
+        "message": inquiry.message,
+    }
+
+    inquiries_collection.insert_one(inquiry_data)  
+
+    return {"message": "Inquiry submitted successfully!"}
