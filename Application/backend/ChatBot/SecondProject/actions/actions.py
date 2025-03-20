@@ -1,9 +1,19 @@
 import requests
+import os
+from dotenv import load_dotenv  # ✅ Import dotenv
 from rasa_sdk import Action
 from rasa_sdk.events import UserUtteranceReverted
 
-# OpenRouter API Key
-API_KEY = "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"  # Replace with your actual key
+# ✅ Load environment variables
+env_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..", ".env"))
+load_dotenv(dotenv_path=env_path)
+print(env_path)
+
+# ✅ Get API Key from .env file
+API_KEY = os.getenv("OPENROUTER_API_KEY")
+
+if not API_KEY:
+    raise ValueError("❌ OPENROUTER_API_KEY is not set in .env file! Please check.")
 
 class ActionFallbackLLM(Action):
     def name(self):
