@@ -76,13 +76,8 @@ const Footer = () => {
                 </a>
               </li>
               <li className="py-2 text-sm">
-                <a href="/pmForm" className="hover:underline">
-                  PMpred
-                </a>
-              </li>
-              <li className="py-2 text-sm">
-                <a href="/vaForm" className="hover:underline">
-                  VApred
+                <a href="/predict" className="hover:underline">
+                  Predict
                 </a>
               </li>
               <li className="py-2 text-sm">
@@ -103,12 +98,12 @@ const Footer = () => {
             <h6 className="font-medium text-gray-400">Solutions</h6>
             <ul>
               <li className="py-2 text-sm">
-                <a href="/pmForm" className="hover:underline">
+                <a href="/predict" className="hover:underline">
                   Postmortem Predictions
                 </a>
               </li>
               <li className="py-2 text-sm">
-                <a href="/vaForm" className="hover:underline">
+                <a href="/predict" className="hover:underline">
                   Autopsy Predictions
                 </a>
               </li>

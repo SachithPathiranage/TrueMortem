@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Footer from "../components/Footer";
 import AnimatedBackground from "../components/Animation";
 import { Bar, Pie } from "react-chartjs-2"; // Import visualization libraries
 import "chart.js/auto"; // Required for Chart.js to work

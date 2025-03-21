@@ -173,7 +173,80 @@ const VAForm = () => {
                 </select>
               </div>
             ))}
+
+            {/* Pain Location */}
+            <div>
+              <label
+                htmlFor="pain_location"
+                className="block text-gray-700 font-medium"
+              >
+                Where was the chest pain located
+              </label>
+              <select
+                id="pain_location"
+                name="pain_location"
+                value={formData.pain_location}
+                onChange={handleChange}
+                required
+                className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-300 transform hover:scale-102 mt-2"
+              >
+                {painLocationOptions.map((option) => (
+                  <option key={option.value} value={option.value}>
+                    {option.label}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            {/* Breathing Pattern */}
+            <div>
+              <label
+                htmlFor="breathing_on_off"
+                className="block text-gray-700 font-medium"
+              >
+                Breathing Pattern:
+              </label>
+              <select
+                id="breathing_on_off"
+                name="breathing_on_off"
+                value={formData.breathing_on_off}
+                onChange={handleChange}
+                required
+                className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-300 transform hover:scale-102 mt-2"
+              >
+                {breathingOptions.map((option) => (
+                  <option key={option.value} value={option.value}>
+                    {option.label}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            {/* Chest Pain Duration */}
+            <div>
+              <label
+                htmlFor="chest_pain_duration"
+                className="block text-gray-700 font-medium"
+              >
+                Chest Pain Duration:
+              </label>
+              <select
+                id="chest_pain_duration"
+                name="chest_pain_duration"
+                value={formData.chest_pain_duration}
+                onChange={handleChange}
+                required
+                className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-300 transform hover:scale-102 mt-2"
+              >
+                {painDurationOptions.map((option) => (
+                  <option key={option.value} value={option.value}>
+                    {option.label}
+                  </option>
+                ))}
+              </select>
+            </div>
           </div>
+
           <div className="flex justify-center mt-6">
             <button
               type="submit"
@@ -183,6 +256,7 @@ const VAForm = () => {
             </button>
           </div>
         </form>
+
         {predictionResult && (
           <div className="prediction-result">
             <h3>Prediction Result</h3>
