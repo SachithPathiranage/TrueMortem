@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
+import "../styles.css";
 
 const SignIn = ({ setIsAuthenticated }) => {
   const [email, setEmail] = useState("");
@@ -40,10 +41,10 @@ const SignIn = ({ setIsAuthenticated }) => {
   return (
     <div className="flex h-screen bg-white">
       <div className="w-1/2 min-h-screen">
-        <img src="/red_heart.png" className="w-full h-full object-cover opacity-80 mix-blend-multiply transition duration-300 hover:opacity-100" alt="Heart Logo" />
+        <img src="/red_heart.png" className="w-full h-full object-cover opacity-80 mix-blend-multiply transition duration-300 hover:opacity-100 slide-left" alt="Heart Logo"  />
       </div>
 
-      <div className="w-1/2 flex justify-center items-center bg-white shadow-xl rounded-l-lg">
+      <div className="w-1/2 flex justify-center items-center bg-white shadow-xl rounded-l-lg slide-right">
         <div className="w-96 p-8">
           <h2 className="text-3xl font-extrabold text-gray-700 mb-6 text-center">Sign In</h2>
 

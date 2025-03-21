@@ -585,14 +585,11 @@ responses:
 
   utter_Systolic_diastolic_dysfunction:
     - text:  |
-        Systolic dysfunction and diastolic dysfunction are both causes of heart failure, but they affect the heart's ability to pump blood differently:
-        
+        Systolic dysfunction and diastolic dysfunction are both causes of heart failure, but they affect the heart's ability to pump blood differently:        
         Systolic Dysfunction: Involves the inability of the heart muscle to contract effectively, leading to reduced ejection fraction (EF) and impaired pumping of blood. 
-        This results from damage to the myocardium, often due to ischemia, infarction, or dilated cardiomyopathy. The hallmark is a decreased left ventricular ejection fraction (LVEF).
-        
+        This results from damage to the myocardium, often due to ischemia, infarction, or dilated cardiomyopathy. The hallmark is a decreased left ventricular ejection fraction (LVEF).        
         Diastolic Dysfunction: Occurs when the heart muscle becomes stiff and cannot relax properly during diastole, leading to inadequate filling of the ventricles.
-        It typically results from conditions such as hypertension or fibrosis, leading to increased filling pressures, but the ejection fraction may remain normal or slightly reduced.
-        
+        It typically results from conditions such as hypertension or fibrosis, leading to increased filling pressures, but the ejection fraction may remain normal or slightly reduced.        
         While systolic dysfunction leads to reduced cardiac output, diastolic dysfunction leads to increased ventricular pressures, both contributing to heart failure symptoms. The treatment approaches differ based on the underlying mechanism, with systolic dysfunction often treated with medications that improve contractility (e.g., ACE inhibitors, beta-blockers), while diastolic dysfunction focuses on managing blood pressure and fluid overload.
 
 
@@ -614,7 +611,6 @@ responses:
   utter_polygenic_risk:
     - text:  |
         Polygenic risk scores (PRS) improve the prediction of cardiovascular events in diverse populations by incorporating genetic variations associated with disease risk. PRS enables:
-
         1)Personalized Risk Assessment: By analyzing multiple genetic markers, PRS provides a more precise estimation of an individual’s risk beyond traditional factors like age or lifestyle.
         2)Early Intervention: High-risk individuals identified by PRS can benefit from targeted prevention strategies, such as medication or lifestyle changes.
         3)Inclusion of Genetic Diversity: Incorporating diverse population data improves PRS accuracy and applicability across ethnic groups, addressing historical biases in genomic studies.
@@ -624,7 +620,6 @@ responses:
   utter_CRISPR:
     - text:  |
         CRISPR-Cas9 technology offers the potential to treat genetic forms of hypertrophic cardiomyopathy (HCM) by directly targeting and correcting the specific mutations in genes such as MYH7 or MYBPC3. Key aspects include:
-
         1)Precise Gene Editing: CRISPR-Cas9 can precisely edit faulty DNA sequences responsible for HCM, restoring normal protein function.
         2)Targeted Therapy: It allows for personalized treatment tailored to the genetic mutation of the individual patient.
         3Long-Term Solution: By permanently correcting the genetic defect, CRISPR-Cas9 may offer a lasting cure instead of symptom management.
@@ -634,7 +629,6 @@ responses:
   utter_familial_hypercholesterolemia:
     - text:  |
         Next-generation sequencing (NGS) plays a pivotal role in identifying familial hypercholesterolemia (FH) by enabling the comprehensive analysis of genes associated with the condition, such as LDLR, APOB, and PCSK9. Key contributions include:
-
         1)Accurate Mutation Detection: NGS identifies pathogenic genetic mutations responsible for FH, even in complex cases or rare variants.
         2)High Throughput: It allows for the simultaneous analysis of multiple genes, enhancing diagnostic efficiency.
         3)Early Diagnosis: NGS supports the early detection of FH, enabling timely interventions to reduce cardiovascular risk.
@@ -645,7 +639,6 @@ responses:
   utter_antiplatelet_therapy:
     - text:  |
         Dual antiplatelet therapy (DAPT), typically involving aspirin and clopidogrel, plays a significant role in the secondary prevention of ischemic stroke, particularly in the acute and subacute phases. Its key roles include:
-
         1)Reduced Risk of Recurrent Stroke: DAPT provides enhanced inhibition of platelet aggregation compared to monotherapy, lowering the likelihood of subsequent thrombotic events.
         2)Synergistic Action: Combining two antiplatelet agents targets different pathways in platelet activation, offering comprehensive protection against thrombus formation.
         3)Acute Management: Short-term use of DAPT (typically 21–90 days) following a minor stroke or high-risk transient ischemic attack (TIA) has shown efficacy in reducing recurrent strokes without significantly increasing bleeding risks.
@@ -656,7 +649,6 @@ responses:
   utter_mitochondrial_dysfunction:
     - text:  |
         Mitochondrial dysfunction plays a critical role in the progression of type 2 diabetes by affecting energy production and metabolic processes:
-
         1)Impaired ATP Production: Mitochondria are responsible for ATP generation. Dysfunction reduces energy availability, disrupting insulin secretion and glucose uptake.
         2)Increased Reactive Oxygen Species (ROS): Mitochondrial dysfunction leads to higher ROS production, causing oxidative stress and damaging insulin-signaling pathways.
         3)Insulin Resistance: Dysfunctional mitochondria contribute to insulin resistance by impairing glucose and lipid metabolism.
@@ -667,7 +659,6 @@ responses:
   utter_ETCO2_level_assist:
     - text:  |
         End-tidal CO₂ (ETCO₂) monitoring is a valuable tool during cardiac arrest resuscitation, providing real-time feedback on the effectiveness of chest compressions and overall resuscitative efforts.
-
         1)Indicator of Compression Quality: ETCO₂ levels reflect cardiac output generated by chest compressions, with higher values indicating effective CPR.
         2)Early Predictor of Return of Spontaneous Circulation (ROSC): A sudden increase in ETCO₂ levels often suggests ROSC.
         3)Prognostic Value: Persistently low ETCO₂ levels (<10 mmHg) after prolonged resuscitation may indicate poor chances of survival.
@@ -678,7 +669,6 @@ responses:
   utter_EGDT_in_septic:
     - text:  |
         Early goal-directed therapy (EGDT) significantly improves outcomes in the management of septic shock by emphasizing timely interventions aimed at restoring tissue perfusion and preventing organ dysfunction. Key impacts include:
-
         1)Reduction in Mortality: EGDT reduces in-hospital and 28-day mortality by promptly addressing sepsis-related hypoperfusion.
         2)Hemodynamic Stabilization: Early use of fluids, vasopressors, and inotropes optimizes cardiac output and oxygen delivery.
         3)Organ Protection: By normalizing lactate levels, central venous oxygen saturation, and urine output, EGDT helps prevent organ failure.
@@ -691,7 +681,6 @@ responses:
   utter_role_ECMO:
     - text:  |
         Extracorporeal membrane oxygenation (ECMO) plays a critical role in managing cardiogenic shock by providing mechanical circulatory and respiratory support when conventional treatments fail. Key aspects include:
-
         1)Hemodynamic Support: ECMO temporarily takes over the heart's pumping function, ensuring adequate blood flow to vital organs.
         2)Oxygenation and CO₂ Removal: ECMO provides respiratory support by oxygenating blood and removing carbon dioxide, especially in cases of concurrent respiratory failure.
         3)Bridge to Recovery or Intervention: It acts as a bridge to recovery, heart transplantation, or long-term mechanical circulatory support like a ventricular assist device (VAD).
@@ -704,7 +693,6 @@ responses:
   utter_care_testing_improve_diagnosis:
     - text:  |
         Point-of-care cardiac biomarkers, such as troponins, play a critical role in the rapid diagnosis of acute coronary syndrome (ACS) in emergency settings by providing quick and reliable results at the bedside. Key benefits include:
-
         1)Early Detection: Rapid testing of biomarkers like troponin I and T allows for early identification of myocardial injury, facilitating immediate intervention.
         2)Timely Decision-Making: Results are available within minutes, supporting faster triage and treatment decisions in critical cases.
         3)Reduced Turnaround Time: Unlike laboratory tests, point-of-care devices minimize delays, ensuring prompt diagnosis.
@@ -716,7 +704,6 @@ responses:
   utter_adipose_tissue_function:
     - text:  |
         Adipose tissue dysfunction plays a pivotal role in systemic inflammation and the development of metabolic syndrome by disrupting normal metabolic and endocrine functions. Key mechanisms include:
-
         1)Adipokine Imbalance: Dysfunctional adipose tissue reduces the secretion of anti-inflammatory adipokines like adiponectin and increases the release of pro-inflammatory cytokines such as tumor necrosis factor-alpha (TNF-α) and interleukin-6 (IL-6), creating a state of chronic low-grade inflammation.
         2)Immune Cell Infiltration: Enlarged or stressed adipocytes recruit immune cells, particularly macrophages, into adipose tissue. These macrophages adopt a pro-inflammatory phenotype, further amplifying systemic inflammation.
         3)Lipolysis and Ectopic Fat Deposition: Dysfunctional adipose tissue exhibits increased lipolysis, releasing excess free fatty acids (FFAs) into the circulation. Elevated FFAs contribute to insulin resistance and ectopic fat accumulation in organs like the liver and muscles.
@@ -727,24 +714,17 @@ responses:
   utter_impact_of_AGEs:
     - text:  |
         Advanced glycation end products (AGEs) have a significant negative impact on vascular health and contribute to the progression of metabolic disorders, particularly in conditions like diabetes. The effects are mediated through several mechanisms:
-
-        1)Oxidative Stress and Inflammation: AGEs promote the generation of reactive oxygen species (ROS) and activate pro-inflammatory pathways. This leads to endothelial dysfunction, a key factor in vascular damage.
-        
-        2)Altered Protein Function: Glycation modifies proteins in the extracellular matrix, impairing their structure and function, which weakens vascular integrity and accelerates atherosclerosis.
-        
-        3)Interaction with RAGE (Receptor for AGEs): Binding of AGEs to RAGE triggers signaling cascades that exacerbate inflammation, oxidative stress, and cellular damage, further harming vascular tissues.
-        
-        4)Vascular Stiffness: AGEs cross-link collagen and elastin in the vascular walls, reducing their elasticity and increasing arterial stiffness, a risk factor for hypertension and cardiovascular events.
-        
-        5)Insulin Resistance and Metabolic Dysfunction: AGEs impair insulin signaling and promote chronic low-grade inflammation, contributing to insulin resistance and the progression of metabolic disorders like type 2 diabetes.
-        
+        1)Oxidative Stress and Inflammation: AGEs promote the generation of reactive oxygen species (ROS) and activate pro-inflammatory pathways. This leads to endothelial dysfunction, a key factor in vascular damage.       
+        2)Altered Protein Function: Glycation modifies proteins in the extracellular matrix, impairing their structure and function, which weakens vascular integrity and accelerates atherosclerosis.        
+        3)Interaction with RAGE (Receptor for AGEs): Binding of AGEs to RAGE triggers signaling cascades that exacerbate inflammation, oxidative stress, and cellular damage, further harming vascular tissues.        
+        4)Vascular Stiffness: AGEs cross-link collagen and elastin in the vascular walls, reducing their elasticity and increasing arterial stiffness, a risk factor for hypertension and cardiovascular events.        
+        5)Insulin Resistance and Metabolic Dysfunction: AGEs impair insulin signaling and promote chronic low-grade inflammation, contributing to insulin resistance and the progression of metabolic disorders like type 2 diabetes.        
         The accumulation of AGEs is more pronounced in hyperglycemic states and with aging. Strategies to mitigate their effects include maintaining optimal blood glucose levels, adopting a diet low in AGE-rich processed foods, and exploring pharmacological agents that inhibit AGE formation or RAGE activation.
 
 
   utter_incretin_based_therapies:
     - text:  |
         Incretin-based therapies, such as GLP-1 receptor agonists and DPP-4 inhibitors, improve cardiovascular outcomes in patients with type 2 diabetes through multiple mechanisms:
-
         1)Reduction in Atherosclerotic Risk: GLP-1 receptor agonists have been shown to reduce atherosclerotic cardiovascular events, such as myocardial infarction and stroke, in patients with established cardiovascular disease or high cardiovascular risk.
         2)Improved Glycemic Control: By enhancing glucose-dependent insulin secretion and suppressing glucagon release, these therapies help maintain optimal blood glucose levels, which indirectly reduce cardiovascular complications.
         3)Weight Loss: GLP-1 receptor agonists promote satiety and reduce caloric intake, leading to weight loss. This improvement in body weight reduces cardiovascular strain.
@@ -766,13 +746,11 @@ responses:
   utter_cryptogenic_strokes:
     - text:  |
         Recurrent strokes in patients with cryptogenic stroke are influenced by various risk factors despite the absence of a clearly identifiable cause. These include:
-
         Atrial Fibrillation (AF): Silent or paroxysmal AF, often undiagnosed during initial evaluations, can increase the risk of embolic events. Prolonged cardiac monitoring is essential to detect occult AF.
         Patent Foramen Ovale (PFO): Cryptogenic strokes associated with a PFO, particularly in younger patients, increase the risk of paradoxical embolism and recurrent events.
         Prothrombotic Conditions: Hypercoagulable states, such as antiphospholipid syndrome or inherited thrombophilias, can predispose patients to recurrent strokes.
         Vascular Risk Factors: Hypertension, diabetes, dyslipidemia, smoking, and obesity contribute to vascular dysfunction and increase stroke risk.
-        Nonstenotic Atherosclerosis: Plaque in large arteries that is insufficient to cause significant stenosis may still lead to embolization and recurrence.
-       
+        Nonstenotic Atherosclerosis: Plaque in large arteries that is insufficient to cause significant stenosis may still lead to embolization and recurrence.       
         Management Considerations:
         Prolonged Monitoring: Implantable loop recorders or extended Holter monitoring can help detect occult AF.
         PFO Closure: For select patients with a cryptogenic stroke and high-risk PFO, closure may reduce the risk of recurrence.
@@ -785,19 +763,14 @@ responses:
   utter_neuroimaging_differentiate:
     - text:  |
         Neuroimaging is crucial for accurately differentiating between ischemic and hemorrhagic strokes, as the treatments for these conditions differ significantly.
-
-        CT Scan (Computed Tomography):
-        
+        CT Scan (Computed Tomography):        
         Primary Utility: CT is widely available and provides rapid imaging, making it the first-line tool in emergency settings.
         Hemorrhagic Stroke: CT is highly sensitive for detecting acute hemorrhage, visualizing blood as hyperdense (bright) in the parenchyma, ventricles, or subarachnoid space.
-        Ischemic Stroke: Early ischemic changes may be subtle, with signs such as loss of gray-white differentiation or sulcal effacement becoming apparent over time. CT perfusion imaging can help identify ischemic penumbra and infarct core.
-        
-        MRI (Magnetic Resonance Imaging):
-        
+        Ischemic Stroke: Early ischemic changes may be subtle, with signs such as loss of gray-white differentiation or sulcal effacement becoming apparent over time. CT perfusion imaging can help identify ischemic penumbra and infarct core.        
+        MRI (Magnetic Resonance Imaging):        
         Primary Utility: MRI provides superior soft tissue contrast and can detect ischemic strokes earlier than CT.
         Ischemic Stroke: Diffusion-weighted imaging (DWI) is highly sensitive for identifying acute ischemia within minutes of onset.
-        Hemorrhagic Stroke: MRI, particularly susceptibility-weighted imaging (SWI), is excellent at detecting small or chronic hemorrhages but may not be as rapid as CT in acute settings.
-        
+        Hemorrhagic Stroke: MRI, particularly susceptibility-weighted imaging (SWI), is excellent at detecting small or chronic hemorrhages but may not be as rapid as CT in acute settings.        
         Key Differences:
         CT is faster and better for detecting acute hemorrhages, while MRI is more sensitive for identifying early ischemic changes and small strokes.
         MRI is preferred for stroke workups when time allows and for evaluating posterior circulation strokes or subtle lesions.
@@ -822,7 +795,6 @@ responses:
   utter_SGLT2_in_CD:
     - text:  |
         SGLT2 inhibitors play a significant role in reducing cardiovascular risk in patients with heart failure and diabetes through multiple mechanisms:
-
         1)Reduction in Cardiac Preload and Afterload: By promoting natriuresis (sodium excretion) and osmotic diuresis, SGLT2 inhibitors reduce blood volume, leading to decreased cardiac preload and afterload, improving heart failure symptoms.
         2)Improved Myocardial Efficiency: They enhance myocardial metabolism by shifting the energy substrate utilization from glucose to ketones, which are more energy-efficient for the failing heart.
         3)Reduction in Inflammation and Oxidative Stress: SGLT2 inhibitors have anti-inflammatory and antioxidant effects, which protect the cardiovascular system from damage.
@@ -839,7 +811,6 @@ responses:
   utter_therapies_for_PAH:
     - text:  |
         Emerging therapies for pulmonary arterial hypertension (PAH) focus on improving outcomes by targeting novel pathways and enhancing existing treatments. Key advancements include:
-
         1)Soluble Guanylate Cyclase (sGC) Stimulators: Drugs like riociguat improve the nitric oxide pathway, enhancing vasodilation and reducing pulmonary vascular resistance.
         2)Prostacyclin Receptor Agonists: Newer agents such as selexipag act on the prostacyclin pathway to improve vascular relaxation and inhibit smooth muscle proliferation.
         3)Endothelin Receptor Antagonists (ERAs): Enhanced ERAs aim to improve pulmonary arterial pressure control while minimizing side effects.
@@ -858,7 +829,6 @@ responses:
   utter_endothelial_dysfunction_and_vascular_disease:
     - text:  |
         Endothelial dysfunction is a critical factor in the progression of atherosclerosis and peripheral vascular disease (PVD). The endothelium plays a vital role in maintaining vascular homeostasis by regulating vascular tone, platelet activity, and inflammation. When endothelial function is impaired, several pathological processes are initiated:
-
         1)Reduced Nitric Oxide (NO) Availability: NO is crucial for vasodilation and inhibiting platelet aggregation. Endothelial dysfunction reduces NO production, leading to increased vasoconstriction and thrombotic risk.
         2)Increased Inflammation: Dysfunctional endothelium produces pro-inflammatory cytokines, promoting the recruitment of monocytes and their transformation into foam cells, a key step in atherogenesis.
         3)Oxidative Stress: Endothelial cells generate reactive oxygen species (ROS), exacerbating lipid oxidation and accelerating plaque formation.
@@ -881,7 +851,6 @@ responses:
   utter_troponin_I_and_troponin_T_in_MD :
     - text: |
         Troponin I and troponin T are highly sensitive and specific biomarkers for diagnosing myocardial infarction (MI), but there are slight differences in their diagnostic performance and clinical applications:
-
         1)Sensitivity: Both troponin I and T are extremely sensitive markers of myocardial injury. However, troponin T may have slightly higher sensitivity in detecting minor myocardial injuries due to its longer half-life in circulation.
         2)Specificity: Troponin I is often considered slightly more specific for cardiac injury since troponin T may be elevated in certain non-cardiac conditions like chronic kidney disease or skeletal muscle disorders.
         3)Clinical Use: The choice between troponin I and T often depends on institutional preferences, availability, and assay standardization, as both are considered equally effective in most clinical settings.
@@ -892,7 +861,6 @@ responses:
   utter_celebral_autoregulation_in_ischemic_stroke:
     - text:  |
         During an ischemic stroke, cerebral autoregulation is often disrupted, leading to an impaired ability to maintain stable cerebral blood flow despite fluctuations in systemic blood pressure. Normally, autoregulation ensures consistent perfusion to the brain by adjusting the diameter of cerebral blood vessels, but in ischemic stroke, the following changes occur:
-
         Loss of Autoregulatory Capacity: The affected brain regions may experience diminished ability to regulate blood flow, resulting in hypoperfusion or hyperperfusion depending on systemic pressure.
         Pressure Dependency: Blood flow in ischemic areas becomes more dependent on systemic arterial pressure, increasing the risk of further ischemic damage or hemorrhagic transformation.
         Imbalance of Vasodilatory and Vasoconstrictive Mechanisms: Endothelial dysfunction and metabolic disturbances contribute to impaired vasomotor responses.
@@ -941,7 +909,6 @@ responses:
           10.Unexplained cold sweats or excessive sweating.
           11.Paleness or Bluish Skin Tone (Cyanosis)
           12.Sweating-Unexplained cold sweats or excessive sweating.
-
           Symptoms Specific to Women-
           In women, heart disease symptoms can be subtler and may include:
           Pain in the neck, jaw, or throat.
@@ -951,24 +918,17 @@ responses:
 
   utter_common_among_who:
   - text: |
-          More Common in Males:
-  
+          More Common in Males: 
           Coronary Artery Disease (CAD) and heart attacks tend to occur more frequently in men, particularly at younger ages.
           Men are at higher risk of developing heart diseases earlier (in their 40s or 50s) due to factors like higher rates of smoking, stress, and untreated high blood pressure.
           Symptoms:
-          Men often experience "classic" heart attack symptoms, such as chest pain or tightness, making diagnosis easier.
-  
-          Impact on Females:
-  
-          Women generally develop heart diseases about 7-10 years later than men, largely due to the protective effects of estrogen before menopause. However, after menopause, the risk increases significantly.
-  
+          Men often experience "classic" heart attack symptoms, such as chest pain or tightness, making diagnosis easier.  
+          Impact on Females:  
+          Women generally develop heart diseases about 7-10 years later than men, largely due to the protective effects of estrogen before menopause. However, after menopause, the risk increases significantly. 
           Unique Challenges:
-          Women are more likely to experience atypical symptoms like nausea, back pain, or shortness of breath, which can delay diagnosis and treatment.
-  
+          Women are more likely to experience atypical symptoms like nausea, back pain, or shortness of breath, which can delay diagnosis and treatment.  
           Higher Mortality Rate:
-          While fewer women experience heart attacks compared to men, women are more likely to die from their first heart attack, partly because of delayed diagnosis and treatment.
-          
-          
+          While fewer women experience heart attacks compared to men, women are more likely to die from their first heart attack, partly because of delayed diagnosis and treatment.                   
           Conclusion:
           Heart disease is slightly more common in men, especially at younger ages. However, it is a significant health concern for both genders, with unique considerations for each.
           Awareness and tailored prevention strategies are essential.
@@ -987,36 +947,23 @@ responses:
   utter_most_affected:
     - text: |
           Countries with the highest number of heart disease patients are generally those with higher rates of cardiovascular risk factors, such as high blood pressure, smoking, poor diet, and lack of exercise.
-          As of recent data, the countries with the most significant number of heart disease patients are typically high-income countries with older populations and countries in transition where lifestyle factors are contributing to rising rates of heart disease.
-          
+          As of recent data, the countries with the most significant number of heart disease patients are typically high-income countries with older populations and countries in transition where lifestyle factors are contributing to rising rates of heart disease.          
           Here are some countries with high numbers of heart disease patients:
-
           1.United States – The U.S. has one of the highest rates of heart disease, with a large number of people affected by cardiovascular conditions. Factors like obesity, smoking, and poor diet contribute to this.
-
           2.Russia – Russia has a high rate of cardiovascular diseases, partly due to factors like high alcohol consumption, smoking, and poor healthcare access in some areas.
-
           3.China – While heart disease rates in China were historically lower, the country has seen a rapid increase in cases in recent years due to urbanization, unhealthy diets, and increasing stress levels.
-
           4.India – India has seen an increase in heart disease cases, driven by factors such as smoking, poor diet, and increasing urbanization. The country also has a large population, contributing to the high number of patients.
-
           5.Brazil – Brazil, along with other Latin American countries, has seen rising heart disease rates, often related to poor diets, lack of exercise, and smoking.
-
           6.Mexico – Cardiovascular diseases are one of the leading causes of death in Mexico, with a high prevalence of diabetes and obesity, which are key risk factors for heart disease.
-
           7.Germany – As one of the most industrialized nations in Europe, Germany faces a high rate of heart disease, influenced by lifestyle factors such as diet and smoking.
-
           8.United Kingdom – The UK also has a high rate of cardiovascular diseases, largely due to aging populations and risk factors like smoking and unhealthy diets.
-
           9.Japan – While Japan historically had lower rates of heart disease compared to Western nations, the prevalence has risen with increased adoption of Western diets and lifestyle changes.
-
           10.Turkey – Turkey has a significant number of cardiovascular patients, driven by rising obesity rates and unhealthy eating habits.
 
   utter_hw_to_prevent:
     - text: |
           Here are some direct ways to prevent heart disease:
-
           Lifestyle Changes:
-
           Diet-
           Eat a balanced diet rich in fruits, vegetables, whole grains, and lean proteins. 
           Limit saturated and trans fats, cholesterol, sodium, and added sugars.
@@ -1031,11 +978,8 @@ responses:
           Practice stress-reduction techniques like meditation, yoga, or deep breathing.
           Get enough sleep. 
           Limit Alcohol-
-          Excessive alcohol consumption can increase your risk of heart disease.
-        
-        
-          Medical Advice-
-          
+          Excessive alcohol consumption can increase your risk of heart disease.        
+          Medical Advice-         
           Regular Check-ups-
           Schedule regular check-ups with your doctor to monitor your blood pressure, cholesterol, and other health factors.   
           Medication-
@@ -1046,265 +990,167 @@ responses:
   utter_cardiac_and_non:
     - text: |
         Differentiating between cardiac and non-cardiac chest pain requires assessing the characteristics of the pain, associated symptoms, and patient history. Here are the main distinctions:
-
          1) Nature of Pain
-
           Cardiac: Typically described as pressure, tightness, heaviness, or squeezing.
-          Non-cardiac: Sharp, stabbing, burning, or localized pain.
-        
-          2)Location
-          
+          Non-cardiac: Sharp, stabbing, burning, or localized pain.        
+          2)Location          
           Cardiac: Central or left-sided chest, often radiating to the jaw, neck, back, or arms.
-          Non-cardiac: Localized to one specific area, such as the chest wall or epigastrium.
-          
-          3)Triggers
-          
+          Non-cardiac: Localized to one specific area, such as the chest wall or epigastrium.          
+          3)Triggers          
           Cardiac: Often provoked by physical exertion, stress, or cold weather; relieved by rest or nitroglycerin.
-          Non-cardiac: Associated with movements, posture changes, meals (if gastrointestinal), or deep breaths.
-          
-          4)Duration
-          
+          Non-cardiac: Associated with movements, posture changes, meals (if gastrointestinal), or deep breaths.         
+          4)Duration         
           Cardiac: Lasts for a few minutes to hours, usually not fleeting.
-          Non-cardiac: May last seconds or persist for long periods without worsening.
-          
-          5)Associated Symptoms
-          
+          Non-cardiac: May last seconds or persist for long periods without worsening.          
+          5)Associated Symptoms          
           Cardiac: Shortness of breath, sweating, nausea, dizziness, or palpitations.
-          Non-cardiac: Acid reflux, bloating, tenderness over the chest wall, or anxiety.
-          
-          6)Response to Medications
-          
+          Non-cardiac: Acid reflux, bloating, tenderness over the chest wall, or anxiety.          
+          6)Response to Medications          
           Cardiac: Improves with nitroglycerin.
-          Non-cardiac: May improve with antacids, analgesics, or muscle relaxants.
-          
-          7)Patient History
-          
+          Non-cardiac: May improve with antacids, analgesics, or muscle relaxants.          
+          7)Patient History          
           Cardiac: History of coronary artery disease, hypertension, diabetes, smoking, or hypercholesterolemia.
-          Non-cardiac: History of gastrointestinal issues, musculoskeletal pain, or panic disorders.
-          
-          8)ECG Findings
-          
+          Non-cardiac: History of gastrointestinal issues, musculoskeletal pain, or panic disorders.          
+          8)ECG Findings          
           Cardiac: Often shows changes (e.g., ST elevation, T-wave inversion) if related to ischemia.
-          Non-cardiac: Normal or non-specific findings.
-          
-          9)Troponin Levels
-          
+          Non-cardiac: Normal or non-specific findings.          
+          9)Troponin Levels          
           Cardiac: Elevated in cases of myocardial injury.
-          Non-cardiac: Normal in most cases unless related to other stressors.
-          
-          10)Chest Pain Reproducibility
-          
+          Non-cardiac: Normal in most cases unless related to other stressors.          
+          10)Chest Pain Reproducibility          
           Cardiac: Not usually reproducible by palpation or movement.
           Non-cardiac: Often reproducible, particularly with musculoskeletal or chest wall pain.
 
   utter_types_of tests:
     - text: |
         Diagnosing heart diseases involves a combination of clinical evaluation, imaging studies, and laboratory tests. Here are the commonly used diagnostic tests:
-
-        1)Electrocardiogram (ECG/EKG)
-        
+        1)Electrocardiogram (ECG/EKG)        
         Records the electrical activity of the heart.
-        Helps detect arrhythmias, ischemia, or myocardial infarction.
-        
-        2)Echocardiogram
-        
+        Helps detect arrhythmias, ischemia, or myocardial infarction.        
+        2)Echocardiogram        
         Uses ultrasound waves to produce images of the heart.
-        Assesses heart structure, function, valve disorders, and ejection fraction.
-        
-        3)Stress Test (Exercise or Pharmacologic)
-        
+        Assesses heart structure, function, valve disorders, and ejection fraction.        
+        3)Stress Test (Exercise or Pharmacologic)        
         Evaluates the heart's response to physical activity or stress.
-        Identifies ischemia or exercise-induced symptoms.
-        
-        4)Coronary Angiography
-        
+        Identifies ischemia or exercise-induced symptoms.        
+        4)Coronary Angiography        
         Involves injecting contrast dye into coronary arteries via catheterization.
-        Detects blockages or narrowing in coronary arteries.
-        
-        5)Chest X-ray
-        
+        Detects blockages or narrowing in coronary arteries.        
+        5)Chest X-ray        
         Provides a basic view of heart size, shape, and surrounding structures.
-        Identifies heart enlargement, fluid buildup, or lung issues.
-        
-        6)Blood Tests
-        
+        Identifies heart enlargement, fluid buildup, or lung issues.        
+        6)Blood Tests        
         Troponin: Indicates heart muscle damage (e.g., in a heart attack).
         Lipid profile: Evaluates cholesterol levels.
-        BNP/NT-proBNP: Assesses heart failure.
-        
-        7)Cardiac MRI
-        
+        BNP/NT-proBNP: Assesses heart failure.        
+        7)Cardiac MRI        
         Produces detailed images of the heart using magnetic fields.
-        Useful for diagnosing cardiomyopathies, congenital defects, or tissue damage.
-        
-        8)CT Coronary Angiography
-        
+        Useful for diagnosing cardiomyopathies, congenital defects, or tissue damage.        
+        8)CT Coronary Angiography        
         Non-invasive imaging to visualize coronary arteries and detect plaques or narrowing.
-        Often used for low-to-moderate risk patients.
-        
-        9)Holter Monitor
-        
+        Often used for low-to-moderate risk patients.        
+        9)Holter Monitor        
         Portable device that records ECG over 24–48 hours.
-        Detects intermittent arrhythmias or cardiac events.
-        
-        10)Pulse Oximetry and Blood Pressure Measurement
-        
+        Detects intermittent arrhythmias or cardiac events.        
+        10)Pulse Oximetry and Blood Pressure Measurement        
         Monitors oxygen levels and blood pressure for signs of systemic or cardiac conditions.
 
   utter_diagnosis_criteria:
     - text: |
         Diagnosing heart failure involves integrating clinical, laboratory, and imaging data. The main diagnostic criteria are:
-
-        1)Clinical Guidelines
-        
-        Follow ESC or AHA guidelines for standard definitions and management.
-        
-        2)Framingham Criteria
-        
+        1)Clinical Guidelines        
+        Follow ESC or AHA guidelines for standard definitions and management.        
+        2)Framingham Criteria        
         Diagnosis requires at least 2 major criteria or 1 major and 2 minor criteria.
         Major: Paroxysmal nocturnal dyspnea, neck vein distension, pulmonary rales, etc.
-        Minor: Peripheral edema, dyspnea on exertion, nocturnal cough, etc.
-        
-        3)Ejection Fraction (EF)
-        
+        Minor: Peripheral edema, dyspnea on exertion, nocturnal cough, etc.        
+        3)Ejection Fraction (EF)        
         Assessed via echocardiogram.
         HFrEF: EF ≤ 40%.
-        HFpEF: EF ≥ 50%.
-        
-        4)Symptoms
-        
-        Shortness of breath (rest or exertion), orthopnea, fatigue, reduced exercise capacity.
-        
-        5)Physical Examination Findings
-        
-        Jugular venous distension, rales/crackles, displaced apical impulse, S3 sound, peripheral edema.
-        
-        6)Natriuretic Peptides
-        
-        Elevated BNP (>100 pg/mL) or NT-proBNP (>300 pg/mL) indicates heart failure.
-        
-        7)Chest X-Ray
-        
-        Signs: Cardiomegaly, pulmonary congestion, Kerley B lines, pleural effusion.
-        
-        8)ECG
-        
-        Identifies arrhythmias, ischemia, or left ventricular hypertrophy.
-        
-        9)Functional Classification (NYHA)
-        
+        HFpEF: EF ≥ 50%.        
+        4)Symptoms        
+        Shortness of breath (rest or exertion), orthopnea, fatigue, reduced exercise capacity.        
+        5)Physical Examination Findings        
+        Jugular venous distension, rales/crackles, displaced apical impulse, S3 sound, peripheral edema.        
+        6)Natriuretic Peptides        
+        Elevated BNP (>100 pg/mL) or NT-proBNP (>300 pg/mL) indicates heart failure.        
+        7)Chest X-Ray        
+        Signs: Cardiomegaly, pulmonary congestion, Kerley B lines, pleural effusion.        
+        8)ECG        
+        Identifies arrhythmias, ischemia, or left ventricular hypertrophy.        
+        9)Functional Classification (NYHA)       
         Evaluates symptom severity:
         Class I: No limitation.
         Class II: Slight limitation.
         Class III: Marked limitation.
         Class IV: Symptoms at rest.
-        Risk Factors and Medical History
-        
+        Risk Factors and Medical History       
         10)Hypertension, coronary artery disease, diabetes, previous MI, cardiomyopathies, or valve disease.
 
   utter_ECG_report:
     - text: |
         Interpreting an ECG for signs of myocardial infarction involves identifying specific patterns across leads and understanding their relationship to heart regions. Key changes include:
-
         1)ST-Segment Elevation (STEMI)
-
         ST elevation ≥ 1 mm in two or more contiguous leads.
-        Indicates acute myocardial injury.
-        
+        Indicates acute myocardial injury.       
         2)T-Wave Changes
-
         Hyperacute T-waves: Tall, peaked, and symmetric T-waves indicate early ischemia.
-        T-wave inversion: Suggests ischemia if seen in contiguous leads.
-        
+        T-wave inversion: Suggests ischemia if seen in contiguous leads.        
         3)Pathological Q-Waves
-
         Q-wave depth ≥ 25% of the R-wave or >0.04 seconds in duration.
-        Indicates previous myocardial infarction or necrosis.
-        
+        Indicates previous myocardial infarction or necrosis.        
         4)ST-Segment Depression
-
         Seen in reciprocal leads during STEMI or in multiple leads in NSTEMI.
-        Reflects subendocardial ischemia.
-        
+        Reflects subendocardial ischemia.       
         5)Reciprocal Changes
-
         ST depression in opposite leads during STEMI. For example:
-        ST elevation in leads II, III, aVF (inferior MI) may show reciprocal depression in leads I and aVL.
-        
+        ST elevation in leads II, III, aVF (inferior MI) may show reciprocal depression in leads I and aVL.        
         6)Localization of Infarction (Based on Leads)
-
         Inferior MI: ST elevation in leads II, III, aVF.
         Anterior MI: ST elevation in V1–V4.
         Lateral MI: ST elevation in I, aVL, V5, V6.
-        Posterior MI: ST depression in V1–V3 (reciprocal changes). Confirm with posterior leads.
-        
+        Posterior MI: ST depression in V1–V3 (reciprocal changes). Confirm with posterior leads.      
         7)Bundle Branch Blocks
-
-        New left bundle branch block (LBBB) may indicate MI in the appropriate clinical context.
-        
+        New left bundle branch block (LBBB) may indicate MI in the appropriate clinical context.        
         8)Prolonged QT Interval
-
-        May occur due to ischemia or reperfusion.
-        
+        May occur due to ischemia or reperfusion.        
         9)ECG Evolution in MI
-
         Hyperacute Phase: Peaked T-waves.
         Acute Phase: ST elevation.
         Subacute Phase: Pathological Q-waves, T-wave inversion.
-        Chronic Phase: Persistent Q-waves with normalization of T-waves.
-        
+        Chronic Phase: Persistent Q-waves with normalization of T-waves.       
         10)Non-ST-Elevation Myocardial Infarction (NSTEMI)
         No ST elevation but may show ST depression, T-wave inversion, or non-specific changes. Diagnosis often relies on troponin elevation alongside symptoms.
 
   utter_troponin_levels:
     - text: |
         Biomarkers like troponin are critical in diagnosing heart attacks (myocardial infarction, MI) due to their sensitivity and specificity for detecting myocardial injury. Here’s their role:
-
-        1)Specificity for Myocardial Damage
-        
+        1)Specificity for Myocardial Damage       
         Troponins (TnI and TnT) are highly specific for cardiac muscle damage.
-        Elevated levels directly indicate myocardial cell injury.
-        
-        2)Timeline of Elevation
-        
+        Elevated levels directly indicate myocardial cell injury.       
+        2)Timeline of Elevation        
         Initial Rise: 3–6 hours after myocardial injury.
         Peak Levels: 12–24 hours.
-        Return to Normal: 7–14 days (depending on the extent of damage).
-        
-        3)Differentiation Between Acute and Chronic Conditions
-        
+        Return to Normal: 7–14 days (depending on the extent of damage).       
+        3)Differentiation Between Acute and Chronic Conditions       
         Acute myocardial infarction shows a dynamic rise and/or fall in troponin levels.
-        Stable, chronically elevated levels suggest ongoing structural heart disease (e.g., heart failure).
-        
-        4)Threshold Values
-        
-        Troponin levels exceeding the 99th percentile of the upper reference limit are diagnostic when combined with clinical evidence of ischemia.
-        
-        5)Diagnostic Utility in Acute Coronary Syndrome (ACS)
-        
-        Troponins are essential for confirming NSTEMI (Non-ST-Elevation MI), where ECG changes might be subtle or absent.
-        
-        6)Risk Stratification
-        
+        Stable, chronically elevated levels suggest ongoing structural heart disease (e.g., heart failure).        
+        4)Threshold Values       
+        Troponin levels exceeding the 99th percentile of the upper reference limit are diagnostic when combined with clinical evidence of ischemia.        
+        5)Diagnostic Utility in Acute Coronary Syndrome (ACS)       
+        Troponins are essential for confirming NSTEMI (Non-ST-Elevation MI), where ECG changes might be subtle or absent.       
+        6)Risk Stratification       
         Higher troponin levels correlate with larger infarct size and worse prognosis.
-        Useful in guiding the intensity of treatment strategies (e.g., thrombolysis, percutaneous coronary intervention).
-        
-        7)Comparison with Other Biomarkers
-        
+        Useful in guiding the intensity of treatment strategies (e.g., thrombolysis, percutaneous coronary intervention).       
+        7)Comparison with Other Biomarkers        
         Troponins are more specific than older markers like CK-MB or myoglobin.
-        CK-MB can also elevate in skeletal muscle injury, reducing specificity.
-        
-        8)High-Sensitivity Troponin (hs-Troponin)
-        
+        CK-MB can also elevate in skeletal muscle injury, reducing specificity.        
+        8)High-Sensitivity Troponin (hs-Troponin)        
         Detects lower levels of troponin earlier, improving early diagnosis and rule-out of MI in emergency settings.
-        Allows rapid assessment with algorithms like 0-hour/1-hour or 0-hour/3-hour protocols.
-        
-        9)Utility in Rule-Out Protocols
-        
-        Normal troponin levels at presentation and after a few hours effectively rule out myocardial infarction.
-        
-        10)Contextual Diagnosis
-        
+        Allows rapid assessment with algorithms like 0-hour/1-hour or 0-hour/3-hour protocols.       
+        9)Utility in Rule-Out Protocols        
+        Normal troponin levels at presentation and after a few hours effectively rule out myocardial infarction.        
+        10)Contextual Diagnosis        
         Troponin elevation must be interpreted with clinical findings (chest pain, ECG changes) to confirm MI.
         Other causes of troponin elevation (e.g., myocarditis, sepsis, pulmonary embolism) should be considered if clinical presentation is atypical
 
@@ -1494,159 +1340,105 @@ responses:
   utter_manage_atrial_fibrillation:
     - text: |
         1)Assess Symptoms & Risk: Evaluate symptoms (e.g., palpitations, dizziness) and risk factors (e.g., hypertension, heart disease).
-
-        2)Rate Control: Use beta-blockers or calcium channel blockers (e.g., metoprolol, diltiazem) to control heart rate. Digoxin may be used in some cases.
-        
-        3)Rhythm Control: If necessary, use antiarrhythmic drugs (e.g., amiodarone) or perform electrical cardioversion.
-        
-        4)Anticoagulation: Use DOACs (e.g., apixaban, rivaroxaban) or warfarin based on stroke risk (CHA2DS2-VASc score).
-        
-        5)Treat Underlying Conditions: Manage conditions like hypertension or heart failure.
-        
-        6)Patient Education: Educate on treatment adherence and stroke symptoms.
-        
-        7)Monitor Complications: Regularly monitor for adverse effects of medications and adjust as needed.
-        
-        8)Catheter Ablation: Consider for patients with persistent AF not controlled by medications.
-        
-        9)Rate vs. Rhythm Control: Choose based on patient symptoms and AF duration.
-        
+        2)Rate Control: Use beta-blockers or calcium channel blockers (e.g., metoprolol, diltiazem) to control heart rate. Digoxin may be used in some cases.       
+        3)Rhythm Control: If necessary, use antiarrhythmic drugs (e.g., amiodarone) or perform electrical cardioversion.        
+        4)Anticoagulation: Use DOACs (e.g., apixaban, rivaroxaban) or warfarin based on stroke risk (CHA2DS2-VASc score).        
+        5)Treat Underlying Conditions: Manage conditions like hypertension or heart failure.              
+        6)Patient Education: Educate on treatment adherence and stroke symptoms.        
+        7)Monitor Complications: Regularly monitor for adverse effects of medications and adjust as needed.        
+        8)Catheter Ablation: Consider for patients with persistent AF not controlled by medications.        
+        9)Rate vs. Rhythm Control: Choose based on patient symptoms and AF duration.        
         10)Prevent Stroke: Prioritize anticoagulation to reduce thromboembolism risk.
 
   utter_Lbbb_block_MD:
     - text: |
         Left bundle branch block (LBBB) poses significant challenges in diagnosing myocardial infarction (MI), especially when using electrocardiograms (ECGs), because:
-
-        1)Masking of Typical MI Patterns: LBBB alters the normal depolarization sequence of the ventricles, which can obscure the ST-segment elevation or Q waves typically seen in MI.
-        
-        2)Mimicking MI Features: The abnormal depolarization caused by LBBB often produces ST-segment changes, T-wave inversions, or QRS complexes that can mimic the signs of an MI, leading to potential false positives.
-        
-        3)Sgarbossa Criteria: Special criteria, such as the Sgarbossa scoring system, are required to diagnose MI in the presence of LBBB. These criteria evaluate concordant or discordant ST-segment changes relative to the QRS complex to identify possible infarction.
-        
-        4)Limited Sensitivity of Standard ECGs: Standard ECG interpretation rules are less reliable in patients with LBBB, necessitating additional diagnostic tools like cardiac biomarkers or advanced imaging.
-        
+        1)Masking of Typical MI Patterns: LBBB alters the normal depolarization sequence of the ventricles, which can obscure the ST-segment elevation or Q waves typically seen in MI.        
+        2)Mimicking MI Features: The abnormal depolarization caused by LBBB often produces ST-segment changes, T-wave inversions, or QRS complexes that can mimic the signs of an MI, leading to potential false positives.        
+        3)Sgarbossa Criteria: Special criteria, such as the Sgarbossa scoring system, are required to diagnose MI in the presence of LBBB. These criteria evaluate concordant or discordant ST-segment changes relative to the QRS complex to identify possible infarction.        
+        4)Limited Sensitivity of Standard ECGs: Standard ECG interpretation rules are less reliable in patients with LBBB, necessitating additional diagnostic tools like cardiac biomarkers or advanced imaging.       
         5)Association with Structural Heart Disease: LBBB is often associated with underlying cardiac conditions such as hypertrophy or ischemia, which can independently complicate the clinical picture and mask MI diagnosis.
 
   utter_echocardiography_in_Ischemic:
     - text: |
         Echocardiography findings can support the diagnosis of ischemic heart disease (IHD) in the following ways:
-
-        1)Detection of Wall Motion Abnormalities: Regional wall motion abnormalities (RWMA) are a hallmark of ischemia or infarction. These abnormalities often correlate with the territory of the affected coronary artery.
-        
-        2)Assessment of Myocardial Viability: Techniques like dobutamine stress echocardiography can evaluate whether dysfunctional myocardium is still viable, aiding in decision-making for revascularization.
-        
-        3)Stress-Induced Changes: Stress echocardiography (using exercise or pharmacologic agents) can reveal inducible ischemia by identifying areas of reduced myocardial perfusion or contractility during stress.
-        
-        4)Evaluation of Left Ventricular Function: Echocardiography assesses left ventricular ejection fraction (LVEF), which is often reduced in chronic ischemic heart disease or after a myocardial infarction.
-        
+        1)Detection of Wall Motion Abnormalities: Regional wall motion abnormalities (RWMA) are a hallmark of ischemia or infarction. These abnormalities often correlate with the territory of the affected coronary artery.        
+        2)Assessment of Myocardial Viability: Techniques like dobutamine stress echocardiography can evaluate whether dysfunctional myocardium is still viable, aiding in decision-making for revascularization.       
+        3)Stress-Induced Changes: Stress echocardiography (using exercise or pharmacologic agents) can reveal inducible ischemia by identifying areas of reduced myocardial perfusion or contractility during stress.       
+        4)Evaluation of Left Ventricular Function: Echocardiography assesses left ventricular ejection fraction (LVEF), which is often reduced in chronic ischemic heart disease or after a myocardial infarction.       
         5)Visualization of Complications: It identifies complications of IHD, such as ventricular aneurysms, thrombi, or papillary muscle dysfunction, which can arise after myocardial infarction.
    
 
   utter_ABG_CD:
     - text:  |
         Arterial blood gas (ABG) findings can correlate with cardiopulmonary dysfunction in the following ways:
-
-        1)Hypoxemia (Low PaO₂): Reduced arterial oxygen levels indicate impaired gas exchange, which may result from conditions like pulmonary embolism, acute respiratory distress syndrome (ARDS), or congestive heart failure (CHF).
-        
-        2)Hypercapnia (High PaCO₂): Elevated carbon dioxide levels suggest alveolar hypoventilation, often associated with conditions such as chronic obstructive pulmonary disease (COPD) or severe asthma exacerbations.
-        
-        3)Acid-Base Imbalances: ABG analysis can reveal metabolic or respiratory acidosis/alkalosis, helping identify the underlying cause of cardiopulmonary dysfunction (e.g., lactic acidosis in heart failure or respiratory acidosis in COPD).
-        
-        4)Oxygenation Efficiency (A-a Gradient): An increased alveolar-arterial oxygen gradient indicates problems with oxygen diffusion or ventilation-perfusion (V/Q) mismatch, common in pulmonary or cardiac diseases.
-        
-        5)Compensation Mechanisms: ABG findings can show the body's compensatory efforts, such as hyperventilation in metabolic acidosis or renal compensation in chronic respiratory acidosis, which are critical in understanding disease progression.
-        
+        1)Hypoxemia (Low PaO₂): Reduced arterial oxygen levels indicate impaired gas exchange, which may result from conditions like pulmonary embolism, acute respiratory distress syndrome (ARDS), or congestive heart failure (CHF).        
+        2)Hypercapnia (High PaCO₂): Elevated carbon dioxide levels suggest alveolar hypoventilation, often associated with conditions such as chronic obstructive pulmonary disease (COPD) or severe asthma exacerbations.       
+        3)Acid-Base Imbalances: ABG analysis can reveal metabolic or respiratory acidosis/alkalosis, helping identify the underlying cause of cardiopulmonary dysfunction (e.g., lactic acidosis in heart failure or respiratory acidosis in COPD).        
+        4)Oxygenation Efficiency (A-a Gradient): An increased alveolar-arterial oxygen gradient indicates problems with oxygen diffusion or ventilation-perfusion (V/Q) mismatch, common in pulmonary or cardiac diseases.        
+        5)Compensation Mechanisms: ABG findings can show the body's compensatory efforts, such as hyperventilation in metabolic acidosis or renal compensation in chronic respiratory acidosis, which are critical in understanding disease progression.       
         ABG analysis provides a comprehensive overview of oxygenation, ventilation, and acid-base status, making it a crucial tool for diagnosing and managing cardiopulmonary dysfunction.
 
   utter_betablocker_in_CD:
     - text:  |
         The mechanism of action of beta-blockers in preventing secondary cardiac events involves the following:
-
-        1)Reduction in Heart Rate: Beta-blockers block beta-adrenergic receptors, leading to a decrease in heart rate. This reduces myocardial oxygen demand and prevents ischemic episodes.
-        
-        2)Lowering Myocardial Contractility: By decreasing the force of contraction, beta-blockers reduce the workload on the heart, which is beneficial in preventing further damage to the myocardium.
-        
-        3)Antihypertensive Effects: Beta-blockers help lower blood pressure, reducing the strain on the heart and the risk of complications like heart failure or recurrent myocardial infarction.
-        
-        4)Antiarrhythmic Properties: Beta-blockers reduce the risk of arrhythmias, which are common after a cardiac event, by stabilizing electrical activity in the heart.
-        
-        5)Inhibition of Catecholamine Effects: By blocking the effects of stress hormones like adrenaline, beta-blockers mitigate adverse remodeling of the heart and improve long-term outcomes.
-        
+        1)Reduction in Heart Rate: Beta-blockers block beta-adrenergic receptors, leading to a decrease in heart rate. This reduces myocardial oxygen demand and prevents ischemic episodes.        
+        2)Lowering Myocardial Contractility: By decreasing the force of contraction, beta-blockers reduce the workload on the heart, which is beneficial in preventing further damage to the myocardium.       
+        3)Antihypertensive Effects: Beta-blockers help lower blood pressure, reducing the strain on the heart and the risk of complications like heart failure or recurrent myocardial infarction.       
+        4)Antiarrhythmic Properties: Beta-blockers reduce the risk of arrhythmias, which are common after a cardiac event, by stabilizing electrical activity in the heart.        
+        5)Inhibition of Catecholamine Effects: By blocking the effects of stress hormones like adrenaline, beta-blockers mitigate adverse remodeling of the heart and improve long-term outcomes.        
         These combined effects make beta-blockers a cornerstone therapy in reducing the risk of secondary cardiac events, particularly in patients with a history of myocardial infarction, heart failure, or arrhythmias.
 
   utter_conventional_aniography:
     - text:  |
         Advantages of CT Coronary Angiography (CTCA):
-
         1)Non-Invasive: CTCA is performed without the need for catheter insertion, reducing procedural risks and patient discomfort.
         2)Comprehensive Imaging: Provides high-resolution 3D images of coronary arteries and surrounding structures, aiding in a detailed assessment of plaque composition and extent.
         3)Rapid Procedure: The scan is quick, often taking less than 15 minutes, and requires minimal recovery time.
         4)Detection of Non-Obstructive Disease: CTCA can identify early-stage coronary artery disease, including non-obstructive plaques, which may not be apparent with conventional angiography.
-        5)Lower Risk for Stable Patients: Eliminates complications such as bleeding, infection, or vascular damage associated with invasive procedures.
-        
-        Limitations of CT Coronary Angiography:
-        
+        5)Lower Risk for Stable Patients: Eliminates complications such as bleeding, infection, or vascular damage associated with invasive procedures.        
+        Limitations of CT Coronary Angiography:        
         1)Radiation Exposure: CTCA involves exposure to ionizing radiation, which may be a concern with repeated use.
         2)Limited Functional Assessment: Unlike conventional angiography, CTCA does not provide real-time information on blood flow or pressure gradients.
         3)Artifacts: Calcified plaques or stents may cause imaging artifacts, potentially reducing diagnostic accuracy in certain cases.
         4)Contrast Medium Use: Requires iodine-based contrast, posing a risk to patients with kidney impairment or contrast allergies.
-        5)Lower Accuracy in Severe Disease: CTCA may be less reliable in evaluating heavily calcified vessels or severe stenoses compared to conventional angiography.
-        
-        Conventional Coronary Angiography Advantages:
-        
+        5)Lower Accuracy in Severe Disease: CTCA may be less reliable in evaluating heavily calcified vessels or severe stenoses compared to conventional angiography.       
+        Conventional Coronary Angiography Advantages:        
         1)Offers real-time visualization and functional assessment of coronary blood flow.
-        2)Allows for immediate therapeutic interventions like angioplasty or stent placement.
-        
+        2)Allows for immediate therapeutic interventions like angioplasty or stent placement.        
         Despite its advantages, CTCA is often used as a diagnostic tool for low-to-moderate risk patients, while conventional angiography remains the gold standard for high-risk cases or when therapeutic intervention is anticipated.
 
   utter_ABI_in_PAD:
     - text: |
         The ankle-brachial index (ABI) is a simple, non-invasive diagnostic tool used to identify peripheral arterial disease (PAD) based on the following principles:
-
-        1)Comparison of Blood Pressure: ABI measures the ratio of the systolic blood pressure in the ankle to that in the brachial artery. Lower pressures in the ankle relative to the arm indicate impaired blood flow to the lower extremities, suggestive of PAD.
-        
-        2)Quantitative Assessment of Severity: ABI values provide a clear metric for diagnosing and grading PAD:
-        
+        1)Comparison of Blood Pressure: ABI measures the ratio of the systolic blood pressure in the ankle to that in the brachial artery. Lower pressures in the ankle relative to the arm indicate impaired blood flow to the lower extremities, suggestive of PAD.        
+        2)Quantitative Assessment of Severity: ABI values provide a clear metric for diagnosing and grading PAD:        
         Normal ABI: 1.0–1.4
         Borderline ABI: 0.91–0.99
         PAD: ABI < 0.90
         Severe PAD: ABI < 0.50
-        3)Detection of Asymptomatic Disease: ABI can identify PAD in patients without overt symptoms, particularly those at high risk (e.g., diabetics or smokers).
-        
-        4)Monitoring Disease Progression: Repeated ABI measurements can track changes in blood flow over time, aiding in disease management and evaluating treatment efficacy.
-        
-        5)Assessment of Cardiovascular Risk: An abnormal ABI is associated with an increased risk of cardiovascular and cerebrovascular events, serving as an indicator of systemic atherosclerosis.
-        
+        3)Detection of Asymptomatic Disease: ABI can identify PAD in patients without overt symptoms, particularly those at high risk (e.g., diabetics or smokers).       
+        4)Monitoring Disease Progression: Repeated ABI measurements can track changes in blood flow over time, aiding in disease management and evaluating treatment efficacy.        
+        5)Assessment of Cardiovascular Risk: An abnormal ABI is associated with an increased risk of cardiovascular and cerebrovascular events, serving as an indicator of systemic atherosclerosis.        
         While highly effective, ABI has limitations, such as reduced accuracy in patients with calcified, non-compressible arteries (e.g., diabetics or elderly individuals). In such cases, adjunctive tests like toe-brachial index (TBI) or imaging studies may be necessary.
 
   utter_DVT_in_PE:
     - text:  |
         1)Thrombus Formation in Deep Veins: DVT involves the formation of a blood clot, typically in the deep veins of the legs or pelvis, due to Virchow's triad: stasis of blood flow, endothelial injury, and hypercoagulability.
-
-        2)Thrombus Dislodgement: Portions of the clot may break away from the vein wall, forming an embolus. This often occurs due to increased venous pressure or physical activity.
-        
-        3)Migration to the Pulmonary Circulation: The embolus travels through the venous system, enters the right side of the heart, and is pumped into the pulmonary arteries.
-        
-        4)Obstruction of Pulmonary Vessels: The embolus lodges in a pulmonary artery or one of its branches, causing a pulmonary embolism. This blocks blood flow, leading to ventilation-perfusion mismatch and impaired oxygen exchange.
-        
-        5)Hemodynamic and Inflammatory Effects: PE can cause elevated pulmonary artery pressures, right ventricular strain, and systemic hypoxemia. The inflammatory response triggered by the embolism may worsen the condition.
-        
+        2)Thrombus Dislodgement: Portions of the clot may break away from the vein wall, forming an embolus. This often occurs due to increased venous pressure or physical activity.        
+        3)Migration to the Pulmonary Circulation: The embolus travels through the venous system, enters the right side of the heart, and is pumped into the pulmonary arteries.        
+        4)Obstruction of Pulmonary Vessels: The embolus lodges in a pulmonary artery or one of its branches, causing a pulmonary embolism. This blocks blood flow, leading to ventilation-perfusion mismatch and impaired oxygen exchange.       
+        5)Hemodynamic and Inflammatory Effects: PE can cause elevated pulmonary artery pressures, right ventricular strain, and systemic hypoxemia. The inflammatory response triggered by the embolism may worsen the condition.        
         DVT and PE are collectively referred to as venous thromboembolism (VTE) due to their shared pathophysiological basis. Recognizing and treating DVT early is critical to prevent the progression to a potentially life-threatening pulmonary embolism.
 
   utter_right_catherization:
     - text:  |
         The diagnostic criteria for pulmonary hypertension (PH) on right heart catheterization (RHC) are based on hemodynamic measurements and include the following:
-
-        1)Mean Pulmonary Arterial Pressure (mPAP): A mPAP ≥ 20 mmHg at rest is required for the diagnosis of pulmonary hypertension. This is measured directly during RHC.
-        
-        2)Pulmonary Artery Wedge Pressure (PAWP): PAWP (or left atrial pressure) ≤ 15 mmHg distinguishes precapillary pulmonary hypertension (e.g., pulmonary arterial hypertension or chronic thromboembolic pulmonary hypertension) from postcapillary causes related to left heart disease.
-        
-        3)Pulmonary Vascular Resistance (PVR): PVR > 3 Wood units (WU) is indicative of significant vascular remodeling and increased resistance, commonly seen in pulmonary arterial hypertension.
-        
-        4)Cardiac Output (CO): Measurements of CO are used to assess overall heart function and classify the severity of the disease, as reduced CO often occurs in advanced stages.
-        
-        Classification by Hemodynamic Type:
-        
+        1)Mean Pulmonary Arterial Pressure (mPAP): A mPAP ≥ 20 mmHg at rest is required for the diagnosis of pulmonary hypertension. This is measured directly during RHC.       
+        2)Pulmonary Artery Wedge Pressure (PAWP): PAWP (or left atrial pressure) ≤ 15 mmHg distinguishes precapillary pulmonary hypertension (e.g., pulmonary arterial hypertension or chronic thromboembolic pulmonary hypertension) from postcapillary causes related to left heart disease.        
+        3)Pulmonary Vascular Resistance (PVR): PVR > 3 Wood units (WU) is indicative of significant vascular remodeling and increased resistance, commonly seen in pulmonary arterial hypertension.        
+        4)Cardiac Output (CO): Measurements of CO are used to assess overall heart function and classify the severity of the disease, as reduced CO often occurs in advanced stages.        
+        Classification by Hemodynamic Type:        
         Precapillary PH: mPAP ≥ 20 mmHg, PAWP ≤ 15 mmHg, PVR > 3 WU.
         Postcapillary PH: mPAP ≥ 20 mmHg, PAWP > 15 mmHg.
         Combined Pre- and Postcapillary PH: Features of both categories (elevated PAWP and PVR).
@@ -1655,25 +1447,15 @@ responses:
   utter_spirometry:
     - text:  |
         Spirometry is a valuable diagnostic tool for distinguishing between cardiac-related dyspnea and pulmonary causes by assessing lung function through the following parameters:
-
-        1)Obstructive Patterns:
-        
-        Spirometry identifies obstructive lung diseases, such as COPD or asthma, by showing a reduced FEV1/FVC ratio (<70%). This finding suggests a pulmonary cause for dyspnea rather than a cardiac one.
-        
-        2)Restrictive Patterns:
-        
-        In restrictive lung diseases (e.g., pulmonary fibrosis), spirometry reveals a proportional reduction in FEV1 and FVC with a normal or increased FEV1/FVC ratio. This also points to a pulmonary etiology.
-        
-        3)Normal Spirometry Results:
-        
-        Normal lung function results on spirometry suggest a non-pulmonary cause of dyspnea, shifting the focus toward cardiac evaluation (e.g., heart failure or valvular heart disease).
-        
-        4)Response to Bronchodilators:
-        
-        Improvement in FEV1 or FVC after bronchodilator administration indicates reversible airway obstruction, supporting a diagnosis of asthma or another pulmonary condition, as opposed to cardiac-related dyspnea.
-        
-        5)Flow-Volume Loops:
-        
+        1)Obstructive Patterns:        
+        Spirometry identifies obstructive lung diseases, such as COPD or asthma, by showing a reduced FEV1/FVC ratio (<70%). This finding suggests a pulmonary cause for dyspnea rather than a cardiac one.       
+        2)Restrictive Patterns:        
+        In restrictive lung diseases (e.g., pulmonary fibrosis), spirometry reveals a proportional reduction in FEV1 and FVC with a normal or increased FEV1/FVC ratio. This also points to a pulmonary etiology.        
+        3)Normal Spirometry Results:        
+        Normal lung function results on spirometry suggest a non-pulmonary cause of dyspnea, shifting the focus toward cardiac evaluation (e.g., heart failure or valvular heart disease).        
+        4)Response to Bronchodilators:        
+        Improvement in FEV1 or FVC after bronchodilator administration indicates reversible airway obstruction, supporting a diagnosis of asthma or another pulmonary condition, as opposed to cardiac-related dyspnea.        
+        5)Flow-Volume Loops:        
         Analysis of flow-volume loops may reveal fixed or variable extrathoracic/intrathoracic obstructions, which are pulmonary in origin. A normal loop shifts suspicion to a cardiac cause.
         By combining spirometry results with clinical assessment and other tests (e.g., echocardiography or BNP levels), clinicians can effectively differentiate between cardiac-related and pulmonary causes of dyspnea.
 
