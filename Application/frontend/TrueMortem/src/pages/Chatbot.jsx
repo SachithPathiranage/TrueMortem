@@ -8,7 +8,7 @@ const Chatbot = () => {
     { text: "Hello! How can I help you today?", sender: "bot" },
   ]);
   const [input, setInput] = useState("");
-  
+
   // Create a reference for the chat box
   const chatBoxRef = useRef(null);
 
@@ -21,7 +21,7 @@ const Chatbot = () => {
     setInput("");
 
     try {
-      // Send user message to Rasa's REST API directly
+      // Send user message to Rasa's REST API
       const response = await axios.post(
         "http://localhost:5005/webhooks/rest/webhook",
         {
@@ -30,10 +30,9 @@ const Chatbot = () => {
         }
       );
 
-      // Check if Rasa sent a response
       if (response.data.length > 0) {
         const botResponse = response.data[0].text; // Get response text
-        setMessages([...newMessages, { text: botResponse, sender: "bot" }]);
+        typeMessage(botResponse, newMessages);
       } else {
         setMessages([
           ...newMessages,
@@ -47,6 +46,23 @@ const Chatbot = () => {
         { text: "Error connecting to chatbot.", sender: "bot" },
       ]);
     }
+  };
+
+  // Function to simulate word-by-word typing effect
+  const typeMessage = (fullMessage, updatedMessages) => {
+    let words = fullMessage.split(" ");
+    let typedMessage = "";
+    let index = 0;
+
+    const typingInterval = setInterval(() => {
+      if (index < words.length) {
+        typedMessage += (index > 0 ? " " : "") + words[index]; // Add words with spacing
+        setMessages([...updatedMessages, { text: typedMessage, sender: "bot" }]);
+        index++;
+      } else {
+        clearInterval(typingInterval); // Stop when done
+      }
+    }, 150); // Adjust speed (milliseconds per word)
   };
 
   // Scroll to the bottom of the chat when messages change
@@ -73,7 +89,7 @@ const Chatbot = () => {
           <p>Choose a prompt below or write your own to start chatting.</p>
         </div>
 
-        {/* Fix button click handlers */}
+        {/* Quick reply buttons */}
         <div className="quick-replies">
           <button onClick={() => handleSend("What is heart disease?")}>
             What’s a heart disease?
@@ -89,10 +105,14 @@ const Chatbot = () => {
         <div className="chat-box" ref={chatBoxRef}>
           {messages.map((msg, index) => (
             <div key={index} className={`message ${msg.sender}`}>
-              {msg.text}
-            </div>
-          ))}
+              {msg.text.split("\n").map((line, i) => (
+               <p key={i}>{line.trim()}</p> // Ensures no unnecessary dots or spaces
+           ))}
         </div>
+        ))}
+     </div>
+
+         
 
         <div className="input-area">
           <input
