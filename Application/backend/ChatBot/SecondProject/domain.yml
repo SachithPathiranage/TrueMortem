@@ -137,6 +137,7 @@ intents:
   - bedside ultrasound
   - permissive hypercapnia
   - myocardial infarction
+  - ask about truemortem
 
 actions:
   - action_fallback_llm  # Custom fallback action to use LLM
@@ -177,6 +178,14 @@ responses:
         6. Cardiomyopathy
         7. Congenital Heart Disease
         8. Pericardial Disease
+
+  utter_about_truemortem:
+    - text:  |
+        Truemortem is a predictive system designed to determine whether a person has died due to heart disease. The project integrates two distinct machine learning models: a Verbal Autopsy Model and a Postmortem Report Model, each trained on different datasets to ensure accuracy and reliability.
+        The Postmortem Model- was developed using a custom dataset compiled from postmortem reports collected in the Kurunegala District, Sri Lanka. This data was carefully gathered and processed from scratch to reflect the local context and enhance model performance.
+        The Verbal Autopsy Model- was trained using a publicly available dataset sourced from a research study conducted in India, enabling broader contextual understanding based on symptom-based narratives.
+        Users can access both models to predict the cause of death after successfully signing into the system. Additionally, Truemortem features an integrated chatbot that provides users with reliable information and answers to questions related to heart disease. The chatbot’s knowledge base is built from credible, certified medical websites to ensure users receive accurate and trustworthy health information.
+
 
   utter_myocardial_infarction:
     - text:  |
@@ -1157,152 +1166,87 @@ responses:
   utter_hypertension:
     - text: |
         Hypertension is strongly linked to heart diseases due to its damaging effects on the cardiovascular system over time. Here's how it contributes:
-
         Increased Cardiac Workload-
-
-        High blood pressure forces the heart to pump harder, leading to left ventricular hypertrophy (LVH). Over time, this can result in heart failure.
-        
+        High blood pressure forces the heart to pump harder, leading to left ventricular hypertrophy (LVH). Over time, this can result in heart failure.        
         Damage to Blood Vessels-
-
-        Hypertension weakens and damages arteries, causing them to become stiff and thickened (arteriosclerosis). This process can reduce blood flow to the heart.
-        
+        Hypertension weakens and damages arteries, causing them to become stiff and thickened (arteriosclerosis). This process can reduce blood flow to the heart.        
         Coronary Artery Disease (CAD)-
-
         High blood pressure accelerates atherosclerosis, where fatty deposits build up in coronary arteries, leading to chest pain, angina, or heart attacks.
         Heart Failure
-
-        Prolonged hypertension causes the heart muscle to weaken or stiffen, leading to systolic or diastolic heart failure, where the heart can't pump blood effectively.
-       
+        Prolonged hypertension causes the heart muscle to weaken or stiffen, leading to systolic or diastolic heart failure, where the heart can't pump blood effectively.       
         Arrhythmias-
-
-        Structural and electrical changes in the heart due to LVH can cause irregular heartbeats, such as atrial fibrillation, increasing the risk of stroke.
-        
+        Structural and electrical changes in the heart due to LVH can cause irregular heartbeats, such as atrial fibrillation, increasing the risk of stroke.        
         Aneurysms-
-
-        Chronic high blood pressure can create weak spots in artery walls, leading to aneurysms. Ruptured aneurysms are life-threatening.
-        
+        Chronic high blood pressure can create weak spots in artery walls, leading to aneurysms. Ruptured aneurysms are life-threatening.       
         Ischemic Heart Disease-
-
-        Narrowed arteries caused by hypertension reduce oxygen supply to the heart muscle, resulting in ischemia, angina, or infarction.
-        
+        Narrowed arteries caused by hypertension reduce oxygen supply to the heart muscle, resulting in ischemia, angina, or infarction.       
         Hypertensive Crisis-
-
-        Extremely high blood pressure can cause acute conditions like pulmonary edema, heart failure, or aortic dissection.
-        
+        Extremely high blood pressure can cause acute conditions like pulmonary edema, heart failure, or aortic dissection.        
         Heart Valve Problems-
-
-        Increased pressure can damage valves, causing them to leak or not close properly, contributing to valvular heart diseases.
-        
+        Increased pressure can damage valves, causing them to leak or not close properly, contributing to valvular heart diseases.        
         Metabolic Implications-
-
         Hypertension often coexists with diabetes and obesity, collectively increasing the risk of cardiovascular disease as part of metabolic syndrome.
 
   utter_relation_to_diabetes:
     - text: |
         The relationship between diabetes and heart disease is significant because chronic high blood sugar levels damage the cardiovascular system in multiple ways:
-
-        1)Accelerates Atherosclerosis
-        
-        Diabetes increases the buildup of fatty deposits in arteries (atherosclerosis), narrowing blood vessels and reducing blood flow to the heart, which can lead to coronary artery disease (CAD).
-        
-        2)Endothelial Damage
-        
-        High glucose levels damage the inner lining of blood vessels (endothelium), impairing their function and making them prone to plaque formation and inflammation.
-        
-        3)Promotes Inflammation
-        
-        Diabetes triggers chronic low-grade inflammation, which destabilizes arterial plaques, increasing the risk of heart attacks and strokes.
-        
-        4)Lipid Abnormalities
-        
-        Diabetics often have an unhealthy lipid profile (high triglycerides, low HDL, and small LDL particles), which contributes to heart disease.
-        
-        5)Hypertension
-        
-        Many people with diabetes also have high blood pressure, which increases the strain on the heart and accelerates vascular damage.
-        
-        6)Obesity and Insulin Resistance
-        
-        Diabetes is closely linked with obesity and insulin resistance, both of which exacerbate cardiovascular risks by promoting inflammation and lipid abnormalities.
-        
-        7)Diabetic Cardiomyopathy
-        
-        Diabetes can cause changes in the heart muscle, leading to stiffness or weakness (diabetic cardiomyopathy), which increases the risk of heart failure.
-        
-        8)Increased Clotting Risk
-        
-        Diabetes promotes a pro-thrombotic state, meaning blood clots form more easily, potentially blocking arteries and causing heart attacks or strokes.
-        
-        9)Worse Outcomes in Heart Events
-        
-        Individuals with diabetes have poorer recovery and outcomes after heart attacks or strokes due to pre-existing vascular damage and comorbidities.
-        
-        10)Chronic Glucose Exposure
-        
+        1)Accelerates Atherosclerosis        
+        Diabetes increases the buildup of fatty deposits in arteries (atherosclerosis), narrowing blood vessels and reducing blood flow to the heart, which can lead to coronary artery disease (CAD).        
+        2)Endothelial Damage        
+        High glucose levels damage the inner lining of blood vessels (endothelium), impairing their function and making them prone to plaque formation and inflammation.        
+        3)Promotes Inflammation        
+        Diabetes triggers chronic low-grade inflammation, which destabilizes arterial plaques, increasing the risk of heart attacks and strokes.        
+        4)Lipid Abnormalities        
+        Diabetics often have an unhealthy lipid profile (high triglycerides, low HDL, and small LDL particles), which contributes to heart disease.        
+        5)Hypertension        
+        Many people with diabetes also have high blood pressure, which increases the strain on the heart and accelerates vascular damage.        
+        6)Obesity and Insulin Resistance        
+        Diabetes is closely linked with obesity and insulin resistance, both of which exacerbate cardiovascular risks by promoting inflammation and lipid abnormalities.        
+        7)Diabetic Cardiomyopathy        
+        Diabetes can cause changes in the heart muscle, leading to stiffness or weakness (diabetic cardiomyopathy), which increases the risk of heart failure.        
+        8)Increased Clotting Risk        
+        Diabetes promotes a pro-thrombotic state, meaning blood clots form more easily, potentially blocking arteries and causing heart attacks or strokes.        
+        9)Worse Outcomes in Heart Events        
+        Individuals with diabetes have poorer recovery and outcomes after heart attacks or strokes due to pre-existing vascular damage and comorbidities.        
+        10)Chronic Glucose Exposure        
         Persistent high blood glucose causes glycation of proteins and lipids, leading to advanced glycation end-products (AGEs), which damage blood vessels and promote cardiovascular complications.
 
   utter_cholestrol_HD:
     - text: |
         High cholesterol contributes to atherosclerosis primarily by promoting the buildup of fatty deposits (plaques) in the walls of arteries. This process involves several key mechanisms:
-
-        1)LDL Cholesterol Infiltration
-        
-        Low-density lipoprotein (LDL), often referred to as "bad cholesterol," penetrates the inner lining of blood vessels (endothelium) when levels are high.
-        
-        2)Oxidation of LDL
-        
-        Once inside the arterial wall, LDL cholesterol undergoes oxidation, becoming harmful and triggering an immune response.
-        
-        3)Inflammatory Response
-        
-        The body recognizes oxidized LDL as harmful, leading to an inflammatory response where immune cells (macrophages) are recruited to the site.
-        
-        4)Foam Cell Formation
-        
-        Macrophages engulf oxidized LDL but become "foam cells," which accumulate and contribute to the formation of fatty streaks in the arterial wall.
-        
-        5)Plaque Formation
-        
-        Over time, fatty streaks grow into plaques composed of cholesterol, dead cells, and other debris. These plaques thicken the arterial wall, reducing blood flow.
-        
-        6)Endothelial Damage
-        
-        High cholesterol levels damage the endothelium, impairing its function and increasing the likelihood of plaque formation and blood clotting.
-        
-        7)Hardening of Arteries
-        
-        Calcium deposits can form in plaques over time, leading to the stiffening and hardening of arteries (arteriosclerosis).
-        
-        8)Artery Narrowing
-        
-        Plaques protrude into the artery, narrowing the lumen and restricting blood flow to vital organs such as the heart and brain.
-        
-        9)Plaque Rupture Risk
-        
-        Plaques can become unstable and rupture, exposing their contents to the bloodstream, which can trigger the formation of a blood clot (thrombus).
-        
-        10)Complications
-        
+        1)LDL Cholesterol Infiltration        
+        Low-density lipoprotein (LDL), often referred to as "bad cholesterol," penetrates the inner lining of blood vessels (endothelium) when levels are high.        
+        2)Oxidation of LDL        
+        Once inside the arterial wall, LDL cholesterol undergoes oxidation, becoming harmful and triggering an immune response.        
+        3)Inflammatory Response        
+        The body recognizes oxidized LDL as harmful, leading to an inflammatory response where immune cells (macrophages) are recruited to the site.        
+        4)Foam Cell Formation        
+        Macrophages engulf oxidized LDL but become "foam cells," which accumulate and contribute to the formation of fatty streaks in the arterial wall.        
+        5)Plaque Formation        
+        Over time, fatty streaks grow into plaques composed of cholesterol, dead cells, and other debris. These plaques thicken the arterial wall, reducing blood flow.        
+        6)Endothelial Damage        
+        High cholesterol levels damage the endothelium, impairing its function and increasing the likelihood of plaque formation and blood clotting.        
+        7)Hardening of Arteries        
+        Calcium deposits can form in plaques over time, leading to the stiffening and hardening of arteries (arteriosclerosis).        
+        8)Artery Narrowing        
+        Plaques protrude into the artery, narrowing the lumen and restricting blood flow to vital organs such as the heart and brain.        
+        9)Plaque Rupture Risk        
+        Plaques can become unstable and rupture, exposing their contents to the bloodstream, which can trigger the formation of a blood clot (thrombus).       
+        10)Complications        
         Reduced blood flow from narrowed or blocked arteries increases the risk of heart attacks, strokes, and peripheral artery disease (PAD).
         
   utter_genetic_to_HD:
     - text: |
         Family history plays a crucial role in assessing the risk of heart disease because genetic and environmental factors shared within families can significantly influence cardiovascular health. Here's how it matters:
-
-        Genetic Risk: Certain heart conditions, like familial hypercholesterolemia or inherited arrhythmias, are directly passed down through genes, elevating the risk. If a close relative (e.g., parent or sibling) had a heart attack at an early age (before 55 in men or 65 in women), your risk is notably higher.
-        
-        Shared Environment: Families often share similar lifestyles, such as diet and activity levels, which can compound genetic risks. For example, a family prone to high cholesterol might also have a diet rich in saturated fats, further increasing cardiovascular risks.
-        
-        Epigenetic Factors: Beyond direct inheritance, genetic expressions influenced by environmental triggers (e.g., smoking, obesity, or stress) can exacerbate risks.
-        
-        Implications for Screening: A strong family history of heart disease might prompt earlier or more frequent screenings, such as lipid profiles, blood pressure monitoring, or even genetic testing.
-        
+        Genetic Risk: Certain heart conditions, like familial hypercholesterolemia or inherited arrhythmias, are directly passed down through genes, elevating the risk. If a close relative (e.g., parent or sibling) had a heart attack at an early age (before 55 in men or 65 in women), your risk is notably higher.        
+        Shared Environment: Families often share similar lifestyles, such as diet and activity levels, which can compound genetic risks. For example, a family prone to high cholesterol might also have a diet rich in saturated fats, further increasing cardiovascular risks.        
+        Epigenetic Factors: Beyond direct inheritance, genetic expressions influenced by environmental triggers (e.g., smoking, obesity, or stress) can exacerbate risks.        
+        Implications for Screening: A strong family history of heart disease might prompt earlier or more frequent screenings, such as lipid profiles, blood pressure monitoring, or even genetic testing.        
         Prevention Strategies: While family history is unchangeable, awareness of it allows individuals to adopt preventive measures, like a healthier lifestyle, regular exercise, and early medical interventions, to mitigate risks.
 
   utter_smoking_to_HD:
     - text: |
         Smoking significantly increases the risk of heart disease through several harmful effects on the cardiovascular system:
-
         Increased Blood Pressure: Smoking raises blood pressure by constricting blood vessels, which strains the heart over time.
         Damage to Blood Vessels: Chemicals in smoke damage the lining of blood vessels, promoting atherosclerosis (plaque buildup) and narrowing arteries.
         Higher Clotting Risk: Smoking increases platelet aggregation, which raises the risk of blood clots and heart attacks.
@@ -1317,24 +1261,15 @@ responses:
   utter_treatment_hypertension:
     - text: |
         Common Medications Used to Treat Hypertension:
-        1)Angiotensin-Converting Enzyme (ACE) Inhibitors: These include medications like enalapril, lisinopril, and ramipril. They relax blood vessels by inhibiting the enzyme that narrows blood vessels.
-        
-        2)Angiotensin II Receptor Blockers (ARBs): Examples are losartan, valsartan, and olmesartan. ARBs work by blocking the effects of angiotensin II, a hormone that narrows blood vessels.
-        
-        3)Calcium Channel Blockers: Medications like amlodipine, diltiazem, and verapamil help relax and widen blood vessels by blocking calcium from entering cells of the heart and blood vessel walls.
-        
-        4)Diuretics: Often called "water pills," examples include hydrochlorothiazide, chlorthalidone, and furosemide. These medications help reduce the amount of fluid in the body, lowering blood pressure.
-        
-        5)Beta-Blockers: Medications like metoprolol, atenolol, and propranolol reduce the heart rate and the heart’s workload, helping lower blood pressure.
-        
-        6)Alpha-Blockers: These include drugs like prazosin and doxazosin. They relax the muscle in the walls of blood vessels, helping blood flow more easily.
-        
-        7)Renin Inhibitors: Aliskiren is an example of a direct renin inhibitor that works by blocking renin, a substance produced by the kidneys that can increase blood pressure.
-        
-        8)Central Agonists: Clonidine and methyldopa are examples. They work in the brain to decrease nerve signals that can narrow blood vessels, helping to lower blood pressure.
-        
-        9)Vasodilators: Medications like hydralazine and minoxidil directly relax blood vessel muscles, allowing blood to flow more freely.
-        
+        1)Angiotensin-Converting Enzyme (ACE) Inhibitors: These include medications like enalapril, lisinopril, and ramipril. They relax blood vessels by inhibiting the enzyme that narrows blood vessels.        
+        2)Angiotensin II Receptor Blockers (ARBs): Examples are losartan, valsartan, and olmesartan. ARBs work by blocking the effects of angiotensin II, a hormone that narrows blood vessels.        
+        3)Calcium Channel Blockers: Medications like amlodipine, diltiazem, and verapamil help relax and widen blood vessels by blocking calcium from entering cells of the heart and blood vessel walls.        
+        4)Diuretics: Often called "water pills," examples include hydrochlorothiazide, chlorthalidone, and furosemide. These medications help reduce the amount of fluid in the body, lowering blood pressure.        
+        5)Beta-Blockers: Medications like metoprolol, atenolol, and propranolol reduce the heart rate and the heart’s workload, helping lower blood pressure.       
+        6)Alpha-Blockers: These include drugs like prazosin and doxazosin. They relax the muscle in the walls of blood vessels, helping blood flow more easily.        
+        7)Renin Inhibitors: Aliskiren is an example of a direct renin inhibitor that works by blocking renin, a substance produced by the kidneys that can increase blood pressure.       
+        8)Central Agonists: Clonidine and methyldopa are examples. They work in the brain to decrease nerve signals that can narrow blood vessels, helping to lower blood pressure.        
+        9)Vasodilators: Medications like hydralazine and minoxidil directly relax blood vessel muscles, allowing blood to flow more freely.        
         10)Combination Medications: Some people are prescribed a combination of two or more types of medications, such as an ACE inhibitor and a diuretic (e.g., lisinopril-hydrochlorothiazide), to achieve better control of blood pressure.
 
   utter_manage_atrial_fibrillation:

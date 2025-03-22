@@ -94,8 +94,8 @@ const Chatbot = () => {
           <button onClick={() => handleSend("What is heart disease?")}>
             What’s a heart disease?
           </button>
-          <button onClick={() => handleSend("Tell me about hypertension.")}>
-            Tell me about hypertension?
+          <button onClick={() => handleSend("What is TrueMortem?")}>
+            What is TrueMortem?
           </button>
           <button onClick={() => handleSend("What is CAD?")}>
             What is CAD?

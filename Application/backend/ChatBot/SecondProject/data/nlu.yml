@@ -1248,6 +1248,18 @@ nlu:
       -tell me about myocardial infarction
       -How does a blocked artery lead to a heart attack?
 
+- intent: ask about truemortem
+  examples:  |
+    - What is Truemortem?
+    - Tell me about Truemortem
+    - I want to know more about Truemortem
+    - Can you explain what Truemortem is?
+    - What's Truemortem all about?
+    - Give me some info about Truemortem
+    - I'm curious about Truemortem
+    - How does Truemortem work?
+    - What does Truemortem do?
+    - Can you describe Truemortem to me?
 
 - intent: bot_challenge
   examples: |
