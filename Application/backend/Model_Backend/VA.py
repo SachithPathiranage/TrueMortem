@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 from pydantic import BaseModel
+from typing import List, Dict, Any
 
 # Define the HealthData model for prediction input
 class HealthData(BaseModel):
@@ -58,15 +59,68 @@ def predict_heart_disease(data: HealthData, expected_columns, va_model):
         # Debug: Print raw prediction
         print("Raw Prediction:", prediction)
 
+        # Extract feature importance
+        feature_importance = {}
+        
+        if hasattr(va_model, "feature_importances_"):
+            # For tree-based models (Random Forest, XGBoost, etc.)
+            importances = va_model.feature_importances_
+            for i, col in enumerate(expected_columns):
+                # Make feature name more readable
+                readable_name = col.replace('_', ' ').title()
+                if readable_name.startswith('Had '):
+                    readable_name = readable_name[4:]  # Remove "Had " prefix
+                feature_importance[readable_name] = float(importances[i])
+        elif hasattr(va_model, "coef_"):
+            # For linear models (Logistic Regression, SVM, etc.)
+            coefs = va_model.coef_[0] if len(va_model.coef_.shape) > 1 else va_model.coef_
+            for i, col in enumerate(expected_columns):
+                readable_name = col.replace('_', ' ').title()
+                if readable_name.startswith('Had '):
+                    readable_name = readable_name[4:]  # Remove "Had " prefix
+                feature_importance[readable_name] = float(coefs[i])
+        else:
+            # If model doesn't expose feature importance, use permutation importance
+            # as a fallback (this is a simplified approach)
+            base_prediction = va_model.predict_proba(input_encoded)[:, 1] if hasattr(va_model, "predict_proba") else va_model.predict(input_encoded)
+            
+            for i, col in enumerate(expected_columns):
+                # Make a copy and shuffle one feature
+                perturbed = input_encoded.copy()
+                perturbed.iloc[0, i] = 1 - perturbed.iloc[0, i]  # Flip the feature value
+                
+                # See how prediction changes
+                perturbed_prediction = va_model.predict_proba(perturbed)[:, 1] if hasattr(va_model, "predict_proba") else va_model.predict(perturbed)
+                
+                # Calculate importance as change in prediction
+                importance = abs(perturbed_prediction[0] - base_prediction[0])
+                
+                readable_name = col.replace('_', ' ').title()
+                if readable_name.startswith('Had '):
+                    readable_name = readable_name[4:]  # Remove "Had " prefix
+                feature_importance[readable_name] = float(importance)
+        
+        # Sort feature importance
+        feature_importance = dict(sorted(
+            feature_importance.items(), 
+            key=lambda item: abs(item[1]), 
+            reverse=True
+        ))
+
         # Create message based on prediction
         if prediction[0] == 1:
             message = "The analysis indicates that heart disease was a significant factor in the death."
+            result = "Heart-related death"
         else:
             message = "The analysis suggests that heart disease was likely not a significant factor in the death."
+            result = "Not heart-related"
 
         # Return the response
         return {
             "message": message,
+            "prediction": result,
+            "prediction_probability": float(probabilities[0]) if hasattr(va_model, "predict_proba") else None,
+            "feature_importance": feature_importance 
         }
 
     except Exception as e:
