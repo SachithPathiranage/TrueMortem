@@ -48,21 +48,21 @@ function HeaderStat() {
         <div className="flex flex-col items-center p-2 ml-6 rounded-lg shadow-lg bg-white h-full">
           <h1 className="text-lg font-semibold mb-3">Main Causes</h1>
           <div className="w-[95%] h-[80%] bg-[#efefef] rounded-lg flex items-center justify-center p-2">
-            <Doughnut
+            {/* <Doughnut
               data={data}
               options={options}
               className="w-[85%] h-[85%] max-h-[75%] max-w-[75%]"
-            />
+            /> */}
           </div>
         </div>
         <div className="flex flex-col items-center p-2 mr-6 rounded-lg shadow-lg bg-white h-full">
           <h1 className="text-lg font-semibold mb-3">Our Focus</h1>
           <div className="w-[95%] h-[80%] bg-[#efefef] rounded-lg flex items-center justify-center p-2">
-            <img
+            {/* <img
               className="h-[85%] w-[85%] max-h-[75%] max-w-[75%] object-contain"
               src="/HomeHeart.png"
               alt="heart"
-            />
+            /> */}
           </div>
         </div>
       </div>

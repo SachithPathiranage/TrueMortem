@@ -2,6 +2,7 @@ import React from "react";
 import HomeHeader from "../components/HomeHeader";
 import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
+import Cards from "../components/Cards";
 
 const Home = () => {
   return (
@@ -31,18 +32,7 @@ const Home = () => {
           </p>
         </div>
         {/* Grid Container */}
-        <div className="max-w-[1240px] mx-auto grid grid-cols-1 h-[60%] md:grid-cols-3 gap-10 mt-12">
-          {/* Grid Items */}
-          <div className="bg-white p-6 rounded-2xl shadow-md text-center">
-            Item 1
-          </div>
-          <div className="bg-white p-6 rounded-2xl shadow-md text-center">
-            Item 2
-          </div>
-          <div className="bg-white p-6 rounded-2xl shadow-md text-center">
-            Item 3
-          </div>
-        </div>
+        <Cards />
       </div>
       <FAQ />
       <Footer />
