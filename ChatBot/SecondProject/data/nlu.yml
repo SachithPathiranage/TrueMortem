@@ -1,0 +1,1258 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+    
+
+- intent: inform_heart_disease
+  examples: | 
+    -can i know about heart disease.
+    -what is a heart disease.
+    -tell me about heart diseases.
+    -what muscles get affected from heart diseases.
+    -heart diseases?
+    -wht heart diseases
+    -what is the nature of heart diseases
+
+
+- intent: types of HD
+  examples: |
+    -what are the main types of heart diseases
+    -what are types of heart diseases
+    -what are types of HD
+    -types of HD?
+    -heart diseases types?
+    -types of disorders of heart diseases
+
+- intent: causes for HD
+  examples: |
+    -what are the factors causing heart diseases
+    -what causes heart diseases?
+    -factors for heart diseases
+    -main factors for heart diseases
+    -factors for HD?
+    -can you tell me about heart diseases causes?
+    -reasons for heart diseases
+    -What are the main risk factors for heart disease?
+    -How does someone get heart disease?
+    -What contributes to the development of heart disease?
+    -What are the primary causes of cardiovascular disease?
+    -What lifestyle factors lead to heart disease?
+    -What are the top reasons for heart disease?
+    -Why do people develop heart disease?
+    -What increases the risk of heart disease?
+    -What habits or conditions cause heart disease?
+    
+    
+    
+
+- intent: what is CAD
+  examples: |
+    -What is CAD?
+    -Wht s CAD?
+    -wht is Coronary Artery Diseases(CAD)?
+    -can you tell me about CAD?
+    -explain about Coronary Artery Disease?
+    -CAD?
+    -tell me about coronary artery disease
+    -what is the most common heart disease in the world?
+    -common heart disease globally 
+    -worldwide common heart disease
+    -wht is the most common HD among the people worldwide?
+
+
+- intent: symptoms of HD
+  examples: |
+    -what are symptoms of HD?
+    -What are the symptoms of heart diseases?
+    -Can you tell me the signs of heart diseases?
+    -What should I look out for if I suspect a heart problem?
+    -How do I know if I have a heart disease?
+    -What are the common signs of heart-related issues?
+    -Can you explain the symptoms of heart disease?
+    -What are the warning signs of a heart attack or heart disease?
+    -How do heart diseases manifest?
+    -What are the physical symptoms of heart problems?
+    -Could you list the symptoms of heart conditions?
+    -What are the early symptoms of heart disease?
+    -How can I recognize if my heart isn’t healthy?
+    -Tell me about the signs of a cardiac condition.
+    -What are the indicators of heart trouble?
+    -What are the symptoms I should watch for heart diseases?
+
+
+- intent: common_to_male_or_female
+  examples:  |
+      -Is heart disease more common in men or women?
+      -Which gender is more affected by heart disease?
+      -Does heart disease occur more often in males or females?
+      -Are men or women more likely to get heart disease?
+      -Who is more prone to heart disease, men or women?
+      -Is heart disease more prevalent in men or women?
+      -What gender has a higher risk of heart disease?
+      -Are heart diseases more common among men or women?
+      -Which gender suffers more from heart diseases?
+      -Do men or women experience heart disease more often?
+      -Who is more likely to develop heart disease, males or females?
+      -Is heart disease more frequent in males or females?
+      -Between men and women, who has a higher chance of developing heart disease?
+      -Are men or women at a greater risk of heart disease?
+      -Does heart disease affect men or women more frequently?
+
+- intent: ECG report
+  examples: |
+      -What ECG changes indicate a myocardial infarction (MI)?
+      -How can I identify ST-elevation myocardial infarction (STEMI) on an ECG?
+      -What are the key ECG features of a heart attack?
+      -How do I detect ischemic changes in an ECG?
+      -What abnormalities in an ECG suggest myocardial infarction?
+      -How can I differentiate between acute and old myocardial infarction on an ECG?
+      -What are the specific leads to check for myocardial infarction in different heart regions?
+      -What patterns on an ECG indicate myocardial ischemia or infarction?
+      -How do T-wave changes help in diagnosing myocardial infarction on an ECG?
+      -What ECG criteria are used to diagnose a non-ST-elevation myocardial infarction (NSTEMI)?
+
+- intent: nations affected
+  examples: |
+      -Which countries have the highest rates of heart disease?
+      -Where do most people suffer from heart disease?
+      -What countries have the most heart disease cases?
+      -Which nations are most affected by heart disease?
+      -Which countries have the largest number of heart disease patients?
+      -Where is heart disease most prevalent around the world?
+      -Which countries report the highest number of heart disease-related deaths?
+      -What are the leading countries in terms of heart disease patients?
+      -Which nations are facing the biggest heart disease epidemics?
+      -Where is cardiovascular disease most common?
+
+- intent: hw to prevent
+  examples:  |
+      -What are the best ways to prevent heart disease?
+      -How can I lower my risk of heart disease?
+      -What lifestyle changes can I make to protect my heart?
+      -I want to improve my heart health. What should I do?
+      -Are there any steps I can take to avoid heart problems?
+      -What can I do to live a heart-healthy life?
+      -I want to live a long and healthy life. What are some heart-healthy habits?
+      -I'm concerned about my heart health. What can I do to reduce my risk?
+      -Are there any simple lifestyle changes that can protect my heart?
+      -how to minimize the risk  of HD?
+    
+    
+- intent: difference between cardiac and non cardiac pain
+  examples: |
+      -What are the key differences between cardiac and non-cardiac chest pain?
+      -How can I clinically differentiate cardiac chest pain from other types of chest pain?
+      -What signs indicate chest pain is cardiac in origin?
+      -How do I know if chest pain is due to a heart problem or something else?
+      -What are the characteristics of non-cardiac chest pain?
+      -Are there specific symptoms to help distinguish between cardiac and non-cardiac chest pain?
+      -How can I determine if chest pain is heart-related during an initial evaluation?
+      -What diagnostic features separate cardiac chest pain from non-cardiac causes?
+      -How can I tell if chest pain is from angina or gastrointestinal issues?
+      -What questions should I ask a patient to differentiate between cardiac and non-cardiac chest pain?
+    
+- intent: what types tests
+  examples:  |
+      -What are the common tests used to diagnose heart diseases?
+      -How do doctors confirm a diagnosis of heart disease?
+      -What diagnostic tools are available for identifying heart problems?
+      -What tests should be performed to evaluate a patient for cardiovascular disease?
+      -What are the standard investigations for detecting heart-related conditions?
+      -What imaging or lab tests are used to diagnose heart issues?
+      -Which tests help differentiate between types of heart diseases?
+      -How can I assess heart function in a patient?
+      -What are the key diagnostic procedures for identifying coronary artery disease?
+      -What advanced tests are available for evaluating heart diseases?
+    
+
+- intent: diagnosing criteria
+  examples:   |
+      -What clinical guidelines should I follow to diagnose heart failure?
+      -How do the Framingham criteria help in diagnosing heart failure?
+      -What are the laboratory tests used to confirm heart failure?
+      -How can echocardiography findings indicate heart failure?
+      -What role does ejection fraction play in diagnosing heart failure?
+      -How are natriuretic peptide levels (BNP/NT-proBNP) used to identify heart failure?
+      -What physical signs on examination suggest heart failure?
+      -What imaging studies confirm heart failure, and how are they interpreted?
+      -How do I use NYHA functional classification to assess heart failure severity?
+      -What differentiates heart failure with reduced ejection fraction (HFrEF) from preserved ejection fraction (HFpEF)?
+
+- intent: troponin levels
+  examples:  |
+      -How is troponin used to confirm a heart attack?
+      -What role do cardiac biomarkers play in diagnosing myocardial infarction?
+      -How can elevated troponin levels indicate a heart attack?
+      -Why is troponin the preferred biomarker for diagnosing acute coronary syndrome?
+      -How do changes in troponin levels help in identifying myocardial damage?
+      -What is the diagnostic significance of troponin in heart attacks?
+      -When should troponin levels be checked in a suspected heart attack?
+      -How does the timeline of troponin elevation help diagnose myocardial infarction?
+      -Can normal troponin levels rule out a heart attack?
+      -How do troponin levels differentiate between acute and chronic cardiac injury?
+
+- intent: smoking to HD
+  examples:  |
+      -How does smoking contribute to the development of heart disease?
+      -Why is smoking a major risk factor for cardiovascular disease?
+      -In what ways does smoking affect heart health?
+      -How does smoking increase the likelihood of heart attacks and strokes?
+      -What are the effects of tobacco use on the heart and blood vessels?
+      -Can smoking cause damage to the arteries? If so, how?
+      -How does smoking affect blood pressure and heart rate?
+      -Why does smoking lead to atherosclerosis and heart disease?
+      -What specific heart conditions are caused by smoking?
+      -How does nicotine and other chemicals in cigarettes damage the cardiovascular system?
+
+- intent: hypertension
+  examples:  |
+      -How does hypertension contribute to cardiovascular complications?
+      -Why is high blood pressure considered a risk factor for heart disease?
+      -Can prolonged hypertension damage the heart? If yes, how?
+      -What is the connection between hypertension and heart failure?
+      -How does uncontrolled blood pressure affect coronary arteries?
+      -In what ways does high blood pressure lead to a heart attack?
+      -Why does hypertension increase the likelihood of developing arrhythmias?
+      -How does high blood pressure impact the heart's structure and function?
+      -What specific types of heart diseases are caused by chronic hypertension?
+      -How can hypertension cause long-term cardiovascular problems?
+      -what is known as hypertension?
+
+- intent: diabetes and HD
+  examples:  |
+      -How does diabetes contribute to the development of heart disease?
+      -What is the link between high blood sugar levels and heart problems?
+      -Why are people with diabetes more likely to have cardiovascular diseases?
+      -Can diabetes directly lead to heart disease? If so, how?
+      -How does Type 2 diabetes increase the risk of heart attacks?
+      -What is the relationship between insulin resistance and heart health?
+      -How does poorly controlled diabetes affect the heart and blood vessels?
+      -What are the common heart-related complications seen in diabetics?
+      -Why is cardiovascular disease the leading cause of death in people with diabetes?
+      -How do chronic high glucose levels damage the cardiovascular system?
+    
+- intent: cholestrol and HD
+  examples:  |
+      -How does high cholesterol lead to atherosclerosis?
+      -What is the role of cholesterol in the formation of atherosclerotic plaques?
+      -Why is elevated cholesterol a major risk factor for atherosclerosis?
+      -Can high LDL cholesterol levels cause artery blockages? If so, how?
+      -How do cholesterol deposits contribute to hardening of the arteries?
+      -What is the connection between bad cholesterol and plaque buildup in arteries?
+      -How does having high cholesterol affect blood vessel health?
+      -What mechanisms link cholesterol and atherosclerosis?
+      -Why does high cholesterol increase the risk of arterial narrowing?
+      -How do lipids from cholesterol accumulate in arterial walls?
+
+- intent: genetics and HD
+  examples:   |
+      -How does family history influence my risk of heart disease?
+      -Why is knowing family history important in evaluating heart health risks?
+      -Can a genetic predisposition increase the likelihood of developing heart conditions?
+      -How significant is the role of inherited factors in heart disease?
+      -Does having a parent with heart disease mean I’m at higher risk?
+      -How can a family history of cardiovascular issues affect my health?
+      -Why do doctors ask about relatives with heart problems during a checkup?
+      -What genetic traits are passed down that might cause heart disease?
+      -Is family history the strongest risk factor for developing coronary artery disease?
+      -How do hereditary heart conditions differ from lifestyle-induced heart disease?
+
+- intent: hypertension treatments
+  examples:  |
+      -What are the most common drugs prescribed for hypertension?
+      -Which medications are typically used to manage high blood pressure?
+      -What treatment options are available for people with hypertension?
+      -What are the standard medications for controlling hypertension?
+      -How do doctors usually treat high blood pressure with medication?
+      -What are the popular medications used to lower blood pressure?
+      -Which drugs are commonly recommended for hypertension management?
+      -What medications can help control hypertension?
+      -What are the first-line treatments for hypertension?
+      -What are the most effective medications for managing high blood pressure?
+
+- intent: manage atrial fibrillations
+  examples:  |
+      -What are the best strategies for managing a patient with atrial fibrillation?
+      -How should a patient with atrial fibrillation be treated?
+      -What is the recommended management plan for atrial fibrillation?
+      -How do you approach the treatment of atrial fibrillation in a clinical setting?
+      -What are the steps in managing atrial fibrillation?
+      -What is the standard care for patients diagnosed with atrial fibrillation?
+      -How do you manage a case of atrial fibrillation effectively?
+      -What treatment options should be considered for managing atrial fibrillation?
+      -What are the most common treatments for atrial fibrillation?
+      -How should you care for a patient presenting with atrial fibrillation?
+    
+    
+          
+- intent: CT aniography vs conventional aniography
+  examples:  |
+      -How does CT coronary angiography compare to conventional angiography in terms of advantages and limitations?
+      -What are the benefits and drawbacks of using CT coronary angiography instead of conventional angiography?
+      -Why might CT coronary angiography be chosen over conventional angiography, and what are its limitations?
+      -What are the strengths and weaknesses of CT coronary angiography compared to traditional angiography?
+      -How do CT and conventional coronary angiography differ in diagnostic utility and practicality?
+
+- intent: ABG in CD
+  examples:  |
+      -What is the relationship between arterial blood gas (ABG) findings and cardiopulmonary dysfunction?
+      -How can ABG results indicate underlying cardiopulmonary dysfunction?
+      -What ABG abnormalities suggest cardiopulmonary problems?
+      -How do ABG findings help diagnose cardiopulmonary disorders?
+      -Why are ABG tests important in assessing cardiopulmonary function?  
+
+
+- intent: ABI in PAD
+  examples:  |
+      -What is the role of the ankle-brachial index (ABI) in diagnosing peripheral arterial disease (PAD)?
+      -How does the ankle-brachial index indicate the presence of peripheral arterial disease?
+      -Why is the ankle-brachial index used to diagnose peripheral arterial disease?
+      -What does an abnormal ankle-brachial index signify in relation to peripheral arterial disease?
+      -How is the ankle-brachial index applied in the detection of peripheral arterial disease?
+
+- intent: DVT to PE
+  examples:  |
+      -How are deep vein thrombosis (DVT) and pulmonary embolism (PE) pathophysiologically connected?
+      -What is the mechanism linking DVT to the development of a pulmonary embolism?
+      -Why does a deep vein thrombosis increase the risk of pulmonary embolism?
+      -What is the relationship between DVT and PE in terms of pathophysiology?
+      -How does a thrombus from DVT lead to pulmonary embolism?
+
+- intent: echocardiography in Ischemic
+  examples:  |
+      -What role does echocardiography play in diagnosing ischemic heart disease?
+      -How can echocardiography findings indicate ischemic heart disease?
+      -What echocardiographic signs suggest the presence of ischemic heart disease?
+      -How does echocardiography help differentiate ischemic heart disease from other conditions?
+      -Why is echocardiography used in the evaluation of ischemic heart disease?
+
+- intent: Beta blockers in CD
+  examples:  |
+      -How do beta-blockers work to prevent secondary cardiac events?
+      -What is the mechanism behind beta-blockers reducing the risk of recurrent cardiac events?
+      -How do beta-blockers help in the management of patients post-myocardial infarction?
+      -What role do beta-blockers play in secondary prevention of cardiac events?
+      -Why are beta-blockers prescribed to prevent secondary cardiac complications?
+
+- intent: right catherization
+  examples:  |
+      -What parameters on right heart catheterization diagnose pulmonary hypertension?
+      -How is pulmonary hypertension confirmed through right heart catheterization?
+      -What are the hemodynamic criteria for diagnosing pulmonary hypertension using right heart catheterization?
+      -Which right heart catheterization findings are indicative of pulmonary hypertension?
+      -What defines pulmonary hypertension on right heart catheterization?
+
+- intent: spirometry
+  examples:  |
+      -How can spirometry differentiate between cardiac and pulmonary causes of dyspnea?
+      -What spirometry findings help identify whether dyspnea is due to pulmonary or cardiac issues?
+      -How does spirometry aid in distinguishing cardiac dyspnea from pulmonary dyspnea?
+      -What role does spirometry play in evaluating the cause of dyspnea?
+      -How do spirometry results clarify whether dyspnea is cardiac or pulmonary in origin?
+
+- intent: doppler ultrasound in ID
+  examples:  |
+      -How does carotid Doppler ultrasound contribute to the prevention of ischemic stroke?
+      -What is the significance of carotid Doppler ultrasound in assessing stroke risk?
+      -Why is carotid Doppler ultrasound used in stroke prevention strategies?
+      -How does carotid Doppler ultrasound help in identifying patients at risk of ischemic stroke?
+      -What role does carotid Doppler ultrasound play in managing and preventing ischemic stroke?
+
+- intent:  arial fibrillations in embolic
+  examples:   |
+      -How does atrial fibrillation increase the risk of embolic stroke?
+      -What role do left atrial appendage clots play in the development of embolic stroke?
+      -Why are patients with atrial fibrillation at higher risk for embolic stroke?
+      -How does atrial fibrillation lead to the formation of clots in the left atrial appendage?
+      -What is the connection between atrial fibrillation, left atrial appendage clots, and embolic stroke?
+
+- intent: TCD access cerebrovascular reserve capacity
+  examples:  |
+      -How does transcranial Doppler imaging evaluate cerebrovascular reserve capacity?
+      -What role does transcranial Doppler play in assessing cerebrovascular reserve?
+      -How is cerebrovascular reserve measured using transcranial Doppler imaging?
+      -Why is transcranial Doppler imaging used to assess cerebrovascular reserve?
+      -How does transcranial Doppler detect impairments in cerebrovascular reserve?
+
+      
+
+        
+- intent: lipid  panel in CD
+  examples:   |
+      -Why is a lipid panel important for assessing cardiovascular risk in diabetic patients?
+      -How does the lipid panel help evaluate heart disease risk in diabetes?
+      -What role does the lipid panel play in managing cardiovascular risk in diabetic patients?
+      -How is a lipid panel used to monitor cardiovascular health in individuals with diabetes?
+      -What is the significance of analyzing lipid profiles in diabetic patients for heart disease prevention?
+
+- intent: insulin resistance in endothelial dysfunction
+  examples:  |
+      -What is the link between insulin resistance and endothelial dysfunction?
+      -How does insulin resistance promote the development of atherosclerosis?
+      -What role does insulin resistance play in endothelial dysfunction and vascular disease?
+      -How does insulin resistance contribute to the progression of atherosclerosis?
+      -Why is insulin resistance associated with endothelial damage and atherosclerosis?
+      
+
+        
+- intent: lactate levels in MD
+  examples:   |
+      -How do lactate levels indicate tissue perfusion during an acute myocardial infarction?
+      -Why are lactate levels important in evaluating perfusion in acute myocardial infarction?
+      -What is the role of lactate levels in monitoring tissue hypoxia during a heart attack?
+      -How does elevated lactate help assess the severity of myocardial infarction?
+      -What is the clinical significance of lactate levels in acute myocardial infarction management?
+
+
+- intent: chronic hyperglycemia and diabetic cardiomyopathy
+  examples:   |
+      -What is the relationship between chronic hyperglycemia and diabetic cardiomyopathy progression?
+      -How does persistent high blood sugar worsen diabetic cardiomyopathy?
+      -Why does chronic hyperglycemia contribute to the development of diabetic cardiomyopathy?
+      -How does hyperglycemia accelerate structural and functional changes in diabetic cardiomyopathy?
+      -What role does chronic hyperglycemia play in worsening diabetic heart disease?
+
+- intent: Lbbb block MD
+  examples:  |
+      -How does left bundle branch block (LBBB) affect the diagnosis of a myocardial infarction?
+      -What challenges does LBBB present in identifying myocardial infarction on an ECG?
+      -Why is LBBB significant in myocardial infarction diagnosis?
+      -Can myocardial infarction be reliably diagnosed in the presence of LBBB?
+      -What are the diagnostic implications of LBBB in myocardial infarction?
+
+- intent: APOE in CD
+  examples:  |
+      -How do ApoE genetic variants impact cardiovascular risk?
+      -What is the role of ApoE polymorphisms in determining cardiovascular disease susceptibility?
+      -How does the ApoE genotype correlate with cardiovascular risk factors?
+      -What influence do ApoE genetic markers have on lipid metabolism and cardiovascular health?
+      -Why are ApoE variants significant in assessing cardiovascular disease risk?
+
+- intent: pharmacogenomics in CD
+  examples:  |
+      -How does pharmacogenomics guide antiplatelet therapy in patients with coronary artery disease?
+      -What is the importance of pharmacogenomic testing in personalizing antiplatelet treatment for coronary artery disease?
+      -How do genetic variations affect the response to antiplatelet drugs in coronary artery disease patients?
+      -What role do pharmacogenomic markers play in optimizing antiplatelet therapy for coronary artery disease?
+      -Why is pharmacogenomics essential in selecting the most effective antiplatelet therapy for coronary artery disease?
+
+- intent: hypercholesterolemia in CD
+  examples:  |
+      -How does familial hypercholesterolemia contribute to early-onset coronary artery disease?
+      -What is the link between familial hypercholesterolemia and premature coronary artery disease?
+      -Why does familial hypercholesterolemia increase the risk of coronary artery disease at a young age?
+      -How does elevated cholesterol in familial hypercholesterolemia lead to early cardiovascular events?
+      -What mechanisms in familial hypercholesterolemia predispose individuals to premature coronary artery disease?
+
+- intent: troponin I and troponin T in MD
+  examples:  |
+      -How do troponin I and troponin T compare in terms of sensitivity and specificity for diagnosing myocardial infarction?
+      -What are the differences between troponin I and troponin T in detecting myocardial infarction?
+      -Which has better diagnostic accuracy for myocardial infarction: troponin I or troponin T?
+      -How do the sensitivity and specificity of troponin I and T influence their use in myocardial infarction diagnosis?
+      -Are there differences in diagnostic reliability between troponin I and troponin T for myocardial infarction?
+
+- intent: Q waves in ECG
+  examples:  |
+      -What does the presence of Q waves on an ECG indicate about the severity of myocardial infarction?
+      -How are Q waves on an ECG linked to the extent of heart muscle damage during a myocardial infarction?
+      -Why are Q waves significant in assessing the magnitude of a myocardial infarction?
+      -How does the development of Q waves on an ECG reflect the size of a myocardial infarction?
+      -What is the relationship between Q waves and myocardial infarction severity on an ECG?
+
+
+- intent: HRV in CD
+  examples:  |
+      -How is heart rate variability (HRV) used to predict outcomes in cardiovascular diseases?
+      -What is the importance of heart rate variability in evaluating the prognosis of cardiovascular patients?
+      -How does reduced HRV correlate with cardiovascular disease risk and outcomes?
+      -Why is heart rate variability a significant prognostic marker in cardiovascular health?
+      -What does heart rate variability reveal about the prognosis of patients with cardiovascular conditions?
+
+- intent: MRI in identifying MD
+  examples:  |
+      -What is the role of cardiac MRI in identifying myocardial fibrosis and infarction?
+      -How does cardiac MRI improve the accuracy of diagnosing myocardial damage?
+      -Why is cardiac MRI considered effective for detecting myocardial fibrosis or infarction?
+      -How does cardiac MRI differentiate between viable and non-viable myocardium?
+      -What are the advantages of using cardiac MRI to assess myocardial fibrosis or infarction?
+
+- intent: SGLT2 in CD
+  examples:  |
+      -How do SGLT2 inhibitors reduce cardiovascular risk in patients with heart failure and diabetes?
+      -What are the benefits of SGLT2 inhibitors for cardiovascular health in diabetic patients with heart failure?
+      -Why are SGLT2 inhibitors recommended for managing heart failure in patients with diabetes?
+      -What mechanisms allow SGLT2 inhibitors to lower cardiovascular risk in heart failure and diabetes?
+      -How do SGLT2 inhibitors improve outcomes for patients with both diabetes and heart failure?
+
+- intent: FFR in CD
+  examples:  |
+      -What is the role of fractional flow reserve (FFR) in determining the need for revascularization in coronary artery disease?
+      -How does FFR assessment influence revascularization decisions in patients with coronary artery disease?
+      -Why is fractional flow reserve important for guiding treatment in coronary artery disease?
+      -How does FFR help identify lesions that require revascularization in coronary arteries?
+      -What is the significance of fractional flow reserve in planning coronary interventions?
+
+- intent: therapies for PAH
+  examples:   |
+      -What are the latest therapeutic advancements in managing pulmonary arterial hypertension (PAH)?
+      -How are emerging treatments changing the landscape of pulmonary arterial hypertension therapy?
+      -What new drugs or therapies are available for pulmonary arterial hypertension?
+      -What are the novel approaches being developed to treat pulmonary arterial hypertension?
+      -How do emerging therapies improve outcomes in patients with pulmonary arterial hypertension?
+
+- intent: D_dimer testing
+  examples:  |
+      -What is the role of d-dimer testing in diagnosing venous thromboembolism (VTE)?
+      -How do elevated d-dimer levels indicate the presence of venous thromboembolism?
+      -Why are d-dimer levels important in evaluating patients for suspected VTE?
+      -How is a d-dimer test used to rule out venous thromboembolism?
+      -What does an abnormal d-dimer level signify in the context of diagnosing VTE?
+
+- intent: endothelial dysfunction and vascular disease
+  examples:  |
+      -How does endothelial dysfunction contribute to the development of atherosclerosis and peripheral vascular disease?
+      -What role does endothelial dysfunction play in the progression of vascular diseases like atherosclerosis?
+      -Why is endothelial dysfunction a key factor in the pathogenesis of atherosclerosis and peripheral vascular disease?
+      -How does impaired endothelial function accelerate atherosclerosis and peripheral vascular disease?
+      -What is the relationship between endothelial dysfunction and vascular disease progression?
+
+- intent: CTPA in pulmonary embolism
+  examples:  |
+      -How is computed tomography pulmonary angiography (CTPA) used to diagnose acute pulmonary embolism?
+      -What makes CTPA the gold standard for detecting acute pulmonary embolism?
+      -Why is CTPA preferred for diagnosing pulmonary embolism in acute settings?
+      -What role does CTPA play in confirming the presence of acute pulmonary embolism?
+      -How does CTPA enhance the accuracy of diagnosing pulmonary embolism?
+
+- intent: celebral autoregulation in ischemic stroke
+  examples:  |
+      -What happens to cerebral autoregulation during an ischemic stroke, and how can it be assessed?
+      -How is cerebral autoregulation affected in the setting of an ischemic stroke?
+      -What changes occur in cerebral autoregulation during ischemic stroke, and how are they measured?
+      -How does impaired cerebral autoregulation contribute to ischemic stroke pathophysiology?
+      -What techniques are used to evaluate cerebral autoregulation in patients with ischemic stroke?
+
+- intent: antiplatelet therapy
+  examples:  |
+      -How does dual antiplatelet therapy help prevent recurrent ischemic strokes?
+      -What is the importance of dual antiplatelet therapy in managing patients after an ischemic stroke?
+      -Why is dual antiplatelet therapy used in the secondary prevention of ischemic stroke?
+      -What are the benefits and risks of dual antiplatelet therapy for stroke prevention?
+      -How effective is dual antiplatelet therapy in reducing the risk of recurrent strokes?
+
+- intent: neuroimaging differentiate
+  examples:  |
+      -How do CT and MRI differ in identifying ischemic and hemorrhagic strokes?
+      -What role does neuroimaging play in distinguishing between ischemic and hemorrhagic strokes?
+      -How can CT and MRI be used to differentiate stroke types?
+      -Why is neuroimaging essential in determining whether a stroke is ischemic or hemorrhagic?
+      -What are the advantages of CT and MRI in diagnosing stroke subtypes?
+
+- intent: cryptogenic strokes
+  examples:  |
+      -What factors increase the likelihood of a recurrent stroke in cryptogenic stroke patients?
+      -Why do cryptogenic stroke patients remain at risk for future strokes?
+      -What are the predictors of recurrent stroke in individuals with cryptogenic stroke?
+      -How can clinicians identify patients with cryptogenic stroke who are at high risk for recurrence?
+      -What risk factors should be monitored to prevent recurrent strokes in cryptogenic stroke cases?
+
+- intent: PFO closure
+  examples:  |
+      -How effective is patent foramen ovale (PFO) closure in reducing recurrent stroke risk in young patients?
+      -What is the impact of PFO closure on preventing stroke recurrence in younger individuals?
+      -Why is PFO closure recommended for younger stroke patients?
+      -How does closing a PFO influence the long-term risk of stroke recurrence in young people?
+      -What are the benefits of PFO closure in younger patients with cryptogenic stroke?
+
+- intent: incretin based therapies
+  examples:  |
+      -How do incretin-based therapies impact cardiovascular health in patients with type 2 diabetes?
+      -What role do incretin-based treatments play in improving cardiovascular outcomes for diabetic patients?
+      -How do GLP-1 receptor agonists and DPP-4 inhibitors benefit cardiovascular outcomes in type 2 diabetes?
+      -Why are incretin-based therapies associated with reduced cardiovascular risk in type 2 diabetes?
+      -What is the evidence for the cardiovascular benefits of incretin-based therapies in managing type 2 diabetes?
+
+
+- intent: impact of AGEs
+  examples:  |
+      -How do advanced glycation end products (AGEs) contribute to vascular damage and metabolic diseases?
+      -What is the role of AGEs in the progression of vascular dysfunction and metabolic disorders?
+      -How do AGEs impact vascular health in conditions like diabetes and metabolic syndrome?
+      -What are the mechanisms by which AGEs affect vascular integrity and metabolic regulation?
+      -How do elevated levels of AGEs influence the development of vascular complications in metabolic disorders?
+
+- intent: adipose tissue function
+  examples:  |
+      -How does impaired adipose tissue function lead to systemic inflammation and the development of metabolic syndrome?
+      -What is the role of dysfunctional adipose tissue in promoting inflammation and metabolic dysregulation?
+      -How does adipose tissue dysfunction drive the pathophysiology of metabolic syndrome?
+      -What are the inflammatory consequences of adipose tissue dysfunction in metabolic diseases?
+      -How does the dysregulation of adipose tissue contribute to the onset of systemic inflammation and metabolic syndrome?
+
+- intent: mitochondrial dysfunction
+  examples:  |
+      -How does mitochondrial dysfunction contribute to the development of type 2 diabetes?
+      -What role does impaired mitochondrial function play in the progression of type 2 diabetes?
+      -How does mitochondrial dysfunction affect insulin sensitivity in type 2 diabetes?
+      -What is the relationship between mitochondrial dysfunction and metabolic disturbances in type 2 diabetes?
+      -How does mitochondrial dysfunction influence glucose metabolism and insulin resistance in type 2 diabetes?
+
+- intent: care testing improve diagnosis
+  examples:  |
+      -How are point-of-care cardiac biomarkers used to quickly diagnose acute coronary syndrome in emergency care?
+      -What is the role of point-of-care testing for cardiac biomarkers in detecting acute coronary syndrome?
+      -How do cardiac biomarkers at the point of care aid in the rapid assessment of acute coronary syndrome?
+      -Why are point-of-care cardiac biomarker tests crucial in emergency settings for diagnosing acute coronary syndrome?
+      -How does point-of-care testing improve the speed of acute coronary syndrome diagnosis?
+
+- intent: role ECMO
+  examples:  |
+      -How is extracorporeal membrane oxygenation (ECMO) used in the treatment of cardiogenic shock?
+      -What role does ECMO play in managing patients with cardiogenic shock?
+      -How does ECMO support patients experiencing cardiogenic shock?
+      -Why is ECMO considered a therapeutic option for severe cardiogenic shock?
+      -How does ECMO improve outcomes in cases of refractory cardiogenic shock?
+
+- intent: ETCO2 level assist
+  examples:  |
+      -How is end-tidal CO₂ (ETCO₂) monitoring used during cardiac arrest resuscitation?
+      -What role does ETCO₂ monitoring play in guiding resuscitation efforts during cardiac arrest?
+      -How can ETCO₂ levels inform the effectiveness of CPR in cardiac arrest management?
+      -Why is end-tidal CO₂ measurement important during advanced life support in cardiac arrest?
+      -How does monitoring ETCO₂ assist in evaluating outcomes during cardiac resuscitation?
+
+- intent: EGDT in septic
+  examples:  |
+      -How does early goal-directed therapy (EGDT) improve outcomes in septic shock management?
+      -What are the benefits of implementing EGDT in patients with septic shock?
+      -Why is early goal-directed therapy significant in treating septic shock?
+      -How does EGDT influence mortality rates in septic shock patients?
+      -What role does early goal-directed therapy play in optimizing septic shock treatment?
+
+- intent: polygenic risk
+  examples:  |
+      -How do polygenic risk scores enhance cardiovascular event prediction across different populations?
+      -What role do polygenic risk scores play in assessing cardiovascular risk in diverse genetic groups?
+      -Why are polygenic risk scores valuable for predicting cardiovascular events in multi-ethnic cohorts?
+      -How can polygenic risk scores improve personalized cardiovascular risk assessment?
+      -What is the significance of polygenic risk scores in stratifying cardiovascular risk in varied populations?
+
+- intent: familial hypercholesterolemia
+  examples:  |
+      -How does next-generation sequencing aid in diagnosing familial hypercholesterolemia?
+      -What is the significance of next-generation sequencing in detecting genetic mutations linked to familial hypercholesterolemia?
+      -How does next-generation sequencing improve the identification of familial hypercholesterolemia cases?
+      -Why is next-generation sequencing important for the genetic diagnosis of familial hypercholesterolemia?
+      -What role does next-generation sequencing play in uncovering hereditary factors in familial hypercholesterolemia?
+
+- intent: CRISPR
+  examples:  |
+      -How can CRISPR-Cas9 be used to treat genetic mutations causing hypertrophic cardiomyopathy?
+      -What is the potential role of CRISPR-Cas9 in addressing the genetic basis of hypertrophic cardiomyopathy?
+      -How does CRISPR-Cas9 offer a therapeutic approach for hereditary hypertrophic cardiomyopathy?
+      -Can CRISPR-Cas9 correct the genetic defects underlying hypertrophic cardiomyopathy?
+      -What is the mechanism by which CRISPR-Cas9 could treat hypertrophic cardiomyopathy caused by genetic mutations?
+
+- intent: CRP in CD
+  examples:  |
+      -How is high-sensitivity C-reactive protein (hs-CRP) used to evaluate cardiovascular risk?
+      -What does hs-CRP indicate about inflammation and cardiovascular disease risk?
+      -Why is hs-CRP considered a reliable biomarker for assessing cardiovascular risk?
+      -How does hs-CRP correlate with the likelihood of cardiovascular events?
+      -What is the clinical significance of measuring hs-CRP in predicting cardiovascular disease?
+
+- intent: Takotsubo cardiomypathy
+  examples:  |
+      -What are the similarities between Takotsubo cardiomyopathy and myocardial infarction, and how is it differentiated?
+      -How does Takotsubo cardiomyopathy present like a myocardial infarction?
+      -What diagnostic tools help distinguish Takotsubo cardiomyopathy from myocardial infarction?
+      -Why is Takotsubo cardiomyopathy often mistaken for myocardial infarction?
+      -How is Takotsubo cardiomyopathy identified and confirmed despite its resemblance to myocardial infarction?
+
+- intent: Systolic diastolic dysfunction
+  examples:  |
+      -What are the key differences between systolic and diastolic dysfunction in heart failure?
+      -How does systolic dysfunction differ from diastolic dysfunction in heart failure pathophysiology?
+      -What distinguishes systolic heart failure from diastolic heart failure in terms of their underlying mechanisms?
+      -How do systolic and diastolic dysfunction impact cardiac function in heart failure patients?
+      -What are the pathophysiological differences between systolic and diastolic dysfunction in heart failure?
+
+- intent: INOCA patients
+  examples:  |
+      -How does coronary microvascular dysfunction lead to ischemia in patients with no obstructive coronary arteries (INOCA)?
+      -What role does coronary microvascular dysfunction play in causing ischemia in INOCA?
+      -How can coronary microvascular dysfunction result in symptoms similar to ischemic heart disease despite the absence of major coronary artery obstruction?
+      -What is the connection between coronary microvascular dysfunction and ischemia in patients with non-obstructive coronary artery disease (NOCAD)?
+      -How does coronary microvascular dysfunction contribute to the pathophysiology of ischemia in INOCA patients?
+
+- intent: LGE effect
+  examples:  |
+      -How does late gadolinium enhancement (LGE) on cardiac MRI predict cardiac outcomes in hypertrophic cardiomyopathy?
+      -What is the significance of late gadolinium enhancement in assessing the prognosis of patients with hypertrophic cardiomyopathy?
+      -How does late gadolinium enhancement help in predicting adverse events in hypertrophic cardiomyopathy?
+      -What role does late gadolinium enhancement play in evaluating the risk of arrhythmias and sudden cardiac death in hypertrophic cardiomyopathy?
+      -How can late gadolinium enhancement on MRI be used to assess the severity and prognosis of hypertrophic cardiomyopathy?
+
+- intent: MitraClip procedure
+  examples:  |
+      -How does the MitraClip procedure help manage functional mitral regurgitation in heart failure patients?
+      -What role does the MitraClip device play in treating functional mitral regurgitation in heart failure?
+      -How does MitraClip therapy improve outcomes in patients with heart failure and functional mitral regurgitation?
+      -How does interventional treatment with MitraClip reduce the severity of functional mitral regurgitation in heart failure?
+      -What are the benefits of using MitraClip in patients with functional mitral regurgitation due to heart failure?
+
+- intent: OSA contribution to hypertension
+  examples:  |
+      -How does obstructive sleep apnea (OSA) lead to the development of pulmonary hypertension?
+      -What is the link between obstructive sleep apnea and pulmonary hypertension?
+      -How does OSA contribute to increased pulmonary artery pressure?
+      -What mechanisms connect obstructive sleep apnea with pulmonary hypertension?
+      -How does untreated obstructive sleep apnea result in pulmonary vascular complications like pulmonary hypertension?
+
+- intent: endothelin receptors in PAH
+  examples:  |
+      -How do endothelin receptor antagonists help in managing pulmonary arterial hypertension?
+      -What is the mechanism of action of endothelin receptor antagonists in treating PAH?
+      -Why are endothelin receptor antagonists used for pulmonary arterial hypertension?
+      -How do endothelin receptor antagonists improve outcomes in PAH patients?
+      -What is the therapeutic role of endothelin receptor blockers in PAH management?
+
+- intent: CTEPH and IPH
+  examples:  |
+      -How is chronic thromboembolic pulmonary hypertension (CTEPH) different from idiopathic pulmonary hypertension (IPH) in terms of pathophysiology and treatment?
+      -What distinguishes CTEPH from IPH in causes and management approaches?
+      -How do the mechanisms of CTEPH and IPH differ, and how does this affect treatment options?
+      -What are the key differences in the pathophysiology and management of CTEPH compared to IPH?
+      -How does the treatment strategy for CTEPH vary from that for idiopathic pulmonary hypertension?
+
+- intent: venous stasis in CVI
+  examples:  |
+      -How does venous stasis affect patients with chronic venous insufficiency (CVI)?
+      -What are the clinical consequences of venous stasis in CVI patients?
+      -How does chronic venous stasis contribute to complications in CVI?
+      -What is the significance of venous stasis in the progression of chronic venous insufficiency?
+      -What are the health impacts of venous stasis in individuals with chronic venous disease?
+
+- intent: TBI to improve accuracy in PAD
+  examples:  |
+      -How is the toe-brachial index (TBI) used to diagnose peripheral arterial disease in diabetic patients?
+      -Why is the toe-brachial index more reliable than the ankle-brachial index in diabetics with suspected PAD?
+      -How does TBI enhance the detection of peripheral arterial disease in patients with diabetes?
+      -What makes the toe-brachial index a better diagnostic tool for PAD in diabetic individuals?
+      -How does the use of TBI improve the accuracy of PAD diagnosis in diabetic patients?
+
+- intent: mechanical thrombectomy
+  examples:  |
+      -How does mechanical thrombectomy help in managing large vessel occlusion strokes?
+      -Why is mechanical thrombectomy considered a standard treatment for large vessel occlusion strokes?
+      -What benefits does mechanical thrombectomy offer in large vessel ischemic stroke management?
+      -How effective is mechanical thrombectomy for patients with large vessel occlusion strokes?
+      -What is the significance of mechanical thrombectomy in improving outcomes for large vessel stroke patients?
+
+- intent: CSVD contribution
+  examples:  |
+      -What is the relationship between cerebral small vessel disease and vascular cognitive impairment?
+      -How does small vessel disease in the brain affect cognitive function?
+      -Why is cerebral small vessel disease a key factor in vascular cognitive impairment?
+      -What role does cerebral small vessel disease play in the development of cognitive decline?
+      -How does damage from small vessel disease lead to vascular-related cognitive issues?
+
+- intent: perfusion weighted MRI
+  examples:  |
+      -How does perfusion-weighted MRI help identify salvageable brain tissue in acute stroke patients?
+      -What is the role of advanced imaging techniques in determining the penumbra during an acute stroke?
+      -Why is perfusion-weighted MRI critical for assessing viable brain tissue in stroke management?
+      -How do imaging methods like diffusion and perfusion MRI guide acute stroke therapy?
+      -What is the importance of advanced imaging in identifying the ischemic core and penumbra in stroke patients?
+
+- intent: atrial septal aneurysm
+  examples:  |
+      -Why does atrial septal aneurysm raise the likelihood of embolic stroke?
+      -How does an atrial septal aneurysm contribute to stroke risk?
+      -What is the connection between atrial septal aneurysm and embolic stroke?
+      -How can atrial septal aneurysm lead to an increased risk of thromboembolic events?
+      -What is the role of atrial septal aneurysm in the pathogenesis of embolic strokes?
+
+- intent: hypothyroidism contribution to atherosclerosis
+  examples:  |
+      -How does hypothyroidism contribute to the development of atherosclerosis?
+      -What are the cardiovascular effects of hypothyroidism, especially regarding atherosclerosis risk?
+      -Why is hypothyroidism considered a factor in atherosclerosis progression?
+      -How does hypothyroidism influence lipid metabolism and atherosclerosis development?
+      -What is the link between hypothyroidism and cardiovascular complications like atherosclerosis?
+
+- intent: NAFLD contribution
+  examples:  |
+      -What is the connection between non-alcoholic fatty liver disease (NAFLD) and insulin resistance?
+      -How does NAFLD increase the risk of cardiovascular disease and metabolic complications?
+      -Why is NAFLD considered a factor in worsening insulin resistance and cardiovascular health?
+      -What role does non-alcoholic fatty liver disease play in systemic inflammation and cardiovascular risk?
+      -How does the presence of NAFLD contribute to metabolic syndrome and related cardiovascular conditions?
+
+- intent: CKD contribution
+  examples:  |
+      -How does chronic kidney disease (CKD) contribute to cardiovascular complications in diabetes?
+      -What molecular pathways connect CKD with cardiovascular risk in diabetic individuals?
+      -Why is CKD a significant factor in increasing cardiovascular morbidity in patients with diabetes?
+      -What are the underlying mechanisms driving cardiovascular disease in diabetics with CKD?
+      -How do CKD and diabetes interact to amplify cardiovascular morbidity?
+
+- intent: glucocorticoids affect in HD
+  examples:  |
+      -What are the cardiovascular effects of long-term glucocorticoid use in chronic inflammatory diseases?
+      -How do glucocorticoids influence heart health in patients with chronic inflammation?
+      -Why do glucocorticoids pose cardiovascular risks for individuals with chronic inflammatory conditions?
+      -What is the role of glucocorticoids in altering cardiovascular physiology in chronic inflammation?
+      -How does prolonged glucocorticoid therapy affect the cardiovascular system in inflammatory diseases?
+
+- intent: impedance cardiography
+  examples:  |
+      -How does impedance cardiography assist in managing heart failure in critical care settings?
+      -What is the clinical utility of impedance cardiography for heart failure patients in intensive care?
+      -How can impedance cardiography improve monitoring in critically ill heart failure patients?
+      -What role does impedance cardiography play in optimizing treatment for heart failure in critical care?
+      -Why is impedance cardiography used for hemodynamic assessment in heart failure patients in ICU settings?
+
+- intent: permissive hypertension in hemorrhagic shock
+  examples:  |
+      -What are the effects of permissive hypotension on trauma patients with hemorrhagic shock?
+      -How does permissive hypotension influence survival in hemorrhagic trauma cases?
+      -Why is permissive hypotension used in managing trauma-induced hemorrhagic shock?
+      -How does maintaining permissive hypotension affect outcomes in hemorrhagic shock?
+      -What is the role of permissive hypotension in improving outcomes in trauma patients with severe bleeding?
+
+- intent: lactate clearence in sepsis
+  examples:  |
+      -How does lactate clearance predict mortality in sepsis patients?
+      -Why is lactate clearance used as an indicator of survival in sepsis management?
+      -What is the significance of monitoring lactate clearance in septic patients?
+      -How effective is lactate clearance as a prognostic tool in sepsis?
+      -What does lactate clearance indicate about patient outcomes in sepsis?
+
+- intent: VADS enhance survival rates
+  examples:  |
+      -How do ventricular assist devices (VADs) enhance survival rates in end-stage heart failure patients?
+      -What role do VADs play in improving outcomes for individuals with severe heart failure?
+      -How effective are VADs in extending life expectancy in patients with advanced heart failure?
+      -Why are ventricular assist devices used in managing end-stage heart failure?
+      -What are the survival benefits of VADs in patients awaiting heart transplantation?
+
+- intent: detection of pathogenic variants in the TTN gene
+  examples:  |
+      -How do TTN gene mutations affect the management of patients with dilated cardiomyopathy?
+      -What is the clinical significance of identifying pathogenic TTN variants in dilated cardiomyopathy?
+      -How does genetic testing for TTN mutations guide treatment strategies in dilated cardiomyopathy?
+      -Why is the detection of TTN pathogenic variants important in the care of dilated cardiomyopathy patients?
+      -What role does TTN gene analysis play in managing familial dilated cardiomyopathy?
+
+- intent: pharmacogenomics in hyperlimidia
+  examples:  |
+      -How does pharmacogenomics help tailor statin therapy for patients with hyperlipidemia?
+      -What is the significance of pharmacogenomic testing in optimizing statin efficacy and safety?
+      -How can genetic variations affect the response to statins in hyperlipidemia management?
+      -Why is pharmacogenomics important in reducing statin-related adverse effects?
+      -How does genetic testing guide personalized statin therapy in treating hyperlipidemia?
+
+- intent: gene environment in hypertension
+  examples:  |
+      -How do genetic and environmental factors interact to influence the risk of developing hypertension?
+      -What is the role of gene-environment interactions in the pathogenesis of hypertension?
+      -How does the combination of genetic predisposition and lifestyle factors contribute to hypertension?
+      -What are the effects of gene-environment interplay on blood pressure regulation and hypertension development?
+      -How do environmental triggers modify the genetic susceptibility to hypertension?
+
+- intent: lipoprotein levels in CD
+  examples:  |
+      -How do elevated lipoprotein(a) levels contribute to residual cardiovascular risk?
+      -What is the significance of measuring lipoprotein(a) in assessing cardiovascular risk beyond traditional lipid profiles?
+      -How does lipoprotein(a) affect the evaluation of residual cardiovascular risk after statin therapy?
+      -Why is lipoprotein(a) considered an independent risk factor for cardiovascular disease?
+      -What role does lipoprotein(a) play in the management of patients with residual cardiovascular risk?
+
+- intent: intermittent fasting effects
+  examples:  |
+      -What are the cardiovascular and metabolic benefits of intermittent fasting?
+      -How does intermittent fasting influence heart health and metabolic markers?
+      -Can intermittent fasting improve cardiovascular outcomes and insulin sensitivity?
+      -What is the impact of intermittent fasting on cholesterol, blood pressure, and glucose levels?
+      -How does intermittent fasting contribute to better cardiovascular and metabolic health?
+
+- intent:  role of omega3 fatty acids
+  examples:  |
+      -How do omega-3 fatty acids help in preventing arrhythmias and sudden cardiac death?
+      -What is the role of omega-3 fatty acids in improving cardiac rhythm stability?
+      -Can omega-3 fatty acids reduce the risk of life-threatening arrhythmias?
+      -What benefits do omega-3 fatty acids offer in lowering sudden cardiac death risk?
+      -How do omega-3 fatty acids contribute to arrhythmia prevention and heart health?
+
+- intent: affect of psychosocial stress
+  examples:  |
+      -What is the impact of job strain and other stressors on the risk of developing hypertension?
+      -How do psychosocial stress factors contribute to high blood pressure?
+      -Can chronic stress from work and life situations lead to hypertension?
+      -What role do stressors like job strain play in increasing the likelihood of hypertension?
+      -How do psychological and social stressors influence blood pressure regulation and hypertension risk?
+
+- intent: use of AI in wearables
+  examples:  |
+      -How does artificial intelligence improve the detection of arrhythmias through wearable technology?
+      -What is the significance of AI in identifying cardiac arrhythmias with wearables?
+      -Can wearable devices with AI algorithms effectively detect arrhythmias?
+      -How is artificial intelligence transforming arrhythmia detection in wearable health devices?
+      -What role does AI play in enhancing the accuracy of arrhythmia monitoring via wearables?
+
+- intent: FFRCT in treatments
+  examples:  |
+      -How is coronary fractional flow reserve-computed tomography (FFR-CT) used in clinical decision-making for coronary artery disease?
+      -What is the role of FFR-CT in managing patients with coronary artery disease?
+      -How does FFR-CT guide treatment decisions for coronary lesions?
+      -Why is FFR-CT important in evaluating coronary artery disease severity?
+      -What are the clinical benefits of using FFR-CT in coronary treatment planning?
+
+- intent: ST2 and galectin3
+  examples:  |
+      -What is the clinical significance of ST2 and galectin-3 biomarkers in chronic heart failure management?
+      -How do ST2 and galectin3 assist in monitoring and treating chronic heart failure?
+      -Why are biomarkers like ST2 and galectin3 important in heart failure prognosis?
+      -How do ST2 and galectin3 biomarkers contribute to the care of patients with chronic heart failure?
+      -What roles do ST2 and galectin3 play in guiding therapy for chronic heart failure?
+
+- intent: TVR in elderly patients
+  examples:  |
+      -What impact does frailty have on the prognosis of elderly patients undergoing TAVR?
+      -How does frailty affect recovery and complications after transcatheter aortic valve replacement?
+      -Why is frailty an important factor in assessing TAVR outcomes in older adults?
+      -What role does frailty play in predicting mortality and morbidity after TAVR?
+      -How does preoperative frailty influence long-term survival in TAVR patients?
+      
+- intent: HFpEF mimic heart failure
+  examples:  |
+      -How does cardiac amyloidosis present similarly to heart failure with preserved ejection fraction (HFpEF)?
+      -Why is cardiac amyloidosis often misdiagnosed as HFpEF?
+      -What are the clinical and echocardiographic similarities between cardiac amyloidosis and HFpEF?
+      -How can cardiac amyloidosis be differentiated from HFpEF in diagnosis?
+      -What diagnostic tools help distinguish cardiac amyloidosis from HFpEF?
+
+- intent: lipoprotein in LDL
+  examples:  |
+      -How does lipoprotein(a) contribute to cardiovascular risk despite well-controlled LDL levels?
+      -Why is lipoprotein(a) considered a residual risk factor in cardiovascular disease management?
+      -What role does lipoprotein(a) play in persistent cardiovascular risk after LDL optimization?
+      -Can elevated lipoprotein(a) levels increase cardiovascular events even with low LDL cholesterol?
+      -How does lipoprotein(a) influence atherosclerosis and thrombosis despite statin therapy?
+
+- intent: role of PCI
+  examples:  |
+      -How does invasive coronary physiology testing assist in optimizing PCI outcomes?
+      -What is the clinical significance of fractional flow reserve (FFR) and instantaneous wave-free ratio (iFR) in PCI decision-making?
+      -How do invasive physiological assessments improve stent placement strategies in coronary interventions?
+      -Why is invasive coronary physiology testing important for guiding revascularization in patients with coronary artery disease?
+      -How do FFR and iFR influence the selection of lesions for PCI?
+
+- intent: coronary vasospastic angina
+  examples:  |
+      -How does coronary vasospastic angina redefine the understanding of myocardial ischemia?
+      -What challenges does vasospastic angina pose to the traditional obstructive model of ischemic heart disease?
+      -How does coronary artery spasm contribute to myocardial ischemia despite the absence of significant atherosclerosis?
+      -Why is vasospastic angina considered a distinct mechanism of ischemia compared to stable angina and acute coronary syndromes?
+      -What are the implications of recognizing coronary vasospastic angina for diagnosing and treating ischemic heart disease?
+
+- intent: cardioprotective mechanisms of SGLT2
+  examples:  |
+      -What are the cardioprotective mechanisms of SGLT2 inhibitors beyond lowering blood glucose?
+      -How do SGLT2 inhibitors benefit heart failure and cardiovascular disease independent of glycemic control?
+      -Why are SGLT2 inhibitors recommended for heart failure patients even without diabetes?
+      -What non-glycemic effects of SGLT2 inhibitors contribute to cardiovascular risk reduction?
+      -How do SGLT2 inhibitors improve cardiac and renal outcomes in patients with cardiovascular disease?
+
+- intent: coronary slow flow phenomenon
+  examples:  |
+      -What are the causes and clinical implications of the coronary slow flow phenomenon?
+      -How does coronary slow flow affect patient prognosis and treatment strategies?
+      -What is the relationship between coronary slow flow and microvascular dysfunction?
+      -How should coronary slow flow be diagnosed and managed in clinical practice?
+      -Why is coronary slow flow phenomenon considered a distinct entity in coronary artery disease?
+
+
+- intent: CTEPH  differ from other forms
+  examples:  |
+      -What distinguishes chronic thromboembolic pulmonary hypertension (CTEPH) from idiopathic pulmonary hypertension?
+      -How does CTEPH develop, and how is it different from other types of pulmonary hypertension?
+      -What are the key pathophysiological differences between CTEPH and pulmonary arterial hypertension (PAH)?
+      -How does the treatment approach for CTEPH vary compared to other forms of pulmonary hypertension?
+      -Why is CTEPH considered a potentially curable form of pulmonary hypertension?
+
+- intent: role of NOACs
+  examples:  |
+      -How do novel oral anticoagulants (NOACs) help in preventing recurrent venous thromboembolism (VTE)?
+      -What are the advantages of NOACs over traditional anticoagulants in VTE prevention?
+      -Why are direct oral anticoagulants (DOACs) preferred for long-term VTE management?
+      -How effective are novel anticoagulants in reducing the risk of recurrent deep vein thrombosis (DVT) and pulmonary embolism (PE)?
+      -What is the role of factor Xa inhibitors in secondary prevention of venous thromboembolism?
+
+- intent: pulmonary edema
+  examples:  |
+      -What causes pulmonary edema in high-altitude sickness?
+      -How does hypoxia lead to the development of pulmonary edema at high altitudes?
+      -What physiological changes contribute to pulmonary edema in mountaineers or travelers at high altitudes?
+      -How does highaltitude pulmonary edema (HAPE) occur, and what are the underlying mechanisms?
+      -What role does the increased pulmonary vascular pressure play in high-altitude pulmonary edema
+
+- intent: PFts differentiate
+  examples:  |
+      -How can pulmonary function tests (PFTs) distinguish between restrictive and obstructive lung disease in heart failure?
+      -What role do PFTs play in identifying lung abnormalities in heart failure patients?
+      -How do spirometry and lung volume measurements differentiate obstructive vs. restrictive lung disease in heart failure?
+      -What pulmonary function test parameters help diagnose restrictive lung disease in heart failure patients?
+      -How can PFT results clarify whether dyspnea in heart failure patients is due to lung disease or cardiac dysfunction?
+
+- intent: endothelin1 role
+  examples:  |
+      -How does endothelin-1 contribute to the development of pulmonary arterial hypertension (PAH)?
+      -What is the pathogenic role of endothelin-1 in pulmonary arterial hypertension?
+      -How does endothelin-1 influence vascular remodeling in PAH?
+      -What mechanisms link endothelin-1 to increased pulmonary vascular resistance in PAH?
+      -Why is endothelin-1 a therapeutic target in the treatment of pulmonary arterial hypertension?
+
+- intent: nitric oxide in ARDS
+  examples:  |
+      -What are the benefits of nitric oxide therapy in managing acute respiratory distress syndrome (ARDS)?
+      -How does inhaled nitric oxide improve oxygenation in ARDS patients?
+      -What is the role of nitric oxide in the treatment of ARDS?
+      -How does nitric oxide therapy affect pulmonary hemodynamics in ARDS?
+      -Why is nitric oxide used as an adjunct therapy in acute respiratory distress syndrome?
+
+- intent: BAE in hemoptysis
+  examples:  |
+      -How effective is bronchial artery embolization (BAE) in managing massive hemoptysis?
+      -What are the benefits of bronchial artery embolization in controlling life-threatening hemoptysis?
+      -How does bronchial artery embolization work in the treatment of severe hemoptysis?
+      -What is the success rate of bronchial artery embolization for massive hemoptysis?
+      -How does bronchial artery embolization compare to surgery in treating massive hemoptysis?
+
+- intent: microembolic signals
+  examples:  |
+      -How do microembolic signals detected on transcranial Doppler relate to stroke recurrence risk?
+      -What is the prognostic value of microembolic signals on transcranial Doppler in stroke patients?
+      -Can transcranial Doppler-detected microembolic signals help predict future strokes?
+      -How are microembolic signals used to assess stroke recurrence likelihood?
+      -What does the presence of microembolic signals on transcranial Doppler indicate about stroke prognosis?
+
+- intent: CAA cause of ICH
+  examples:  |
+      -How does cerebral amyloid angiopathy contribute to spontaneous intracerebral hemorrhage?
+      -What is the link between cerebral amyloid angiopathy and intracerebral hemorrhage?
+      -Why is cerebral amyloid angiopathy a major cause of spontaneous brain bleeding?
+      -How does cerebral amyloid angiopathy affect the risk of intracerebral hemorrhage?
+      -What role does amyloid deposition play in spontaneous intracerebral hemorrhage?
+
+- intent: thrombolysis and thrombectomy in WUS
+  examples:  |
+      -How do the outcomes of thrombolysis and thrombectomy compare in wake-up stroke patients?
+      -Which treatment is more effective for wake-up stroke: thrombolysis or thrombectomy?
+      -What are the differences in success rates between thrombolysis and thrombectomy in wake-up stroke?
+      -How do wake-up stroke patients respond to thrombolysis versus thrombectomy?
+      -Is mechanical thrombectomy superior to thrombolysis in treating wake-up stroke
+
+- intent: glymphatic  system role
+  examples:  |
+      -What role does the glymphatic system play in removing neurotoxic proteins after a stroke?
+      -How does the glymphatic system aid in clearing harmful proteins during stroke recovery?
+      -What is the function of the glymphatic system in post-stroke neurotoxin clearance?
+      -How does impaired glymphatic function affect stroke recovery and protein buildup?
+      -Why is the glymphatic system important for neurotoxic waste removal following a stroke?
+
+- intent: WMHs
+  examples:  |
+      -How do white matter hyperintensities impact cognitive decline?
+      -What is the relationship between white matter hyperintensities and dementia?
+      -Why are white matter hyperintensities significant in cognitive impairment?
+      -How do white matter hyperintensities contribute to memory and executive dysfunction?
+      -What is the prognostic value of white matter hyperintensities in neurodegenerative diseases?
+
+- intent: OSA in lacunar  stroke
+  examples:  |
+      -How does obstructive sleep apnea (OSA) contribute to lacunar stroke risk?
+      -What is the link between OSA and small vessel strokes?
+      -How does sleep apnea affect the likelihood of lacunar infarcts?
+      -What role does obstructive sleep apnea play in cerebral small vessel disease and stroke?
+      -Why is OSA considered a risk factor for lacunar strokes?
+
+- intent: bile acid affect in glucose metabolism
+  examples:  |
+      -How do bile acid sequestrants influence blood sugar levels in type 2 diabetes?
+      -What is the effect of bile acid sequestrants on glucose metabolism in diabetic patients?
+      -Can bile acid sequestrants improve glycemic control in type 2 diabetes?
+      -How do bile acid sequestrants impact insulin sensitivity in diabetes?
+      -What role do bile acid sequestrants play in managing glucose levels in type 2 diabetes?
+
+- intent: thyroid dysfunction in CD
+  examples:  |
+      -How does thyroid dysfunction affect lipid metabolism and cardiovascular health?
+      -What is the relationship between thyroid disorders and lipid abnormalities?
+      -How does hypothyroidism or hyperthyroidism influence cholesterol levels and heart disease risk?
+      -What role does thyroid function play in regulating lipid metabolism and atherosclerosis?
+      -How do thyroid hormones impact lipid profiles and cardiovascular disease development?
+
+- intent: adiponectin role
+  examples:  |
+      -What role does adiponectin play in regulating insulin sensitivity and cardiovascular function?
+      -How does adiponectin impact glucose metabolism and heart health?
+      -What is the connection between adiponectin levels and insulin resistance?
+      -How does adiponectin contribute to cardiovascular protection and metabolic health?
+      -What are the effects of adiponectin deficiency on insulin resistance and cardiovascular disease?
+
+- intent: gut dysbiosis in metbabolic syndrome
+  examples:  |
+      -What is the role of the gut microbiome in metabolic syndrome development?
+      -How does gut dysbiosis influence metabolic syndrome risk?
+      -What are the mechanisms linking the gut microbiome to obesity and insulin resistance?
+      -How do microbial metabolites affect metabolic health and inflammation?
+      -What is the impact of gut microbiota composition on metabolic disorders?
+
+- intent: PCOS long term affect
+  examples:  |
+      -How does PCOS increase long-term cardiovascular risk?
+      -What are the cardiovascular complications associated with PCOS?
+      -How does PCOS contribute to heart disease and metabolic disorders over time?
+      -What is the link between PCOS and hypertension, atherosclerosis, or heart failure?
+      -How does PCOS impact long-term vascular health?
+
+- intent: role of hyperaldosteronism
+  examples:  |
+      -What is the role of hyperaldosteronism in causing resistant hypertension?
+      -How does excess aldosterone lead to cardiovascular complications?
+      -Why is hyperaldosteronism a major factor in uncontrolled hypertension?
+      -What are the cardiovascular effects of primary aldosteronism?
+      -How does hyperaldosteronism contribute to hypertension that does not respond to standard treatments?
+
+- intent: utility vs dynamic preload
+  examples:  |
+      -How does dynamic preload assessment compare to static measures in guiding fluid resuscitation?
+      -What are the advantages of using dynamic over static preload parameters in fluid management?
+      -Why is dynamic preload assessment preferred over static measures in critical care settings?
+      -How do static and dynamic preload indicators impact fluid resuscitation decisions?
+      -What is the clinical significance of dynamic preload assessment in fluid therapy?
+
+- intent: temperature modulation
+  examples:  |
+      -What is the role of temperature modulation in improving outcomes for post-cardiac arrest syndrome?
+      -How does therapeutic hypothermia affect survival rates and neurological recovery in post-cardiac arrest patients?
+      -What are the benefits and risks of temperature management in the treatment of post-cardiac arrest syndrome?
+      -How does temperature modulation help in reducing ischemic brain injury after cardiac arrest?
+      -What is the impact of induced hypothermia on long-term neurological outcomes in post-cardiac arrest syndrome?
+
+- intent: bedside ultrasound
+  examples:  |
+      -How does bedside ultrasound assist in evaluating hemodynamic instability in critically ill patients?
+      -What is the role of bedside echocardiography in assessing cardiovascular status during shock?
+      -How does point-of-care ultrasound guide treatment decisions in patients with hypotension or shock?
+      -In what ways can bedside ultrasound improve diagnostic accuracy and management in hemodynamically unstable patients?
+      -How does the use of ultrasound influence the management of hemodynamic instability in emergency and intensive care settings?
+
+- intent: permissive hypercapnia
+  examples:  |
+      -What is the effect of permissive hypercapnia on survival outcomes in patients with ARDS?
+      -How does allowing elevated CO2 levels (permissive hypercapnia) influence mortality in ARDS patients?
+      -What are the clinical benefits and risks of permissive hypercapnia in the management of ARDS?
+      -How does permissive hypercapnia affect ventilatory strategies and survival rates in ARDS?
+      -What role does permissive hypercapnia play in improving the prognosis of patients with acute respiratory distress syndrome (ARDS)?
+
+- intent: myocardial infarction
+  examples:  |
+      -What is a myocardial infarction?
+      -Can you explain what MI is
+      -What causes myocardial infarction and how does it affect the heart?
+      -tell me about myocardial infarction
+      -How does a blocked artery lead to a heart attack?
+
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - what do you know?

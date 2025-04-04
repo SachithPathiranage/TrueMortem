@@ -1,0 +1,349 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+
+- story: get to know about heart disease
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inform_heart_disease
+  - action: utter_inform_heart_disease
+  - intent: types of HD
+  - action: utter_types_of_HD
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: get to know about heart disease2
+  steps:
+  - intent: types of HD
+  - action: utter_types_of_HD
+  - intent: symptoms of HD
+  - action: utter_symptoms_of_HD
+
+
+- story: common to who?
+  steps:
+  - intent: common_to_male_or_female
+  - action: utter_common_among_who
+
+- story: nations affected
+  steps:
+  - intent: nations affected
+  - action: utter_most_affected
+
+- story: how to prevent HD
+  steps:
+    - intent: hw to prevent
+    - action: utter_hw_to_prevent
+
+- story: diabetes and HD
+  steps:
+    - intent: diabetes and HD
+    - action: utter_relation_to_diabetes
+
+- story: cholestrol and HD
+  steps:
+    - intent: cholestrol and HD
+    - action: utter_cholestrol_HD
+    - intent: genetics and HD
+    - action: utter_genetic_to_HD
+
+
+- story: diagnosis
+  steps:
+      - intent: difference between cardiac and non cardiac pain
+      - action:  utter_cardiac_and_non
+      - intent: what types tests
+      - action: utter_types_of tests
+      - intent: diagnosing criteria
+      - action: utter_diagnosis_criteria
+      - intent: ECG report
+      - action: utter_ECG_report
+      - intent: troponin levels
+      - action: utter_troponin_levels
+      - intent: hypertension
+      - action: utter_hypertension
+
+- story: base questions about CAD
+  steps:
+  - intent: causes for HD
+  - action: utter_common_causes_for_HD
+  - intent:  what is CAD
+  - action: utter_about_CAD
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: smoking HD
+  steps:
+    - intent: smoking to HD
+    - action: utter_smoking_to_HD
+
+- story: hypertension treatments
+  steps:
+    - intent: hypertension treatments
+    - action: utter_treatment_hypertension
+
+- story: manage arial fibrilliation
+  steps:
+    - intent: manage atrial fibrillations
+    - action: utter_manage_atrial_fibrillation
+
+- story: advance Info
+  steps:
+    - intent: Lbbb block MD
+    - action: utter_Lbbb_block_MD
+    - intent: echocardiography in Ischemic
+    - action: utter_echocardiography_in_Ischemic
+    - intent: ABG in CD
+    - action: utter_ABG_CD
+    - intent: Beta blockers in CD
+    - action: utter_betablocker_in_CD
+    - intent: CT aniography vs conventional aniography
+    - action: utter_conventional_aniography
+    - intent: ABI in PAD
+    - action: utter_ABI_in_PAD
+    - intent: DVT to PE
+    - action: utter_DVT_in_PE
+    - intent: right catherization
+    - action: utter_right_catherization
+    - intent: spirometry
+    - action: utter_spirometry
+    - intent: doppler ultrasound in ID
+    - action: utter_doppler_ultrasound_in_ID
+    - intent: arial fibrillations in embolic
+    - action: utter_arial_fibrillations_in_embolic
+    - intent: TCD access cerebrovascular reserve capacity
+    - action: utter_TCD_access_cerebrovascular_reserve_capacity
+    - intent: insulin resistance in endothelial dysfunction
+    - action: utter_insulin_resistance_in_endothelial_dysfunction
+    - intent: lipid  panel in CD
+    - action: utter_lipid_panel_in_CD
+    - intent: chronic hyperglycemia and diabetic cardiomyopathy
+    - action: utter_chronic_hyperglycemia_and_diabetic_cardiomyopathy
+    - intent:  lactate levels in MD
+    - action: utter_lactate_levels_in_MD
+    - intent: APOE in CD
+    - action: utter_APOE_in_CD
+    - intent: pharmacogenomics in CD
+    - action: utter_pharmacogenomics_in_CD
+    - intent: hypercholesterolemia in CD
+    - action: utter_hypercholesterolemia_in_CD
+    - intent: troponin I and troponin T in MD
+    - action: utter_troponin_I_and_troponin_T_in_MD
+    - intent: Q waves in ECG
+    - action: utter_Q_waves_in_ECG
+    - intent: HRV in CD
+    - action: utter_HRV_in_CD
+    - intent: MRI in identifying MD
+    - action: utter_MRI_in_identifying_MD
+    - intent: SGLT2 in CD
+    - action: utter_SGLT2_in_CD
+    - intent: FFR in CD
+    - action: utter_FFR_in_CD
+    - intent: therapies for PAH
+    - action: utter_therapies_for_PAH
+    - intent: D_dimer testing
+    - action: utter_D_dimer_testing
+    - intent: endothelial dysfunction and vascular disease
+    - action: utter_endothelial_dysfunction_and_vascular_disease
+    - intent: CTPA in pulmonary embolism
+    - action: utter_CTPA_in_pulmonary_embolism
+    - intent: celebral autoregulation in ischemic stroke
+    - action: utter_celebral_autoregulation_in_ischemic_stroke
+    - intent: antiplatelet therapy
+    - action: utter_antiplatelet_therapy
+    - intent: neuroimaging differentiate
+    - action: utter_neuroimaging_differentiate
+    - intent: cryptogenic strokes
+    - action: utter_cryptogenic_strokes
+    - intent: PFO closure
+    - action: utter_PFO_closure
+    - intent: incretin based therapies
+    - action: utter_incretin_based_therapies
+    - intent: impact of AGEs
+    - action: utter_impact_of_AGEs
+    - intent: adipose tissue function
+    - action: utter_adipose_tissue_function
+    - intent: mitochondrial dysfunction
+    - action: utter_mitochondrial_dysfunction
+    - intent: care testing improve diagnosis
+    - action: utter_care_testing_improve_diagnosis
+    - intent: role ECMO
+    - action: utter_role_ECMO
+    - intent: ETCO2 level assist
+    - action: utter_ETCO2_level_assist
+    - intent: EGDT in septic
+    - action: utter_EGDT_in_septic
+    - intent: polygenic risk
+    - action: utter_polygenic_risk
+    - intent: familial hypercholesterolemia
+    - action: utter_familial_hypercholesterolemia
+    - intent: CRISPR
+    - action: utter_CRISPR
+    - intent: CRP in CD
+    - action: utter_CRP_in_CD
+    - intent: Takotsubo cardiomypathy
+    - action: utter_Takotsubo_cardiomypathy
+    - intent: Systolic diastolic dysfunction
+    - action: utter_Systolic_diastolic_dysfunction
+    - intent: INOCA patients
+    - action: utter_INOCA_patients
+    - intent: LGE effect
+    - action: utter_LGE_effect
+    - intent: MitraClip procedure
+    - action: utter_MitraClip_procedure
+    - intent: OSA contribution to hypertension
+    - action: utter_OSA_contribution
+    - intent: endothelin receptors in PAH
+    - action: utter_endothelin_receptors_in_PAH
+    - intent: CTEPH and IPH
+    - action: utter_CTEPH_and_IPH
+    - intent: venous stasis in CVI
+    - action: utter_venous_stasis_in_CVI
+    - intent: TBI to improve accuracy in PAD
+    - action: utter_TBI_to_improve_accuracy_in_PAD
+    - intent: mechanical thrombectomy
+    - action: utter_mechanical_thrombectomy
+    - intent: CSVD contribution
+    - action: utter_CSVD_contribution
+    - intent: perfusion weighted MRI
+    - action: utter_perfusion_weighted_MRI
+    - intent: atrial septal aneurysm
+    - action: utter_atrial_septal_aneurysm
+    - intent: hypothyroidism contribution to atherosclerosis
+    - action: utter_hypothyroidism_contribution_to_atherosclerosis
+    - intent: NAFLD contribution
+    - action: utter_NAFLD_contribution
+    - intent: CKD contribution
+    - action: utter_CKD_contribution
+    - intent: glucocorticoids affect in HD
+    - action: utter_glucocorticoids_affect_in_HD
+    - intent: impedance cardiography
+    - action: utter_impedance_cardiography
+    - intent: permissive hypertension in hemorrhagic shock
+    - action: utter_permissive_hypertension_in_hemorrhagic_shock
+    - intent: lactate clearence in sepsis
+    - action: utter_lactate_clearence_in_sepsis
+    - intent: VADS enhance survival rates
+    - action: utter_VADS_enhance_survival_rates
+    - intent: detection of pathogenic variants in the TTN gene
+    - action: utter_detection_of_pathogenic_variants_in_the_TTN_gene
+    - intent: pharmacogenomics in hyperlimidia
+    - action: utter_pharmacogenomics_in_hyperlimidia
+    - intent: gene environment in hypertension
+    - action: utter_gene_environment_in_hypertension
+    - intent: lipoprotein levels in CD
+    - action: utter_lipoprotein_levels_in_CD
+    - intent: intermittent fasting effects
+    - action: utter_intermittent_fasting_effects
+    - intent: role of omega3 fatty acids
+    - action: utter_role_of_omega3_fatty_acids
+    - intent: affect of psychosocial stress
+    - action: utter_affect_of_psychosocial_stress
+    - intent: use of AI in wearables
+    - action: utter_use_of_AI_in_wearables
+    - intent: ST2 and galectin3
+    - action: utter_ST2_and_galectin3
+    - intent: FFRCT in treatments
+    - action: utter_FFRCT_in_treatments
+    - intent: TVR in elderly patients
+    - action: utter_TVR_in_elderly_patients
+    - intent: HFpEF mimic heart failure
+    - action: utter_ HFpEF_mimic_heart_failure
+    - intent: lipoprotein in LDL
+    - action: utter_lipoprotein_in_LDL
+    - intent: role of PCI
+    - action: utter_role_of_PCI
+    - intent: coronary vasospastic angina
+    - action: utter_coronary_vasospastic_angina
+    - intent: cardioprotective mechanisms of SGLT2
+    - action: utter_cardioprotective_mechanisms_of_SGLT2
+    - intent: coronary slow flow phenomenon
+    - action: utter_coronary_slow_flow_phenomenon
+    - intent: CTEPH  differ from other forms
+    - action: utter_CTEPH_differ_from_other_forms
+    - intent: role of NOACs
+    - action: utter_role_of_NOACs
+    - intent: pulmonary edema
+    - action: utter_pulmonary edema
+    - intent: PFts differentiate
+    - action: utter_PFts_differentiate
+    - intent: endothelin1 role
+    - action: utter_endothelin1_role
+    - intent: nitric oxide in ARDS
+    - action: utter_nitric_oxide_in_ARDS
+    - intent: BAE in hemoptysis
+    - action: utter_BAE_in_hemoptysis
+    - intent: microembolic signals
+    - action: utter_microembolic_signals
+    - intent: CAA cause of ICH
+    - action: utter_CAA_cause_of_ICH
+    - intent: thrombolysis and thrombectomy in WUS
+    - action: utter_thrombolysis_and_thrombectomy_in_WUS
+    - intent: glymphatic  system role
+    - action: utter_glymphatic_system_role
+    - intent: WMHs
+    - action: utter_WMHs
+    - intent: OSA in lacunar  stroke
+    - action: utter_OSA_in_lacunar_stroke
+    - intent: bile acid affect in glucose metabolism
+    - action: utter_bile_acid_affect_in_glucose_metabolism
+    - intent: thyroid dysfunction in CD
+    - action: utter_thyroid_dysfunction_in_CD
+    - intent: adiponectin role
+    - action: utter_adiponectin_role
+    - intent: gut dysbiosis in metbabolic syndrome
+    - action: utter_gut_dysbiosis_in_metbabolic_syndrome
+    - intent: PCOS long term affect
+    - action: utter_PCOS_long_term_affect
+    - intent: role of hyperaldosteronism
+    - action: utter_role_of_hyperaldosteronism
+    - intent: utility vs dynamic preload
+    - action: utter_utility_vs_dynamic_preload
+    - intent: temperature modulation
+    - action: utter_temperature_modulation
+    - intent: bedside ultrasound
+    - action: utter_bedside_ultrasound
+    - intent: permissive hypercapnia
+    - action: utter_permissive_hypercapnia
+    - intent: myocardial infarction
+    - action: utter_myocardial_infarction
+
+
+
+
+
+
+
+
+
