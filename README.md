@@ -21,6 +21,11 @@ TrueMortem is an AI-driven system designed to predict and analyze causes of deat
   - ⚡ XGBoost
   - 🧮 Naive Bayes
   - 🧠 Neural Networks
+  - 🧳 Support Vector Machine (SVM)
+  - 🏋️‍♂️ Multi-layer Perceptron (MLP)
+  - 🔀 Stacking Ensemble
+  - 🔼 Boosting Ensemble
+  - ✔️ Voting Ensemble
 - Focused on **classifying deaths due to heart disease**.
 
 ### 📈 Dashboard for Visualization
@@ -129,7 +134,7 @@ npm run dev
 Instead of running each component separately, you can use a **Git Bash** terminal to launch everything in one go.
 
 
-1. **Run the script in VS Code PowerShell terminal**:
+1. **Run the script in VS Code Git Bash terminal**:
 ```gitbash
 bash run.sh
 ```
