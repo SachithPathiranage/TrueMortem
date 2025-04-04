@@ -14,54 +14,93 @@ ChartJS.register(BarElement, CategoryScale, LinearScale, Tooltip, Legend);
 
 function Performance() {
   const data = {
-    labels: ["PM Model", "VA Model"],
+    labels: [
+      "PM Model",
+      "Accuracy",
+      "Precision",
+      "Recall",
+      "",
+      "VA Model",
+      "Accuracy",
+      "Precision",
+      "Recall",
+    ],
     datasets: [
       {
-        label: "Acurracy",
-        data: [80, 86], // Accuracy & Precision for PM Model
-        backgroundColor: "#FF6384",
-        hoverBackgroundColor: "#FF4D6A",
-        borderRadius: 5,
-      },
-      {
-        label: "Precision",
-        data: [92, 94], // Accuracy & Precision for VA Model
-        backgroundColor: "#36A2EB",
-        hoverBackgroundColor: "#2A8AC4",
+        label: "Performance (%)",
+        data: [null, 80, 92, 88, null, null, 86, 94, 91],
+        backgroundColor: [
+          "transparent",
+          "#FF6384",
+          "#FF6384",
+          "#FF6384",
+          "transparent",
+          "transparent",
+          "#36A2EB",
+          "#36A2EB",
+          "#36A2EB",
+        ],
+        hoverBackgroundColor: [
+          "transparent",
+          "#FF4D6A",
+          "#FF4D6A",
+          "#FF4D6A",
+          "transparent",
+          "transparent",
+          "#2A8AC4",
+          "#2A8AC4",
+          "#2A8AC4",
+        ],
         borderRadius: 5,
       },
     ],
   };
 
   const options = {
-    indexAxis: "y", // Horizontal bar chart
+    indexAxis: "y",
     responsive: true,
     maintainAspectRatio: false,
     scales: {
       x: {
         beginAtZero: true,
-        max: 100, // Since accuracy & precision are percentages
+        max: 100,
         ticks: {
-          font: { size: 13 },
+          callback: (value) => `${value}%`,
+          font: { size: 12 },
           color: "#333",
-          callback: (value) => `${value}%`, // Adds '%' to x-axis labels
+        },
+        title: {
+          display: true,
+          text: "Performance (%)",
+          font: { size: 14 },
         },
       },
       y: {
         ticks: {
-          font: { size: 14 },
-          color: "#333",
+          font: {
+            size: 13,
+            weight: (ctx) => {
+              const label = data.labels[ctx.index];
+              return label.includes("Model") ? "bold" : "normal";
+            },
+          },
+          color: (ctx) => {
+            const label = data.labels[ctx.index];
+            if (label === "PM Model") return "#000000";
+            if (label === "VA Model") return "#000000";
+            return "#333";
+          },
         },
       },
     },
     plugins: {
       legend: {
-        display: true,
-        position: "top",
+        display: false,
       },
       tooltip: {
         callbacks: {
           label: function (tooltipItem) {
+            if (tooltipItem.raw === null) return "";
             return `${tooltipItem.raw}%`;
           },
         },
@@ -70,11 +109,9 @@ function Performance() {
   };
 
   return (
-    <div className="w-full h-full flex flex-col items-center p-8 rounded-lg shadow-lg bg-white">
-      <h1 className="text-lg font-semibold mb-4">
-        Model Performance Comparison
-      </h1>
-      <div className="w-[100%] h-40">
+    <div className="mt-25 mb-25 max-w-[1240px] mx-auto h-full flex flex-col items-center p-8 rounded-lg shadow-lg bg-white">
+      <h1 className="text-lg font-semibold mb-4">Model Performance Metrics</h1>
+      <div className="w-full h-96">
         <Bar data={data} options={options} />
       </div>
     </div>
