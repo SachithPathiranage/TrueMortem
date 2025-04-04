@@ -1,0 +1,6 @@
+FastAPI: 0.111.0
+Pydantic: 2.8.2
+Joblib: 1.4.2
+NumPy: 1.26.4
+Scikit-Learn: 1.6.1
+SHAP: 0.46.0

@@ -1,0 +1,4 @@
+fastapi 0.111.0
+uvicorn 0.30.1
+scikit-learn 1.6.1
+axios 0.4.0

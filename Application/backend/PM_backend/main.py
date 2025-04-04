@@ -6,7 +6,7 @@ import pickle
 import numpy as np
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
-
+import shap  # SHAP for interpretability
 
 app = FastAPI()
 
@@ -22,6 +22,7 @@ app.add_middleware(
 # Load the trained model
 with open('rf_classifier_2.pkl', 'rb') as f:
     model = pickle.load(f)
+    
 
 # Define the encoding mappings
 encoding_mappings = {
@@ -138,7 +139,34 @@ def predict_death_cause(data: PostMortemData):
         # Convert to human-readable result
         result = "Heart-related death" if prediction[0] == 1 else "Not heart-related"
 
-        return {"prediction": result}
+        # SHAP Explanationi
+        explainer = shap.TreeExplainer(model)
+        # explainer = shap.KernelExplainer(model.predict, shap.sample(X_train, 100))  # Use this for other models
+
+        shap_values = explainer(np.array(encoded_features).reshape(1, -1))
+        
+        feature_contributions = {
+            feature: round(value, 4)
+            for feature, value in zip(data_dict.keys(), shap_values.values.flatten())
+        }
+
+        # Generate report
+        report = f"**Heart Disease Prediction Report**\n\n"
+        report += f"**Prediction:** {result}\n\n"
+        report += "**Feature Contributions:**\n"
+        for feature, contribution in feature_contributions.items():
+            report += f"- {feature}: {contribution}\n"
+        
+        report += "\nThis prediction is based on the provided autopsy details and the model's learned relationships."
+
+        print(report)
+
+        return {
+            "prediction": result,
+            "feature_contributions": feature_contributions,
+            "report": report
+        } 
+    
 
     except Exception as e:
         print("Error:", str(e))  # Print the error for debugging
