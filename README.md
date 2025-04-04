@@ -39,8 +39,7 @@ TrueMortem is an AI-driven system designed to predict and analyze causes of deat
 - Built with **Rasa** framework
 - Offers:
   - 🤔 Query answering
-  - 📚 Explanation of results
-  - 🧪 Exploration of postmortem data insights
+  - 🧪 Exploration of postmortem data insights related to heart diseases
 
 ### 🔐 **User Authentication**: 
 - Secure login/signup functionality using MongoDB.
