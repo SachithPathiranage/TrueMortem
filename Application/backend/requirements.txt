@@ -6,3 +6,5 @@ shap==0.46.0
 pandas==2.2.3
 pymongo==4.3.3
 bcrypt==4.3.0
+rasa-sdk==3.6.2
+rasa==3.6.20

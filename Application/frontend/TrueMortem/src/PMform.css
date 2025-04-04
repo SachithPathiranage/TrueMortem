@@ -198,3 +198,79 @@ button:hover {
   font-size: 14px;
   margin-top: 4px;
 }
+
+/* ReportStyles.css */
+.medical-report {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.medical-report h1 {
+  color: #2c3e50;
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #3498db;
+  margin-bottom: 20px;
+}
+
+.medical-report h2 {
+  color: #2980b9;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.medical-report h3 {
+  color: #3498db;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.medical-report p {
+  margin-bottom: 16px;
+}
+
+.medical-report strong {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.medical-report ul, .medical-report ol {
+  margin-left: 25px;
+  margin-bottom: 20px;
+}
+
+.medical-report li {
+  margin-bottom: 10px;
+}
+
+.medical-report hr {
+  border: 0;
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 25px 0;
+}
+
+/* Print styles */
+@media print {
+  .medical-report {
+    font-size: 12pt;
+  }
+  
+  button {
+    display: none;
+  }
+  
+  .medical-report h1 {
+    font-size: 18pt;
+  }
+  
+  .medical-report h2 {
+    font-size: 16pt;
+  }
+}
