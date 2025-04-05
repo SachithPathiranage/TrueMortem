@@ -14,7 +14,7 @@ env_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".env")
 load_dotenv(dotenv_path=env_path)
 
 # ✅ Get API Key from .env file
-API_KEY = os.getenv("OPENROUTER_API_KEY")
+API_KEY = os.getenv("OPENROUTER_API_KEY_2")
 
 # Allow CORS for frontend
 app.add_middleware(
