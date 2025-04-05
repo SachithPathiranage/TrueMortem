@@ -4,12 +4,13 @@ import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
 import Cards from "../components/Cards";
 import Performance from "../components/Performance";
+import Heart from "../components/Heart";
 
 const Home = () => {
   return (
     <div className="">
       <HomeHeader />
-      <div className="flex flex-col items-center h-screen text-center max-w-[1240px] mx-auto rounded-[3rem] shadow-lg">
+      <div className="flex flex-col items-center text-center max-w-[1240px] mx-auto rounded-[3rem]">
         {/* Title */}
         <div className="flex items-center mt-10">
           <p className="text-[4rem] font-medium leading-tight text-black">
@@ -24,11 +25,7 @@ const Home = () => {
             <div className="w-100 h-100 rounded-full border-4 border-white bg-[#ffffffb1] absolute"></div>
             <div className="w-120 h-120 rounded-full border-4 border-white bg-[#ffffff75] absolute"></div>
           </div>
-          <img
-            src="/HomeHeart.png"
-            alt="Medical Focus"
-            className="w-120 object-fit drop-shadow-lg relative top-[-40px]"
-          />
+          <Heart />
         </div>
 
         {/* Subtitle */}
@@ -39,7 +36,7 @@ const Home = () => {
 
       <div className="flex flex-col items-center h-screen text-center max-w-[1240px] mx-auto">
         {/* Title */}
-        <div className="flex items-center mt-10">
+        <div className="flex items-center mt-25">
           <p className="text-[4rem] font-medium leading-tight text-black">
             Our Services
           </p>
@@ -47,7 +44,7 @@ const Home = () => {
         </div>
         <Cards />
       </div>
-      <div className="bg-[#0000ffb6] text-white text-[1.6rem] font-medium p-8 text-center">
+      <div className="bg-[#0000ffb6] text-white text-[1.6rem] font-medium p-8 text-center mt-10">
         <div className="max-w-[1240px] mx-auto flex justify-between w-full px-30">
           <span>Our Models</span>
           <span className="text-4xl font-bold text-[#7CB9FF]">+</span>

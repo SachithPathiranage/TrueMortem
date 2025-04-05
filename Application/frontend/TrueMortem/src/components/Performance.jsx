@@ -109,7 +109,7 @@ function Performance() {
   };
 
   return (
-    <div className="mt-25 mb-25 max-w-[1240px] mx-auto h-full flex flex-col items-center p-8 rounded-lg shadow-lg bg-white">
+    <div className="mt-20 mb-15 max-w-[1240px] mx-auto h-full flex flex-col items-center p-8 rounded-lg shadow-lg bg-white">
       <h1 className="text-lg font-semibold mb-4">Model Performance Metrics</h1>
       <div className="w-full h-96">
         <Bar data={data} options={options} />

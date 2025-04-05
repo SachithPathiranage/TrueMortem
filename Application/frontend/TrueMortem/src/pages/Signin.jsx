@@ -39,11 +39,11 @@ const SignIn = ({ setIsAuthenticated }) => {
   };
 
   return (
-    <div className="flex h-screen bg-white">
-      <div className="w-1/2 min-h-screen">
+    <div className="flex h-[calc(100vh-13vh)] bg-white">
+      <div className="w-1/2">
         <img
           src="/red_heart.png"
-          className="w-full h-full object-cover opacity-80 mix-blend-multiply transition duration-300 hover:opacity-100 slide-left"
+          className="w-full h-[calc(100vh-13vh)] object-cover opacity-80 mix-blend-multiply transition duration-300 hover:opacity-100 slide-left"
           alt="Heart Logo"
         />
       </div>

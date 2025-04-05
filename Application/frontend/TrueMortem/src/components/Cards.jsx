@@ -72,14 +72,14 @@ const Cards = ({ isAuthenticated }) => {
       image: "/rasa.png",
       title: "Chatbot",
       label: "Chatbot",
-      link: "/diabetes",
+      link: "/chatbot",
       isBlurred: true,
       requiresAuth: false,
     },
   ];
 
   return (
-    <div className="max-w-[1240px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 mt-25 justify-between">
+    <div className="max-w-[1240px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 mt-15 justify-between">
       {cards.map((card, index) => (
         <Card
           key={index}

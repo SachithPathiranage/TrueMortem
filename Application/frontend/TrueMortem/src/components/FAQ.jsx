@@ -5,27 +5,27 @@ function FAQ() {
     {
       question: "What is TrueMortem?",
       answer:
-        "TrueMortem is an AI platform that predicts causes of death using post-mortem organ data.",
+        "TrueMortem is an AI-powered platform that predicts causes of death using post-mortem organ data and verbal autopsy information. It primarily focuses on identifying heart-related causes of death. By combining medical data with insights from verbal autopsies, TrueMortem aims to provide accurate and reliable predictions to support medical research and investigations.",
     },
     {
       question: "How does TrueMortem work?",
       answer:
-        "TrueMortem uses machine learning algorithms to analyze organ data and determine probable causes of death.",
+        "TrueMortem uses advanced machine learning techniques to analyze post-mortem organ data and verbal autopsy data  to  determine probable causes of death. It also features an integrated chatbot designed to answer heart-related questions, providing users with quick insights and guidance on cardiovascular conditions.",
     },
     {
       question: "Is TrueMortem accurate?",
       answer:
-        "TrueMortem is trained on vast datasets to provide highly accurate predictions, but results should be used alongside expert analysis.",
+        "TrueMortem is trained on vast and diverse datasets of post-mortem organ data and heart-related cases to deliver highly accurate cause-of-death predictions. However, while TrueMortem provides valuable insights, its results are intended to support — not replace — medical expertise. Final conclusions should always be made in consultation with healthcare professionals and forensic experts.",
     },
     {
       question: "Who can use TrueMortem?",
       answer:
-        "TrueMortem is designed for forensic experts, medical examiners, and researchers in post-mortem analysis.",
+        "TrueMortem is specifically designed to assist forensic experts, medical examiners, and researchers involved in post-mortem analysis. It serves as a powerful decision-support tool, helping professionals analyze complex post-mortem organ data and heart-related findings more efficiently. By combining AI-driven insights with expert knowledge, TrueMortem aims to enhance accuracy and speed in forensic investigations.",
     },
   ];
 
   return (
-    <div className="max-w-[1240px] mx-auto px-4 py-10 h-screen mb-20">
+    <div className="max-w-[1240px] mx-auto px-4 py-10 h-screen mb-25">
       {/* Title */}
       <div className="flex items-center justify-center">
         <p className="text-[4rem] font-medium leading-tight text-black">FAQ</p>

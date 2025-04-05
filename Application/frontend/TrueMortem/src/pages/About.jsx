@@ -7,7 +7,6 @@ const About = () => {
     <div>
       <div className="w-full h-[calc(100vh-13vh)] flex items-center justify-center">
         <div className="flex flex-col items-center text-center justify-center max-w-[1240px] mx-auto my-auto">
-          <h1 className="text-[17px] mt-1 motion-preset-fade">About Us</h1>
           <h1 className="text-[40px] font-bold max-w-[60%] mt-7 md:text-[50px]">
             We combine the precision of AI with expertise in forensic science.
           </h1>

@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import {
   FaDribbbleSquare,
   FaFacebookSquare,
@@ -11,6 +12,21 @@ const Footer = () => {
   const handleFAQClick = (e) => {
     e.preventDefault(); // Prevent default navigation
     // You can add any other logic here if needed
+  };
+
+  const navigate = useNavigate();
+
+  const handlePredictClick = (e) => {
+    e.preventDefault(); // prevent <button> from triggering default nav
+
+    const isAuthenticated = localStorage.getItem("token") !== null; // Example authentication check
+
+    if (isAuthenticated) {
+      navigate("/predict");
+    } else {
+      localStorage.setItem("redirectAfterLogin", "/predict");
+      navigate("/signin");
+    }
   };
 
   return (
@@ -76,9 +92,12 @@ const Footer = () => {
                 </a>
               </li>
               <li className="py-2 text-sm">
-                <a href="/predict" className="hover:underline">
+                <button
+                  onClick={handlePredictClick}
+                  className="hover:underline text-sm text-left bg-transparent p-0 m-0 text-gray-300"
+                >
                   Predict
-                </a>
+                </button>
               </li>
               <li className="py-2 text-sm">
                 <a href="/about" className="hover:underline">
