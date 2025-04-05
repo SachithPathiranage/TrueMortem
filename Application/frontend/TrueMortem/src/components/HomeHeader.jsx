@@ -1,7 +1,18 @@
 import React from "react";
-import HeaderStat from "./HeaderStat";
+import { useNavigate } from "react-router-dom";
 
-function HomeHeader() {
+function HomeHeader({ isAuthenticated }) {
+  const navigate = useNavigate();
+
+  const handlePredictClick = () => {
+    if (isAuthenticated) {
+      navigate("/predict");
+    } else {
+      localStorage.setItem("redirectAfterLogin", "/predict");
+      navigate("/signin");
+    }
+  };
+
   return (
     <div>
       <div className="max-w-[1240px] mx-auto">
@@ -18,7 +29,10 @@ function HomeHeader() {
               <p className="text-[8.6rem] font-medium leading-tight text-black mt-20 ml-25">
                 AI Death
               </p>
-              <button className="mt-35 py-6 px-10 ml-15 text-xl font-semibold text-white bg-blue-500 rounded-full hover:bg-blue-600 transition">
+              <button
+                className="mt-35 py-6 px-10 ml-15 text-xl font-semibold text-white bg-blue-500 rounded-full hover:bg-blue-600 transition"
+                onClick={handlePredictClick}
+              >
                 Predict
               </button>
             </div>
@@ -36,7 +50,6 @@ function HomeHeader() {
           </div>
         </div>
       </div>
-      {/* Blue Div with Text */}
       <div className="bg-[#0000ffb6] text-white text-[1.6rem] font-medium p-8 text-center mt-10">
         <p>Redefining Forensic Analysis, One Insight At A Time</p>
       </div>
