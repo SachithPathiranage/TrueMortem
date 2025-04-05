@@ -1,87 +1,97 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { BsArrowUpRight } from "react-icons/bs";
-import { AiOutlineClose } from "react-icons/ai";
-import { BiWater } from "react-icons/bi";
 import { LuFileText } from "react-icons/lu";
 
-const Card = ({ image, title, label, link, isBlurred }) => {
+const Card = ({ image, title, label, isBlurred, onClick }) => {
   return (
-    <div className="relative w-[250px] h-[300px] bg-gray-200 rounded-2xl p-4 flex flex-col justify-between shadow-lg overflow-hidden">
+    <div
+      className="relative w-[21rem] h-[25rem] bg-gray-200 rounded-2xl p-4 flex flex-col justify-between shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:z-10 hover:shadow-2xl cursor-pointer"
+      onClick={onClick}
+    >
       {/* Background Image */}
       <img
         src={image}
         alt={title}
         className={`absolute inset-0 w-full h-full object-cover transition-all ${
-          isBlurred ? "blur-md" : "blur-0"
+          isBlurred ? "blur-[0px]" : "blur-0"
         }`}
       />
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/20 rounded-2xl"></div>
 
-      {/* Top Buttons */}
-      <div className="absolute top-3 left-3 flex flex-col gap-2">
-        <button className="w-8 h-8 flex items-center justify-center bg-white/30 rounded-full text-white">
-          <AiOutlineClose />
-        </button>
-        <button className="w-8 h-8 flex items-center justify-center bg-white/30 rounded-full text-white">
-          <BiWater />
-        </button>
-      </div>
-      <button className="absolute top-3 right-3 w-8 h-8 flex items-center justify-center bg-white/30 rounded-full text-white">
-        <LuFileText />
-      </button>
-
-      {/* Content */}
-      <div className="relative text-white p-4">
-        <span className="bg-white/30 px-2 py-1 rounded-lg text-sm">
+      {/* Top Row: Label and Icon */}
+      <div className="relative z-10 flex justify-between items-center">
+        <span className="bg-white/30 px-2 py-1 rounded-lg text-sm text-white">
           {label}
         </span>
-        <h2 className="text-2xl font-semibold mt-2">{title}</h2>
+        <button className="w-8 h-8 flex items-center justify-center bg-white/30 rounded-full text-white">
+          <LuFileText />
+        </button>
       </div>
 
       {/* Arrow Button */}
-      <a
-        href={link}
-        className="absolute bottom-3 right-3 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md"
-      >
+      <div className="absolute bottom-3 right-3 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md z-10">
         <BsArrowUpRight className="text-black text-xl" />
-      </a>
+      </div>
     </div>
   );
 };
 
-const Cards = () => {
+const Cards = ({ isAuthenticated }) => {
+  const navigate = useNavigate();
+
+  const handleCardClick = (link, requiresAuth) => {
+    if (requiresAuth && !isAuthenticated) {
+      localStorage.setItem("redirectAfterLogin", "/predict");
+      navigate("/signin");
+    } else {
+      navigate(link);
+    }
+  };
+
   const cards = [
     {
-      image: "/path/to/image1.jpg",
-      title: "Osteoporosis",
-      label: "Bisphosphonate drugs",
+      image: "/pm.png",
+      title: "Post Mortem Prediction",
+      label: "Post Mortem Prediction",
       link: "/osteoporosis",
       isBlurred: true,
+      requiresAuth: true,
     },
     {
-      image: "/path/to/image2.jpg",
-      title: "Arthritis",
-      label: "Anti-inflammatory drugs",
+      image: "/va.png",
+      title: "Verbal Autopsy Prediction",
+      label: "Verbal Autopsy Prediction",
       link: "/arthritis",
-      isBlurred: false,
+      isBlurred: true,
+      requiresAuth: true,
     },
     {
-      image: "/path/to/image3.jpg",
-      title: "Diabetes",
-      label: "Insulin Therapy",
+      image: "/rasa.png",
+      title: "Chatbot",
+      label: "Chatbot",
       link: "/diabetes",
       isBlurred: true,
+      requiresAuth: false,
     },
   ];
 
   return (
-    <div className="max-w-[1240px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 mt-12 shadow-lg justify-between">
+    <div className="max-w-[1240px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 mt-25 justify-between">
       {cards.map((card, index) => (
-        <Card key={index} {...card} />
+        <Card
+          key={index}
+          image={card.image}
+          title={card.title}
+          label={card.label}
+          isBlurred={card.isBlurred}
+          onClick={() => handleCardClick(card.link, card.requiresAuth)}
+        />
       ))}
     </div>
   );
 };
+
 export default Cards;
