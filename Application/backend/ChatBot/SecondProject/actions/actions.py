@@ -36,7 +36,10 @@ class ActionFallbackLLM(Action):
             headers = {
                 "Authorization": f"Bearer {API_KEY}",
                 "Content-Type": "application/json",
+<<<<<<< HEAD
+=======
                 "HTTP-Referer": "https://localhost",  # Replace with your project name
+>>>>>>> 27a38fb001395dc760326f4f379694135c200efd
                 "HTTP-Referer": "http://localhost",  # Replace with your project name
             }
             data = {
