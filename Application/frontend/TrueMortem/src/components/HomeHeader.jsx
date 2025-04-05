@@ -1,12 +1,26 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Body from "./Body";
 
-function HomeHeader() {
+function HomeHeader({ isAuthenticated }) {
+  const navigate = useNavigate();
+
+  const handlePredictClick = () => {
+    if (isAuthenticated) {
+      navigate("/predict");
+    } else {
+      localStorage.setItem("redirectAfterLogin", "/predict");
+      navigate("/signin");
+    }
+  };
+
   return (
     <div>
       <div className="max-w-[1240px] mx-auto">
         <div className="grid md:grid-cols-[30%_70%] md:gap-4 relative">
-          <Body />
+          <div className="mx-auto relative group md:h-[calc(100vh-13vh)]">
+            <Body />
+          </div>
           <div className="p-2 md:p-0 md:h-[calc(100vh-13vh)] z-10">
             <div className="flex items-start justify-start">
               <p className="text-[8.6rem] font-medium leading-tight text-black mt-20 ml-25">

@@ -5,7 +5,7 @@ function Body() {
 
   return (
     <div
-      className="shadow-lg mx-auto relative group md:h-[calc(100vh-13vh)]"
+      className="mx-auto relative group md:h-[calc(100vh-13vh)]"
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
@@ -18,7 +18,7 @@ function Body() {
 
       {/* Marker 1 */}
       <div
-        className={`absolute left-[49.5%] top-[34%] w-8 h-8 flex items-center justify-center rounded-full bg-[#ffffff54] transition-opacity duration-300 ${
+        className={`absolute left-[54%] top-[28%] w-8 h-8 flex items-center justify-center rounded-full bg-[#ffffff54] transition-opacity duration-300 ${
           hover ? "opacity-100" : "opacity-0"
         }`}
       >
@@ -27,19 +27,19 @@ function Body() {
 
       {/* Label 1 */}
       <div
-        className={`absolute left-[62%] top-[34%] flex items-center bg-white p-2 rounded-full shadow-lg transition-all duration-300 ${
+        className={`absolute left-[55%] top-[19%] flex items-center bg-white p-2 rounded-full shadow-lg transition-all duration-300 ${
           hover ? "opacity-100 scale-100" : "opacity-0 scale-95"
         }`}
       >
         <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 mr-2">
-          <span className="text-sm font-bold text-black">50%</span>
+          <span className="text-sm font-bold text-black">33%</span>
         </div>
         <p className="text-sm font-medium text-black pr-2">Heart Diseases</p>
       </div>
 
       {/* Marker 2 */}
       <div
-        className={`absolute left-[59.5%] top-[44%] w-8 h-8 flex items-center justify-center rounded-full bg-[#ffffff54] transition-opacity duration-300 ${
+        className={`absolute left-[47%] top-[44%] w-8 h-8 flex items-center justify-center rounded-full bg-[#ffffff54] transition-opacity duration-300 ${
           hover ? "opacity-100" : "opacity-0"
         }`}
       >
@@ -48,19 +48,19 @@ function Body() {
 
       {/* Label 2 */}
       <div
-        className={`absolute left-[62%] top-[44%] flex items-center bg-white p-2 rounded-full shadow-lg transition-all duration-300 ${
+        className={`absolute left-[58%] top-[42%] flex items-center bg-white p-2 rounded-full shadow-lg transition-all duration-300 ${
           hover ? "opacity-100 scale-100" : "opacity-0 scale-95"
         }`}
       >
         <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 mr-2">
-          <span className="text-sm font-bold text-black">30%</span>
+          <span className="text-sm font-bold text-black">18%</span>
         </div>
         <p className="text-sm font-medium text-black pr-2">Cancers</p>
       </div>
 
       {/* Marker 3 */}
       <div
-        className={`absolute left-[41%] top-[54%] w-8 h-8 flex items-center justify-center rounded-full bg-[#ffffff54] transition-opacity duration-300 ${
+        className={`absolute left-[40%] top-[32%] w-8 h-8 flex items-center justify-center rounded-full bg-[#ffffff54] transition-opacity duration-300 ${
           hover ? "opacity-100" : "opacity-0"
         }`}
       >
@@ -69,12 +69,12 @@ function Body() {
 
       {/* Label 3 */}
       <div
-        className={`absolute left-[44%] top-[54%] flex items-center bg-white p-2 rounded-full shadow-lg transition-all duration-300 ${
+        className={`absolute left-[-15%] top-[28%] flex items-center bg-white p-2 rounded-full shadow-lg transition-all duration-300 ${
           hover ? "opacity-100 scale-100" : "opacity-0 scale-95"
         }`}
       >
         <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 mr-2">
-          <span className="text-sm font-bold text-black">15%</span>
+          <span className="text-sm font-bold text-black">7%</span>
         </div>
         <p className="text-sm font-medium text-black pr-2">
           Respiratory Diseases
@@ -83,7 +83,7 @@ function Body() {
 
       {/* Marker 4 */}
       <div
-        className={`absolute left-[51.5%] top-[69%] w-8 h-8 flex items-center justify-center rounded-full bg-[#ffffff54] transition-opacity duration-300 ${
+        className={`absolute left-[33%] top-[68%] w-8 h-8 flex items-center justify-center rounded-full bg-[#ffffff54] transition-opacity duration-300 ${
           hover ? "opacity-100" : "opacity-0"
         }`}
       >
@@ -92,12 +92,12 @@ function Body() {
 
       {/* Label 4 */}
       <div
-        className={`absolute left-[54%] top-[69%] flex items-center bg-white p-2 rounded-full shadow-lg transition-all duration-300 ${
+        className={`absolute left-[-14%] top-[66%] flex items-center bg-white p-2 rounded-full shadow-lg transition-all duration-300 ${
           hover ? "opacity-100 scale-100" : "opacity-0 scale-95"
         }`}
       >
         <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 mr-2">
-          <span className="text-sm font-bold text-black">5%</span>
+          <span className="text-sm font-bold text-black">42%</span>
         </div>
         <p className="text-sm font-medium text-black pr-2">Other Diseases</p>
       </div>
