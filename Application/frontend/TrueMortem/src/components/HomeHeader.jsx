@@ -1,6 +1,7 @@
 import React from "react";
 import Body from "./Body";
 
+function HomeHeader() {
   return (
     <div>
       <div className="max-w-[1240px] mx-auto">
