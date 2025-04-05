@@ -1,18 +1,12 @@
 import React from "react";
-import HeaderStat from "./HeaderStat";
+import Body from "./Body";
 
 function HomeHeader() {
   return (
     <div>
       <div className="max-w-[1240px] mx-auto">
         <div className="grid md:grid-cols-[30%_70%] md:gap-4 relative">
-          <div className="shadow-lg mx-auto relative group md:h-[calc(100vh-13vh)]">
-            <img
-              className="relative object-cover w-[41.5%] md:w-[79%] mx-auto h-auto md:ml-10 transition-transform duration-300 hover:scale-105 -z-10 group-hover:z-0"
-              src="/body.png"
-              alt=""
-            />
-          </div>
+          <Body />
           <div className="p-2 md:p-0 md:h-[calc(100vh-13vh)] z-10">
             <div className="flex items-start justify-start">
               <p className="text-[8.6rem] font-medium leading-tight text-black mt-20 ml-25">
