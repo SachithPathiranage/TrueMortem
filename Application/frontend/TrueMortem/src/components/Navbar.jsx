@@ -18,12 +18,11 @@ const Navbar = ({ isAuthenticated }) => {
       ? "bg-white text-black"
       : "bg-[#efefef] text-[#737373] hover:text-[#494646] hover:bg-[#e2e0e0]";
 
-  // Handle Predict Click Navigation
   const handlePredictClick = () => {
     if (isAuthenticated) {
       navigate("/predict");
     } else {
-      localStorage.setItem("redirectAfterLogin", "/predict"); // Store intended page
+      localStorage.setItem("redirectAfterLogin", "/predict");
       navigate("/signin");
     }
   };
