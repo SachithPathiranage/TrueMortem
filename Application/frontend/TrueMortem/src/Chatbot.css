@@ -27,6 +27,7 @@ General styles body {
   text-align: center;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .chat-header {
@@ -86,6 +87,8 @@ General styles body {
   border-radius: 10px;
   background: #f9f9f9;
   margin-bottom: 10px;
+  max-height: 60vh; /*  Prevent messages from growing too much */
+  word-wrap: break-word;
 }
 
 .message {
@@ -94,17 +97,23 @@ General styles body {
   max-width: 80%;
   margin: 8px 0;
   font-size: 14px;
+  white-space: pre-wrap; /*  Preserve line breaks */
+  word-wrap: break-word; /*  Ensure text doesn't overflow */
+  overflow-wrap: break-word; /*  Alternative for text wrapping */
 }
 
 .message.bot {
   background: #e0e0e0;
   align-self: flex-start;
+  max-width: 90%;
+  text-align: left;
 }
 
 .message.user {
   background: #007bff;
   color: white;
   align-self: flex-end;
+  max-width: 90%;
 }
 
 .input-area {

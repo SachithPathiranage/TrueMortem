@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import Footer from "../components/Footer";
 import AnimatedBackground from "../components/Animation";
 import { Bar, Pie } from "react-chartjs-2"; // Import visualization libraries
 import "chart.js/auto"; // Required for Chart.js to work
 import "../PMform.css";
+import ReactMarkdown from "react-markdown";
+import axios from "axios";
 
 const FormComponent = () => {
   const [formData, setFormData] = useState({
@@ -234,6 +235,26 @@ const FormComponent = () => {
     } finally {
       setLoading(false);
     }
+  };
+
+  const [report, setReport] = useState("");
+  const generateReport = async () => {
+    setLoading(true);
+    try {
+      const allFeatures = Object.entries(featureContributions)
+        .sort((a, b) => Math.abs(b[1]) - Math.abs(a[1])) // Sort by absolute contribution
+        .map(([feature, contribution]) => `${feature}: ${contribution.toFixed(4)}`);
+
+      const response = await axios.post("http://127.0.0.1:8000/generate-report", {
+        prediction,
+        features: allFeatures, // Send all features, not just the top 10
+      });
+
+      setReport(response.data);
+    } catch (error) {
+      console.error("Error generating report:", error);
+    }
+    setLoading(false);
   };
 
   return (
@@ -749,8 +770,6 @@ const FormComponent = () => {
           </form>
         </div>
 
-        {/* Display Prediction */}
-        {prediction && <h3>Prediction: {prediction}</h3>}
       </div>
 
       {/* Dashboard Visualization */}
@@ -774,33 +793,95 @@ const FormComponent = () => {
 
           {/* Feature Contribution Bar Chart */}
           <div className="mt-8">
-            <h3 className="text-lg font-semibold text-gray-700">
+            <h3 className="text-xl font-bold text-black">
               Feature Contributions
             </h3>
-            <div className="relative w-full h-96">
-              <Bar
-                data={{
-                  labels: Object.keys(featureContributions),
-                  datasets: [
-                    {
-                      label: "Feature Importance",
-                      data: Object.values(featureContributions),
-                      backgroundColor: "rgba(54, 162, 235, 0.6)",
-                      borderColor: "rgba(54, 162, 235, 1)",
-                      borderWidth: 1,
-                    },
-                  ],
-                }}
-                options={{
-                  responsive: true,
-                  maintainAspectRatio: false,
-                  scales: {
-                    y: { beginAtZero: true },
+            <div className="relative w-full h-[600px]">
+          <Bar
+            data={{
+              labels: Object.keys(featureContributions),
+              datasets: [
+                {
+                  label: "Feature Importance",
+                  data: Object.values(featureContributions),
+                  backgroundColor: "rgba(54, 162, 235, 0.7)",
+                  borderColor: "rgba(54, 162, 235, 1)",
+                  borderWidth: 1.5,
+                  barThickness: 18, // Increase bar size
+                },
+              ],
+            }}
+            options={{
+              responsive: true,
+              indexAxis: "y",
+              maintainAspectRatio: false,
+              scales: {
+                x: {
+                  beginAtZero: true,
+                  title: {
+                    display: true,
+                    text: "Contribution Score",
+                    color: "#000",
+                    font: { size: 16, weight: "bold" },
                   },
-                }}
-              />
-            </div>
-          </div>
+                  ticks: {
+                    color: "#333",
+                    font: { size: 14 },
+                  },
+                },
+                y: {
+                  title: {
+                    display: true,
+                    text: "Features",
+                    color: "#000",
+                    font: { size: 16, weight: "bold" },
+                  },
+                  ticks: {
+                    color: "#000",
+                    font: { size: 14, weight: "bold" }, // Make labels bold
+                  },
+                },
+              },
+              plugins: {
+                legend: { display: false },
+                tooltip: {
+                  callbacks: {
+                    label: (context) =>
+                      `${context.label}: ${context.parsed.x.toFixed(4)}`,
+                  },
+                },
+              },
+            }}
+          />
+        </div>
+      </div>
+
+      {/* Feature Contribution Table */}
+      <div className="mt-8">
+        <h3 className="text-xl font-bold text-black">Feature Contribution Table</h3>
+        <div className="overflow-x-auto">
+          <table className="min-w-full bg-white shadow-md rounded-lg border-collapse">
+            <thead>
+              <tr className="bg-gray-200">
+                <th className="border p-3 text-left font-bold text-black">Feature</th>
+                <th className="border p-3 text-left font-bold text-black">
+                  Contribution Score
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {Object.entries(featureContributions)
+                .sort((a, b) => Math.abs(b[1]) - Math.abs(a[1])) // Sort by importance
+                .map(([feature, contribution], index) => (
+                  <tr key={index} className="border-b">
+                    <td className="border p-3 text-black font-semibold">{feature}</td>
+                    <td className="border p-3 text-black">{contribution.toFixed(4)}</td>
+                  </tr>
+                ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
 
           {/* Feature Contribution Pie Chart */}
           <div className="mt-8">
@@ -831,6 +912,46 @@ const FormComponent = () => {
                 }}
               />
             </div>
+            <div className="mt-6 p-6 bg-gray-100 rounded-lg shadow-md">
+      {/* Generate Report Button */}
+      <button
+        onClick={generateReport}
+        className="px-6 py-2 bg-green-500 text-white font-bold rounded-md shadow-md hover:bg-green-600 transition"
+        disabled={loading}
+      >
+        {loading ? "Generating..." : "Generate Report"}
+      </button>
+
+      {/* Show Generated Report Below Charts */}
+      {report && (
+        <div className="mt-6 p-6 bg-white rounded-md shadow-lg border border-gray-200">
+          <div className="medical-report">
+            <ReactMarkdown>{report}</ReactMarkdown>
+          </div>
+          <div className="mt-4 flex justify-end">
+            <button
+              onClick={() => window.print()}
+              className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 mr-2"
+            >
+              Print Report
+            </button>
+            <button
+              onClick={() => {
+                const blob = new Blob([report], { type: "text/markdown" });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement("a");
+                a.href = url;
+                a.download = `Medical_Report_${new Date().toISOString().split("T")[0]}.md`;
+                a.click();
+              }}
+              className="px-4 py-2 bg-gray-500 text-white rounded-md hover:bg-gray-600"
+            >
+              Download Report
+            </button>
+          </div>
+        </div>
+      )}
+    </div>
           </div>
         </div>
       )}

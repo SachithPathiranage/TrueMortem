@@ -1,20 +1,54 @@
 import React from "react";
-import HeaderStat from "./HeaderStat";
+import { useNavigate } from "react-router-dom";
+import Body from "./Body";
 
-function HomeHeader() {
+function HomeHeader({ isAuthenticated }) {
+  const navigate = useNavigate();
+
+  const handlePredictClick = () => {
+    if (isAuthenticated) {
+      navigate("/predict");
+    } else {
+      localStorage.setItem("redirectAfterLogin", "/predict");
+      navigate("/signin");
+    }
+  };
+
   return (
-    <div className="max-w-[1240px] mx-auto md:mb-35">
-      <div className="grid md:grid-cols-[33%_67%] md:h-[calc(100vh-13vh)] md:gap-4 relative">
-        <div className="shadow-lg mx-auto relative group">
-          <img
-            className="relative object-cover w-[41.5%] md:w-[80%] mx-auto h-auto md:ml-15 transition-transform duration-300 hover:scale-105 -z-10 group-hover:z-0"
-            src="/body.png"
-            alt=""
-          />
+    <div>
+      <div className="max-w-[1240px] mx-auto">
+        <div className="grid md:grid-cols-[30%_70%] md:gap-4 relative">
+          <div className="mx-auto relative group md:h-[calc(100vh-13vh)]">
+            <Body />
+          </div>
+          <div className="p-2 md:p-0 md:h-[calc(100vh-13vh)] z-10">
+            <div className="flex items-start justify-start">
+              <p className="text-[8.6rem] font-medium leading-tight text-black mt-20 ml-25">
+                AI Death
+              </p>
+              <button
+                className="mt-35 py-6 px-10 ml-15 text-xl font-semibold text-white bg-blue-500 rounded-full hover:bg-blue-600 transition"
+                onClick={handlePredictClick}
+              >
+                Predict
+              </button>
+            </div>
+            <div className="flex items-center">
+              <p className="text-[8.6rem] font-medium leading-tight text-black ml-23">
+                Diagnosis
+              </p>
+              <div className="p-[0.7rem] rounded-full bg-blue-600 mt-23 ml-2"></div>
+            </div>
+
+            <p className="text-[#737373] w-[45%] align-baseline ml-25 mt-10">
+              We are revolutionizing forensic analysis providing data-driven
+              insights to assist in accurate cause of death prediction.
+            </p>
+          </div>
         </div>
-        <div className="p-8 md:p-0 flex items-center justify-center shadow-lg h-screen md:h-[calc(100vh-13vh)] z-10">
-          <HeaderStat />
-        </div>
+      </div>
+      <div className="bg-[#0000ffb6] text-white text-[1.6rem] font-medium p-8 text-center mt-10">
+        <p>Redefining Forensic Analysis, One Insight At A Time</p>
       </div>
     </div>
   );

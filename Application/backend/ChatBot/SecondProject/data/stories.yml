@@ -338,6 +338,8 @@ stories:
     - action: utter_permissive_hypercapnia
     - intent: myocardial infarction
     - action: utter_myocardial_infarction
+    - intent: ask about truemortem
+    - action: utter_about_truemortem
 
 
 
