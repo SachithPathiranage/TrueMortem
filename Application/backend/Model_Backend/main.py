@@ -6,6 +6,7 @@ from auth import router as auth_router
 import pickle
 import os
 
+
 app = FastAPI()
 
 # Allow CORS for frontend
