@@ -202,7 +202,7 @@ const FormComponent = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    setLoading(true);
+    
 
     if (validateForm()) {
       alert("Form submitted successfully!");
@@ -213,6 +213,7 @@ const FormComponent = () => {
     }
 
     try {
+      setLoading(true);
       const response = await fetch("http://127.0.0.1:8000/predict/postmortem", {
         method: "POST",
         headers: {
