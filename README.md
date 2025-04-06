@@ -33,6 +33,7 @@ TrueMortem is an AI-driven system designed to predict and analyze causes of deat
   - ✅ Predicted causes of death
   - 📉 Confidence levels
   - 🔍 Key features contributing to predictions
+  - 📝 Generate reports based on the contributions
 - Designed for use by **forensic experts** and **public health professionals**.
 
 ### 💬 Chatbot Assistant
@@ -88,6 +89,7 @@ Create a `.env` file inside `Application/backend/` and add:
 ```
 MONGO_URI=mongodb://localhost:27017/TrueMortem
 OPENROUTER_API_KEY=your_secret_key_here
+OPENROUTER_API_KEY_2=your_2nd_secret_key_here
 ```
 
 #### **🔹 Run the Backend**
@@ -141,7 +143,7 @@ bash run.sh
 ---
 
 ## **📜 License**
-This project is licensed under the **MIT License**. Feel free to use and modify it.
+
 
 ## **🤝 Contributing**
 We welcome contributions! To contribute:
