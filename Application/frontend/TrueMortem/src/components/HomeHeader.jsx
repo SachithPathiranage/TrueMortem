@@ -40,7 +40,7 @@ function HomeHeader({ isAuthenticated }) {
               <div className="p-[0.7rem] rounded-full bg-blue-600 mt-23 ml-2"></div>
             </div>
 
-            <p className="text-[#737373] w-[45%] align-baseline ml-25 mt-10">
+            <p className="text-[#737373] w-[52%] align-baseline ml-25 mt-10">
               We are revolutionizing forensic analysis providing data-driven
               insights to assist in accurate cause of death prediction.
             </p>
