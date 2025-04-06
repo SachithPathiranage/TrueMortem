@@ -118,6 +118,12 @@ def predict_death_cause(data: PostMortemData, model):
         prediction = model.predict(input_features)  
         print("Raw Prediction:", prediction)  # Debugging
 
+        prediction_proba = model.predict_proba(input_features)
+
+        confidence = float(prediction_proba[0][1])  # Probability of heart-related (class = 1)
+        print("Raw Prediction:", prediction)
+        print("Prediction Confidence:", confidence)
+
         # Convert to human-readable result
         result = "Heart-related death" if prediction[0] == 1 else "Not heart-related"
 
@@ -135,6 +141,7 @@ def predict_death_cause(data: PostMortemData, model):
         # Generate report
         report = f"**Heart Disease Prediction Report**\n\n"
         report += f"**Prediction:** {result}\n\n"
+        report += f"**Confidence:** {confidence*100:.2f}%\n\n"
         report += "**Feature Contributions:**\n"
         for feature, contribution in feature_contributions.items():
             report += f"- {feature}: {contribution}\n"
@@ -145,6 +152,7 @@ def predict_death_cause(data: PostMortemData, model):
 
         return {
             "prediction": result,
+            "confidence": round(confidence * 100, 2),
             "feature_contributions": feature_contributions,
             "report": report
         } 

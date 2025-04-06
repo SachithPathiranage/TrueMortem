@@ -34,6 +34,7 @@ const FormComponent = () => {
   });
 
   const [prediction, setPrediction] = useState(null);
+  const [confidence, setConfidence] = useState(null);
   const [featureContributions, setFeatureContributions] = useState(null);
   const [loading, setLoading] = useState(false);
   const [errors, setErrors] = useState({});
@@ -190,6 +191,11 @@ const FormComponent = () => {
       }
     });
 
+    // If there are errors, show an alert
+    if (Object.keys(newErrors).length > 0) {
+      alert("Please complete all required fields before submitting.");
+    }
+
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
@@ -200,6 +206,10 @@ const FormComponent = () => {
 
     if (validateForm()) {
       alert("Form submitted successfully!");
+    }
+
+    else{
+      return;
     }
 
     try {
@@ -219,6 +229,7 @@ const FormComponent = () => {
 
       setPrediction(data.prediction);
       console.log("Response Data:", data); // Debugging output
+      setConfidence(data.confidence);
       alert(`Prediction: ${data.prediction}`); // Display the prediction result
       setFeatureContributions(data.feature_contributions); // Feature importance from the model
 
@@ -790,6 +801,17 @@ const FormComponent = () => {
           >
             {prediction}
           </p>
+
+          <p className="text-lg">
+            <strong>Confidence:</strong> {confidence}%
+          </p>
+
+          <div className="w-full bg-gray-200 h-4 rounded-lg mt-2">
+            <div
+              className="bg-blue-500 h-4 rounded-lg"
+              style={{ width: `${confidence}%` }}
+            />
+          </div>
 
           {/* Feature Contribution Bar Chart */}
           <div className="mt-8">
