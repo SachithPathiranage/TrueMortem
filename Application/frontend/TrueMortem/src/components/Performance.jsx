@@ -17,18 +17,18 @@ function Performance() {
     labels: [
       "PM Model",
       "Accuracy",
-      "Precision",
-      "Recall",
+      "CV Score",
+      "ROC-AUC Score",
       "",
       "VA Model",
       "Accuracy",
-      "Precision",
-      "Recall",
+      "CV Score",
+      "ROC-AUC Score",
     ],
     datasets: [
       {
         label: "Performance (%)",
-        data: [null, 80, 92, 88, null, null, 86, 94, 91],
+        data: [null, 87, 86, 91, null, null, 80, 81, 80],
         backgroundColor: [
           "transparent",
           "#FF6384",
