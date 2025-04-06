@@ -31,8 +31,8 @@ function Heart() {
           hover ? "opacity-100 scale-100" : "opacity-0 scale-95"
         }`}
       >
-        <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 mr-2">
-          <span className="text-sm font-bold text-black">53%</span>
+        <div className="w-10 h-10 flex items-center justify-center rounded-full bg-blue-500 mr-2">
+          <span className="text-sm font-bold text-white">53%</span>
         </div>
         <p className="text-sm font-medium text-black pr-2">
           Coronary Artery Disease
@@ -54,8 +54,8 @@ function Heart() {
           hover ? "opacity-100 scale-100" : "opacity-0 scale-95"
         }`}
       >
-        <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 mr-2">
-          <span className="text-sm font-bold text-black">17%</span>
+        <div className="w-10 h-10 flex items-center justify-center rounded-full bg-blue-500 mr-2">
+          <span className="text-sm font-bold text-white">17%</span>
         </div>
         <p className="text-sm font-medium text-black pr-2">Stroke</p>
       </div>
@@ -75,8 +75,8 @@ function Heart() {
           hover ? "opacity-100 scale-100" : "opacity-0 scale-95"
         }`}
       >
-        <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 mr-2">
-          <span className="text-sm font-bold text-black">15%</span>
+        <div className="w-10 h-10 flex items-center justify-center rounded-full bg-blue-500 mr-2">
+          <span className="text-sm font-bold text-white">15%</span>
         </div>
         <p className="text-sm font-medium text-black pr-2">Heart Failure</p>
       </div>
@@ -96,8 +96,8 @@ function Heart() {
           hover ? "opacity-100 scale-100" : "opacity-0 scale-95"
         }`}
       >
-        <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 mr-2">
-          <span className="text-sm font-bold text-black">15%</span>
+        <div className="w-10 h-10 flex items-center justify-center rounded-full bg-blue-500 mr-2">
+          <span className="text-sm font-bold text-white">15%</span>
         </div>
         <p className="text-sm font-medium text-black pr-2">Other Causes</p>
       </div>

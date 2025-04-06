@@ -31,8 +31,8 @@ function Body() {
           hover ? "opacity-100 scale-100" : "opacity-0 scale-95"
         }`}
       >
-        <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 mr-2">
-          <span className="text-sm font-bold text-black">33%</span>
+        <div className="w-10 h-10 flex items-center justify-center rounded-full bg-blue-500 mr-2">
+          <span className="text-sm font-bold text-white">33%</span>
         </div>
         <p className="text-sm font-medium text-black pr-2">Heart Diseases</p>
       </div>
@@ -52,8 +52,8 @@ function Body() {
           hover ? "opacity-100 scale-100" : "opacity-0 scale-95"
         }`}
       >
-        <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 mr-2">
-          <span className="text-sm font-bold text-black">18%</span>
+        <div className="w-10 h-10 flex items-center justify-center rounded-full bg-blue-500 mr-2">
+          <span className="text-sm font-bold text-white">18%</span>
         </div>
         <p className="text-sm font-medium text-black pr-2">Cancers</p>
       </div>
@@ -73,8 +73,8 @@ function Body() {
           hover ? "opacity-100 scale-100" : "opacity-0 scale-95"
         }`}
       >
-        <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 mr-2">
-          <span className="text-sm font-bold text-black">7%</span>
+        <div className="w-10 h-10 flex items-center justify-center rounded-full bg-blue-500 mr-2">
+          <span className="text-sm font-bold text-white">7%</span>
         </div>
         <p className="text-sm font-medium text-black pr-2">
           Respiratory Diseases
@@ -96,8 +96,8 @@ function Body() {
           hover ? "opacity-100 scale-100" : "opacity-0 scale-95"
         }`}
       >
-        <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 mr-2">
-          <span className="text-sm font-bold text-black">42%</span>
+        <div className="w-10 h-10 flex items-center justify-center rounded-full bg-blue-500 mr-2">
+          <span className="text-sm font-bold text-white">42%</span>
         </div>
         <p className="text-sm font-medium text-black pr-2">Other Diseases</p>
       </div>
