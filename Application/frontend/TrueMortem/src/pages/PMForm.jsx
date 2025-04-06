@@ -864,20 +864,36 @@ const FormComponent = () => {
             <thead>
               <tr className="bg-gray-200">
                 <th className="border p-3 text-left font-bold text-black">Feature</th>
-                <th className="border p-3 text-left font-bold text-black">
-                  Contribution Score
-                </th>
+                <th className="border p-3 text-left font-bold text-black">Contribution Score</th>
               </tr>
             </thead>
             <tbody>
               {Object.entries(featureContributions)
-                .sort((a, b) => Math.abs(b[1]) - Math.abs(a[1])) // Sort by importance
-                .map(([feature, contribution], index) => (
-                  <tr key={index} className="border-b">
-                    <td className="border p-3 text-black font-semibold">{feature}</td>
-                    <td className="border p-3 text-black">{contribution.toFixed(4)}</td>
-                  </tr>
-                ))}
+                .sort((a, b) => Math.abs(b[1]) - Math.abs(a[1]))
+                .map(([feature, contribution], index) => {
+                  const maxContribution = Math.max(
+                    ...Object.values(featureContributions).map((v) => Math.abs(v))
+                  );
+                  const barWidth = (Math.abs(contribution) / maxContribution) * 100;
+                  const barColor = contribution > 0 ? "bg-green-500" : "bg-red-500";
+
+                  return (
+                    <tr key={index} className="border-b">
+                      <td className="border p-3 text-black font-semibold">{feature}</td>
+                      <td className="border p-3 text-black">
+                        <div className="flex items-center gap-2">
+                          <span className="w-14">{contribution.toFixed(4)}</span>
+                          <div className="flex-1 bg-gray-200 h-4 rounded-lg overflow-hidden">
+                            <div
+                              className={`${barColor} h-4`}
+                              style={{ width: `${barWidth}%` }}
+                            />
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  );
+                })}
             </tbody>
           </table>
         </div>
